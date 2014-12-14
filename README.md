@@ -15,4 +15,4 @@ https://talkabit.teamwork.com/projects/129607-talk-a-bit-2015/tasks
 
 Project WIKI
 ========
-http://paginas.fe.up.pt/~talkabit/wiki
+http://paginas.fe.up.pt/~talkabit/doku
