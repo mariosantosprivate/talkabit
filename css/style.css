@@ -117,8 +117,8 @@ a:focus {
 
 .navbar-brand h1{
 	color: #fff;
-  font-size: 20px;
-  line-height: 40px;
+	font-size: 20px;
+	line-height: 40px;
 }
 
 .navbar-brand:focus {
@@ -339,6 +339,10 @@ hr {
 
 .bg-lightblue{
 	background: #005F82;
+}
+
+.bg-lightestblue{
+	background: #D3EEFB;
 }
 
 
@@ -1173,18 +1177,18 @@ opacity:1;-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(
 
 }
 
-table {table-layout: auto;}
+.sponsors_table table {table-layout: auto;}
 
-tr {
+.sponsors_table tr {
 	text-align:left;
 }
 
-th {
+.sponsors_table th {
 	color:#00304D;
 	font-family:Decima;
 	text-align:center;
 }
-td {
+.sponsors_table td {
 	color:#00304D;
 	font-family:Decima;
 	padding: 5px 5px;
@@ -1195,16 +1199,16 @@ td {
 }
 
 
-td.title{
+.sponsors_table td.title{
 	width:0%;
 	text-align:right;
 }
 
-th:last-child {
+.sponsors_table th:last-child {
 	text-align:left;
 }
 
-td:last-child {
+.sponsors_table. td:last-child {
 	text-align:left;
 }
 
@@ -1249,4 +1253,27 @@ a.disabled {
    cursor: default;
 }
 
+/*----------------------------------------------------------------*/
+.sponsors_logo {
+	width:40%;
+	float:left;
+	margin-top:5%;
+}
+
+.sponsors_logo img
+{
+	max-width:80%; 
+}
+
+.sponsors_text {
+	width:60%;
+	float:left;
+	text-align: left;
+	margin-top:5%;
+}
+
+.conference_sponsors{ 
+	clear:both; 
+
+}
 
