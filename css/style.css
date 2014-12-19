@@ -675,7 +675,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 footer {
 	text-align: center;
 	padding: 50px 0 ;
-	background-color: #005F82;;
+	background-color: #005F82;
 	
 }
 
@@ -964,6 +964,10 @@ Parallax
 	p {
 		font-size:15px;
 	}
+	
+	.speakers_table img {
+		width:45px!important;height:45px!important;
+	}
 }
 
 @media (max-width:480px) {
@@ -1041,6 +1045,11 @@ background-size: cover;
 .laraMarinha{
 	background-image:url(../img/team/laraMarinha.jpg)
 }
+
+.brunoGuedes {
+	background-image:url(../img/team/brunoGuedes.jpg)
+}
+
 .marlynSousa{
 	background-image:url(../img/team/marlynSousa.jpg)
 }
@@ -1255,9 +1264,9 @@ a.disabled {
 
 /*----------------------------------------------------------------*/
 .sponsors_logo {
-	width:40%;
+	width:50%;
 	float:left;
-	margin-top:5%;
+
 }
 
 .sponsors_logo img
@@ -1266,14 +1275,87 @@ a.disabled {
 }
 
 .sponsors_text {
-	width:60%;
+	width:50%;
 	float:left;
 	text-align: left;
-	margin-top:5%;
 }
+
+
+.sponsors_logo_silver {
+	width:100%;
+
+
+}
+
+.sponsors_logo_silver img
+{
+	max-width:25%; 
+}
+
 
 .conference_sponsors{ 
 	clear:both; 
-
 }
+
+h1.gold {
+	font-family: Decima;
+	font-size:40px;
+	color:#CC9900!important;
+	padding-top:5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1.platinum {
+	font-family: Decima;
+	font-size:40px;
+	color:#545C6A!important;
+	padding-top:5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1.silver {
+	font-family: Decima;
+	font-size:40px;
+	color:#4E4E4E!important;
+	padding-top:5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.type_sponsors {
+	padding: 2%;
+}
+
+.type_sponsors img {
+width:10%;
+}
+
+
+.speakers_table {
+	font-family: Decima;
+	font-size:16px;
+	color: #00304D;
+	text-align:left;
+	text-transform: uppercase;
+	margin: 0 auto;
+	
+}
+
+.speakers_table .header {
+    font-weight: bold;
+}
+
+td.hour{
+	color: #005F82;
+	text-align:center;
+}
+
+.speakers_table img {
+	border-radius:50%;position:relative;cursor:default;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;-ms-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;
+	background-size: cover;
+	width:90px;height:90px;display:inline-block;margin:5px;
+}
+
 
