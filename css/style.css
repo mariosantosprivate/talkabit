@@ -1062,8 +1062,8 @@ background-size: cover;
 	background-image:url(../img/team/andreBarbosa.jpg)
 }
 
-.nelsonMatos{
-	background-image:url(../img/team/nelsonMatos.jpg)
+.nelsonMendes{
+	background-image:url(../img/team/nelsonMendes.jpg)
 }
 
 .jorgeCosta{
@@ -1281,7 +1281,7 @@ a.disabled {
 }
 
 
-.sponsors_logo_silver {
+.sponsors_logo_silver {  
 	width:100%;
 
 
@@ -1290,6 +1290,7 @@ a.disabled {
 .sponsors_logo_silver img
 {
 	max-width:25%; 
+	margin: 10px;
 }
 
 
