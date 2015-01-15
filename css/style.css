@@ -1326,7 +1326,7 @@ h1.silver {
 }
 
 .type_sponsors {
-	padding: 2%;
+	padding: 4%;
 }
 
 .type_sponsors img {
@@ -1359,4 +1359,11 @@ td.hour{
 	width:90px;height:90px;display:inline-block;margin:5px;
 }
 
+img.critical {
+	max-width:19%;
+}
+
+img.ria {
+	max-width:28%;
+}
 
