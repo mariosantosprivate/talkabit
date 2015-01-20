@@ -7,9 +7,6 @@
 		jQuery("#load").delay(100).fadeOut("slow");
 	});
 
-
-
-
 	/*
 	//jQuery to collapse the navbar on scroll
 	$(window).scroll(function() {

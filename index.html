@@ -21,7 +21,6 @@
 	<link href="color/default.css" rel="stylesheet">
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	
 	<script type="text/javascript" charset="utf-8">
     $(function(){
       $("#team").load("team.html"); 
@@ -31,15 +30,16 @@
     });
 	
 
+	$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+	});
+  
+
+				
 	function myFunction(){
          document.location.href = "mailto:laramarinha@gmail.com?subject=Talk%20a%20Bit%20Sponsorship";
 	}
 
-	$("li").hover(
-	  function() {
-		alert("hover");
-	  }
-	);
 </script>
 <style>
       #map-canvas {
@@ -112,12 +112,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-			<li><a class="disabled" href="#">Speakers</a></li>
-			<li><a href="#schedule">Schedule</a></li>  
-			<li><a href="#location">Location</a></li> 
 			<li><a href="https://docs.google.com/forms/d/1Y6rPsTsYQSDulZSml92VDJkfa3r9K5pC8UL20LsG0J0/viewform?c=0&amp;w=1">Register</a></li>  
+			<li><a href="#speakers">Speakers</a></li>
+			<li><a href="#schedule">Schedule</a></li> 
 			<li><a href="#team">Organizers</a></li>  
-			<li><a href="#sponsors">Sponsors</a></li>
+			<li><a href="#sponsors">Sponsors</a></li>			
+			<li><a href="#location">Location</a></li> 
           </ul>
         </li>
       </ul>
@@ -130,14 +130,16 @@
 	<!-- Section: intro -->
     <section id="intro" class="intro">
 		<ul class="tile_div right_side">
-			<li><a class="disabled" href="#">Speakers</a></li>
-			<li><a href="#schedule">Schedule</a></li>  
+			<li><a href="#team">Organizers</a></li> 
+			<li><a href="#sponsors">Sponsors</a></li>
 			<li><a href="#location">Location</a></li> 
 		</ul>
 		<ul class="tile_div left_side">
 			<li><a href="https://docs.google.com/forms/d/1Y6rPsTsYQSDulZSml92VDJkfa3r9K5pC8UL20LsG0J0/viewform?c=0&amp;w=1">Register</a></li>  
-			<li><a href="#team">Organizers</a></li>  
-			<li><a href="#sponsors">Sponsors</a></li>
+			<li><a href="#speakers">Speakers</a></li>
+			<li><a href="#schedule">Schedule</a></li> 
+			
+
 		</ul>
 
     </section>
@@ -159,7 +161,7 @@
 
 
 	
-	<!-- Section: speakers 
+	<!-- Section: speakers -->
 	<section id="speakers" class="home-section text-center bg-lightestblue">
 	</section>  
 	<!-- /Section: speakers -->
