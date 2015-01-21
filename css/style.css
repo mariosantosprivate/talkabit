@@ -27,6 +27,24 @@
 	src: url('fonts/Decima Bold Italic.otf');
 }
 
+.modal-content {
+  border-radius: 0px !important;
+  -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.5) !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,.5) !important;
+}
+
+ul.special_bullet li {
+  background: url('../img/favicon_flip.png') no-repeat left 5px;
+  /* padding-left: 12px; */
+  display: block;
+  background-size: 25px 25px;
+  /* padding-left: 33px; */
+  background-position-y: 3px;
+  padding-bottom: 13px;
+  height: auto;
+  padding-left: 44px;
+  padding-top: 5px;
+}
 
 body {
     width: 100%;
@@ -36,6 +54,8 @@ body {
     color: #666;
     background-color: #fff;
 }
+
+
 
 html {  
     width: 100%;
@@ -1024,6 +1044,13 @@ width:100%;height:100%;border-radius:50%;position:relative;cursor:default;-webki
 background-size: cover;
 }
 
+
+#speakers .ch-item{
+width:98%;height:99%;border-radius:50%;position:relative;cursor:default;-webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;-ms-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;
+background-size: cover; left: 2px;
+bottom: -1px;
+}
+
 .none{
 	background-image:url(../img/team/none-a0f37c13.png);
 	background-repeat: no-repeat;
@@ -1058,11 +1085,17 @@ background-size: cover;
 .filipeAraujo{
 	background-image:url(../img/team/filipeAraujo.jpg)
 }
+.guilhermeMartins{
+  background-image:url(../img/team/guilhermeMartins.jpg)
+}
+.guilhermeMartins h3, .fernandaLedesma h3 {
+  top: 17px;
+}
 .vitorDinis{
 	background-image:url(../img/team/vitorDinis.jpg)
 }
 
-.fernandaLadesma {
+.fernandaLedesma {
 	background-image:url(../img/team/fernandaLadesma.png)
 }
 .miguelGoncalves {
@@ -1175,7 +1208,9 @@ color:#fff222;color:rgba(255,242,34,0.8)
 }
 
 .ch-item:hover{
-box-shadow:inset 0 0 0 110px rgba(0,95,95,0.4)
+box-shadow:inset 0 0 0 110px rgba(0,95,95,0.4);
+
+
 }
 
 .ch-info h3 {
@@ -1184,7 +1219,16 @@ font-family:Decima!important;
 }
 
 .ch-item:hover .ch-info{
-opacity:1;-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1)
+opacity:1;-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1);
+
+}
+
+#speakers .ch-item:hover .ch-info{
+opacity:1;-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transform:scale(1);
+left: 0px;
+bottom: 0px;
+width: 100%;
+height: 100%;
 }
 
 
@@ -1461,7 +1505,7 @@ z-index:-1;
 
 #speakers .ch-grid li {
 	width: 220px;
-	height: 220px;
+	height: 221px;
 	background-image:url(../img/team/moldura_fotos2.png);
 }
 
