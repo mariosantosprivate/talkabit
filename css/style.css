@@ -1085,8 +1085,17 @@ bottom: -1px;
 .filipeAraujo{
 	background-image:url(../img/team/filipeAraujo.jpg)
 }
+.ricardoCorreia{
+  background-image:url(../img/team/ricardoCorreia.jpg)
+}
+.fernandoAlvim{
+  background-image:url(../img/team/fernandoAlvim.png)
+}
 .guilhermeMartins{
   background-image:url(../img/team/guilhermeMartins.jpg)
+}
+.claraSoares{
+  background-image:url(../img/team/claraSoares.jpg)
 }
 .guilhermeMartins h3, .fernandaLedesma h3 {
   top: 17px;
@@ -1484,7 +1493,7 @@ img.ria {
 }
 
 td {
-padding-left: 10px;
+  padding-left: 10px;
 }
 
 .home-section {
