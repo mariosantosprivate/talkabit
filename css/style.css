@@ -1127,11 +1127,25 @@ bottom: -1px;
 	background-image:url(../img/team/vitorDinis.jpg)
 }
 
+.luisMartins{
+  background-image:url(../img/team/luisMartins.png)
+}
+.danielTeixeira{
+  background-image:url(../img/team/danielTeixeira.jpg)
+}
+.anaSantos{
+  background-image:url(../img/team/anaSantos.jpg)
+}
+
 .fernandaLedesma {
 	background-image:url(../img/team/fernandaLadesma.png)
 }
 .miguelGoncalves {
 	background-image:url(../img/team/miguelGoncalves.png)
+}
+
+.sandraBorges {
+  background-image:url(../img/team/sandraBorges.jpg)
 }
 .joaoSantos{
 	background-image:url(../img/team/joaoSantos.jpg)
