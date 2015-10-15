@@ -296,6 +296,10 @@ ul li {
           transition: all 0.2s linear 0s;
 }
 
+.navbar-solid span:before {
+  content: attr(data-name)
+}
+
 .site-branding {
   float: left;
   margin-top: 0;
