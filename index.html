@@ -1,234 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Talk A Bit</title>
+    <title>Talk A Bit - 4th edition</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="css/animate.css" rel="stylesheet" />
-	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
-	<link href="color/default.css" rel="stylesheet">
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" charset="utf-8">
-    $(function(){
-      $("#team").load("team.html"); 
-	  $("#sponsors").load("sponsors.html");
-	  $("#speakers").load("speakers.html");
-	  $("#schedule").load("schedule.html");
-    });
-	
-
-	$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-	});
-  
-
-				
-	function myFunction(){
-         document.location.href = "mailto:laramarinha@gmail.com?subject=Talk%20a%20Bit%20Sponsorship";
-	}
-
-</script>
-<style>
-      #map-canvas {
-        width: 100%;
-        height: 400px;
-      }
-    </style>
-	 <script>
-	  function initialize() {
-		var mapCanvas = document.getElementById('map-canvas');
-		var myLatlng = new google.maps.LatLng(41.178180, -8.597597); //originais  41.177895, -8.597954 coordenadas auditório 41.178180, -8.597597 | coordenadas queijos 41.177784, -8.595435	change zoom:19
-		var mapOptions = {
-		  center: myLatlng,
-		  zoom: 19, //16
-		  zoomControl: true,
-			zoomControlOptions: {
-			  style: google.maps.ZoomControlStyle.LARGE
-			},
-		scrollwheel: false,
-		  mapTypeId: google.maps.MapTypeId.ROADMAP
-		}
-		var styles = [
-		{
-			stylers: [
-			{ hue: "#00ffe6" },  
-			{ saturation: -20 }
-		]
-		}];
-	
-		var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
-	
-		var image = './img/location.png';
-		var map = new google.maps.Map(mapCanvas, mapOptions);
-		
-		  map.mapTypes.set('map_style', styledMap);
-			map.setMapTypeId('map_style');
-  
-		var marker = new google.maps.Marker({
-		  position: myLatlng,
-		  map: map,
-		  title: 'FEUP',
-		  icon: image
-	  });
-		var center = map.getCenter();	
-		google.maps.event.addDomListener(window, 'resize', function() {
-			map.setCenter(center);
-		});
-	  }
-	  google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-	<!-- Preloader -->
-	<div id="preloader">
-	  <div id="load"></div>
-	</div>
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
         <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <!--<a class="navbar-brand" href="index.html">
-                    <h1>SQUAD FREE</h1>
-                </a>-->
-            </div>
+            <div class="navbar-header">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-			<li><a href="https://docs.google.com/forms/d/1Y6rPsTsYQSDulZSml92VDJkfa3r9K5pC8UL20LsG0J0/viewform?c=0&amp;w=1">Register</a></li>  
-			<li><a href="#speakers">Speakers</a></li>
-			<li><a href="#schedule">Schedule</a></li> 
-			<li><a href="#team">Organizers</a></li>  
-			<li><a href="#sponsors">Sponsors</a></li>			
-			<li><a href="#location">Location</a></li> 
-          </ul>
-        </li>
-      </ul>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li><a data-scroll href="#sponsorship">Sponsorship</a></li>
+                    <li><a data-scroll href="#location">Location</a></li>
+                    <li><a title="Subscribe to the mailing list" href="https://ti.to/talkabit/2016-edition/">Stay Updated</a></li>
+                    <li><a title="4th edition - 2015" href="2015">Previous Edition</a></li>
+                </ul>
             </div>
-            <!-- /.navbar-collapse -->
-		</div>
-        <!-- /.container -->
+        </div><!-- /.container -->
     </nav>
 
-	<!-- Section: intro -->
-    <section id="intro" class="intro">
-		<ul class="tile_div right_side">
-			<li><a href="#team">Organizers</a></li> 
-			<li><a href="#sponsors">Sponsors</a></li>
-			<li><a href="#location">Location</a></li> 
-		</ul>
-		<ul class="tile_div left_side">
-			<li><a href="https://docs.google.com/forms/d/1Y6rPsTsYQSDulZSml92VDJkfa3r9K5pC8UL20LsG0J0/viewform?c=0&amp;w=1">Register</a></li>  
-			<li><a href="#speakers">Speakers</a></li>
-			<li><a href="#schedule">Schedule</a></li> 
-			
-
-		</ul>
-
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+            <h1 style="font-family: DecimaBold; letter-spacing: 2px; font-size: 60px">
+                Talk A Bit <span style="font-family: DecimaLight">Conference 2016</span>
+            </h1>
+            <h2>6 February</h2>
+            <br><br>
+            <p style="margin-right: 180px">
+                We are going to talk a bit about the social impact of &nbsp;
+                <strong><span class="element" style="white-space:pre; position: absolute; font-family: DecimaBold"></span></strong>
+            </p>
+            <br><br>
+            <a href="#sponsorship" data-scroll><h1 class="btn btn-default" style="font-size: 50px; letter-spacing: 5px">CALL FOR SPONSORS</h1></a><br>
+            <br><br>
+            <p>The Largest Student Organized Conference @ Porto</p>
+        </div>
+        </header>
+    <section class="section pricing" id="sponsorship">
+        <div class="container">
+            <div class="row">
+                <h3 class="col-xs-11 col-xs-offset-1" style="text-transform: uppercase;">Sponsorship Plans</h3>
+            </div>
+            <div class="row hidden-xs ">
+                <div class="col-md-offset-1 col-no-padding col-sm-4 col-md-2">
+                    <div class="pricetab-wrapper">
+                        <div class="pricetab">
+                            <h1> official </h1>
+                            <div class="price">
+                                <h2> 3000 </h2>
+                            </div>
+                            <div class="infos">
+                                <h3> logo in our website</h3>
+                                <h3> logo in the talkabit billboard</h3>
+                                <h3> physical stand (main) </h3>
+                                <h3> social media mentions</h3>
+                                <h3> stage roll-up</h3>
+                            </div>
+                            <div class="pricefooter">
+                                <div class="button">
+                                    <a href="#"> apply </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-no-padding col-sm-4 col-md-2">
+                    <div class="pricetab-wrapper">
+                        <div class="pricetab">
+                            <h1> gold </h1>
+                            <div class="price">
+                                <h2> 1200 </h2>
+                            </div>
+                            <div class="infos">
+                                <h3> logo in our website</h3>
+                                <h3> logo in the talkabit billboard</h3>
+                                <h3> physical stand (secondary)</h3>
+                                <h3> social media mentions</h3>
+                                <h3 class="disabled"> stage roll-up</h3>
+                            </div>
+                            <div class="pricefooter">
+                                <div class="button">
+                                    <a href="#"> apply </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-no-padding col-sm-4 col-md-2">
+                    <div class="pricetab-wrapper">
+                        <div class="pricetab">
+                            <h1> silver </h1>
+                            <div class="price">
+                                <h2> 600 </h2>
+                            </div>
+                            <div class="infos">
+                                <h3> logo in our website</h3>
+                                <h3> logo in the talkabit billboard</h3>
+                                <h3> physical stand (secondary) </h3>
+                                <h3 class="disabled"> social media mentions</h3>
+                                <h3 class="disabled"> stage roll-up</h3>
+                            </div>
+                            <div class="pricefooter">
+                                <div class="button">
+                                    <a href="#"> apply </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-no-padding col-sm-4 col-md-2">
+                    <div class="pricetab-wrapper">
+                        <div class="pricetab">
+                            <h1> bronze </h1>
+                            <div class="price">
+                                <h2> 350 </h2>
+                            </div>
+                            <div class="infos">
+                                <h3> logo in our website</h3>
+                                <h3> logo in the talkabit billboard</h3>
+                                <h3 class="disabled"> physical stand(main)</h3>
+                                <h3 class="disabled"> social media mentions</h3>
+                                <h3 class="disabled"> stage roll-up</h3>
+                            </div>
+                            <div class="pricefooter">
+                                <div class="button">
+                                    <a href="#"> apply </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-no-padding col-sm-4 col-md-2">
+                    <div class="pricetab-wrapper">
+                        <div class="pricetab">
+                            <h1> friend </h1>
+                            <div class="price">
+                                <h2> 100 </h2>
+                            </div>
+                            <div class="infos">
+                                <h3> logo in our website</h3>
+                                <h3 class="disabled"> logo in the talkabit billboard</h3>
+                                <h3 class="disabled"> physical stand(main)</h3>
+                                <h3 class="disabled"> social media mentions</h3>
+                                <h3 class="disabled"> stage roll-up</h3>
+                            </div>
+                            <div class="pricefooter">
+                                <div class="button">
+                                    <a href="#"> apply </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-	<!-- /Section: intro -->
-	
-	<!-- Section: about -->
-	<section id="about" class="home-section bg-blue">
-		<div class="bg-blue" style="display:inline-block">
-			<div class="about-logo bg-blue">
-				<img src="./img/about-logo.png">
-			</div>
-			<div class="about-text bg-blue">
-				<h1>TALK A BIT 3rd Edition</h1>
-				<h4>Talk A Bit is an event organized by the students of Information Systems and Software Engineering Seminar, a class held at Faculdade de Engenharia da Universidade do Porto.</h4>
-			</div>
-		</div>
-	</section>
-		<!-- Section: about -->
 
+<!--
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
 
-	
-	<!-- Section: speakers -->
-	<section id="speakers" class="home-section text-center bg-lightestblue">
-	</section>  
-	<!-- /Section: speakers -->
-	
-	<!-- Section: schedule -->
-    <section id="schedule" class="home-section text-center bg-gray">
-	</section>  
-	<!-- /Section: schedule -->
-	
-	<!-- Section: team -->
-    <section id="team" class="home-section text-center bg-lightblue">
-	</section>  
-	<!-- /Section: team -->
+                    <h3 class="section-title">About Us</h3>
 
-	
-	<div style="background: #00304D; height:5%;"></div>
-	
-	<!-- Section: sponsors -->
-    <section id="sponsors" class="home-section text-center bg-gray">
-	</section>
-	<!-- /Section: sponsors -->
-	
-    <section id="location" class="home-section bg-blue">
-		<div class="bg-blue" style="display:inline-block">
-			<div class="location-logo">
-				<h4>Address</h4>
-				<h4>Faculdade de Engenharia da Universidade do Porto</h4>
-				<h4>Rua Dr. Roberto Frias, s/n 4200-465, Porto, Portugal</h4>
-				<div class="location-img">
-					<img src="./img/metro_linhad.png">
-					<img src="./img/stcp.png">
-				</div>
-			</div>
-			<div class="location-text">
-				<h1>Location</h1>
-				<h4>Talk A Bit 2015 will once again take place at Faculdade de Engenharia da Universidade do Porto (FEUP) - a top-level engineering school, known to be one of the best in Europe, as well as in Portugal.</h4>
-				<h4><p></p></h4>
-				<h4>You can arrive at FEUP by car, bus (STCP) or subway (line D).
-				<h4>Subway network of Porto - www.metrodoporto.pt/en/</h4>
-				<h4>Bus STCP - www.stcp.pt/en/travel/</h4>
-				<h4>Táxis Invicta - www.taxisinvicta.com</h4>
-		</div>
-	</section>
+                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
 
-    <div id="map-canvas"></div>
+                    <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                    </figure>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<h4 class="h4_footer" >Follow us</h4>
-				<a href="https://www.facebook.com/talkabit"> <img src="./img/icons/facebook.png"></img></a>
-			</div>
-			<div>
-				<button class="btn_footer" onclick="location.href='http://www.talkabit.org/2014'">Checkout the previous edition of Talk a Bit</button>
-			</div>
-		</div>
-	</footer>
+                </div>&lt;!&ndash; /.col-sm-6 &ndash;&gt;
 
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
+                <div class="col-sm-6">
 
+                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+
+                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+
+                    <ul class="list-arrow-right">
+
+                        <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
+                        <li>Have dedicated 2-to-1 meetings with the experts</li>
+                        <li>Reach more consumers for less by learning new digital media skills</li>
+                        <li>Save money when spending in online advertising</li>
+                    
+                    </ul>
+
+                </div>&lt;!&ndash; /.col-sm-6 &ndash;&gt;
+            </div>&lt;!&ndash; /.row &ndash;&gt;
+        </div>&lt;!&ndash; /.container &ndash;&gt;
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2015<br>June 25</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>California<br>USA</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>150<br>Tickets</h3>
+                
+                </div>
+                <div class="col-sm-3">
+                
+                    <i class="ion-speakerphone"></i>
+                    <h3>06<br>Speakers</h3>
+                
+                </div>
+            </div>&lt;!&ndash; row &ndash;&gt;
+        </div>&lt;!&ndash; container &ndash;&gt;
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">Speakers</h3>
+                
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>&lt;!&ndash; /.speaker &ndash;&gt;
+                </div>&lt;!&ndash; /.col-md-4 &ndash;&gt;
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-2.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>&lt;!&ndash; /.speaker &ndash;&gt;
+                </div>&lt;!&ndash; /.col-md-4 &ndash;&gt;
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-3.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>&lt;!&ndash; /.speaker &ndash;&gt;
+                </div>&lt;!&ndash; /.col-md-4 &ndash;&gt;
+            </div>&lt;!&ndash; /.row &ndash;&gt;
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-4.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-5.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-6.jpg">
+                        </figure>
+                        <h4>Jhon Smith</h4>
+                        <p>CEO of Peren</p>
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Registration &amp; Pricing</h3>
+                </div>
+            </div>
+                
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="city" id="city" required>
+                                <option readonly>City</option>
+                                <option>City Name 1</option>
+                                <option>City Name 2</option>
+                                <option>City Name 3</option>
+                                <option>City Name 4</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" name="program" id="program" required>
+                                <option readonly>Select Your Program</option>
+                                <option>Program Name 1</option>
+                                <option>Program Name 2</option>
+                                <option>Program Name 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contribution" class="section bg-image-2 contribution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+                    
+                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
+
+                    <a class="btn btn-white" href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Schedule</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Welcome and intro</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Tips and share</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>View from the top</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Partner</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-1"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-2"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-3"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-4"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-5"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-6"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-7"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-8"></a>
+                </div>
+            </div>   
+    </section>
+
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event FAQs</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h3>Hello</h3>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> What is included in my ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+  
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Office address ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> How should I dress ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> I have specific questions that are not addressed here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Photos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+                        
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                    
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </section> -->
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+                        <p>Faculdade de Engenharia da Universidade do Porto<br>Rua Dr. Roberto Frias, s/n<br> Phone: +351 22 508 14 00<br> Email: <a href="mailto:geral@talkabit.org">geral@talkabit.org</a></p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaVJLzkBkJA0R301kkXcD6DU&key=AIzaSyAkjQJHWVuaZrnTkYbAj79D-hzO0GMayrQ" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="social-block">
+                        <li><a href="https://twitter.com/talkabitconf"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/talkabit"><i class="ion-social-facebook"></i></a></li>
+                        <li>#talkabit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script>
+      $(function(){
+          $(".element").typed({
+            strings: ["Internet of Things", "Biotechnology", "Information Security", "Uberification", "Smart Cities", "Enterprise Mobility"],
+            typeSpeed: 0,
+            loop: true,
+            showCursor: false
+          });
+          
+          $(".corner-ribbon").click(function () {
+            window.location = "#sponsorship";
+            return false;
+          });
+      });
+    </script>
 </body>
-
 </html>
