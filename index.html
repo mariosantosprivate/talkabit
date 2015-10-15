@@ -41,14 +41,16 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!-- navigation menu -->
-                    <li class="active"><a data-scroll href="#about">About</a></li>
                     <!--<li><a data-scroll href="#speakers">Speakers</a></li>
                     <li><a data-scroll href="#schedule">Schedule</a></li>                  
                     <li><a data-scroll href="#partner">Partner</a></li>
                     -->
                     <li><a data-scroll href="#">Sponsorship</a></li>
+
                     <!--<li><a data-scroll href="#faq">FAQ</a></li>
                     <li><a data-scroll href="#photos">Photos</a></li>
+
+
                 -->
                 </ul>
             </div>
@@ -58,15 +60,13 @@
     <header id="site-header" class="site-header valign-center"> 
         <div class="intro">
 
-            <h2>February, 2015 / Porto</h2>
-            
-            <h1>Talkabit Conference 2015</h1>
-            
-            <span><h2>We are going to talk a bit about </h2><h2><span class="element"></span></h2></span>
-            
+            <h1>Talkabit Conference 2016</h1>
+
+            <h2 style="margin-right: 160px">We are going to talk a bit about:&nbsp; <span class="element" style="white-space:pre; position: absolute;"></span></h2>
+
             <p> The Largest Student Organized Conference @ Porto</p>
             
-            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+            <a title="Mailing list" class="btn btn-white" href="https://ti.to/talkabit/2016-edition/">Stay updated</a>
         
         </div>
     </header>
@@ -600,13 +600,14 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typed.js"></script>
     <script>
-    $(function(){
-        $(".element").typed({
+      $(function(){
+          $(".element").typed({
             strings: ["Internet of Things", "Biotechnology", "Information Security", "Uberification", "Smart Cities", "Enterprise Mobility"],
-            typeSpeed: 0
-        });
-    });
-</script>
-
+            typeSpeed: 0,
+            loop: true,
+            showCursor: false
+          });
+      });
+    </script>
 </body>
 </html>
