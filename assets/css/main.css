@@ -700,7 +700,7 @@ ul li {
   width: calc(100% - 30px);
 }
 .pricetab .disabled{
-  color: rgb(184, 170, 170);
+  color: rgba(184, 170, 170, 0.5);
 }
 .col-no-padding{
   padding: 0;
