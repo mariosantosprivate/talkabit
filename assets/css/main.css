@@ -351,10 +351,18 @@ ul li {
   font-size: 25px;
   font-weight: 300;
 }
+
 .site-header .intro h1 {
-  margin-top: 0px;
-  font-size: 30px;
+  margin-top: 0;
+  font-family: DecimaBold, sans-serif;
+  letter-spacing: 2px;
+  font-size: 60px
 }
+
+.site-header .intro h1 span {
+  font-family: DecimaLight, sans-serif
+}
+
 .site-header .intro p {
   font-size: 20px;
   margin-bottom: 10px;
@@ -741,25 +749,34 @@ ul li {
  */
 
 @font-face {
-	font-family: 'DecimaMonoLight';
-	src: url('decimamono-light-webfont.eot');
-	src: local('Decima Mono'), local('DecimaMonoLight'), url('../fonts/decimamono-light-webfont.woff') format('woff'), url('../fonts/decimamono-light-webfont.ttf') format('truetype'), url('../fonts/decimamono-light-webfont.svg#webfontuNgTZGoJ') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'DecimaMonoLight';
+  src: url('decimamono-light-webfont.eot');
+  src: local('Decima Mono'), local('DecimaMonoLight'), url('../fonts/decimamono-light-webfont.woff') format('woff'), url('../fonts/decimamono-light-webfont.ttf') format('truetype'), url('../fonts/decimamono-light-webfont.svg#webfontuNgTZGoJ') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'DecimaLight';
-	src: url('decima-light-webfont.eot');
-	src: local('Decima'), local('DecimaLight'), url('../fonts/decima-light-webfont.woff') format('woff'), url('../fonts/decima-light-webfont.ttf') format('truetype'), url('../fonts/decima-light-webfont.svg#webfontf7zQ8qHD') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'DecimaLight';
+  src: url('decima-light-webfont.eot');
+  src: local('Decima'), local('DecimaLight'), url('../fonts/decima-light-webfont.woff') format('woff'), url('../fonts/decima-light-webfont.ttf') format('truetype'), url('../fonts/decima-light-webfont.svg#webfontf7zQ8qHD') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'DecimaBold';
-	src: url('decima-bold-webfont.eot');
-	src: local('Decima'), local('DecimaBold'), url('../fonts/decima-bold-webfont.woff') format('woff'), url('../fonts/decima-bold-webfont.ttf') format('truetype'), url('../fonts/decima-bold-webfont.svg#webfont75boeeA4') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'DecimaBold';
+  src: url('decima-bold-webfont.eot');
+  src: local('Decima'), local('DecimaBold'), url('../fonts/decima-bold-webfont.woff') format('woff'), url('../fonts/decima-bold-webfont.ttf') format('truetype'), url('../fonts/decima-bold-webfont.svg#webfont75boeeA4') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.element {
+  white-space: pre;
+  position: absolute;
+}
+
+.call {
+  letter-spacing: 5px;
 }
