@@ -709,7 +709,7 @@ ul li {
   background-color: rgba(0, 142, 194, 1);
 }
 .pricing .container{
-  width: calc(100% - 30px);
+  width: calc(100%);
 }
 .pricetab .disabled{
   color: rgba(184, 170, 170, 0.5);
