@@ -780,3 +780,8 @@ ul li {
 .call {
   letter-spacing: 5px;
 }
+
+.shadow {
+    -webkit-filter: drop-shadow( -5px -5px 40px #000 );
+            filter: drop-shadow( -5px -5px 40px #000 );
+}
