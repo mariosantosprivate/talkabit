@@ -715,6 +715,10 @@ ul li {
   color: rgba(184, 170, 170, 0.5);
   text-decoration: line-through;
 }
+.price-disabled{
+  color: rgba(184, 170, 170, 0.5);
+  text-decoration: line-through;
+}
 .col-no-padding{
   padding: 0;
 }
