@@ -12,6 +12,38 @@
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<style>
+
+    #topics-introduction{
+        margin-right: 180px;
+    }
+    #topics-introduction .element{
+        font-weight: bold;
+    }
+    @media (max-width: 768px) {
+        .call *{
+            color: #383838;
+            font-size: large !important;
+        }
+        .navbar-custom{
+            background-color: transparent;
+        }
+        .site-header .intro h1{
+            font-size: large;
+        }
+        #topics-introduction{
+            margin-right: 0;
+        }
+        #topics-introduction .element{
+            display: block;
+            clear: both;
+            text-align: center;
+            width: 100%;
+            left: 0;
+        }
+    }
+
+</style>
 <body data-spy="scroll" data-target="#site-nav">
 <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
     <div class="container">
@@ -48,9 +80,9 @@
     <div class="intro">
         <object width="40%" height="40%" class="shadow" type="image/svg+xml" data="assets/images/TAB-ASS-2.svg">Talk A Bit Conference - 6 Feb 2016 @ Porto</object>
         <br><br>
-        <p style="margin-right: 180px">
+        <p id="topics-introduction">
             We are going to talk a bit about the social impact of&nbsp;
-            <strong><span class="element"></span></strong>
+            <span class="element"></span>
         </p>
         <br><br>
         <h1><a href="#sponsorship" data-scroll><h1 class="btn btn-default call">CALL FOR SPONSORS</h1></a></h1>
