@@ -29,7 +29,7 @@ figure.snip1218 img {
 }
 figure.snip1218 .image {
     position: relative;
-    border-bottom: 4px solid #34495e;
+    border-bottom: 4px solid #1399D6;
     /* z-index: 1; */
 }
 figure.snip1218 .image:before {
@@ -77,6 +77,7 @@ figure.snip1218 h3 span {
 figure.snip1218 h5 {
     margin: 0 0 15px;
     font-weight: 400;
+    color: #1399D6;
 }
 
 figure.snip1218:hover .image:before,
