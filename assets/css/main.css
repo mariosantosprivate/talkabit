@@ -274,10 +274,10 @@ ul li {
 }
 .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
   background-color: transparent;
-  border-color: rgb(0, 20, 255);
+  border-color: #1399D6;
 }
 .navbar-custom .navbar-nav > .active > a {
-  border-color: rgb(0, 20, 255);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .navbar-toggle {
