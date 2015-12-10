@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,6 +63,34 @@
     </div>
     <img width="15%" src="assets/images/feup.png" style="margin: 0 5px 10px 10px; position: absolute; bottom: 0; right: 0;">
 </header>
+<section id="speakers" class="section speakers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3 class="section-title">Speakers</h3>
+
+            </div>
+        </div>
+
+        <div class="row">
+            {% for speaker in site.data.speakers %}
+            <div class="col-md-4">
+                <figure class="snip1218">
+                    <div class="image"><img src="{{ speaker.picture }}" alt="{{ speaker.alt }}"/>
+                        <p>{{ speaker.quote }}</p>
+                    </div>
+                    <figcaption>
+                        <h3><a href="{{ speaker.url }}">{{ speaker.firstName }}<span> {{ speaker.lastName }}</span></a></h3>
+                        <h5>{{ speaker.role }}</h5>
+                        <!-- <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-vimeo-outline"></i></a></div> -->
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 <section class="section pricing" id="sponsorship" style="background: url(assets/talkabit/images/background.jpg) no-repeat center center/cover;">
     <div class="container-fluid">
         <div class=" col-lg-offset-1 col-lg-2 col-sm-4 col-xs-12">
