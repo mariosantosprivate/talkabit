@@ -1,0 +1,50 @@
+.schedule2 h3 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.07em
+}
+
+.schedule2 ol {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #ccc;
+  margin: 0 -0.48225em 1.44em;
+}
+
+.schedule2 li {
+  display: flex;
+  padding: 0.5em;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.schedule-entry-time {
+  padding: 0 0.83333em;
+  text-align: center;
+}
+
+.schedule-entry-time time {
+  font-size: 0.83333em;
+  display: block;
+}
+.schedule-entry-time time:nth-of-type(2) {
+  color: #999;
+}
+
+.schedule-entry-title {
+  overflow: hidden;
+  border-left: 2px solid #1399D6;
+  padding-left: 0.69444em;
+  width: 100%;
+}
+
+.schedule h3 {
+  margin: 0 0 0.3349em;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.schedule-entry-speaker {
+  color: #999;
+  font-size: 0.83333em;
+}

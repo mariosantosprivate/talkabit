@@ -133,6 +133,11 @@
 .no-float {
     float: none !important;
 }
+
+span.text-right{
+    float:right;
+}
+
 @media (max-width: 767px) {
     ul.timeline:before {
         left: 40px;

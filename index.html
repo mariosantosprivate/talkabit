@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/timetable.css">
+    <link rel="stylesheet" href="assets/css/timetable2.css">
+
 
 </head>
 <body data-spy="scroll" data-target="#site-nav">
@@ -244,20 +246,21 @@
                     <h3 class="section-title">Schedule</h3>
                     <ul class="timeline">
                         <!--
-                        <% for(var i=0; i<site.data.timetable.length; i=i+2) {%>
+                        <% for(var i=0; i<site.data.schedule.length; i=i+2) {%>
                             <li>
                                 <div class="timeline-badge">
                                   <a><i class="fa fa-circle" id=""></i></a>
                               </div>
                               <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                <h4>{{site.data.timetable[i].title}}</h4>
+                                <h4>{{site.data.schedule[i].title}}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>{{site.data.timetable[i].description}}</p>
+                                    <p>{{site.data.schedule[i].description}}</p>
                                 </div>
                                 <div class="timeline-footer">
-                                    <p class="text-right">{{site.data.timetable[i].time}}</p>
+                                    <p class="text-left">{{site.data.schedule[i].speaker}}</p>
+                                    <p class="text-right">{{site.data.schedule[i].startTime}}-{{site.data.schedule[i].endTime}}</p>
                                 </div>
                             </div>
                         </li>
@@ -268,13 +271,14 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>{{site.data.timetable[i+1].title}}</h4>
+                                    <h4>{{site.data.schedule[i+1].title}}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>{{site.data.timetable[i+1].description}}</p>
+                                    <p>{{site.data.schedule[i+1].description}}</p>
                                 </div>
                                 <div class="timeline-footer">
-                                    <p class="text-left">{{site.data.timetable[i].time}}</p>
+                                    <p class="text-left">{{site.data.schedule[i+1].speaker}}</p>
+                                    <p class="text-right">{{site.data.schedule[i+1].startTime}}-{{site.data.schedule[i].endTime}}</p>
                                 </div>
                             </div>
                         </li>
@@ -292,7 +296,7 @@
                                 <p>Intensive coding should be done.<br>Another line, should this have some spaced saved for a picture?</p>
                             </div>
                             <div class="timeline-footer">
-                                <p class="text-right">10:00</p>
+                                <p> John Smith<span class="text-right">10:00</p>                    
                             </div>
                         </div>
                     </li>
@@ -309,7 +313,7 @@
                                 <p>This event will be in the morning but it won't be as cool as the first event</p>
                             </div>
                             <div class="timeline-footer">
-                                <p class="text-right">11:30</p>
+                                <p> John Smith<span class="text-right">11:30</p>
                             </div>
                         </div>
                     </li>
@@ -326,7 +330,7 @@
                                 <p>This talk is boring, I'm sleepy.</p>
                             </div>
                             <div class="timeline-footer">
-                                <p class="text-right">14:30</p>
+                                <p> John Smith<span class="text-right">14:30</p>
                             </div>
                         </div>
                     </li>
@@ -343,12 +347,92 @@
                                 <p>This talk is cool but I'm starting to get hungry</p>
                             </div>
                             <div class="timeline-footer">
-                                <p class="text-right">16:30</p>
+                                <p> John Smith<span class="text-right">16:30</p>
                             </div>
                         </div>
                     </li>
                     <li class="clearfix no-float"></li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 schedule2">
+<ol>
+  <li>
+    <div class="schedule-entry-time">
+      <time>09:30</time><time>09:40</time>
+    </div>
+    <div class="schedule-entry-title">
+      <h3>
+        Opening
+      </h3>
+      <div class="schedule-entry-speaker">
+        Opening Session with RMV and AMA
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="schedule-entry-time">
+      <time>09:40</time><time>11:30</time>
+    </div>
+    <div class="schedule-entry-title">
+      <h3>
+        Long Talk
+      </h3>
+      <div class="schedule-entry-speaker">
+        John Smith from Generic Company
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="schedule-entry-time">
+      <time>12:00</time><time>14:30</time>
+    </div>
+    <div class="schedule-entry-title">
+      <h3>
+        Lunch
+      </h3>
+      <div class="schedule-entry-speaker">
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="schedule-entry-time">
+      <time>14:30</time><time>16:30</time>
+    </div>
+    <div class="schedule-entry-title">
+      <h3>
+        "Man I'm Sleepy" Talk
+      </h3>
+      <div class="schedule-entry-speaker">
+        Mary Smith from Generic Company No.2
+      </div>
+    </div>
+  </li>
+
+  <!--
+  {% for scheduleEntry in site.data.schedule %}
+  <li>
+    <div class="schedule-entry-time">
+      <time>{{scheduleEntry.startTime}}</time><time>scheduleEntry.endTime</time>
+    </div>
+    <div class="schedule-entry-title">
+      <h3>
+        {{scheduleEntry.title}}
+      </h3>
+      <div class="schedule-entry-speaker">
+        {{scheduleEntry.speaker}}
+      </div>
+    </div>
+  </li>
+</ol>
+{% endfor %}
+-->
+                </div>
             </div>
         </div>
     </section>
