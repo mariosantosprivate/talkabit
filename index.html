@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,435 +11,555 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/timetable.css">
+
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="site-branding">
-                <a class="logo" href="#">
-                    <span data-name="Talk A Bit"></span>
-                </a>
-            </div>
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-        </div><!-- /.navbar-header -->
-
-        <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="nav navbar-nav navbar-right">
-
-                <!-- navigation menu -->
-                <li><a data-scroll href="#sponsorship">Sponsorship</a></li>
-                <li><a data-scroll href="#speakers">Speakers</a></li>
-                <li><a data-scroll href="#faq">FAQ</a></li>
-                <li><a data-scroll href="#location">Location</a></li>
-                <li><a href="organization.html">Organization</a></li>
-                <li><a title="Subscribe to the mailing list" href="https://ti.to/talkabit/2016-edition/">Stay Updated</a></li>
-                <li><a href="https://www.facebook.com/talkabit">Facebook</a></li>
-                <li><a title="3rd edition - 2015" href="2015">Previous Edition</a></li>
-            </ul>
-        </div>
-    </div><!-- /.container -->
-</nav>
-
-<header id="site-header" class="site-header valign-center">
-    <div class="intro">
-        <object width="40%" height="40%" type="image/svg+xml" data="assets/images/TAB-ASS-2.svg">Talk A Bit Conference - 30 Jan 2016 @ Porto</object>
-        <br><br>
-        <p id="topics-introduction">
-            We are going to talk a bit about the social impact of&nbsp;
-            <span class="element"></span>
-        </p>
-        <br><br>
-        <h1><a href="#sponsorship" data-scroll><h1 class="btn btn-default call">CALL FOR SPONSORS</h1></a></h1>
-        <br><br>
-        <p><strong>4th edition</strong> of the Largest Student Organized Conference @ Porto</p>
-    </div>
-    <img width="15%" src="assets/images/feup.png" style="margin: 0 5px 10px 10px; position: absolute; bottom: 0; right: 0;">
-</header>
-<section id="speakers" class="section speakers">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-
-                <h3 class="section-title">Speakers</h3>
-
-            </div>
-        </div>
-
-        <div class="row">
-            {% for speaker in site.data.speakers %}
-            <div class="col-md-4">
-                <figure class="snip1218">
-                    <div class="image"><img src="{{ speaker.picture }}" alt="{{ speaker.alt }}"/>
-                        <p>{{ speaker.quote }}</p>
-                    </div>
-                    <figcaption>
-                        <h3><a href="{{ speaker.url }}">{{ speaker.firstName }}<span> {{ speaker.lastName }}</span></a></h3>
-                        <h5>{{ speaker.role }}</h5>
-                        <!-- <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-vimeo-outline"></i></a></div> -->
-                    </figcaption>
-                </figure>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-<section class="section pricing" id="sponsorship" style="background: url(assets/talkabit/images/background.jpg) no-repeat center center/cover;">
-    <div class="container-fluid">
-        <div class=" col-lg-offset-1 col-lg-2 col-sm-4 col-xs-12">
-            <div class="tier">
-                <h1>Friend</h1>
-                <object type="image/svg+xml" data="assets/images/sponsors/friend.svg">Friend - 100€</object>
-                <div class="infos">
-                    <h6> Logo in website </h6>
-                    <h6> Ads on slides </h6>
-                    <h6> Take part in networking session </h6>
-                    <h6> Offerings in conference bag (small) </h6>
-                    <h6 class="price-disabled"> Logo in outdoor </h6>
-                    <h6 class="price-disabled"> Logo in posters </h6>
-                    <h6 class="price-disabled"> Reserved seats & dinner </h6>
-                    <h6 class="price-disabled"> Video ads during breaks </h6>
-                    <h6 class="price-disabled"> Physical stand </h6>
-                    <h6 class="price-disabled"> Publicity via social networks </h6>
-                    <h6 class="price-disabled"> Logo in conference bag </h6>
-                    <h6 class="price-disabled"> Logo in conference badge string </h6>
-                    <h6 class="price-disabled"> Logo in staff t-shirt </h6>
-                    <h6 class="price-disabled"> Roll-up on stage </h6>
-                </div>
-                <div class="text-center button-container">
-                    <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
-                        <button class="btn">APPLY</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class=" col-lg-2 col-sm-4 col-xs-12">
-            <div class="tier">
-                <h1>Bronze</h1>
-                <object type="image/svg+xml" data="assets/images/sponsors/bronze.svg">Bronze - 300€</object>
-                <div class="infos">
-                    <h6> Logo in website </h6>
-                    <h6> Ads on slides </h6>
-                    <h6> Take part in networking session </h6>
-                    <h6> Offerings in conference bag (medium) </h6>
-                    <h6> Logo in posters </h6>
-                    <h6> Reserved seats & dinner (1) </h6>
-                    <h6 class="price-disabled"> Logo in outdoor </h6>
-                    <h6 class="price-disabled"> Video ads during breaks </h6>
-                    <h6 class="price-disabled"> Physical stand </h6>
-                    <h6 class="price-disabled"> Publicity via social networks </h6>
-                    <h6 class="price-disabled"> Logo in conference bag </h6>
-                    <h6 class="price-disabled"> Logo in conference badge string </h6>
-                    <h6 class="price-disabled"> Logo in staff t-shirt </h6>
-                    <h6 class="price-disabled"> Roll-up on stage </h6>
-                </div>
-                <div class="text-center button-container">
-                    <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
-                        <button class="btn">APPLY</button>
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="site-branding">
+                    <a class="logo" href="#">
+                        <span data-name="Talk A Bit"></span>
                     </a>
                 </div>
 
-            </div>
-        </div>
-        <div class=" col-lg-2 col-sm-4 col-xs-12">
-            <div class="tier">
-                <h1>Silver</h1>
-                <object type="image/svg+xml" data="assets/images/sponsors/silver.svg">Silver - 600€</object>
-                <div class="infos">
-                    <h6> Logo in website </h6>
-                    <h6> Ads on slides </h6>
-                    <h6> Take part in networking session </h6>
-                    <h6> Offerings in conference bag (medium) </h6>
-                    <h6> Logo in posters </h6>
-                    <h6> Reserved seats & dinner (1) </h6>
-                    <h6> Logo in outdoor </h6>
-                    <h6> Video ads during breaks (1 min)</h6>
-                    <h6> Physical secondary stand </h6>
-                    <h6 class="price-disabled"> Publicity via social networks </h6>
-                    <h6 class="price-disabled"> Logo in conference bag </h6>
-                    <h6 class="price-disabled"> Logo in conference badge string </h6>
-                    <h6 class="price-disabled"> Logo in staff t-shirt </h6>
-                    <h6 class="price-disabled"> Roll-up on stage </h6>
-                </div>
-                <div class="text-center button-container">
-                    <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
-                        <button class="btn">APPLY</button>
-                    </a>
-                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-            </div>
-        </div>
-        <div class=" col-lg-2 col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0 col-lg-offset-0">
-            <div class="tier">
-                <h1>Gold</h1>
-                <object type="image/svg+xml" data="assets/images/sponsors/gold.svg">Gold - 1200€</object>
-                <div class="infos">
-                    <h6> Logo in website </h6>
-                    <h6> Ads on slides </h6>
-                    <h6> Take part in networking session </h6>
-                    <h6> Offerings in conference bag (large) </h6>
-                    <h6> Logo in posters </h6>
-                    <h6> Reserved seats & dinner (2) </h6>
-                    <h6> Logo in outdoor </h6>
-                    <h6> Video ads during breaks (2 min)</h6>
-                    <h6> Physical secondary stand </h6>
-                    <h6> Publicity via social networks </h6>
-                    <h6> Logo in conference bag </h6>
-                    <h6 class="price-disabled"> Logo in conference badge string </h6>
-                    <h6 class="price-disabled"> Logo in staff t-shirt </h6>
-                    <h6 class="price-disabled"> Roll-up on stage </h6>
-                </div>
-                <div class="text-center button-container">
-                    <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
-                        <button class="btn">APPLY</button>
-                    </a>
-                </div>
+            </div><!-- /.navbar-header -->
 
-            </div>
-        </div>
-        <div class=" col-lg-2 col-sm-4 col-xs-12">
-            <div class="tier">
-                <h1>Official</h1>
-                <object type="image/svg+xml" data="assets/images/sponsors/official.svg">Official - 3000€</object>
-                <div class="infos">
-                    <h6> Logo in website </h6>
-                    <h6> Ads on slides </h6>
-                    <h6> Take part in networking session </h6>
-                    <h6> Offerings in conference bag (unlimited) </h6>
-                    <h6> Logo in posters </h6>
-                    <h6> Reserved seats & dinner (2) </h6>
-                    <h6> Logo in outdoor </h6>
-                    <h6> Video ads during breaks (5 min)</h6>
-                    <h6> Physical main stand </h6>
-                    <h6> Publicity via social networks </h6>
-                    <h6> Logo in conference bag </h6>
-                    <h6> Logo in conference badge string </h6>
-                    <h6> Logo in staff t-shirt </h6>
-                    <h6> Roll-up on stage </h6>
-                </div>
-                <div class="text-center button-container">
-                    <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
-                        <button class="btn">APPLY</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
 
-<section id="faq" class="section faq">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">Frequently Asked Questions</h3>
+                    <!-- navigation menu -->
+                    <li><a data-scroll href="#sponsorship">Sponsorship</a></li>
+                    <li><a data-scroll href="#speakers">Speakers</a></li>
+                    <li><a data-scroll href="#faq">FAQ</a></li>
+                    <li><a data-scroll href="#location">Location</a></li>
+                    <li><a href="organization.html">Organization</a></li>
+                    <li><a title="Subscribe to the mailing list" href="https://ti.to/talkabit/2016-edition/">Stay Updated</a></li>
+                    <li><a href="https://www.facebook.com/talkabit">Facebook</a></li>
+                    <li><a title="3rd edition - 2015" href="2015">Previous Edition</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        </div><!-- /.container -->
+    </nav>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    What is the price of the ticket?
-                                </a>
-                            </h4>
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <object width="40%" height="40%" type="image/svg+xml" data="assets/images/TAB-ASS-2.svg">Talk A Bit Conference - 30 Jan 2016 @ Porto</object>
+            <br><br>
+            <p id="topics-introduction">
+                We are going to talk a bit about the social impact of&nbsp;
+                <span class="element"></span>
+            </p>
+            <br><br>
+            <h1><a href="#sponsorship" data-scroll><h1 class="btn btn-default call">CALL FOR SPONSORS</h1></a></h1>
+            <br><br>
+            <p><strong>4th edition</strong> of the Largest Student Organized Conference @ Porto</p>
+        </div>
+        <img width="15%" src="assets/images/feup.png" style="margin: 0 5px 10px 10px; position: absolute; bottom: 0; right: 0;">
+    </header>
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">Speakers</h3>
+
+                </div>
+            </div>
+
+            <div class="row">
+                {% for speaker in site.data.speakers %}
+                <div class="col-md-4">
+                    <figure class="snip1218">
+                        <div class="image"><img src="{{ speaker.picture }}" alt="{{ speaker.alt }}"/>
+                            <p>{{ speaker.quote }}</p>
                         </div>
+                        <figcaption>
+                            <h3><a href="{{ speaker.url }}">{{ speaker.firstName }}<span> {{ speaker.lastName }}</span></a></h3>
+                            <h5>{{ speaker.role }}</h5>
+                            <!-- <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-vimeo-outline"></i></a></div> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0">
-                            <div class="panel-body">
-                                The ticket is entirely free.
+    <section class="section pricing" id="sponsorship" style="background: url(assets/talkabit/images/background.jpg) no-repeat center center/cover;">
+        <div class="container-fluid">
+            <div class=" col-lg-offset-1 col-lg-2 col-sm-4 col-xs-12">
+                <div class="tier">
+                    <h1>Friend</h1>
+                    <object type="image/svg+xml" data="assets/images/sponsors/friend.svg">Friend - 100€</object>
+                    <div class="infos">
+                        <h6> Logo in website </h6>
+                        <h6> Ads on slides </h6>
+                        <h6> Take part in networking session </h6>
+                        <h6> Offerings in conference bag (small) </h6>
+                        <h6 class="price-disabled"> Logo in outdoor </h6>
+                        <h6 class="price-disabled"> Logo in posters </h6>
+                        <h6 class="price-disabled"> Reserved seats & dinner </h6>
+                        <h6 class="price-disabled"> Video ads during breaks </h6>
+                        <h6 class="price-disabled"> Physical stand </h6>
+                        <h6 class="price-disabled"> Publicity via social networks </h6>
+                        <h6 class="price-disabled"> Logo in conference bag </h6>
+                        <h6 class="price-disabled"> Logo in conference badge string </h6>
+                        <h6 class="price-disabled"> Logo in staff t-shirt </h6>
+                        <h6 class="price-disabled"> Roll-up on stage </h6>
+                    </div>
+                    <div class="text-center button-container">
+                        <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
+                            <button class="btn">APPLY</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-sm-4 col-xs-12">
+                <div class="tier">
+                    <h1>Bronze</h1>
+                    <object type="image/svg+xml" data="assets/images/sponsors/bronze.svg">Bronze - 300€</object>
+                    <div class="infos">
+                        <h6> Logo in website </h6>
+                        <h6> Ads on slides </h6>
+                        <h6> Take part in networking session </h6>
+                        <h6> Offerings in conference bag (medium) </h6>
+                        <h6> Logo in posters </h6>
+                        <h6> Reserved seats & dinner (1) </h6>
+                        <h6 class="price-disabled"> Logo in outdoor </h6>
+                        <h6 class="price-disabled"> Video ads during breaks </h6>
+                        <h6 class="price-disabled"> Physical stand </h6>
+                        <h6 class="price-disabled"> Publicity via social networks </h6>
+                        <h6 class="price-disabled"> Logo in conference bag </h6>
+                        <h6 class="price-disabled"> Logo in conference badge string </h6>
+                        <h6 class="price-disabled"> Logo in staff t-shirt </h6>
+                        <h6 class="price-disabled"> Roll-up on stage </h6>
+                    </div>
+                    <div class="text-center button-container">
+                        <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
+                            <button class="btn">APPLY</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-lg-2 col-sm-4 col-xs-12">
+                <div class="tier">
+                    <h1>Silver</h1>
+                    <object type="image/svg+xml" data="assets/images/sponsors/silver.svg">Silver - 600€</object>
+                    <div class="infos">
+                        <h6> Logo in website </h6>
+                        <h6> Ads on slides </h6>
+                        <h6> Take part in networking session </h6>
+                        <h6> Offerings in conference bag (medium) </h6>
+                        <h6> Logo in posters </h6>
+                        <h6> Reserved seats & dinner (1) </h6>
+                        <h6> Logo in outdoor </h6>
+                        <h6> Video ads during breaks (1 min)</h6>
+                        <h6> Physical secondary stand </h6>
+                        <h6 class="price-disabled"> Publicity via social networks </h6>
+                        <h6 class="price-disabled"> Logo in conference bag </h6>
+                        <h6 class="price-disabled"> Logo in conference badge string </h6>
+                        <h6 class="price-disabled"> Logo in staff t-shirt </h6>
+                        <h6 class="price-disabled"> Roll-up on stage </h6>
+                    </div>
+                    <div class="text-center button-container">
+                        <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
+                            <button class="btn">APPLY</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-lg-2 col-sm-4 col-sm-offset-2 col-xs-12 col-xs-offset-0 col-lg-offset-0">
+                <div class="tier">
+                    <h1>Gold</h1>
+                    <object type="image/svg+xml" data="assets/images/sponsors/gold.svg">Gold - 1200€</object>
+                    <div class="infos">
+                        <h6> Logo in website </h6>
+                        <h6> Ads on slides </h6>
+                        <h6> Take part in networking session </h6>
+                        <h6> Offerings in conference bag (large) </h6>
+                        <h6> Logo in posters </h6>
+                        <h6> Reserved seats & dinner (2) </h6>
+                        <h6> Logo in outdoor </h6>
+                        <h6> Video ads during breaks (2 min)</h6>
+                        <h6> Physical secondary stand </h6>
+                        <h6> Publicity via social networks </h6>
+                        <h6> Logo in conference bag </h6>
+                        <h6 class="price-disabled"> Logo in conference badge string </h6>
+                        <h6 class="price-disabled"> Logo in staff t-shirt </h6>
+                        <h6 class="price-disabled"> Roll-up on stage </h6>
+                    </div>
+                    <div class="text-center button-container">
+                        <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
+                            <button class="btn">APPLY</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-lg-2 col-sm-4 col-xs-12">
+                <div class="tier">
+                    <h1>Official</h1>
+                    <object type="image/svg+xml" data="assets/images/sponsors/official.svg">Official - 3000€</object>
+                    <div class="infos">
+                        <h6> Logo in website </h6>
+                        <h6> Ads on slides </h6>
+                        <h6> Take part in networking session </h6>
+                        <h6> Offerings in conference bag (unlimited) </h6>
+                        <h6> Logo in posters </h6>
+                        <h6> Reserved seats & dinner (2) </h6>
+                        <h6> Logo in outdoor </h6>
+                        <h6> Video ads during breaks (5 min)</h6>
+                        <h6> Physical main stand </h6>
+                        <h6> Publicity via social networks </h6>
+                        <h6> Logo in conference bag </h6>
+                        <h6> Logo in conference badge string </h6>
+                        <h6> Logo in staff t-shirt </h6>
+                        <h6> Roll-up on stage </h6>
+                    </div>
+                    <div class="text-center button-container">
+                        <a href="mailto:sponsors@talkabit.org" target="_top" title="sponsors@talkabit.org">
+                            <button class="btn">APPLY</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section timetable" id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Schedule</h3>
+                    <ul class="timeline">
+                        <!--
+                        <% for(var i=0; i<site.data.timetable.length; i=i+2) {%>
+                            <li>
+                                <div class="timeline-badge">
+                                  <a><i class="fa fa-circle" id=""></i></a>
+                              </div>
+                              <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                <h4>{{site.data.timetable[i].title}}</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>{{site.data.timetable[i].description}}</p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-right">{{site.data.timetable[i].time}}</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge">
+                                <a><i class="fa fa-circle invert" id=""></i></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>{{site.data.timetable[i+1].title}}</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>{{site.data.timetable[i+1].description}}</p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-left">{{site.data.timetable[i].time}}</p>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        -->
+                        <li>
+                            <div class="timeline-badge">
+                              <a><i class="fa fa-circle" id=""></i></a>
+                          </div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                            <h4>Cool Morning Event</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Intensive coding should be done.<br>Another line, should this have some spaced saved for a picture?</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">10:00</p>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    What is included in my ticket?
-                                </a>
-                            </h4>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge">
+                            <a><i class="fa fa-circle invert" id=""></i></a>
                         </div>
-
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0">
-                            <div class="panel-body">The ticket includes access to the talks, pitch room, coffee-breaks and identification badge.</div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    What languages are spoken?
-                                </a>
-                            </h4>
-                        </div>
-
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0">
-                            <div class="panel-body">
-                                The event will be in English however some talks might be in Portuguese.
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Not So Cool Morning Event</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>This event will be in the morning but it won't be as cool as the first event</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">11:30</p>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFour">
-                            <h4 class="panel-title">
-                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Is there any requirement for attending TalkABit?
-                                </a>
-                            </h4>
+                    <li>
+                        <div class="timeline-badge">
+                            <a><i class="fa fa-circle" id=""></i></a>
                         </div>
-
-                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false" style="height: 0">
-                            <div class="panel-body">
-                                No! Just a load of motivation and curiosity is needed.
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Right After Lunch Event</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>This talk is boring, I'm sleepy.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">14:30</p>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                            <h4 class="panel-title">
-                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How to get to Talk A Bit?
-                                </a>
-                            </h4>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge">
+                            <a><i class="fa fa-circle invert" id=""></i></a>
                         </div>
-
-                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false" style="height: 0">
-                            <div class="panel-body">
-                                <h4>By plane:</h4>
-
-                                <p>
-                                    To Aeroporto Sá Carneiro (OPorto), and then by car or subway (line E) with line
-                                    changing in Trindade to line D with direction to Hospital S.João with exit on station IPO.
-                                </p>
-
-                                <h4>By car:</h4>
-
-                                <p>
-                                    <ul>
-                                        <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow the signs toward the Hospital de S. João.</li>
-                                        <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the Hospital de S. João.</li>
-                                        <li>Coming from A3: Take the direction to Hospital de S. João</li>
-                                        <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the direction to Hospital de S. João.</li>
-                                    </ul>
-                                </p>
-
-                                <h4>By bus:</h4>
-
-                                <p>
-                                    From Rodonorte/Rede Expressos/Tâmega station, follow to Aliados Avenue and take the subway with direction Hospital S. João (line D).
-                                    Or take bus number: 204, 300, 301 and 803.
-                                    There are also other buses near Hospital de São João.
-
-                                    For more information: <a href="http://www.stcp.pt/">www.stcp.pt</a>
-                                </p>
-
-                                <h4>By train:</h4>
-
-                                <p>
-                                    If coming by train, there are two main stations:
-                                    <ul>
-                                        <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change to D line.</li>
-                                        <li>São Bento – and then get in the subway (line D)</li>
-                                    </ul>
-
-                                    If coming by subway, take the one from line D (yellow) going to Hospital de São João and exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP.
-
-                                    For more information: <a href="http://www.metrodoporto.pt/">www.metrodoporto.pt</a>
-                                </p>
-
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Cool Talk</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>This talk is cool but I'm starting to get hungry</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">16:30</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSix">
-                            <h4 class="panel-title">
-                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    I have specific questions that are not addressed here. Who can help me?
-                                </a>
-                            </h4>
-                        </div>
-
-                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix" aria-expanded="false">
-                            <div class="panel-body">
-                                Feel free to contact us at <a href="mailto:hello@talkabit.org">hello@talkabit.org</a>.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="location" class="section location">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3 class="section-title">Event Location</h3>
-                <address>
-                    <p>Faculdade de Engenharia da Universidade do Porto<br>Rua Dr. Roberto Frias, s/n<br> Phone: +351 22 508 14 00<br> Email: <a href="mailto:hello@talkabit.org">hello@talkabit.org</a></p>
-                </address>
-            </div>
-            <div class="col-sm-9">
-                <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaVJLzkBkJA0R301kkXcD6DU&key=AIzaSyAkjQJHWVuaZrnTkYbAj79D-hzO0GMayrQ" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="social-block">
-                    <li><a href="https://twitter.com/talkabitconf"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/talkabit"><i class="ion-social-facebook"></i></a></li>
-                    <li>#talkabit</li>
+                    </li>
+                    <li class="clearfix no-float"></li>
                 </ul>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-<!-- script -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/typed.js"></script>
-<script>
-    $(function(){
-        $(".element").typed({
-            strings: ["Internet of Things", "Biotechnology", "Information Security", "Uberification", "Smart Cities", "Enterprise Mobility"],
-            typeSpeed: 0,
-            loop: true,
-            showCursor: false
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Frequently Asked Questions</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        What is the price of the ticket?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0">
+                                <div class="panel-body">
+                                    The ticket is entirely free.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is included in my ticket?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0">
+                                <div class="panel-body">The ticket includes access to the talks, pitch room, coffee-breaks and identification badge.</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What languages are spoken?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0">
+                                <div class="panel-body">
+                                    The event will be in English however some talks might be in Portuguese.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Is there any requirement for attending TalkABit?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false" style="height: 0">
+                                <div class="panel-body">
+                                    No! Just a load of motivation and curiosity is needed.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        How to get to Talk A Bit?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive" aria-expanded="false" style="height: 0">
+                                <div class="panel-body">
+                                    <h4>By plane:</h4>
+
+                                    <p>
+                                        To Aeroporto Sá Carneiro (OPorto), and then by car or subway (line E) with line
+                                        changing in Trindade to line D with direction to Hospital S.João with exit on station IPO.
+                                    </p>
+
+                                    <h4>By car:</h4>
+
+                                    <p>
+                                        <ul>
+                                            <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow the signs toward the Hospital de S. João.</li>
+                                            <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the Hospital de S. João.</li>
+                                            <li>Coming from A3: Take the direction to Hospital de S. João</li>
+                                            <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the direction to Hospital de S. João.</li>
+                                        </ul>
+                                    </p>
+
+                                    <h4>By bus:</h4>
+
+                                    <p>
+                                        From Rodonorte/Rede Expressos/Tâmega station, follow to Aliados Avenue and take the subway with direction Hospital S. João (line D).
+                                        Or take bus number: 204, 300, 301 and 803.
+                                        There are also other buses near Hospital de São João.
+
+                                        For more information: <a href="http://www.stcp.pt/">www.stcp.pt</a>
+                                    </p>
+
+                                    <h4>By train:</h4>
+
+                                    <p>
+                                        If coming by train, there are two main stations:
+                                        <ul>
+                                            <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change to D line.</li>
+                                            <li>São Bento – and then get in the subway (line D)</li>
+                                        </ul>
+
+                                        If coming by subway, take the one from line D (yellow) going to Hospital de São João and exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP.
+
+                                        For more information: <a href="http://www.metrodoporto.pt/">www.metrodoporto.pt</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        I have specific questions that are not addressed here. Who can help me?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix" aria-expanded="false">
+                                <div class="panel-body">
+                                    Feel free to contact us at <a href="mailto:hello@talkabit.org">hello@talkabit.org</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+                        <p>Faculdade de Engenharia da Universidade do Porto<br>Rua Dr. Roberto Frias, s/n<br> Phone: +351 22 508 14 00<br> Email: <a href="mailto:hello@talkabit.org">hello@talkabit.org</a></p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaVJLzkBkJA0R301kkXcD6DU&key=AIzaSyAkjQJHWVuaZrnTkYbAj79D-hzO0GMayrQ" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="social-block">
+                        <li><a href="https://twitter.com/talkabitconf"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/talkabit"><i class="ion-social-facebook"></i></a></li>
+                        <li>#talkabit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script>
+        $(function(){
+            $(".element").typed({
+                strings: ["Internet of Things", "Biotechnology", "Information Security", "Uberification", "Smart Cities", "Enterprise Mobility"],
+                typeSpeed: 0,
+                loop: true,
+                showCursor: false
+            });
         });
-    });
-</script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-70982862-1', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-70982862-1', 'auto');
+        ga('send', 'pageview');
 
-</script>
+    </script>
 </body>
 </html>
