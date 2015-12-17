@@ -1,7 +1,7 @@
 - firstName:
   lastName: HealthyRoad
   role: TBA
-  quote: The HealthyRoad mission is to develop innovative products that allow solve real problems through the most advanced biometric analysis technologies contributing to increase safety and performance of our customers.
+  quote: The HealthyRoad mission is to develop innovative products that allow to solve real problems through the most advanced biometric analysis technologies contributing to increase safety and performance of our customers.
   picture: assets/images/speakers/healthyroad.jpg
   alt: HealthyRoad
   url: http://www.healthyroad.pt
@@ -15,7 +15,7 @@
 - firstName:
   lastName: SWORD Health
   role: TBA
-  quote: At SWORD Health, we focus on finding technological solutions for some of the most important problems in healthcare systems.
+  quote: At SWORD Health, they focus on finding technological solutions for some of the most important problems in healthcare systems.
   picture: assets/images/speakers/swordhealth.jpg
   alt: SWORD Health
   url: http://swordhealth.com
@@ -36,7 +36,7 @@
 - firstName:
   lastName: eSolidar
   role: TBA
-  quote: We are a social impact startup that uses technology to empower charities and individuals. Our goal is to provide charities with an alternative means of fundraising and to raise awareness through an online platform.
+  quote: eSolidar is a social impact startup that uses technology to empower charities and individuals. Their goal is to provide charities with an alternative means of fundraising and to raise awareness through an online platform.
   picture: assets/images/speakers/esolidar.jpg
   alt: eSolidar
   url: https://www.esolidar.com
