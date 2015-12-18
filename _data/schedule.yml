@@ -1,32 +1,33 @@
 - title: Cool Morning Event
   description: The HealthyRoad mission is to develop innovative products that allow to solve real problems through the most advanced biometric analysis technologies contributing to increase safety and performance of our customers.
   speaker: Nice Guy
-  startTime: 9:30
-  endTime: 10:30
+  startTime: '9:30'
+  endTime: '10:30'
   picture: assets/images/speakers/healthyroad.jpg
 
 - title: Another Morning Event
   description: Second morning event.
   speaker: Another Guy
-  startTime: 10:30
-  endTime: 11:30
+  startTime: '10:30'
+  endTime: '11:30'
   picture: assets/images/speakers/healthyroad.jpg
 
 - title: Lunch
   description: Talking about important stuff here.
-  startTime: 12:00
+  startTime: '12:00'
+  endTime: ''
   picture: assets/images/speakers/healthyroad.jpg
 
 - title: Man I'm Sleepy Talk
   description: Right after lunch.
   speaker: Interesting Guy
-  startTime: 14:30
-  endTime: 16:30
+  startTime: '14:30'
+  endTime: '16:30'
   picture: assets/images/speakers/healthyroad.jpg
 
 - title: Man I'm Hungry Talk
   description: Right Before the coffeebreak yay.
   speaker: Interesting Guy
-  startTime: 16:30
-  endTime: 17:30
+  startTime: '16:30'
+  endTime: '17:30'
   picture: assets/images/speakers/healthyroad.jpg
