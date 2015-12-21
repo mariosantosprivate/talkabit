@@ -11,11 +11,24 @@
   margin: 0 -0.48225em 1.44em;
 }
 
-.schedule li {
+.schedule li a {
+  text-decoration: none;
   display: flex;
   padding: 0.5em;
   background: #fff;
   border-bottom: 1px solid #ccc;
+}
+
+/* Avoid pointer cursor for entries with no description */
+.schedule li a.no-description {
+  cursor: default;
+}
+
+.schedule li a,
+.schedule li a:visited,
+.schedule li a:hover,
+.schedule li a:active{
+  color: #000;
 }
 
 .schedule-entry-time {
@@ -47,4 +60,8 @@
 .schedule-entry-speaker {
   color: #999;
   font-size: 0.83333em;
+}
+
+a {
+  cursor: pointer;
 }
