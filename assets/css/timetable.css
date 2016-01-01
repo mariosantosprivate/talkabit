@@ -16,13 +16,14 @@
   display: flex;
   padding: 0.5em;
   background: #fff;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 /* Avoid pointer cursor for entries with no description */
-.schedule li a.no-description {
+.schedule li a.no-description{
   cursor: default;
 }
+
 
 .schedule li a,
 .schedule li a:visited,
@@ -60,4 +61,15 @@
 .schedule-entry-speaker {
   color: #999;
   font-size: 0.83333em;
+}
+
+.schedule-entry-description-title {
+  font-weight: bold;
+}
+
+.schedule-entry-photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-right: 5px;
 }
