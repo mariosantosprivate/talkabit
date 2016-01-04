@@ -245,63 +245,63 @@
 </section>
 
 <section id="schedule" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Schedule</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 schedule">
-                    <ol>
-                        {% for scheduleEntry in site.data.schedule %}
-                        <li> 
-                            <a role="button" data-toggle="collapse" data-parent="#accordion"
-                            {% if scheduleEntry.description%} 
-                                href="#scheduleEntry{{scheduleEntry.id}}"
-                            {% else if %}
-                                class="no-description"
-                            {% endif %}
-                            aria-expanded="false" aria-controls="collapseOne">
-                                <div class="schedule-entry-time">
-                                  <time>{{scheduleEntry.startTime}}</time>
-                                  <time>{{scheduleEntry.endTime}}</time>
-                                </div>
-                                
-                                {% if scheduleEntry.picture %}
-                                <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
-                                {% endif %}
-
-                                <div class="schedule-entry-title">
-                                  <h3>
-                                    {{scheduleEntry.title}}
-                                  </h3>
-                                  <div class="schedule-entry-speaker">
-                                    {{scheduleEntry.speaker}}
-                                  </div>
-                                </div>
-                            </a>
-                        </li>
-                        {% if scheduleEntry.description %}
-                        <li class="schedule-entry-description">
-                            <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        <span class="schedule-entry-description-title">Abstract:</span>
-                                        {{scheduleEntry.abstract}}<br>
-                                        {% if scheduleEntry.organizationBio %}
-                                        <span class="schedule-entry-description-title">Organization:</span>
-                                        {{scheduleEntry.organizationBio}}<br>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ol>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Schedule</h3>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-12 schedule">
+                <ol>
+                    {% for scheduleEntry in site.data.schedule %}
+                    <li> 
+                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                        {% if scheduleEntry.description%} 
+                            href="#scheduleEntry{{scheduleEntry.id}}"
+                        {% else if %}
+                            class="no-description"
+                        {% endif %}
+                        aria-expanded="false" aria-controls="collapseOne">
+                            <div class="schedule-entry-time">
+                              <time>{{scheduleEntry.startTime}}</time>
+                              <time>{{scheduleEntry.endTime}}</time>
+                            </div>
+                            
+                            {% if scheduleEntry.picture %}
+                            <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                            {% endif %}
+
+                            <div class="schedule-entry-title">
+                              <h3>
+                                {{scheduleEntry.title}}
+                              </h3>
+                              <div class="schedule-entry-speaker">
+                                {{scheduleEntry.speaker}}
+                              </div>
+                            </div>
+                        </a>
+                    </li>
+                    {% if scheduleEntry.description %}
+                    <li class="schedule-entry-description">
+                        <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <span class="schedule-entry-description-title">Abstract:</span>
+                                    {{scheduleEntry.abstract}}<br>
+                                    {% if scheduleEntry.organizationBio %}
+                                    <span class="schedule-entry-description-title">Organization:</span>
+                                    {{scheduleEntry.organizationBio}}<br>
+                                    {% endif %}
+                                </div>
+                            </div>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section id="faq" class="section faq">
     <div class="container">
