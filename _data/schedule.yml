@@ -16,7 +16,6 @@ morning_1:
 
   - id: 4
     title: 'Startup A Bit: TBA'
-    speaker: Filipa de Barros
     startTime: '10:20'
     endTime: '10:35'
 
@@ -42,24 +41,7 @@ morning_2:
     speaker: '&nbsp;' 
     startTime: '10:00'
     endTime: '11:00'
-
-  - id: 102
-    title: '&nbsp;'
-    speaker: '&nbsp;'
-    startTime: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-    endTime: '&nbsp;&nbsp;'
-
-  - id: 102
-    title: '&nbsp;'
-    speaker: '&nbsp;'
-    startTime: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-    endTime: '&nbsp;&nbsp;'
-
-  - id: 102
-    title: '&nbsp;'
-    speaker: '&nbsp;'
-    startTime: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-    endTime: '&nbsp;&nbsp;'
+    size: 3
 
   - id: 103
     title: '<strong>Make</strong> A Bit #2'

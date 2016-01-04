@@ -173,7 +173,7 @@
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
                                 {% if scheduleEntry.description%} 
                                 href="#scheduleEntry{{scheduleEntry.id}}"
-                                {% else if %}
+                                {% else %}
                                 class="no-description"
                                 {% endif %}
                                 >
@@ -186,7 +186,11 @@
                                 <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
                                 {% endif %}
 
-                                <div class="schedule-entry-title">
+                                <div class="schedule-entry-title"
+                                    {% if scheduleEntry.size == 3 %}
+                                        style="height:215px; /* height: calc(100% * {{scheduleEntry.size}}); */"
+                                    {% endif %}
+                                >
                                     <h3>
                                         {{scheduleEntry.title}}
                                     </h3>
