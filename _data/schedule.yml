@@ -131,12 +131,7 @@ afternoon:
     title: Coffee Break
     startTime: '17:30'
     endTime: '17:50'
-
-    #- id: 20
-    #  title: code A Bit: TBD
-    #  startTime: '17:50'
-    #  endTime: '17:55'
-
+    
   - id: 21
     title: 'Revolutionize A Bit: <strong>Airbnb</strong>'
     speaker: Ricardo Macieira
