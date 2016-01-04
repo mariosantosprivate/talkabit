@@ -795,6 +795,9 @@ ul li {
   padding: 15px;
   margin-top: 30px;
 }
+.pricing .tier h1{
+  text-align: center;
+}
 .pricing .tier object {
   width: 50%;
   vertical-align: middle;
