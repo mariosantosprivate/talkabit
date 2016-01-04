@@ -110,7 +110,7 @@
 #  endTime: '17:55'
 
 - id: 21
-  title: <strong>Airbnb</strong>
+  title: 'Revolutionize A Bit: <strong>Airbnb</strong>'
   speaker: Ricardo Macieira
   startTime: '17:55'
   endTime: '18:20'
@@ -121,7 +121,7 @@
   endTime: '18:30'
 
 - id: 23
-  title: <strong>IES</strong>
+  title: 'Learn A Bit: <strong>IES</strong>'
   speaker: Hélder Sampaio
   startTime: '18:45'
   endTime: '19:05'
