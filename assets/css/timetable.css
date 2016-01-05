@@ -5,10 +5,9 @@
 }
 
 .schedule ol {
-  padding: 0;
   list-style: none;
-  border-top: 1px solid #ccc;
   margin: 0 -0.48225em 1.44em;
+  padding: 0;
 }
 
 .schedule li a {
