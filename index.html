@@ -111,6 +111,25 @@
             <div class="col-xs-12 schedule">
                 <!-- Morning 1 -->
                 <h3>Morning</h3>
+                <!-- Hard coded registration for entire morning -->
+                <div class="col-xs-12">
+                    <ol>
+                        <div class="col-xs-12" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                            <li> 
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" class="no-description">
+                                <div class="schedule-entry-time">
+                                    <time>09:30</time>
+                                    <time>10:00</time>
+                                </div>
+                                <div class="schedule-entry-title">
+                                    <h3>Registration</h3>
+                                    <div class="schedule-entry-speaker"></div>
+                                </div>
+                                </a>
+                            </li>
+                        </div>
+                    </ol>
+                </div>
                 <div class="col-xs-6">
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_1 %}
