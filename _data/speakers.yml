@@ -5,6 +5,7 @@
   picture: assets/images/speakers/healthyroad.jpg
   alt: HealthyRoad
   url: http://www.healthyroad.pt
+
 - firstName:
   lastName: Unbabel
   role: TBA
@@ -12,6 +13,7 @@
   picture: assets/images/speakers/unbabel.jpg
   alt: Unbabel
   url: https://unbabel.com
+
 - firstName:
   lastName: SWORD Health
   role: TBA
@@ -19,6 +21,7 @@
   picture: assets/images/speakers/swordhealth.jpg
   alt: SWORD Health
   url: http://swordhealth.com
+
 - firstName:
   lastName: Uber
   role: TBA
@@ -26,6 +29,7 @@
   picture: assets/images/speakers/uber.jpg
   alt: Uber
   url: https://www.uber.com
+
 - firstName:
   lastName: airbnb
   role: TBA
@@ -33,13 +37,15 @@
   picture: assets/images/speakers/airbnb.jpg
   alt: airbnb
   url: https://www.airbnb.pt
-- firstName:
-  lastName: eSolidar
+
+- firstName: Valter
+  lastName: Vasić
   role: TBA
-  quote: eSolidar is a social impact startup that uses technology to empower charities and individuals. Their goal is to provide charities with an alternative means of fundraising and to raise awareness through an online platform.
-  picture: assets/images/speakers/esolidar.jpg
-  alt: eSolidar
-  url: https://www.esolidar.com
+  quote: 
+  picture: assets/images/speakers/zagreb.jpg
+  alt: University of Zagreb
+  url: https://www.researchgate.net/profile/Valter_Vasic
+
 - firstName:
   lastName: Critical Manufacturing
   role: TBA
@@ -47,6 +53,7 @@
   picture: assets/images/speakers/criticalm.jpg
   alt: Critical Manufacturing
   url: http://www.criticalmanufacturing.com/
+
 - firstName:
   lastName: BRAIN Group
   role: TBA
@@ -54,6 +61,7 @@
   picture: assets/images/speakers/brain.jpg
   alt: BRAIN Group
   url: http://brain.inesctec.pt/
+
 - firstName:
   lastName: IES - Social Business School
   role: TBA
