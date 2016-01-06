@@ -299,7 +299,7 @@ ul li {
 }
 
 .navbar-solid span:before {
-  content: attr(data-name)
+  content: url(../talkabit/images/icon_menu_talkabit.png);
 }
 
 .site-branding {
