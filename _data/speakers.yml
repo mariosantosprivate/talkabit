@@ -1,38 +1,38 @@
-- firstName:
-  lastName: HealthyRoad
-  role: TBA
+- firstName: André
+  lastName: Azevedo
+  role: HealthyRoad
   quote: The HealthyRoad mission is to develop innovative products that allow to solve real problems through the most advanced biometric analysis technologies contributing to increase safety and performance of our customers.
   picture: assets/images/speakers/healthyroad.jpg
   alt: HealthyRoad
   url: http://www.healthyroad.pt
 
-- firstName:
-  lastName: Unbabel
-  role: TBA
+- firstName: Paulo
+  lastName: Dimas
+  role: Unbabel
   quote: Unbabel is the most advanced solution for the translation of dynamic content such as product descriptions, blog posts, support tickets or knowledge centers. We do it consistently and affordably.
   picture: assets/images/speakers/unbabel.jpg
   alt: Unbabel
   url: https://unbabel.com
 
-- firstName:
-  lastName: SWORD Health
-  role: TBA
+- firstName: Virgilio 
+  lastName: Bento
+  role: How big of a human problem are you solving?
   quote: At SWORD Health, they focus on finding technological solutions for some of the most important problems in healthcare systems.
   picture: assets/images/speakers/swordhealth.jpg
   alt: SWORD Health
   url: http://swordhealth.com
 
-- firstName:
-  lastName: Uber
-  role: TBA
+- firstName: Rui
+  lastName: Bento
+  role: Uber
   quote: Uber is evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers.
   picture: assets/images/speakers/uber.jpg
   alt: Uber
   url: https://www.uber.com
 
-- firstName:
-  lastName: airbnb
-  role: TBA
+- firstName: Ricardo
+  lastName: Macieira
+  role: airbnb
   quote: Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet.
   picture: assets/images/speakers/airbnb.jpg
   alt: airbnb
@@ -40,31 +40,31 @@
 
 - firstName: Valter
   lastName: Vasić
-  role: TBA
+  role: University of Zagreb
   quote: 
   picture: assets/images/speakers/zagreb.jpg
   alt: University of Zagreb
   url: https://www.researchgate.net/profile/Valter_Vasic
 
-- firstName:
-  lastName: Critical Manufacturing
-  role: TBA
+- firstName: Francisco
+  lastName: Almada Lobo
+  role: Factories of the Future
   quote: Critical Manufacturing provides manufacturers of complex, high tech discrete products, a manufacturing execution and intelligence system that empowers your organization to achieve its goals.
   picture: assets/images/speakers/criticalm.jpg
   alt: Critical Manufacturing
   url: http://www.criticalmanufacturing.com/
 
-- firstName:
-  lastName: BRAIN Group
-  role: TBA
+- firstName: Hugo
+  lastName: Choupina
+  role: BrainLab
   quote: BRAIN (Biomedical Research And INnovation) is a transversal, pluridisciplinary R&D group that has its main focus on two areas, NeuroEngineering and Wearable & Mobile Technologies for human sensing, crossing all the areas of C-BER and interacting with other INESC-TEC centres.
   picture: assets/images/speakers/brain.jpg
   alt: BRAIN Group
   url: http://brain.inesctec.pt/
 
-- firstName:
-  lastName: IES - Social Business School
-  role: TBA
+- firstName: Hélder
+  lastName: Sampaio
+  role: IES - Social Business School
   quote: O IES-Social Business School nasceu do envolvimento de pessoas chave em torno do tema do Empreendedorismo Social, que acreditaram que esta área de conhecimento e atuação devia ser estimulada em Portugal.
   picture: assets/images/speakers/ies.jpg
   alt: IES-SBS
