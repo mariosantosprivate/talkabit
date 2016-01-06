@@ -980,3 +980,27 @@ figure.snip1218.hover img {
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+/* http://codepen.io/lizz/pen/tfpzm */
+.icon-circle, .icon-circle-large, .icon-circle-small {
+  position: relative;
+  display: inline-block;
+  margin: -1px;
+  width: 45px; /* 60*/
+  height: 45px; 
+  font-size:40px; 
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius: 50%;
+  border: 1px solid #1399D6;
+  background: rgb(0, 161, 225);
+  color: #fff;
+  text-align:center;
+}
+
+.icon-circle-large {
+  width: 100px;
+  height: 100px;
+  font-size: 64px; /* 64, originally 60 */
+  padding: 16px;
+}
