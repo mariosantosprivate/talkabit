@@ -188,7 +188,7 @@
                 <div class="col-xs-6">
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_1 %}
-                        <div class="col-xs-12" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                        <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
                             <li> 
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
                                 {% if scheduleEntry.description%} 
@@ -214,6 +214,9 @@
                                         {{scheduleEntry.speaker}}
                                     </div>
                                 </div>
+                                {% if scheduleEntry.description %}
+                                <i class="ion-plus-round" style="line-height:0px; font-size:1em"></i>
+                                {% endif %}
                                 </a>
                             </li>
                             {% if scheduleEntry.description %}
@@ -242,7 +245,7 @@
                 <div class="col-xs-6">
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_2 %}
-                        <div class="col-xs-12" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                        <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
                             <li> 
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
                                 {% if scheduleEntry.description%} 
@@ -262,7 +265,7 @@
 
                                 <div class="schedule-entry-title"
                                     {% if scheduleEntry.size == 3 %}
-                                        style="height:215px; /* height: calc(100% * {{scheduleEntry.size}}); */"
+                                        style="height:215px;"
                                     {% endif %}
                                 >
                                     <h3>
@@ -305,7 +308,7 @@
                 <div class="col-xs-12">
                     <ol>
                         {% for scheduleEntry in site.data.schedule.afternoon %}
-                        <div class="col-xs-12" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
+                        <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
                             <li> 
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
                                 {% if scheduleEntry.description%} 
@@ -331,6 +334,9 @@
                                         {{scheduleEntry.speaker}}
                                     </div>
                                 </div>
+                                {% if scheduleEntry.description %}
+                                <i class="ion-plus-round" style="line-height:0px; font-size:1em"></i>
+                                {% endif %}
                                 </a>
                             </li>
                             {% if scheduleEntry.description %}
