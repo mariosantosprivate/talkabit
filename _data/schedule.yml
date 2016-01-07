@@ -64,8 +64,10 @@ afternoon:
   - id: 203
     title: 'Revolutionize A Bit: <strong>Unbabel</strong>'
     speaker: Paulo Dimas
-    startTime: '14:15'
-    endTime: '14:30'
+    description: false
+    organizationBio: 'Unbabel empowers with Artificial Intelligence technology a worldwide community of 40K translators to dramatically increase the speed of delivering human quality translation. In a world where 80% of the Internet is in English but only 20% of the population has any English skills, Unbabel is building the technology to bridge this gap, extending the global reach of businesses worldwide.'
+    startTime: '14:30'
+    endTime: '14:50'
 
     #- id: 204
     #  title: TBD
