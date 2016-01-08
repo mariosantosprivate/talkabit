@@ -299,7 +299,7 @@ ul li {
 }
 
 .navbar-solid span:before {
-  content: url(../talkabit/images/icon_menu_talkabit.png);
+  content: url(../images/icon_menu_talkabit.png);
 }
 
 .site-branding {
@@ -328,7 +328,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../talkabit/images/background.jpg) no-repeat center center/cover;
+  background: url(../images/background.jpg) no-repeat center center/cover;
 }
 .site-header::before {
   content: "";
