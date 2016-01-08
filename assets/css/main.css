@@ -298,8 +298,12 @@ ul li {
           transition: all 0.2s linear 0s;
 }
 
-.navbar-solid span:before {
-  content: url(../images/icon_menu_talkabit.png);
+.navbar span {
+  display: none;
+}
+
+.navbar-solid span {
+  display: initial;
 }
 
 .site-branding {
