@@ -112,8 +112,12 @@ afternoon:
     endTime: '17:00'
 
   - id: 210
-    title: 'Learn A Bit: <strong>Security</strong>'
+    title: 'Learn A Bit: <strong>Dark side of the Net</strong>'
+    description: true
+    abstract: 'The need for higher level of anonymity introduced Darknets - parts of the Internet that are not directly available. Darknets provide protection from authorities in repressed countries, but are also used for various suspicious activities. We analyze their social impact and try to identify the need for their existence.'
     speaker: Valter Vasić
+    speakerBio: 'Valter Vasić received his M.Sc. in Computer Science in 2010 from the Faculty of Electrical Engineering and Computing, University of Zagreb. In 2010 he started pursuing his Ph.D. degree in Computer science on the same University. He is currently employed as a research associate at the same faculty within the E-IMUNES project funded by Ericsson Nikola Tesla. His research interests include security, network simulation and virtualization.'
+    organizationBio: 'University of Zagreb, Faculty of Electrical Engineering and Computing'
     startTime: '17:05'
     endTime: '17:20'
 
