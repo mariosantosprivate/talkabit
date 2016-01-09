@@ -298,11 +298,24 @@ ul li {
           transition: all 0.2s linear 0s;
 }
 
-.navbar span {
+.navbar .logo {
   display: none;
 }
 
-.navbar-solid span {
+a.svg {
+  position: relative;
+  display: inline-block; 
+}
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+
+.navbar-solid .logo {
   display: initial;
 }
 
