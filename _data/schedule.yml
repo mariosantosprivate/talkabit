@@ -22,9 +22,11 @@ morning_1:
 
   - id: 5
     title: '<strong>Startup a Bit</strong> Facial Biometry in cars'
-    speaker: André Azevedo, Healthy Road
+    speaker: André Azevedo, HealthyRoad
     startTime: '10:40'
     endTime: '11:00'
+    description: true
+    organizationBio: "HealthyRoad aim to reduce the two main causes of road accidents, the distraction and the drowsiness at the wheel, both are considered responsible for more than 60% of road accidents in Europe. It is estimated that in Europe we lose more than 1.000.000.000€/year in human and material losses due to these problems. This fact is equally reflected in other countries such as United States of America, Brazil, Australia, Canada and New Zealand."
 
   - id: 6
     speaker: 'Network a Bit'
