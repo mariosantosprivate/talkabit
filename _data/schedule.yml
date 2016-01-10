@@ -5,150 +5,168 @@ morning_1:
  #   endTime: '10:00'
 
   - id: 3
-    title: 'Startup A Bit: How big of a human problem are you solving? by <strong>Sword Health</strong>'
-    speaker: Virgílio Bento
+    title: '<strong>Startup a Bit</strong> How big of a human problem are you solving?'
+    speaker: Virgílio Bento, Sword Health
     speakerBio: "Virgílio Bento was born in Guarda, Portugal, in 1984. <br> Having realized from an early age that there was much to do and so little being done in the field of rehabilitation, he knew he should step in to change that. <br> He was aware that the key for a democratic and efficient global health was in the development of technologies that overcome socioeconomic barriers and explore how humans have the potential to self-rehabilitate. <br> That was why, during his PhD in Electronics Engineering, Virgílio developed SWORD, a disruptive tool in motor rehabilitation that empowers patients, extending the therapeutic footprint to their homes. <br> Following his PhD work, he founded Sword Health, where he’s leading the design and development of innovative digital health systems, targeted at the medical market of cognitive and motor rehabilitation. <br> Always seeking to solve problems through technology, Virgílio also co-developed an innovative tracking system for children and pets, without monthly fees. In 2014, the idea was funded with more than $100k on Indiegogo, leading to the inception of Findster of which he is one of the founders. <br> Findster broke several geographic barriers being one of the first Portuguese technologies to be featured on TechCrunch and backed by 700 contributors from more than 45 countries. <br> Besides owning 3 patents at the age of 30, Virgílio has already authored and co-authored more than 40 research papers. Having his footprint in diverse fields such as sensor fusion algorithms, motion quantification systems, neuroplasticity or stroke rehabilitation, he was featured in some of the most relevant scientific publications and took part in the most important MedTech conferences. <br> He’s also a Professor at University Institute of Maia, Portugal, where he teaches Innovation and Entrepreneurship. <br> Daring in design, cautious in execution, Virgílio's path is being shaped by his will to make a dent in the universe, having technology as his major ally."
     description: true
     abstract: 'We see technology changing our lives everyday, from something so simple as a social network to self-driving cars and deep learning. The problem with the current trend in the technological world is that we are not applying our talent towards hard problems that have a real and significant impact in humanity. At SWORD Health, we believe in empowering our best engineers towards the solution of big problems. We started by reinventing how physical rehabilitation is performed globally. And we’re just starting.'
     organizationBio: 'At SWORD Health, we created the first digital therapy in the physical rehabilitation industry that automates the 1-to-1 patient-therapist interaction, plummeting healthcare costs, empowering patients and ensuring accountability. SWORD is considered by the European Commission as one of the most innovative companies in Europe.'
     startTime: '10:00'
-    endTime: '10:15'
+    endTime: '10:20'
 
   - id: 4
-    title: 'Startup A Bit: TBA'
+    title: '<strong>Startup a Bit</strong> TBA'
+    speaker: Rui Ramos, eSolidar
     startTime: '10:20'
-    endTime: '10:35'
+    endTime: '10:40'
 
   - id: 5
-    title: 'Startup A Bit: <strong>Healthy Road</strong>'
-    speaker: André Azevedo
+    title: '<strong>Startup a Bit</strong> Facial Biometry in cars'
+    speaker: André Azevedo, HealthyRoad
     startTime: '10:40'
-    endTime: '10:55'
+    endTime: '11:00'
+    description: true
+    organizationBio: "HealthyRoad aim to reduce the two main causes of road accidents, the distraction and the drowsiness at the wheel, both are considered responsible for more than 60% of road accidents in Europe. It is estimated that in Europe we lose more than 1.000.000.000€/year in human and material losses due to these problems. This fact is equally reflected in other countries such as United States of America, Brazil, Australia, Canada and New Zealand."
 
   - id: 6
-    title: '<strong>Network</strong> A Bit: Keynote'
+    speaker: 'Network a Bit'
     startTime: '11:00'
-    endTime: '11:15'
-
-  - id: 7
-    title: '<strong>Network</strong> A Bit'
-    startTime: '11:15'
     endTime: '12:15'
+    title: "Are you graduating soon and looking for job opportunities in the tech area? Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!"
 
 morning_2:
   - id: 101
-    title: '<strong>Make</strong> A Bit #1'
-    speaker: '&nbsp;' 
+    speaker: 'Make a Bit #1'
+    title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
     startTime: '10:00'
     endTime: '11:00'
-    size: 3
-
   - id: 103
-    title: '<strong>Make</strong> A Bit #2'
-    speaker: '&nbsp;'
+    speaker: 'Make a Bit #2'
+    title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
     startTime: '11:15'
-    endTime: '12:15'      
+    endTime: '12:15'
 
 afternoon:
 
   - id: 201
     title: Registration
-    startTime: '13:45'
-    endTime: '14:15'
+    startTime: '13:30'
+    endTime: '14:00'
 
   - id: 202
     title: Opening
-    startTime: '14:15'
-    endTime: '14:30'
+    startTime: '14:00'
+    endTime: '14:15'
 
   - id: 203
-    title: 'Revolutionize A Bit: <strong>Unbabel</strong>'
-    speaker: Paulo Dimas
-    description: false
+    title: '<strong>Revolutionize a Bit</strong> TBA'
+    speaker: Paulo Dimas, Unbabel
+    description: true
     organizationBio: 'Unbabel empowers with Artificial Intelligence technology a worldwide community of 40K translators to dramatically increase the speed of delivering human quality translation. In a world where 80% of the Internet is in English but only 20% of the population has any English skills, Unbabel is building the technology to bridge this gap, extending the global reach of businesses worldwide.'
-    startTime: '14:30'
-    endTime: '14:50'
+    startTime: '14:15'
+    endTime: '14:40'
 
-    #- id: 204
-    #  title: TBD
-    #  startTime: '14:55'
-    #  endTime: '15:00'
+  - id: 204
+    title: '<strong>Code a Bit</strong> TBA'
+    startTime: '14:40'
+    endTime: '14:45'
 
   - id: 205
-    title: 'Research A Bit: <strong>BrainLab</strong> - INESC TEC'
-    speaker: Hugo Choupina
-    startTime: '15:00'
-    endTime: '15:15'
+    title: '<strong>Research a Bit</strong> TBA'
+    speaker: Hugo Choupina, BrainLab - INESC TEC
+    startTime: '14:45'
+    endTime: '15:05'
 
   - id: 206
-    title: 'Revolutionize A Bit: <strong>Uber</strong>'
-    speaker: Rui Bento
-    startTime: '15:25'
-    endTime: '15:50'
+    title: '<strong>Discover a Bit</strong> TBA'
+    startTime: '15:05'
+    endTime: '15:10'
 
   - id: 207
-    title: Coffee Break
-    startTime: '15:55'
-    endTime: '16:15'
+    title: '<strong>Revolutionize a Bit</strong> TBA'
+    speaker: Rui Bento, Uber
+    startTime: '15:10'
+    endTime: '15:40'
 
   - id: 208
-    title: TBA
-    startTime: '16:15'
-    endTime: '16:30'
-
-    #- id: 16
-    #  title: 'Learn A Bit: TBD'
-    #  startTime: '16:40'
-    #  endTime: '16:45'
+    title: Coffee Break
+    startTime: '15:40'
+    endTime: '16:00'
 
   - id: 209
-    title: 'Research A Bit: Factories of the Future by <strong>Critical Manufacturing</strong>'
+    title: '<strong>Learn a Bit</strong> Feel Safe, Feel Yazaki'
+    speaker: Nelson Carvalho, Yazaki
+    startTime: '16:00'
+    endTime: '16:20'
     description: true
-    abstract: 'The key aspect of the factories of the futures lies on a concept, which is as striking as it is fascinating: Cyber-Physical Systems, the Internet of Things and the Internet of Services will collectively result in a disruptive impact on every business domain of manufacturing companies. It is a fusion of the physical and the virtual worlds into what is being called the 4th industrial revolution, which unlike all others is being predicted before it happens.'
-    speaker: Francisco Almada Lobo
-    speakerBio: "Francisco Almada Lobo holds an MBA and an Electrical Engineering Degree from University of Porto. He started his career in a CIM R&D institute, and joined Siemens Semiconductor in 1997. Throughout Siemens, Infineon and Qimonda, he gained experience in several manufacturing areas having, in 2004, led the first migration of a Manufacturing Execution System (MES) in a running high-volume facility. Between 2005 and 2009, he managed the Porto Development Center for Infineon and Qimonda, with implementation of automation projects in the group plants in Europe, Asia and USA. Since 2010 he's Critical Manufacturing's CEO, leading the company to be part of the top MES providers worldwide."
-    organizationBio: 'Critical Manufacturing provides innovative software technology and advanced services that empower operations for some of the most advanced manufacturers worldwide. Its new generation Manufacturing Execution System (MES), built end-to-end on proven Microsoft layers, provides unified flexibility for modeling complex industry requirements, increasing manufacturers’ performance, control and quality. The company is part of the Critical Group, a private group of companies founded in 1998 to provide solutions for mission and business critical information systems.'
-    startTime: '16:45'
-    endTime: '17:00'
+    abstract: "Yazaki is not just a OEM supplier, is a culture, a meaning of quality and safety for their customers. Nowadays more than 40 car makers rely on Yazaki products to achieve the highest demands of the automotive industry."
+    speakerBio: "Nelson Carvalho the electrical coordinator in PTC- Laboratory since 2014, responsible to manage all electrical test activities as well as coach a team of technicians/ engineers. It´s high motivation pushes him to the excellence and demand of automotive industry, the must´s and values of this Japanese company. Nelson Carvalho also acquired competencies in low voltage distribution systems, solar photovoltaics and electronics sustained during his work activities in Madrid, Sicily, Rome and Cologne."
+    organizationBio: "The success story of our long-established, family-owned company started already in 1929 in Japan. Today, Yazaki is the number one in the global automotive wiring harness market and supplier of innovative solutions to all major car manufacturers worldwide. More than 275,000 committed and highly motivated employees at 476 locations in 45 countries contribute to Yazaki’s global success. Our customers have come to appreciate our core competencies consulting, development, industrialization and manufacturing. In doing so, we always pay special attention to creating a reasonable balance between our customers’ needs and a responsible use of our environment"
 
   - id: 210
-    title: 'Learn A Bit: <strong>Dark side of the Net</strong>'
-    description: true
-    abstract: 'The need for higher level of anonymity introduced Darknets - parts of the Internet that are not directly available. Darknets provide protection from authorities in repressed countries, but are also used for various suspicious activities. We analyze their social impact and try to identify the need for their existence.'
-    speaker: Valter Vasić
-    speakerBio: 'Valter Vasić received his M.Sc. in Computer Science in 2010 from the Faculty of Electrical Engineering and Computing, University of Zagreb. In 2010 he started pursuing his Ph.D. degree in Computer science on the same University. He is currently employed as a research associate at the same faculty within the E-IMUNES project funded by Ericsson Nikola Tesla. His research interests include security, network simulation and virtualization.'
-    organizationBio: 'University of Zagreb, Faculty of Electrical Engineering and Computing'
-    startTime: '17:05'
-    endTime: '17:20'
+    title: '<strong>Discover a Bit</strong> TBA'
+    startTime: '16:20'
+    endTime: '16:25'
 
   - id: 211
-    title: Coffee Break
-    startTime: '17:30'
-    endTime: '17:50'
+    title: '<strong>Research a Bit</strong> Factories of the Future'
+    description: true
+    abstract: 'The key aspect of the factories of the futures lies on a concept, which is as striking as it is fascinating: Cyber-Physical Systems, the Internet of Things and the Internet of Services will collectively result in a disruptive impact on every business domain of manufacturing companies. It is a fusion of the physical and the virtual worlds into what is being called the 4th industrial revolution, which unlike all others is being predicted before it happens.'
+    speaker: Francisco Almada Lobo, Critical Manufacturing
+    speakerBio: "Francisco Almada Lobo holds an MBA and an Electrical Engineering Degree from University of Porto. He started his career in a CIM R&D institute, and joined Siemens Semiconductor in 1997. Throughout Siemens, Infineon and Qimonda, he gained experience in several manufacturing areas having, in 2004, led the first migration of a Manufacturing Execution System (MES) in a running high-volume facility. Between 2005 and 2009, he managed the Porto Development Center for Infineon and Qimonda, with implementation of automation projects in the group plants in Europe, Asia and USA. Since 2010 he's Critical Manufacturing's CEO, leading the company to be part of the top MES providers worldwide."
+    organizationBio: 'Critical Manufacturing provides innovative software technology and advanced services that empower operations for some of the most advanced manufacturers worldwide. Its new generation Manufacturing Execution System (MES), built end-to-end on proven Microsoft layers, provides unified flexibility for modeling complex industry requirements, increasing manufacturers’ performance, control and quality. The company is part of the Critical Group, a private group of companies founded in 1998 to provide solutions for mission and business critical information systems.'
+    startTime: '16:25'
+    endTime: '16:45'
 
   - id: 212
-    title: 'Revolutionize A Bit: <strong>Airbnb</strong>'
-    speaker: Ricardo Macieira
-    startTime: '17:55'
-    endTime: '18:20'
+    title: '<strong>Learn a Bit</strong> Dark side of the Net'
+    description: true
+    abstract: 'The need for higher level of anonymity introduced Darknets - parts of the Internet that are not directly available. Darknets provide protection from authorities in repressed countries, but are also used for various suspicious activities. We analyze their social impact and try to identify the need for their existence.'
+    speaker: Valter Vasić, University of Zagreb
+    speakerBio: 'Valter Vasić received his M.Sc. in Computer Science in 2010 from the Faculty of Electrical Engineering and Computing, University of Zagreb. In 2010 he started pursuing his Ph.D. degree in Computer science on the same University. He is currently employed as a research associate at the same faculty within the E-IMUNES project funded by Ericsson Nikola Tesla. His research interests include security, network simulation and virtualization.'
+    organizationBio: 'University of Zagreb, Faculty of Electrical Engineering and Computing'
+    startTime: '16:45'
+    endTime: '17:15'
 
   - id: 213
-    title: 'Learn A Bit: TBA'
-    startTime: '18:25'
-    endTime: '18:30'
+    title: Coffee Break
+    startTime: '17:15'
+    endTime: '17:35'
 
   - id: 214
-    title: 'Learn A Bit: <strong>IES</strong>'
-    speaker: Hélder Sampaio
-    startTime: '18:45'
-    endTime: '19:05'
+    title: '<strong>Code a Bit</strong> TBA'
+    startTime: '17:35'
+    endTime: '17:40'
 
   - id: 215
-    title: 'Learn A Bit: TBA'
-    startTime: '18:45'
-    endTime: '19:05'
+    title: '<strong>Revolutionize a Bit</strong> TBA'
+    speaker: Ricardo Macieira, Airbnb
+    startTime: '17:40'
+    endTime: '18:10'
+    description: true
+    speakerBio: "With a degree in Visual Production Design, Ricardo Macieira worked as a graphic designer, art director and he was one of the founders of Alok Design Brands, a company in the brand representation area. Since May 2014 he has been working as the Airbnb coordinator for the Portuguese market."
+    organizationBio: "Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. "
 
   - id: 216
+    title: '<strong>Discover a Bit</strong> TBA'
+    startTime: '18:10'
+    endTime: '18:15'
+
+  - id: 217
+    title: '<strong>Revolutionize A Bit</strong> TBA'
+    speaker: "Hélder Sampaio, IES & TBA"
+    startTime: '18:15'
+    endTime: '18:55'
+
+  - id: 218
+    title: '<strong>Laugh A Bit</strong>'
+    description: true
+    speaker: Guilherme Duarte
+    speakerBio: "Guilherme Duarte, 30 anos, Engenheiro Informático, pós-graduado em Graçolas pelo Instituto Inferior da Buraca. Cedo aprendeu que fazer rir era bom, sobretudo para desarmar assaltantes. Gosta de escrever, fotografar, ver séries e filmes pirateados, e dança jazz para acender luzes nas casas de banho públicas. É cinturão branco de Jiu Jitsu, coisa que vale tanto em termos de defesa pessoal como ter herpes. Como a vida de consultor era demasiado bem humorada decidiu aventurar-se no Stand Up Comedy para contrabalançar. A avó diz que ele tem muita piada, mas tendo Alzheimer não é opinião para se ter em conta."
+    startTime: '18:55'
+    endTime: '19:10'
+
+  - id: 219
     title: Closing
     startTime: '19:10'
     endTime: '19:30'
