@@ -159,7 +159,10 @@ afternoon:
     endTime: '18:55'
 
   - id: 218
-    title: '<strong>Laugh A Bit</strong> TBA'
+    title: '<strong>Laugh A Bit</strong>'
+    description: true
+    speaker: Guilherme Duarte
+    speakerBio: "Guilherme Duarte, 30 anos, Engenheiro Informático, pós-graduado em Graçolas pelo Instituto Inferior da Buraca. Cedo aprendeu que fazer rir era bom, sobretudo para desarmar assaltantes. Gosta de escrever, fotografar, ver séries e filmes pirateados, e dança jazz para acender luzes nas casas de banho públicas. É cinturão branco de Jiu Jitsu, coisa que vale tanto em termos de defesa pessoal como ter herpes. Como a vida de consultor era demasiado bem humorada decidiu aventurar-se no Stand Up Comedy para contrabalançar. A avó diz que ele tem muita piada, mas tendo Alzheimer não é opinião para se ter em conta."
     startTime: '18:55'
     endTime: '19:10'
 
