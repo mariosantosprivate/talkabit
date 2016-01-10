@@ -225,8 +225,10 @@
                             <li class="schedule-entry-description">
                                 <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
+                                        {% if scheduleEntry.abstract %}
                                         <span class="schedule-entry-description-title">Abstract:</span>
                                         {{scheduleEntry.abstract}}<br>
+                                        {% endif %}
                                         {% if scheduleEntry.organizationBio %}
                                         <span class="schedule-entry-description-title">Organization:</span>
                                         {{scheduleEntry.organizationBio}}<br>
@@ -279,8 +281,10 @@
                             <li class="schedule-entry-description">
                                 <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
+                                        {% if scheduleEntry.abstract %}
                                         <span class="schedule-entry-description-title">Abstract:</span>
                                         {{scheduleEntry.abstract}}<br>
+                                        {% endif %}
                                         {% if scheduleEntry.organizationBio %}
                                         <span class="schedule-entry-description-title">Organization:</span>
                                         {{scheduleEntry.organizationBio}}<br>
@@ -341,8 +345,10 @@
                             <li class="schedule-entry-description">
                                 <div id="scheduleEntry{{scheduleEntry.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
+                                        {% if scheduleEntry.abstract %}
                                         <span class="schedule-entry-description-title">Abstract:</span>
                                         {{scheduleEntry.abstract}}<br>
+                                        {% endif %}
                                         {% if scheduleEntry.organizationBio %}
                                         <span class="schedule-entry-description-title">Organization:</span>
                                         {{scheduleEntry.organizationBio}}<br>
