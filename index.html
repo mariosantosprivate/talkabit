@@ -554,16 +554,34 @@
     }
     #delloite{
         max-width: none;
-        width: 165px;
-        height: 90px;
-        margin-top: 22px;
+        height: 143px;
+        width: 250px;
+        margin-top: 0;
 
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
         #delloite {
             margin-left: 94px;
+
         }
     }
+    @media (max-width: 1200px ) and (min-width: 768px) {
+        #delloite {
+            margin-left: 6px;
+        }
+    }
+    @media (max-width:1000px) {
+        #delloite{
+            margin-top: -33px;
+        }
+    }
+    #silver{
+        color: silver;
+    }
+    #friends{
+        color: #00B1E8;
+    }
+
 </style>
 <section id="sponsors" class="section sponsors">
     <div class="container">
@@ -585,7 +603,7 @@
                 <a target="_blank" href="http://www.criticalmanufacturing.com/"><img src="assets/images/sponsors/critical_manufactoring.png" alt=""></a>
             </div>
         </div>
-        <div class="row sponsor-type">
+        <div class="row sponsor-type" id="friends">
             <div class="col-xs-12">
                 <h4>Friends</h4>
             </div>
