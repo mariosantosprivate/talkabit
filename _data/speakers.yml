@@ -1,71 +1,101 @@
-- firstName: André
-  lastName: Azevedo
-  role: HealthyRoad
-  quote: The HealthyRoad mission is to develop innovative products that allow to solve real problems through the most advanced biometric analysis technologies contributing to increase safety and performance of our customers.
-  picture: assets/images/speakers/healthyroad.jpg
-  alt: HealthyRoad
-  url: http://www.healthyroad.pt
-
-- firstName: Paulo
-  lastName: Dimas
-  role: Unbabel
-  quote: Unbabel is the most advanced solution for the translation of dynamic content such as product descriptions, blog posts, support tickets or knowledge centers. We do it consistently and affordably.
-  picture: assets/images/speakers/unbabel.jpg
-  alt: Unbabel
-  url: https://unbabel.com
-
-- firstName: Virgilio 
-  lastName: Bento
-  role: How big of a human problem are you solving?
-  quote: At SWORD Health, they focus on finding technological solutions for some of the most important problems in healthcare systems.
-  picture: assets/images/speakers/swordhealth.jpg
-  alt: SWORD Health
-  url: http://swordhealth.com
-
-- firstName: Rui
-  lastName: Bento
-  role: Uber
-  quote: Uber is evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers.
-  picture: assets/images/speakers/uber.jpg
-  alt: Uber
-  url: https://www.uber.com
-
 - firstName: Ricardo
   lastName: Macieira
-  role: airbnb
-  quote: Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet.
+  role: Airbnb
+  quote:
   picture: assets/images/speakers/airbnb.jpg
   alt: airbnb
   url: https://www.airbnb.pt
 
-- firstName: Valter
-  lastName: Vasić
-  role: Dark side of the Net
-  quote: The need for higher level of anonymity introduced Darknets - parts of the Internet that are not directly available.
-  picture: assets/images/speakers/zagreb.jpg
-  alt: University of Zagreb
-  url: https://www.researchgate.net/profile/Valter_Vasic
+- firstName: Rui
+  lastName: Bento
+  role: Uber
+  quote:
+  picture: assets/images/speakers/uber.jpg
+  alt: General Manager at Uber Portugal
+  url: https://www.uber.com
+
+- firstName: Paulo
+  lastName: Dimas
+  role: Head of Product at Unbabel
+  quote:
+  picture: assets/images/speakers/unbabel.jpg
+  alt:  Unbabel
+  url: https://unbabel.com
 
 - firstName: Francisco
-  lastName: Almada Lobo
-  role: Factories of the Future
-  quote: Critical Manufacturing provides manufacturers of complex, high tech discrete products, a manufacturing execution and intelligence system that empowers your organization to achieve its goals.
+  lastName: Lobo
+  role: CEO at Critical Manufacturing
+  quote: Factories of the Future
   picture: assets/images/speakers/criticalm.jpg
   alt: Critical Manufacturing
   url: http://www.criticalmanufacturing.com/
 
-- firstName: Hugo
-  lastName: Choupina
-  role: BrainLab
-  quote: BRAIN (Biomedical Research And INnovation) is a transversal, pluridisciplinary R&D group that has its main focus on two areas, NeuroEngineering and Wearable & Mobile Technologies for human sensing, crossing all the areas of C-BER and interacting with other INESC-TEC centres.
-  picture: assets/images/speakers/brain.jpg
-  alt: BRAIN Group
-  url: http://brain.inesctec.pt/
+- firstName: Valter
+  lastName: Vasić
+  role: Researcher at University of Zagreb
+  quote: Dark side of the Net
+  picture: assets/images/speakers/zagreb.jpg
+  alt: University of Zagreb
+  url: https://www.researchgate.net/profile/Valter_Vasic
+
+- firstName: Virgilio 
+  lastName: Bento
+  role: Founder and CEO at Sword Health
+  quote: How big of a human problem are you solving?
+  picture: assets/images/speakers/swordhealth.jpg
+  alt: SWORD Health
+  url: http://swordhealth.com
+
+- firstName: Nelson   
+  lastName: Carvalho
+  role: Yazaki
+  quote: Feel Safe, Feel Yazaki
+  picture: assets/images/speakers/yazaki.jpg
+  alt: Yazaki
+  url: http://yazaki-europe.com/
 
 - firstName: Hélder
   lastName: Sampaio
   role: IES - Social Business School
-  quote: O IES-Social Business School nasceu do envolvimento de pessoas chave em torno do tema do Empreendedorismo Social, que acreditaram que esta área de conhecimento e atuação devia ser estimulada em Portugal.
+  quote: 
   picture: assets/images/speakers/ies.jpg
   alt: IES-SBS
   url: http://www.ies-sbs.org/
+
+- firstName: Rui 
+  lastName: Ramos
+  role: Co-founder at eSolidar
+  quote:
+  picture: assets/images/speakers/esolidar.jpg
+  alt: eSolidar
+  url: http://esolidar.com/
+
+- firstName: Hugo
+  lastName: Choupina
+  role: Researcher at BrainLab
+  quote: 
+  picture: assets/images/speakers/brain.jpg
+  alt: BRAIN Group
+  url: http://brain.inesctec.pt/
+
+- firstName: André
+  lastName: Azevedo
+  role: HealthyRoad
+  quote: Facial biometry in cars
+  picture: assets/images/speakers/healthyroad.jpg
+  alt: HealthyRoad
+  url: http://www.healthyroad.pt
+
+
+
+
+
+
+
+
+
+
+
+
+
+

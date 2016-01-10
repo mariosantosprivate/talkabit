@@ -101,9 +101,10 @@
                 </h2>
                 <p class="text-justify">Our talks will include: <strong>Startup A Bit</strong> - talks by Portuguese startups,
                     <strong>Revolutionize A Bit</strong> - talks by important players,
-                    <strong>Code A Bit</strong> - 5 minutes pitches about FEUP projects,
-                    <strong>Learn A Bit</strong> - 5 minutes intros to subjects, and
-                    <strong>Research A Bit</strong> - ideas for the future.
+                    <strong>Research A Bit</strong> - ideas for the future,
+                    <strong>Learn A Bit</strong> - dive into technology hot topics,
+                    <strong>Code A Bit</strong> - 5 minutes pitches about FEUP projects and
+                    <strong>Discover A Bit</strong> - 5 minutes intros to subjects.
                 </p>
             </div>
             <div class="col-md-4">
@@ -123,7 +124,7 @@
                     </a>
                 </div>
                 <h2 class="text-center">Network A Bit</h2>
-                <p class="text-justify">Are you graduating soon and look for job opportunities in the tech area?
+                <p class="text-justify">Are you graduating soon and looking for job opportunities in the tech area?
                 Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!</p>
             </div>
         </div>
@@ -145,8 +146,8 @@
                         <p>{{ speaker.quote }}</p>
                     </div>
                     <figcaption>
-                        <h3><a href="{{ speaker.url }}">{{ speaker.firstName }}<span> {{ speaker.lastName }}</span></a></h3>
-                        <h5>{{ speaker.role }}</h5>
+                        <h3>{{ speaker.firstName }}<span> {{ speaker.lastName }}</span></h3>
+                        <h5><a href="{{ speaker.url }}">{{ speaker.role }}</a></h5>
                         <!-- <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-vimeo-outline"></i></a></div> -->
                     </figcaption>
                 </figure>
@@ -186,7 +187,7 @@
                         </div>
                     </ol>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_1 %}
                         <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
@@ -209,10 +210,10 @@
 
                                 <div class="schedule-entry-title">
                                     <h3>
-                                        {{scheduleEntry.title}}
+                                        {{scheduleEntry.speaker}}
                                     </h3>
                                     <div class="schedule-entry-speaker">
-                                        {{scheduleEntry.speaker}}
+                                        {{scheduleEntry.title}}
                                     </div>
                                 </div>
                                 {% if scheduleEntry.description %}
@@ -243,7 +244,7 @@
                     </ol>
                 </div>
                 <!-- Morning 2 -->
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_2 %}
                         <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
@@ -264,16 +265,12 @@
                                 <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
                                 {% endif %}
 
-                                <div class="schedule-entry-title"
-                                    {% if scheduleEntry.size == 3 %}
-                                        style="height:215px;"
-                                    {% endif %}
-                                >
+                                <div class="schedule-entry-title">
                                     <h3>
-                                        {{scheduleEntry.title}}
+                                        {{scheduleEntry.speaker}}
                                     </h3>
                                     <div class="schedule-entry-speaker">
-                                        {{scheduleEntry.speaker}}
+                                        {{scheduleEntry.title}}
                                     </div>
                                 </div>
                                 </a>
@@ -329,10 +326,10 @@
 
                                 <div class="schedule-entry-title">
                                     <h3>
-                                        {{scheduleEntry.title}}
+                                        {{scheduleEntry.speaker}}
                                     </h3>
                                     <div class="schedule-entry-speaker">
-                                        {{scheduleEntry.speaker}}
+                                        {{scheduleEntry.title}}
                                     </div>
                                 </div>
                                 {% if scheduleEntry.description %}

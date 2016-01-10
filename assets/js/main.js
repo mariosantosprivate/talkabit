@@ -24,10 +24,9 @@ $(window).on('resize', function(){
     var firstEntry = $('#entry3').height();
 	var secondEntry = $('#entry4').height();
 	var thirdEntry = $('#entry5').height();
-	var forthEntry = $('#entry6').height();
 	var margins = 4;
 
-	$('#entry101').height(firstEntry + secondEntry + thirdEntry + forthEntry);
-	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry + forthEntry - 4 * margins)
+	$('#entry101').height(firstEntry + secondEntry + thirdEntry);
+	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry - 4 * margins)
 });
 $(window).trigger('resize');
