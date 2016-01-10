@@ -528,8 +528,7 @@
         margin-top: 15px;;
     }
     .sponsors img{
-        height: 70px;
-        margin-top: 45px;
+        height: 125px;
     }
     .sponsors div .row{
         text-align: center;
@@ -540,12 +539,30 @@
     #uber{
         width: 100%;
         height: auto;
-        margin-top: 70px;
         max-width: 140px;;
 
     }
     #aefeup,#esop{
         height: 43px;
+    }
+    .sponsor-type{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #silver{
+        margin-top: 0;
+    }
+    #delloite{
+        max-width: none;
+        width: 165px;
+        height: 90px;
+        margin-top: 22px;
+
+    }
+    @media (min-width: 1024px) {
+        #delloite {
+            margin-left: 94px;
+        }
     }
 </style>
 <section id="sponsors" class="section sponsors">
@@ -555,31 +572,39 @@
                 <h3 class="section-title">Sponsors</h3>
             </div>
         </div>
+        <div class="row sponsor-type" id="silver">
+            <div class="col-xs-12">
+                <h4>Silver Sponsors</h4>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-xs-12 col-xs-offset-0 col-md-offset-2 col-md-3">
+            <div class="col-xs-12 col-xs-offset-0 col-md-offset-3 col-md-3">
+                <a target="_blank" href="http://www.deloitte.com/"><img id="delloite" src="assets/images/sponsors/delloite.png" alt=""></a>
+            </div>
+            <div class="col-xs-12 col-md-2">
                 <a target="_blank" href="http://www.criticalmanufacturing.com/"><img src="assets/images/sponsors/critical_manufactoring.png" alt=""></a>
             </div>
-            <div class="col-xs-12 col-md-2">
-                <a target="_blank" href="https://topdox.com" ><img src="assets/images/sponsors/topdox.png" alt=""></a>
+        </div>
+        <div class="row sponsor-type">
+            <div class="col-xs-12">
+                <h4>Friends</h4>
             </div>
-            <div class="col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.deloitte.com/"><img src="assets/images/sponsors/delloite.png" alt=""></a>
-            </div>
-            <div class="col-xs-0 col-sm-3"></div>
-            <div class="col-xs-12 col-xs-offset-0 col-md-offset-5 col-md-2">
+        </div>
+        <div class="row ">
+            <div class="col-xs-12">
                 <a target="_blank" href="https://www.uber.com/">
                     <img id="uber" src="assets/images/sponsors/uber.png" alt="">
                 </a>
             </div>
-
-
+        </div>
+        <div class="row sponsor-type">
+            <div class="col-xs-12">
+                <h4>Institutional Sponsors</h4>
+            </div>
         </div>
         <div class="row institutional">
-            <div class="col-xs-offset-0 col-md-offset-4 col-xs-12 col-md-2">
+            <div class="col-xs-offset-0 col-md-offset-5 col-xs-12 col-md-2">
                 <a target="_blank" href="http://www.aefeup.pt/"><img id="aefeup" src="assets/images/sponsors/aefeup.png" alt=""></a>
-            </div>
-            <div   class="col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.esop.pt/"><img id="esop" src="assets/images/sponsors/esop.png" alt="" href="/"></a>
             </div>
         </div>
 
