@@ -8,10 +8,10 @@
 
 - firstName: Rui
   lastName: Bento
-  role: Uber
+  role: General Manager at Uber Portugal
   quote:
   picture: assets/images/speakers/uber.jpg
-  alt: General Manager at Uber Portugal
+  alt: Uber
   url: https://www.uber.com
 
 - firstName: Paulo
