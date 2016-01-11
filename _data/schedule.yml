@@ -49,7 +49,7 @@ morning_2:
 afternoon:
 
   - id: 201
-    title: "<strong>Check in</strong> Only for the atendees who did not checked in before"
+    title: "<strong>Check in</strong> Only for the attendees who did not checked in before"
     speaker: ''
     startTime: '13:30'
     endTime: '14:00'
