@@ -547,7 +547,15 @@
 
     }
     #aefeup,#esop{
-        height: 43px;
+        height: 58px;
+        width: 189px;
+        max-width: none !important;
+    }
+    #aefeup{
+        margin-left: -30px;
+    }
+    #esop{
+        margin-left: 30px;;
     }
     .sponsor-type{
         margin-top: 30px;
@@ -563,26 +571,38 @@
         margin-top: 0;
 
     }
+    #uber{
+        max-width: 192px;
+        width: 192px;;
+    }
     @media (min-width: 1200px) {
-        #delloite {
-            margin-left: 64px;
+        #delloite,#critical{
+            margin-left:30px;
 
         }
     }
-    @media (max-width: 1200px ) and (min-width: 768px) {
+    @media (max-width: 1200px ) and (min-width: 990px) {
         #delloite {
-            margin-left: 6px;
+            margin-left: -20px;
+        }
+        #critical{
+            margin-left: 40px;
+        }
+        #aefeup{
+            margin-left: -60px;
         }
     }
     @media (max-width:990px) {
-        #delloite{
-            margin-top: -33px;
+        #delloite,#aefeup,#critical,#esop{
+            margin-top: -3px;
+            margin-left: 0;
+        }
+        #esop{
+            margin-top: 20px;
         }
     }
-    #silver{
-        color: silver;
-    }
-    #friends{
+
+    #friends,#silver,.sponsor-type{
         color: #00B1E8;
     }
 
@@ -596,7 +616,7 @@
         </div>
         <div class="row sponsor-type" id="silver">
             <div class="col-xs-12">
-                <h4>Silver Sponsors</h4>
+                <h3>Silver Sponsors</h3>
             </div>
         </div>
         <div class="row">
@@ -604,7 +624,7 @@
                 <a target="_blank" href="http://www.deloitte.com/"><img id="delloite" src="assets/images/sponsors/delloite.png" alt=""></a>
             </div>
             <div class="col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.criticalmanufacturing.com/"><img src="assets/images/sponsors/critical_manufactoring.png" alt=""></a>
+                <a target="_blank" href="http://www.criticalmanufacturing.com/"><img id="critical" src="assets/images/sponsors/critical_manufactoring.png" alt=""></a>
             </div>
         </div>
         <div class="row sponsor-type" id="friends">
@@ -625,8 +645,11 @@
             </div>
         </div>
         <div class="row institutional">
-            <div class="col-xs-offset-0 col-md-offset-5 col-xs-12 col-md-2">
+            <div class="col-xs-offset-0 col-md-offset-4 col-xs-12 col-md-2">
                 <a target="_blank" href="http://www.aefeup.pt/"><img id="aefeup" src="assets/images/sponsors/aefeup.png" alt=""></a>
+            </div>
+            <div class="col-xs-offset-0 col-xs-12 col-md-2">
+                <a target="_blank" href="http://www.aefeup.pt/"><img id="esop" src="assets/images/sponsors/esop.png" alt=""></a>
             </div>
         </div>
 
