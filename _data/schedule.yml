@@ -4,6 +4,12 @@ morning_1:
  #   startTime: '9:30'
  #   endTime: '10:00'
 
+  - id: 2
+    title: ''
+    speaker: Opening Session
+    startTime: '9:30'
+    endTime: '10:00'
+
   - id: 3
     title: '<strong>Startup a Bit</strong> How big of a human problem are you solving?'
     speaker: Virgílio Bento, Sword Health
@@ -38,13 +44,13 @@ morning_2:
   - id: 101
     speaker: 'Make a Bit #1'
     title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
-    startTime: '10:00'
-    endTime: '11:00'
+    startTime: '9:30'
+    endTime: '10:45'
   - id: 103
     speaker: 'Make a Bit #2'
     title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
     startTime: '11:15'
-    endTime: '12:15'
+    endTime: '12:30'
 
 afternoon:
 

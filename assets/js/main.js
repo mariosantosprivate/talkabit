@@ -21,12 +21,14 @@ smoothScroll.init();
 
 // Make a Bit #1 div's height is equal to 4 of the left-side-morning events
 $(window).on('resize', function(){
-    var firstEntry = $('#entry3').height();
-	var secondEntry = $('#entry4').height();
-	var thirdEntry = $('#entry5').height();
+    var firstEntry = $('#entry2').height();
+	var secondEntry = $('#entry3').height();
+	var thirdEntry = $('#entry4').height();
+	var fourthEntry = $('#entry5').height()/2;
 	var margins = 4;
 
-	$('#entry101').height(firstEntry + secondEntry + thirdEntry);
-	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry - 4 * margins)
+	$('#entry101').height(firstEntry + secondEntry + thirdEntry + fourthEntry);
+	$('#entry101').css('margin-bottom',fourthEntry*1.5);
+	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry + fourthEntry - 4 * margins)
 });
 $(window).trigger('resize');
