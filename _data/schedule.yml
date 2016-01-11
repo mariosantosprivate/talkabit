@@ -49,14 +49,16 @@ morning_2:
 afternoon:
 
   - id: 201
-    title: Registration
+    title: "<strong>Check in</strong> Only for the atendees who did not checked in before"
+    speaker: ''
     startTime: '13:30'
     endTime: '14:00'
 
   - id: 202
-    title: Opening
+    title: ''
     startTime: '14:00'
     endTime: '14:15'
+    speaker: Opening session
 
   - id: 203
     title: '<strong>Revolutionize a Bit</strong> TBA'
@@ -167,6 +169,7 @@ afternoon:
     endTime: '19:10'
 
   - id: 219
-    title: Closing
+    speaker: Closing session
+    title: ''
     startTime: '19:10'
     endTime: '19:30'
