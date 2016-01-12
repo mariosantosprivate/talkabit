@@ -91,10 +91,13 @@ afternoon:
     endTime: '15:10'
 
   - id: 207
-    title: '<strong>Revolutionize a Bit</strong> TBA'
+    title: '<strong>Revolutionize a Bit</strong> Helping build smart cities'
     speaker: Rui Bento, Uber
     startTime: '15:10'
     endTime: '15:40'
+    description: yes
+    speakerBio: "After living several years outside of Portugal, Rui joined Uber to bring an innovative mobility alternative to Portuguese cities. Rui studied Engineering at Instituto Super Técnico in Lisbon and did an MBA at Berkeley, in California. Rui was a consultant at McKinsey, and before joining Uber, he worked in Business Development at Apple in London."
+    organizationBio: "Uber is evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers. From our founding in 2009 to our launches in hundreds of cities today, Uber's rapidly expanding global presence continues to bring people and their cities closer."
 
   - id: 208
     title: Coffee Break
