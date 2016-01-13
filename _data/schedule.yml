@@ -150,10 +150,11 @@ afternoon:
     endTime: '17:40'
 
   - id: 215
-    title: "<strong>Revolutionize a Bit</strong> Airbnb's impact on tourism"
+    title: "<strong>Revolutionize a Bit</strong> Airbnb's impact in the travel industry"
     speaker: Ricardo Macieira, Airbnb
     startTime: '17:40'
     endTime: '18:10'
+    abstract: "Since its creation Airbnb and its community has changed the way in which we perceive travel. Connecting travelers and hosts, Airbnb made possible for people to not only to visit a destination but to get to live there like a local. We will take a look at some facts an figures of how Airbnb changed the way we travel."
     description: true
     speakerBio: "With a degree in Visual Production Design, Ricardo Macieira worked as a graphic designer, art director and he was one of the founders of Alok Design Brands, a company in the brand representation area. Since May 2014 he has been working as the Airbnb coordinator for the Portuguese market."
     organizationBio: "Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. "
