@@ -34,9 +34,8 @@ $(window).on('resize', function(){
 
 	// in mobile we want Make a Bit #1 height to be equal do Make a Bit#2
 	if($(window).width() < 768){
-		console.log("oi");
-		$('#entry101').height( $('#entry102').height() );
 		$('#entry101').css('margin-bottom',0);
+		$('#entry101').height( $('#entry102').height() );
 		$('#entry101 .schedule-entry-title').height( $('#entry102 .schedule-entry-title').height());
 	}
 });
