@@ -31,6 +31,14 @@ $(window).on('resize', function(){
 	$('#entry101').css('margin-bottom',fourthEntry*1.5);
 	// Setting heigh of the description of the Make a Bit #1 entry so that the vertical blue line has the proper height
 	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry + fourthEntry*2)
+
+	// in mobile we want Make a Bit #1 height to be equal do Make a Bit#2
+	if($(window).width() < 768){
+		console.log("oi");
+		$('#entry101').height( $('#entry102').height() );
+		$('#entry101').css('margin-bottom',0);
+		$('#entry101 .schedule-entry-title').height( $('#entry102 .schedule-entry-title').height());
+	}
 });
 $(window).trigger('resize');
 
