@@ -29,6 +29,24 @@ $(window).on('resize', function(){
 
 	$('#entry101').height(firstEntry + secondEntry + thirdEntry + fourthEntry);
 	$('#entry101').css('margin-bottom',fourthEntry*1.5);
+	// Setting heigh of the description of the Make a Bit #1 entry so that the vertical blue line has the proper height
 	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry + fourthEntry*2)
 });
 $(window).trigger('resize');
+
+// Switching between a plus and a minus sign when the user wants to collapse a schedule entry
+$( ".schedule li a" ).bind( "click", function() {
+  var i = $(this).find("i");
+  if(i.hasClass("ion-android-add-circle")){
+  	i.removeClass();
+  	i.addClass("ion-android-remove-circle");
+  }
+  else{
+  	i.removeClass();
+  	i.addClass("ion-android-add-circle");
+  }
+
+  // This should have been enough :(
+  //i.toggleClass("ion-plus-circle");
+  //i.toggleClass("ion-minus-circled");
+});
