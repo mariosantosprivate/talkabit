@@ -7,7 +7,7 @@ morning_1:
   - id: 2
     title: ''
     speaker: Opening Session
-    startTime: '9:30'
+    startTime: '09:30'
     endTime: '10:00'
 
   - id: 3
@@ -44,7 +44,7 @@ morning_2:
   - id: 101
     speaker: 'Make a Bit #1'
     title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
-    startTime: '9:30'
+    startTime: '09:30'
     endTime: '10:45'
   - id: 103
     speaker: 'Make a Bit #2'
