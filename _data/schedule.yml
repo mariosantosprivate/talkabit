@@ -84,6 +84,8 @@ afternoon:
     speaker: Hugo Choupina, BrainLab - INESC TEC
     startTime: '14:45'
     endTime: '15:05'
+    description: yes
+    speakerBio: "Hugo Choupina was born in 1991. Hugo holds a Bachelor degree in Bioengineering – Biomedical Engineering (Catholic University – 2012) and a Master degree in Biomedical Engineering (FEUP – 2014). Currently works as a Biomedical Engineer at the Epilepsy center of Klinikum GroBhardern LMU Hospital, Munchen, Germany and as a researcher at BRAIN@INESC TEC, Porto. Co-author of several scientific papers. Hugo is a BRAIN (Biomedical Research And INnovation) researcher since 2013. He is also a Kinect for Windows developer. Hugo has a strong passion for the Healthcare Industry. Focused in technology development, optimization and usage by Healthcare profissionals."
 
   - id: 206
     title: '<strong>Discover a Bit</strong> Smart Cities'
