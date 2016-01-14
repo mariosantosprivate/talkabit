@@ -29,6 +29,6 @@ $(window).on('resize', function(){
 
 	$('#entry101').height(firstEntry + secondEntry + thirdEntry + fourthEntry);
 	$('#entry101').css('margin-bottom',fourthEntry*1.5);
-	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry + fourthEntry - 4 * margins)
+	$('#entry101 .schedule-entry-title').height(firstEntry + secondEntry + thirdEntry + fourthEntry*2)
 });
 $(window).trigger('resize');
