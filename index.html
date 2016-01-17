@@ -95,9 +95,9 @@
         <div class="row">
             <div class="col-md-12">
                 <p>Talk A Bit is a student organised conference where technology
-                hot topics are discussed, in a motivating and friendly environment. This year's topic is
-                The Social Impact of Technology. Join us for free!</p>
-           </div>
+                    hot topics are discussed, in a motivating and friendly environment. This year's topic is
+                    The Social Impact of Technology. Join us for free!</p>
+            </div>
         </div>
 
         <div class="row">
@@ -126,7 +126,7 @@
                 </div>
                 <h2 class="text-center">Make A Bit</h2>
                 <p class="text-justify">A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff.
-                We will provide the tools so you just need to bring loads of motivation!</p>
+                    We will provide the tools so you just need to bring loads of motivation!</p>
             </div>
             <div class="col-md-4">
                 <div class="text-center">
@@ -136,7 +136,7 @@
                 </div>
                 <h2 class="text-center">Network A Bit</h2>
                 <p class="text-justify">Are you graduating soon and looking for job opportunities in the tech area?
-                Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!</p>
+                    Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!</p>
             </div>
         </div>
     </div>
@@ -183,16 +183,16 @@
                 <div class="col-xs-12">
                     <ol>
                         <div class="col-xs-12" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
-                            <li> 
+                            <li>
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" class="no-description">
-                                <div class="schedule-entry-time">
-                                    <time>09:00</time>
-                                    <time>09:30</time>
-                                </div>
-                                <div class="schedule-entry-title">
-                                    <h3></h3>
-                                    <div class="schedule-entry-speaker">Check in</div>
-                                </div>
+                                    <div class="schedule-entry-time">
+                                        <time>09:00</time>
+                                        <time>09:30</time>
+                                    </div>
+                                    <div class="schedule-entry-title">
+                                        <h3></h3>
+                                        <div class="schedule-entry-speaker">Check in</div>
+                                    </div>
                                 </a>
                             </li>
                         </div>
@@ -202,34 +202,34 @@
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_1 %}
                         <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
-                            <li> 
+                            <li>
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
-                                {% if scheduleEntry.description%} 
-                                href="#scheduleEntry{{scheduleEntry.id}}"
-                                {% else if %}
-                                class="no-description"
-                                {% endif %}
-                                >
-                                <div class="schedule-entry-time">
-                                    <time>{{scheduleEntry.startTime}}</time>
-                                    <time>{{scheduleEntry.endTime}}</time>
-                                </div>
-
-                                {% if scheduleEntry.picture %}
-                                <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
-                                {% endif %}
-
-                                <div class="schedule-entry-title">
-                                    <h3>
-                                        {{scheduleEntry.speaker}}
-                                    </h3>
-                                    <div class="schedule-entry-speaker">
-                                        {{scheduleEntry.title}}
+                                   {% if scheduleEntry.description%}
+                                   href="#scheduleEntry{{scheduleEntry.id}}"
+                                   {% else if %}
+                                   class="no-description"
+                                   {% endif %}
+                                        >
+                                    <div class="schedule-entry-time">
+                                        <time>{{scheduleEntry.startTime}}</time>
+                                        <time>{{scheduleEntry.endTime}}</time>
                                     </div>
-                                </div>
-                                {% if scheduleEntry.description %}
-                                <i class="ion-android-add-circle" style="line-height:0px; font-size:1em"></i>
-                                {% endif %}
+
+                                    {% if scheduleEntry.picture %}
+                                    <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                                    {% endif %}
+
+                                    <div class="schedule-entry-title">
+                                        <h3>
+                                            {{scheduleEntry.speaker}}
+                                        </h3>
+                                        <div class="schedule-entry-speaker">
+                                            {{scheduleEntry.title}}
+                                        </div>
+                                    </div>
+                                    {% if scheduleEntry.description %}
+                                    <i class="ion-android-add-circle" style="line-height:0px; font-size:1em"></i>
+                                    {% endif %}
                                 </a>
                             </li>
                             {% if scheduleEntry.description %}
@@ -261,31 +261,31 @@
                     <ol>
                         {% for scheduleEntry in site.data.schedule.morning_2 %}
                         <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
-                            <li> 
+                            <li>
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
-                                {% if scheduleEntry.description%} 
-                                href="#scheduleEntry{{scheduleEntry.id}}"
-                                {% else %}
-                                class="no-description"
-                                {% endif %}
-                                >
-                                <div class="schedule-entry-time">
-                                    <time>{{scheduleEntry.startTime}}</time>
-                                    <time>{{scheduleEntry.endTime}}</time>
-                                </div>
-
-                                {% if scheduleEntry.picture %}
-                                <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
-                                {% endif %}
-
-                                <div class="schedule-entry-title">
-                                    <h3>
-                                        {{scheduleEntry.speaker}}
-                                    </h3>
-                                    <div class="schedule-entry-speaker">
-                                        {{scheduleEntry.title}}
+                                   {% if scheduleEntry.description%}
+                                   href="#scheduleEntry{{scheduleEntry.id}}"
+                                   {% else %}
+                                   class="no-description"
+                                   {% endif %}
+                                        >
+                                    <div class="schedule-entry-time">
+                                        <time>{{scheduleEntry.startTime}}</time>
+                                        <time>{{scheduleEntry.endTime}}</time>
                                     </div>
-                                </div>
+
+                                    {% if scheduleEntry.picture %}
+                                    <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                                    {% endif %}
+
+                                    <div class="schedule-entry-title">
+                                        <h3>
+                                            {{scheduleEntry.speaker}}
+                                        </h3>
+                                        <div class="schedule-entry-speaker">
+                                            {{scheduleEntry.title}}
+                                        </div>
+                                    </div>
                                 </a>
                             </li>
                             {% if scheduleEntry.description %}
@@ -323,34 +323,34 @@
                     <ol>
                         {% for scheduleEntry in site.data.schedule.afternoon %}
                         <div class="col-xs-12" id="entry{{scheduleEntry.id}}" style="display: inline; float: left; padding-right: 0px;padding-left:0px;">
-                            <li> 
+                            <li>
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne"
-                                {% if scheduleEntry.description%} 
-                                href="#scheduleEntry{{scheduleEntry.id}}"
-                                {% else if %}
-                                class="no-description"
-                                {% endif %}
-                                >
-                                <div class="schedule-entry-time">
-                                    <time>{{scheduleEntry.startTime}}</time>
-                                    <time>{{scheduleEntry.endTime}}</time>
-                                </div>
-
-                                {% if scheduleEntry.picture %}
-                                <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
-                                {% endif %}
-
-                                <div class="schedule-entry-title">
-                                    <h3>
-                                        {{scheduleEntry.speaker}}
-                                    </h3>
-                                    <div class="schedule-entry-speaker">
-                                        {{scheduleEntry.title}}
+                                   {% if scheduleEntry.description%}
+                                   href="#scheduleEntry{{scheduleEntry.id}}"
+                                   {% else if %}
+                                   class="no-description"
+                                   {% endif %}
+                                        >
+                                    <div class="schedule-entry-time">
+                                        <time>{{scheduleEntry.startTime}}</time>
+                                        <time>{{scheduleEntry.endTime}}</time>
                                     </div>
-                                </div>
-                                {% if scheduleEntry.description %}
-                                <i class="ion-android-add-circle" style="line-height:0px; font-size:1em"></i>
-                                {% endif %}
+
+                                    {% if scheduleEntry.picture %}
+                                    <img class="schedule-entry-photo" src="{{scheduleEntry.picture}}"></i>
+                                    {% endif %}
+
+                                    <div class="schedule-entry-title">
+                                        <h3>
+                                            {{scheduleEntry.speaker}}
+                                        </h3>
+                                        <div class="schedule-entry-speaker">
+                                            {{scheduleEntry.title}}
+                                        </div>
+                                    </div>
+                                    {% if scheduleEntry.description %}
+                                    <i class="ion-android-add-circle" style="line-height:0px; font-size:1em"></i>
+                                    {% endif %}
                                 </a>
                             </li>
                             {% if scheduleEntry.description %}
@@ -478,12 +478,12 @@
                                 <h4>By car:</h4>
 
                                 <p>
-                                    <ul>
-                                        <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow the signs toward the Hospital de S. João.</li>
-                                        <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the Hospital de S. João.</li>
-                                        <li>Coming from A3: Take the direction to Hospital de S. João</li>
-                                        <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the direction to Hospital de S. João.</li>
-                                    </ul>
+                                <ul>
+                                    <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow the signs toward the Hospital de S. João.</li>
+                                    <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the Hospital de S. João.</li>
+                                    <li>Coming from A3: Take the direction to Hospital de S. João</li>
+                                    <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the direction to Hospital de S. João.</li>
+                                </ul>
                                 </p>
 
                                 <h4>By bus:</h4>
@@ -500,14 +500,14 @@
 
                                 <p>
                                     If coming by train, there are two main stations:
-                                    <ul>
-                                        <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change to D line.</li>
-                                        <li>São Bento – and then get in the subway (line D)</li>
-                                    </ul>
+                                <ul>
+                                    <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change to D line.</li>
+                                    <li>São Bento – and then get in the subway (line D)</li>
+                                </ul>
 
-                                    If coming by subway, take the one from line D (yellow) going to Hospital de São João and exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP.
+                                If coming by subway, take the one from line D (yellow) going to Hospital de São João and exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP.
 
-                                    For more information: <a href="http://www.metrodoporto.pt/">www.metrodoporto.pt</a>
+                                For more information: <a href="http://www.metrodoporto.pt/">www.metrodoporto.pt</a>
                                 </p>
 
                             </div>
@@ -527,25 +527,25 @@
                             <div class="panel-body">
                                 <p>There are several places within walking distance from FEUP:</p>
                                 <p>You can have lunch at the FEP cantine (3min) for a very cheap price
-                                although you need to buy the lunch ticket on the day before (Friday, 29th)
-                                or you won't be able to have lunch.</p>
+                                    although you need to buy the lunch ticket on the day before (Friday, 29th)
+                                    or you won't be able to have lunch.</p>
                                 <p>Shopping Campus S.João offers a variety of restaurants from fast
-                                food to some healtier options (7min).</p>
+                                    food to some healtier options (7min).</p>
                                 <p>Snack-bars:
-                                    <ul>
-                                        <li>Já lá foste (3min)</li>
-                                        <li>Lunatic Burger (7min)</li>
-                                        <li>Tappas Caffé Porto (10min)</li>
-                                        <li>100 Montaditos (10min)</li>
-                                        <li>Tropical Burger (12min)</li>
-                                    </ul>
+                                <ul>
+                                    <li>Já lá foste (3min)</li>
+                                    <li>Lunatic Burger (7min)</li>
+                                    <li>Tappas Caffé Porto (10min)</li>
+                                    <li>100 Montaditos (10min)</li>
+                                    <li>Tropical Burger (12min)</li>
+                                </ul>
                                 </p>
                                 <p>Restaurants:
-                                    <ul>
-                                        <li>Republica do Churrasco (7min)</li>
-                                        <li>Restaurante Leitão&Coisas (13min)</li>
-                                        <li>Marisqueira A Lagosta Da Mauritânia (14min)</li>
-                                    </ul>
+                                <ul>
+                                    <li>Republica do Churrasco (7min)</li>
+                                    <li>Restaurante Leitão&Coisas (13min)</li>
+                                    <li>Marisqueira A Lagosta Da Mauritânia (14min)</li>
+                                </ul>
                                 </p>
                             </div>
                         </div>
@@ -572,123 +572,211 @@
     </div>
 </section>
 <style>
-    .sponsors img{
-        text-align: center;
-    }
-    .sponsors .institutional{
-        margin-top: 15px;;
-    }
-    .sponsors img{
-        height: 125px;
-    }
+    /*  .sponsors img{
+          text-align: center;
+      }
+      .sponsors .institutional{
+          margin-top: 15px;;
+      }
+      .sponsors img{
+          height: 125px;
+      }
+      .sponsors div .row{
+          text-align: center;
+      }
+      .sponsors a{
+          line-height: 20px;;
+      }
+      #uber{
+          width: 100%;
+          height: auto;
+          max-width: 140px;;
+
+      }
+      #aefeup,#esop{
+          height: 58px;
+          width: 189px;
+          max-width: none !important;
+      }
+      #nuieee{
+          width: 165px;
+          margin-left: 55px;
+          height: 50px;
+      }
+      #aefeup{
+          margin-left: -115px;
+          height: 44px;
+          margin-top: 4px;
+      }
+      #esop{
+          margin-left: -11px;
+          margin-top: -3px;
+      }
+      .sponsor-type{
+          margin-top: 45px;
+          margin-bottom: 45px;
+      }
+      #silver{
+          margin-top: 0;
+      }
+      #delloite{
+          max-width: none;
+          height: 143px;
+          width: 250px;
+          margin-top: 0;
+
+      }
+      #uber{
+          width: 192px;
+          margin-left: 33px;
+          margin-top: 5px;
+      }
+      #farfetch{
+          height: 51px;
+          margin-left: 58px;
+      }
+      #topdox{
+          margin-top: -32px;
+          height: 100px;
+          margin-left: 128px;
+      }
+      #novabase{
+          height: 80px;
+          margin-left: 321px;
+          margin-top: -40px;
+      }
+      #sonae{
+          height: 157px;
+      }
+
+
+      @media (min-width: 1200px) {
+          #delloite,#critical{
+              margin-left: 4px;
+          }
+      }
+      @media (max-width: 1200px ) and (min-width: 990px) {
+          #delloite {
+              margin-left: -46px;
+          }
+          #accenture{
+              margin-left: -10px;
+              margin-top: -8px;
+          }
+          #aefeup{
+              margin-left: -60px;
+          }
+      }
+      @media (max-width:990px) {
+          #delloite,#aefeup,#critical,#esop,#nuieee,#farfetch,#uber,#topdox,#novabase{
+              margin-top: -3px;
+              margin-left: 0;
+          }
+          #esop,#nuieee{
+              margin-top: 20px;
+          }
+          #farfetch{
+              margin-top: 40px;
+          }
+          #topdox{
+              margin-top: 30px;;
+          }
+          #novabase{
+              margin-top: 30px;
+          }
+      }*/
     .sponsors div .row{
         text-align: center;
     }
-    .sponsors a{
-        line-height: 20px;;
+    #sponsors .sponsors{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
-    #uber{
-        width: 100%;
-        height: auto;
-        max-width: 140px;;
-
-    }
-    #aefeup,#esop{
-        height: 58px;
-        width: 189px;
-        max-width: none !important;
-    }
-    #nuieee{
-        width: 165px;
-        margin-left: 55px;
-        height: 50px;
-    }
-    #aefeup{
-        margin-left: -115px;
-        height: 44px;
-        margin-top: 4px;
-    }
-    #esop{
-        margin-left: -11px;
-        margin-top: -3px;
-    }
-    .sponsor-type{
-        margin-top: 45px;
-        margin-bottom: 45px;
-    }
-    #silver{
-        margin-top: 0;
-    }
-    #delloite{
-        max-width: none;
-        height: 143px;
-        width: 250px;
-        margin-top: 0;
-
-    }
-    #uber{
-        width: 192px;
-        margin-left: 33px;
-        margin-top: 5px;
-    }
-    #farfetch{
-        height: 51px;
-        margin-left: 58px;
-    }
-    #topdox{
-        margin-top: -32px;
-        height: 100px;
-        margin-left: 128px;
-    }
-    #novabase{
-        height: 80px;
-        margin-left: 321px;
-        margin-top: -40px;
-    }
-    #sonae{
-        height: 157px;
-    }
-
-
-    @media (min-width: 1200px) {
-        #delloite,#critical{
-            margin-left: 4px;
-        }
-    }
-    @media (max-width: 1200px ) and (min-width: 990px) {
-        #delloite {
-            margin-left: -46px;
-        }
-        #accenture{
-            margin-left: -10px;
-            margin-top: -8px;
-        }
-        #aefeup{
-            margin-left: -60px;
-        }
-    }
-    @media (max-width:990px) {
-        #delloite,#aefeup,#critical,#esop,#nuieee,#farfetch,#uber,#topdox,#novabase{
-            margin-top: -3px;
-            margin-left: 0;
-        }
-        #esop,#nuieee{
-            margin-top: 20px;
-        }
-        #farfetch{
-            margin-top: 40px;
-        }
-        #topdox{
-            margin-top: 30px;;
-        }
-        #novabase{
-            margin-top: 30px;
-        }
-    }
-
     #friends,#silver,.sponsor-type{
         color: #00B1E8;
     }
+    #delloite{
+        position: relative;
+        left: -20px;
+    }
+    #critical img{
+        height: 125px;
+    }
+    #critical{
+        left: 27px;
+        position: relative;
+    }
+    #accenture img{
+        height: 125px;
+    }
+    #accenture{
+        position: relative;
+        top: -10px;
+        left: 41px;
+    }
+
+    #aefeup img,#esop img{
+        height: 58px;
+        width: 189px;
+    }
+    #nuieee img{
+        width: 165px;
+        height: 50px;
+    }
+    #aefeup img{
+        height: 44px;
+    }
+    #delloite img{
+        height: 143px;
+        width: 250px;
+    }
+    #uber img{
+        width: 140px;
+    }
+    #uber{
+        position: relative;
+        left: -50px;
+        top: 4px;
+    }
+    #farfetch img{
+        height: 51px;
+    }
+    #farfetch{
+        position: relative;
+        top: 9px;
+    }
+    #topdox img{
+        height: 100px;
+    }
+    #topdox{
+        position: relative;
+        left: 40px;
+    }
+    #novabase img{
+        height: 80px;
+    }
+    #novabase{
+        left: 69px;
+        position: relative;
+    }
+    #sonae img{
+        height: 157px;
+    }
+    #esop{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    @media (max-width:1024px){
+        #sponsors a{
+            display: block;
+            width: 100%;
+            position: static;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
 
 </style>
 <section id="sponsors" class="section sponsors">
@@ -703,73 +791,39 @@
                 <h2>Gold Sponsors</h2>
             </div>
         </div>
-        <div class="row  sponsor-type">
-            <div class="col-xs-12 col-xs-offset-0 col-md-offset-4 col-md-4">
-                <a target="_blank" href="https://www.linkedin.com/company/bit-sonae"><img id="sonae" src="assets/images/sponsors/sonae.png" alt=""></a>
-            </div>
+        <div class="sponsors">
+            <a href="https://www.linkedin.com/company/bit-sonae" target="_blank" id="sonae" ><img  src="assets/images/sponsors/sonae.png" alt=""></a>
         </div>
         <div class="row sponsor-type" id="silver">
             <div class="col-xs-12">
                 <h3>Silver Sponsors</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-xs-offset-0 col-md-offset-2 col-md-3">
-                <a target="_blank" href="http://www.deloitte.com/"><img id="delloite" src="assets/images/sponsors/delloite.png" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.criticalmanufacturing.com/">
-                    <img id="critical" src="assets/images/sponsors/critical_manufactoring.png" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-1">
-                <a target="_blank" href="https://www.accenture.com">
-                    <img id="accenture" src="assets/images/sponsors/accenture.png" alt="">
-                </a>
-            </div>
+        <div class="sponsors">
+            <a href="http://www.deloitte.com"        target="_blank" id="delloite" ><img  src="assets/images/sponsors/delloite.png" alt=""></a>
+            <a href="http://www.criticalmanufacturing.com/" target="_blank" id="critical" ><img  src="assets/images/sponsors/critical_manufactoring.png" alt=""></a>
+            <a href="https://www.accenture.com"             target="_blank" id="accenture" ><img  src="assets/images/sponsors/accenture.png" alt=""></a>
         </div>
         <div class="row sponsor-type" id="friends">
             <div class="col-xs-12">
                 <h4>Friends</h4>
             </div>
         </div>
-        <div class="row ">
-            <div class="col-xs-12 col-xs-offset-0 col-md-offset-0 col-md-2">
-                <a target="_blank" href="https://www.uber.com/">
-                    <img id="uber" src="assets/images/sponsors/uber.png" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.farfetch.com/">
-                    <img id="farfetch" src="assets/images/sponsors/farfetch.png" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-1">
-                <a target="_blank" href="https://topdox.com">
-                    <img id="topdox" src="assets/images/sponsors/topdox.png" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-1">
-                <a target="_blank" href="http://www.novabase.pt/">
-                    <img id="novabase" src="assets/images/sponsors/novabase.svg" alt="">
-                </a>
-            </div>
+        <div class="sponsors">
+            <a href="https://www.uber.com/" target="_blank" id="uber" ><img  src="assets/images/sponsors/uber.png" alt=""></a>
+            <a href=http://www.farfetch.com" target="_blank" id="farfetch" ><img  src="assets/images/sponsors/farfetch.png" alt=""></a>
+            <a href="https://topdox.com" target="_blank" id="topdox" ><img  src="assets/images/sponsors/topdox.png" alt=""></a>
+            <a href="http://www.novabase.pt" target="_blank" id="novabase" ><img  src="assets/images/sponsors/novabase.svg" alt=""></a>
         </div>
         <div class="row sponsor-type">
             <div class="col-xs-12">
                 <h4>Institutional Partners</h4>
             </div>
         </div>
-        <div class="row institutional">
-            <div class="col-xs-offset-0 col-md-offset-3 col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.aefeup.pt/"><img id="aefeup" src="assets/images/sponsors/aefeup.png" alt=""></a>
-            </div>
-            <div class="col-xs-offset-0 col-xs-12 col-md-2">
-                <a target="_blank" href="http://www.esop.pt/"><img id="esop" src="assets/images/sponsors/esop.png" alt=""></a>
-            </div>
-            <div class="col-xs-offset-0 col-xs-12 col-md-2">
-                <a target="_blank" href="http://nuieee.fe.up.pt/"><img id="nuieee" src="assets/images/sponsors/nuieee.png" alt=""></a>
-            </div>
+        <div class="sponsors">
+            <a href="http://www.aefeup.pt/"  id="aefeup"><img src="assets/images/sponsors/aefeup.png" alt=""></a>
+            <a href="http://www.esop.pt/"  id="esop"><img src="assets/images/sponsors/esop.png" alt=""></a>
+            <a href="http://nuieee.fe.up.pt/"  id="nuieee"><img src="assets/images/sponsors/nuieee.png" alt=""></a>
         </div>
 
         <div class="row">
@@ -837,7 +891,7 @@
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
             zoom: 15,
-            
+
             scrollwheel: false,
 
             // The latitude and longitude to center the map (always required)
@@ -862,17 +916,17 @@
             title: 'TalkABit!',
             icon: 'assets/images/talkabit.png'
         });
-        
+
         new google.maps.event.addListener(map, 'click', function(event) {
             this.setOptions({
-            scrollwheel: true
-          });
+                scrollwheel: true
+            });
         });
 
         new google.maps.event.addListener(map, 'mouseout', function(event) {
             this.setOptions({
-            scrollwheel: false
-          });
+                scrollwheel: false
+            });
         });
     }
 </script>
