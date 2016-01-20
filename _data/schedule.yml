@@ -167,10 +167,14 @@ afternoon:
     endTime: '18:15'
 
   - id: 217
-    title: '<strong>Revolutionize A Bit</strong> TBA'
-    speaker: "Carlos Azevedo, IES & TBA"
+    title: '<strong>Revolutionize A Bit</strong> Portugal is not for the small ones: the role of social entrepreneurship in the construction of a sustainable country'
+    speaker: "Carlos Azevedo, IES - Social Business School & TBA"
     startTime: '18:15'
     endTime: '18:55'
+    description: true
+    abstract: "The impact economics is the space of intervention of social entrepreneurs. This space is not defined by the existing sectoral dichotomies or the artificial frontiers between economic sectors. A fertile ecosystem that manages social entrepreneurship initiatives demands a greater articulation and cooperation between sectors, identifying business opportunities from important and neglected problems in society, and the construction of sustainable solutions with impact. Education and technology play a major role in the construction of this new paradigm."
+    speakerBio: "Graduated in Economics by the Católica Porto Business School. Academic Director and member of the IES-SBS Statutory Board. ESLIDER-PORTUGAL's (national network for civil society leaders) founder and Chairman of the Board. Former researched at INSEAD. Former assistant researcher at Católica Porto Business School. College professor. PhD in Economics from Universidade do Minho."
+    organizationBio: "IES - Social Business School is a school of social businesses whose mission is to inspire and enable for a better world through education. Research-action and community building. IES-SBS is composed by four complementary units - School, Social Businesses Lab, Social Investment Lab and Social Innovation Lab."
 
   - id: 218
     title: '<strong>Laugh A Bit</strong>'
