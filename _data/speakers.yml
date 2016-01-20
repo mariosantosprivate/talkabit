@@ -65,7 +65,7 @@
 - firstName: Carlos
   lastName: Azevedo
   role: IES - Social Business School
-  quote: 
+  quote: "Portugal is not for the small ones: the role of social entrepreneurship in the construction of a sustainable country"
   picture: assets/images/speakers/ies.jpg
   alt: IES-SBS
   url: http://www.ies-sbs.org/
@@ -94,16 +94,10 @@
   alt: HealthyRoad
   url: http://www.healthyroad.pt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+- firstName: "Pedro T. & Rita V."
+  lastName:
+  role: bit | Sonae
+  quote: Network a Bit
+  picture: assets/images/speakers/sonae.jpg
+  alt: Sonae
+  url: https://www.linkedin.com/company/bit-sonae
