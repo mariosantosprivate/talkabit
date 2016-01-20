@@ -94,16 +94,10 @@
   alt: HealthyRoad
   url: http://www.healthyroad.pt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+- firstName: 
+  lastName: Pedro & Rita
+  role: bit | Sonae
+  quote: Network a Bit
+  picture: assets/images/speakers/sonae.jpg
+  alt: Sonae
+  url: https://www.linkedin.com/company/bit-sonae
