@@ -94,8 +94,8 @@
   alt: HealthyRoad
   url: http://www.healthyroad.pt
 
-- firstName: 
-  lastName: "Pedro T. & Rita V."
+- firstName: "Pedro T. & Rita V."
+  lastName:
   role: bit | Sonae
   quote: Network a Bit
   picture: assets/images/speakers/sonae.jpg
