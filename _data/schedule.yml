@@ -25,6 +25,9 @@ morning_1:
     speaker: Rui Ramos, eSolidar
     startTime: '10:20'
     endTime: '10:40'
+    description: true
+    speakerBio: "I became passionate about technology early in life. My academic career has always been linked to this world. I am a dynamic person and my career is also connected to technology companies. During university I was one of the founders of the Sétima - Tecnologias Informação e Comunicação (web and mobile development company) and also a co-founder and COO of the Esolidar project. One of my main objectives is to be involved in technological projects that can challenge me daily."
+    organizationBio: "We are a dynamic team that is passionate about developing technology and creating social impact. Our focus is to harness these tools to create an online community that benefits charities around the world. eSolidar is an innovative online platform for people to support the causes they really care about. It is our goal at eSolidar to be the all-encompassing way for charities to fundraise online in a timely and cost-effective way, creating an online community that can help charities from the bottom up."
 
   - id: 5
     title: '<strong>Startup a Bit</strong> Facial Biometry in cars'

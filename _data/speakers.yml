@@ -40,7 +40,7 @@
 
 - firstName: Guilherme
   lastName: Duarte
-  role: Por Falar Noutra Coisa
+  role: "Author of 'Por Falar Noutra Coisa'"
   quote:
   picture: assets/images/speakers/guilherme.jpg
   alt: Guilherme Duarte
@@ -64,7 +64,7 @@
 
 - firstName: Carlos
   lastName: Azevedo
-  role: IES - Social Business School
+  role: Academic Director at IES - Social Business School
   quote: "Portugal is not for the small ones: the role of social entrepreneurship in the construction of a sustainable country"
   picture: assets/images/speakers/ies.jpg
   alt: IES-SBS
