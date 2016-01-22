@@ -41,14 +41,14 @@ $(window).on('resize', function(){
 		var seventhEntry = $('#entry7').height();
 
 		// Make a Bit #1 div's height is equal to 4 of the left-side-morning events and 0.2 of the left side checkin
-		$('#entry102').height(mabCheckIn * 0.25 + secondEntry + thirdEntry + fourthEntry + fifthEntry);
+		$('#entry102').height(mabCheckIn * 0.25 + secondEntry + thirdEntry + fourthEntry + fifthEntry + sixthEntry);
 		// Setting heigh vertical blue line height
-		$('#entry102 .schedule-entry-title').height(firstEntry * 0.25 + secondEntry + thirdEntry + fourthEntry + fifthEntry - margins*6)
+		$('#entry102 .schedule-entry-title').height(firstEntry * 0.25 + secondEntry + thirdEntry + fourthEntry + fifthEntry + sixthEntry - margins*6)
 
 		// Make a Bit #2 div's height is equal to 2 of the left-side-morning events
-		$('#entry103').height(sixthEntry + seventhEntry);
+		$('#entry103').height(seventhEntry);
 		// Setting heigh vertical blue line height
-		$('#entry103 .schedule-entry-title').height(sixthEntry + seventhEntry  - margins*4)
+		$('#entry103 .schedule-entry-title').height(seventhEntry  - margins*2)
 
 	}	
 });

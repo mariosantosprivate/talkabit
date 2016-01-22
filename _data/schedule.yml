@@ -8,7 +8,7 @@ morning_1:
     title: ''
     speaker: Opening Session
     startTime: '09:30'
-    endTime: '10:00'
+    endTime: '09:45'
 
   - id: 3
     title: '<strong>Startup a Bit</strong> How big of a human problem are you solving?'
@@ -17,14 +17,14 @@ morning_1:
     description: true
     abstract: 'We see technology changing our lives everyday, from something so simple as a social network to self-driving cars and deep learning. The problem with the current trend in the technological world is that we are not applying our talent towards hard problems that have a real and significant impact in humanity. At SWORD Health, we believe in empowering our best engineers towards the solution of big problems. We started by reinventing how physical rehabilitation is performed globally. And we’re just starting.'
     organizationBio: 'At SWORD Health, we created the first digital therapy in the physical rehabilitation industry that automates the 1-to-1 patient-therapist interaction, plummeting healthcare costs, empowering patients and ensuring accountability. SWORD is considered by the European Commission as one of the most innovative companies in Europe.'
-    startTime: '10:00'
-    endTime: '10:20'
+    startTime: '09:45'
+    endTime: '10:00'
 
   - id: 4
     title: '<strong>Startup a Bit</strong> TBA'
     speaker: Rui Ramos, eSolidar
-    startTime: '10:20'
-    endTime: '10:40'
+    startTime: '10:05'
+    endTime: '10:20'
     description: true
     speakerBio: "I became passionate about technology early in life. My academic career has always been linked to this world. I am a dynamic person and my career is also connected to technology companies. During university I was one of the founders of the Sétima - Tecnologias Informação e Comunicação (web and mobile development company) and also a co-founder and COO of the Esolidar project. One of my main objectives is to be involved in technological projects that can challenge me daily."
     organizationBio: "We are a dynamic team that is passionate about developing technology and creating social impact. Our focus is to harness these tools to create an online community that benefits charities around the world. eSolidar is an innovative online platform for people to support the causes they really care about. It is our goal at eSolidar to be the all-encompassing way for charities to fundraise online in a timely and cost-effective way, creating an online community that can help charities from the bottom up."
@@ -32,21 +32,21 @@ morning_1:
   - id: 5
     title: '<strong>Startup a Bit</strong> Facial Biometry in cars'
     speaker: André Azevedo, HealthyRoad
-    startTime: '10:40'
-    endTime: '11:00'
+    startTime: '10:25'
+    endTime: '10:40'
     description: true
     organizationBio: "HealthyRoad aim to reduce the two main causes of road accidents, the distraction and the drowsiness at the wheel, both are considered responsible for more than 60% of road accidents in Europe. It is estimated that in Europe we lose more than 1.000.000.000€/year in human and material losses due to these problems. This fact is equally reflected in other countries such as United States of America, Brazil, Australia, Canada and New Zealand."
 
   - id: 6
     speaker: 'Pedro e Rita, BIT Sonae'
-    startTime: '11:00'
-    endTime: '11:15'
+    startTime: '10:45'
+    endTime: '11:00'
     title: "Core Activity, Scrum and Social Impact"
 
   - id: 7
     speaker: 'Network a Bit'
-    startTime: '11:15'
-    endTime: '13:00'
+    startTime: '11:00'
+    endTime: '12:45'
     title: "Are you graduating soon and looking for job opportunities in the tech area? Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!"
 
 morning_2:
