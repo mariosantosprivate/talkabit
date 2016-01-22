@@ -1,14 +1,14 @@
 morning_1:
- #- id: 1
- #   title: Registration
- #   startTime: '9:30'
- #   endTime: '10:00'
+  - id: 1
+    title: 'Check in'
+    startTime: '08:30'
+    endTime: '09:30'
 
   - id: 2
     title: ''
     speaker: Opening Session
     startTime: '09:30'
-    endTime: '10:00'
+    endTime: '09:45'
 
   - id: 3
     title: '<strong>Startup a Bit</strong> How big of a human problem are you solving?'
@@ -17,40 +17,54 @@ morning_1:
     description: true
     abstract: 'We see technology changing our lives everyday, from something so simple as a social network to self-driving cars and deep learning. The problem with the current trend in the technological world is that we are not applying our talent towards hard problems that have a real and significant impact in humanity. At SWORD Health, we believe in empowering our best engineers towards the solution of big problems. We started by reinventing how physical rehabilitation is performed globally. And we’re just starting.'
     organizationBio: 'At SWORD Health, we created the first digital therapy in the physical rehabilitation industry that automates the 1-to-1 patient-therapist interaction, plummeting healthcare costs, empowering patients and ensuring accountability. SWORD is considered by the European Commission as one of the most innovative companies in Europe.'
-    startTime: '10:00'
-    endTime: '10:20'
+    startTime: '09:45'
+    endTime: '10:00'
 
   - id: 4
     title: '<strong>Startup a Bit</strong> TBA'
     speaker: Rui Ramos, eSolidar
-    startTime: '10:20'
-    endTime: '10:40'
+    startTime: '10:05'
+    endTime: '10:20'
+    description: true
+    speakerBio: "I became passionate about technology early in life. My academic career has always been linked to this world. I am a dynamic person and my career is also connected to technology companies. During university I was one of the founders of the Sétima - Tecnologias Informação e Comunicação (web and mobile development company) and also a co-founder and COO of the Esolidar project. One of my main objectives is to be involved in technological projects that can challenge me daily."
+    organizationBio: "We are a dynamic team that is passionate about developing technology and creating social impact. Our focus is to harness these tools to create an online community that benefits charities around the world. eSolidar is an innovative online platform for people to support the causes they really care about. It is our goal at eSolidar to be the all-encompassing way for charities to fundraise online in a timely and cost-effective way, creating an online community that can help charities from the bottom up."
 
   - id: 5
     title: '<strong>Startup a Bit</strong> Facial Biometry in cars'
     speaker: André Azevedo, HealthyRoad
-    startTime: '10:40'
-    endTime: '11:00'
+    startTime: '10:25'
+    endTime: '10:40'
     description: true
     organizationBio: "HealthyRoad aim to reduce the two main causes of road accidents, the distraction and the drowsiness at the wheel, both are considered responsible for more than 60% of road accidents in Europe. It is estimated that in Europe we lose more than 1.000.000.000€/year in human and material losses due to these problems. This fact is equally reflected in other countries such as United States of America, Brazil, Australia, Canada and New Zealand."
 
   - id: 6
+    speaker: 'Pedro Torres & Rita Viana, bit | Sonae'
+    startTime: '10:45'
+    endTime: '11:00'
+    title: "<strong>Network a Bit</strong> Core Activity, Scrum and Social Impact"
+
+  - id: 7
     speaker: 'Network a Bit'
     startTime: '11:00'
-    endTime: '12:15'
+    endTime: '12:45'
     title: "Are you graduating soon and looking for job opportunities in the tech area? Or, is there a speaker with whom you'd like to talk with? Then, this session is for you!"
 
 morning_2:
   - id: 101
+    title: Check in
+    startTime: '08:30'
+    endTime: '09:00'
+
+  - id: 102
     speaker: 'Make a Bit #1'
     title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
-    startTime: '09:30'
-    endTime: '10:45'
-  - id: 102
+    startTime: '09:00'
+    endTime: '11:00'    
+  - id: 103
     speaker: 'Make a Bit #2'
     title: "A workshop (2 identical sessions) where you'll be able to use Raspberry Pi to build cool stuff. We will provide the tools so you just need to bring loads of motivation!"
-    startTime: '11:15'
-    endTime: '12:30'
+    startTime: '11:00'
+    endTime: '13:00'
 
 afternoon:
 
@@ -177,10 +191,12 @@ afternoon:
     organizationBio: "IES - Social Business School is a school of social businesses whose mission is to inspire and enable for a better world through education. Research-action and community building. IES-SBS is composed by four complementary units - School, Social Businesses Lab, Social Investment Lab and Social Innovation Lab."
 
   - id: 218
-    title: '<strong>Laugh A Bit</strong>'
+    title: "<strong>Laugh A Bit</strong> Re-Engineer yourself (it's not coaching sh*t)"
     description: true
+    abstract: "You decide what you want to be in life. You grow. You change your mind. Your personal and professional path is not going to be what you planned. How can new technologies and social media make an impact on what you will become."
     speaker: Guilherme Duarte
-    speakerBio: "Guilherme Duarte, 30 years old, Software Engineer, post-graduate in Joking by the Buraca's Inferior Institute. It was not long before he realized laughing was good, mostly to disarm burglars. He enjoys writing, photography, watching illegally downloaded shows and movies, and dances jazz to turn on the lights in public bathrooms. He's a Jit Jitsu white belt, which is as useful for personal defence as getting herpes. Because the consultant life was too well humored he decided to adventure himself in Stand Up Comedy to counter-balance. His grandma says he's funny, but since she has Alzheimer we shouldn't value her opinion too much."
+    speakerBio: "Guilherme Duarte, 31 years old, is a Software Engineer graduated at Instituto Superior Técnico. He worked as an IT consultant. He quit his job to travel around Europe to search for the best street artists. He got back and started to write on a blog and to do stand up comedy. He then had to pay the bills and started his role of Entrepreneur-in-Residence at Build Up Labs, a venture builder that creates several startups in parallel. He published a book with the best texts from his blog that he still writes when his boss isn't looking. He loves dogs. He's from Buraca so don't mess with him."
+    organizationBio: "Por Falar Noutra Coisa is a blog created in the beginning of 2014. It has reached almost 7 million views and has more than 145 thousand followers. Portugal is full of people with bad taste. He writes about his youth, about philosophical questions (sometimes), international politics, sex, french kisses, sex, stupid stuff, sex, and bad odor on public transportation. He tries to be funny but doesn't always succeed. <br> Build Up Labs (http://builduplabs.com/) is a venture builder that created several startups in parallel. A studio with a core team that delivers digital products and experiences. Social by design. AI by added value."
     startTime: '18:55'
     endTime: '19:10'
 
