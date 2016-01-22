@@ -38,10 +38,10 @@ morning_1:
     organizationBio: "HealthyRoad aim to reduce the two main causes of road accidents, the distraction and the drowsiness at the wheel, both are considered responsible for more than 60% of road accidents in Europe. It is estimated that in Europe we lose more than 1.000.000.000€/year in human and material losses due to these problems. This fact is equally reflected in other countries such as United States of America, Brazil, Australia, Canada and New Zealand."
 
   - id: 6
-    speaker: 'Pedro e Rita, BIT Sonae'
+    speaker: 'Pedro Torres & Rita Viana, bit | Sonae'
     startTime: '10:45'
     endTime: '11:00'
-    title: "Core Activity, Scrum and Social Impact"
+    title: "<strong>Network a Bit</strong> Core Activity, Scrum and Social Impact"
 
   - id: 7
     speaker: 'Network a Bit'
