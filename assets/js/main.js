@@ -46,9 +46,9 @@ $(window).on('resize', function(){
 		$('#entry102 .schedule-entry-title').height(firstEntry * 0.25 + secondEntry + thirdEntry + fourthEntry + fifthEntry + sixthEntry - margins*6)
 
 		// Make a Bit #2 div's height is equal to 2 of the left-side-morning events
-		$('#entry103').height(seventhEntry);
+		//$('#entry103').height(seventhEntry);
 		// Setting heigh vertical blue line height
-		$('#entry103 .schedule-entry-title').height(seventhEntry  - margins*2)
+		//$('#entry103 .schedule-entry-title').height(seventhEntry  - margins*2)
 
 	}	
 });
