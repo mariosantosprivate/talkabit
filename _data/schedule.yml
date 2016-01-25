@@ -81,9 +81,10 @@ afternoon:
     speaker: Opening session
 
   - id: 203
-    title: '<strong>Revolutionize a Bit</strong> TBA'
+    title: '<strong>Revolutionize a Bit</strong> Uniting the Internet through language'
     speaker: Paulo Dimas, Unbabel
     description: true
+    abstract: "The entrance of billions of new users on the Internet has lead to the emergence of multiple internets, divided by languages like Arabic, Russian or Chinese. It's a new babelization of the world that contradicts the prediction, made when 80% of the Web was in English, of a global lingua franca. Unbabel's mission is to unite these internets by empowering human translators with Artificial Intelligence, making communication in dozens of languages seamless."
     organizationBio: 'Unbabel empowers with Artificial Intelligence technology a worldwide community of 40K translators to dramatically increase the speed of delivering human quality translation. In a world where 80% of the Internet is in English but only 20% of the population has any English skills, Unbabel is building the technology to bridge this gap, extending the global reach of businesses worldwide.'
     startTime: '14:15'
     endTime: '14:40'
