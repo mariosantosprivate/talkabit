@@ -91,7 +91,7 @@ afternoon:
     endTime: '14:40'
 
   - id: 204
-    title: '<strong>Code a Bit</strong> TBA'
+    title: '<strong>Code a Bit</strong> Welomobile'
     startTime: '14:40'
     endTime: '14:45'
 
@@ -164,9 +164,11 @@ afternoon:
     endTime: '17:35'
 
   - id: 214
-    title: '<strong>Code a Bit</strong> TBA'
+    title: '<strong>Code a Bit</strong> City Feels'
     startTime: '17:35'
     endTime: '17:40'
+    abstract: "O City Feels é um Sistema de Orientação Multissensorial desenvolvido em parceria com a Câmara Municipal do Porto e o Places4All que permite obter informação em tempo real através da interacção entre o smartphone e o meio físico. O sistema recebe informação graças a um leitor de RFIDs integrado numa bengala desenvolvida pelo INESC. Deste modo é possivel fornecer informações precisas e rápidas sobre a localização de uma pessoa com mobilidade reduzida na cidade para uma mais fácil orientação."
+    description: true
 
   - id: 215
     title: "<strong>Revolutionize a Bit</strong> Airbnb's impact in the travel industry"
