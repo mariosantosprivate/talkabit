@@ -94,6 +94,8 @@ afternoon:
     title: '<strong>Code a Bit</strong> Welomobile'
     startTime: '14:40'
     endTime: '14:45'
+    description: yes
+    abstract: "Health care is deeply underdeveloped and disconnected in Nigeria. When people fall sick, finding the right health professionals or consultation for their specific needs in times of emergency is almost impossible. Welomobile’s aim is to create a centralized information system to provide accessible, affordable, and quality healthcare for underserved rural communities in Nigeria. Welomobile consists of an android application that gives its users detailed information about the closest ambulances, hospitals, pharmacies or blood banks in a quick and easy way."
 
   - id: 205
     title: '<strong>Research a Bit</strong> TBA'
