@@ -86,6 +86,7 @@ afternoon:
     description: true
     abstract: "The entrance of billions of new users on the Internet has lead to the emergence of multiple internets, divided by languages like Arabic, Russian or Chinese. It's a new babelization of the world that contradicts the prediction, made when 80% of the Web was in English, of a global lingua franca. Unbabel's mission is to unite these internets by empowering human translators with Artificial Intelligence, making communication in dozens of languages seamless."
     organizationBio: 'Unbabel empowers with Artificial Intelligence technology a worldwide community of 40K translators to dramatically increase the speed of delivering human quality translation. In a world where 80% of the Internet is in English but only 20% of the population has any English skills, Unbabel is building the technology to bridge this gap, extending the global reach of businesses worldwide.'
+    speakerBio: "Paulo Dimas is the Head of Product at Unbabel, empowering the fastest growing community of translators worldwide with AI technology to achieve Unbabel's vision of connecting the all world through language. Paulo has a passion for products, having developed his first commercial one when he was 14 years old. After joining INESC at 16 to do research on interactive systems, Paulo has founded 3 startups, the last one Wizi, a VC funded geo-social startup that partnered with carriers in 3 continents to take geo-location and social discovery to all mobile subscribers. Paulo has created patents in geo-location technology and developed award-winning projects for major companies in the Media and Telecom industries."
     startTime: '14:15'
     endTime: '14:40'
 
@@ -115,6 +116,7 @@ afternoon:
     description: yes
     speakerBio: "After living several years outside of Portugal, Rui joined Uber to bring an innovative mobility alternative to Portuguese cities. Rui studied Engineering at Instituto Super Técnico in Lisbon and did an MBA at Berkeley, in California. Rui was a consultant at McKinsey, and before joining Uber, he worked in Business Development at Apple in London."
     organizationBio: "Uber is evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers. From our founding in 2009 to our launches in hundreds of cities today, Uber's rapidly expanding global presence continues to bring people and their cities closer."
+    abstract: "As the major cities of the world continue to grow, it is essential to implement innovative solutions to deal with traffic congestion, air pollution and high energy costs. Uber, at the intersection of technology and mobility, has a privileged position to help the world's main cities."
 
   - id: 208
     title: Coffee Break
