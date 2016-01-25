@@ -114,7 +114,7 @@ afternoon:
     title: '<strong>Revolutionize a Bit</strong> Helping build smart cities'
     speaker: Rui Bento, Uber
     startTime: '15:10'
-    endTime: '15:40'
+    endTime: '15:45'
     description: yes
     speakerBio: "After living several years outside of Portugal, Rui joined Uber to bring an innovative mobility alternative to Portuguese cities. Rui studied Engineering at Instituto Super Técnico in Lisbon and did an MBA at Berkeley, in California. Rui was a consultant at McKinsey, and before joining Uber, he worked in Business Development at Apple in London."
     organizationBio: "Uber is evolving the way the world moves. By seamlessly connecting riders to drivers through our apps, we make cities more accessible, opening up more possibilities for riders and more business for drivers. From our founding in 2009 to our launches in hundreds of cities today, Uber's rapidly expanding global presence continues to bring people and their cities closer."
@@ -122,13 +122,13 @@ afternoon:
 
   - id: 208
     title: Coffee Break & meet the companies
-    startTime: '15:40'
-    endTime: '15:55'
+    startTime: '15:45'
+    endTime: '16:05'
 
   - id: 209
     title: '<strong>Learn a Bit</strong> Feel Safe, Feel Yazaki'
     speaker: Nelson Carvalho, Yazaki
-    startTime: '16:00'
+    startTime: '16:05'
     endTime: '16:20'
     description: true
     abstract: "Yazaki is not just a OEM supplier, is a culture, a meaning of quality and safety for their customers. Nowadays more than 40 car makers rely on Yazaki products to achieve the highest demands of the automotive industry."
@@ -158,25 +158,25 @@ afternoon:
     speakerBio: 'Valter Vasić received his M.Sc. in Computer Science in 2010 from the Faculty of Electrical Engineering and Computing, University of Zagreb. In 2010 he started pursuing his Ph.D. degree in Computer science on the same University. He is currently employed as a research associate at the same faculty within the E-IMUNES project funded by Ericsson Nikola Tesla. His research interests include security, network simulation and virtualization.'
     organizationBio: 'University of Zagreb, Faculty of Electrical Engineering and Computing'
     startTime: '16:45'
-    endTime: '17:15'
+    endTime: '17:25'
 
   - id: 213
     title: Coffee Break & meet the companies
-    startTime: '17:15'
-    endTime: '17:35'
+    startTime: '17:25'
+    endTime: '17:55'
 
   - id: 214
     title: '<strong>Code a Bit</strong> City Feels'
-    startTime: '17:35'
-    endTime: '17:40'
+    startTime: '17:55'
+    endTime: '18:00'
     abstract: "O City Feels é um Sistema de Orientação Multissensorial desenvolvido em parceria com a Câmara Municipal do Porto e o Places4All que permite obter informação em tempo real através da interacção entre o smartphone e o meio físico. O sistema recebe informação graças a um leitor de RFIDs integrado numa bengala desenvolvida pelo INESC. Deste modo é possivel fornecer informações precisas e rápidas sobre a localização de uma pessoa com mobilidade reduzida na cidade para uma mais fácil orientação."
     description: true
 
   - id: 215
     title: "<strong>Revolutionize a Bit</strong> Airbnb's impact in the travel industry"
     speaker: Ricardo Macieira, Airbnb
-    startTime: '17:40'
-    endTime: '18:10'
+    startTime: '18:00'
+    endTime: '18:30'
     abstract: "Since its creation Airbnb and its community has changed the way in which we perceive travel. Connecting travelers and hosts, Airbnb made possible for people to not only to visit a destination but to get to live there like a local. We will take a look at some facts an figures of how Airbnb changed the way we travel."
     description: true
     speakerBio: "With a degree in Visual Production Design, Ricardo Macieira worked as a graphic designer, art director and he was one of the founders of Alok Design Brands, a company in the brand representation area. Since May 2014 he has been working as the Airbnb coordinator for the Portuguese market."
@@ -184,14 +184,14 @@ afternoon:
 
   - id: 216
     title: '<strong>Discover a Bit</strong> Smart Cars'
-    startTime: '18:10'
-    endTime: '18:15'
+    startTime: '18:30'
+    endTime: '18:35'
 
   - id: 217
     title: '<strong>Revolutionize A Bit</strong> Portugal is not for the small ones: the role of social entrepreneurship in the construction of a sustainable country'
-    speaker: "Carlos Azevedo, IES - Social Business School & TBA"
-    startTime: '18:15'
-    endTime: '18:55'
+    speaker: "Carlos Azevedo, IES - Social Business School"
+    startTime: '18:35'
+    endTime: '19:00'
     description: true
     abstract: "The impact economics is the space of intervention of social entrepreneurs. This space is not defined by the existing sectoral dichotomies or the artificial frontiers between economic sectors. A fertile ecosystem that manages social entrepreneurship initiatives demands a greater articulation and cooperation between sectors, identifying business opportunities from important and neglected problems in society, and the construction of sustainable solutions with impact. Education and technology play a major role in the construction of this new paradigm."
     speakerBio: "Graduated in Economics by the Católica Porto Business School. Academic Director and member of the IES-SBS Statutory Board. ESLIDER-PORTUGAL's (national network for civil society leaders) founder and Chairman of the Board. Former researched at INSEAD. Former assistant researcher at Católica Porto Business School. College professor. PhD in Economics from Universidade do Minho."
@@ -204,11 +204,11 @@ afternoon:
     speaker: Guilherme Duarte
     speakerBio: "Guilherme Duarte, 31 years old, is a Software Engineer graduated at Instituto Superior Técnico. He worked as an IT consultant. He quit his job to travel around Europe to search for the best street artists. He got back and started to write on a blog and to do stand up comedy. He then had to pay the bills and started his role of Entrepreneur-in-Residence at Build Up Labs, a venture builder that creates several startups in parallel. He published a book with the best texts from his blog that he still writes when his boss isn't looking. He loves dogs. He's from Buraca so don't mess with him."
     organizationBio: "Por Falar Noutra Coisa is a blog created in the beginning of 2014. It has reached almost 7 million views and has more than 145 thousand followers. Portugal is full of people with bad taste. He writes about his youth, about philosophical questions (sometimes), international politics, sex, french kisses, sex, stupid stuff, sex, and bad odor on public transportation. He tries to be funny but doesn't always succeed. <br> Build Up Labs (http://builduplabs.com/) is a venture builder that created several startups in parallel. A studio with a core team that delivers digital products and experiences. Social by design. AI by added value."
-    startTime: '18:55'
-    endTime: '19:10'
+    startTime: '19:00'
+    endTime: '19:15'
 
   - id: 219
     speaker: Closing session
     title: ''
-    startTime: '19:10'
+    startTime: '19:15'
     endTime: '19:30'
