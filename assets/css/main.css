@@ -321,7 +321,7 @@ a.svg:after {
 
 .site-branding {
   float: left;
-  margin-top: 0;
+  margin-top: 10px;
   margin-left: 10px;
 }
 .site-branding .logo {
