@@ -99,12 +99,14 @@ afternoon:
     abstract: "Health care is deeply underdeveloped and disconnected in Nigeria. When people fall sick, finding the right health professionals or consultation for their specific needs in times of emergency is almost impossible. Welomobile’s aim is to create a centralized information system to provide accessible, affordable, and quality healthcare for underserved rural communities in Nigeria. Welomobile consists of an android application that gives its users detailed information about the closest ambulances, hospitals, pharmacies or blood banks in a quick and easy way."
 
   - id: 205
-    title: '<strong>Research a Bit</strong> TBA'
+    title: '<strong>Research a Bit</strong> What the hell is BRAIN?'
     speaker: Hugo Choupina, BrainLab - INESC TEC
     startTime: '14:45'
     endTime: '15:05'
     description: yes
     speakerBio: "Hugo Choupina was born in 1991. Hugo holds a Bachelor degree in Bioengineering – Biomedical Engineering (Catholic University – 2012) and a Master degree in Biomedical Engineering (FEUP – 2014). Currently works as a Biomedical Engineer at the Epilepsy center of Klinikum GroBhardern LMU Hospital, Munchen, Germany and as a researcher at BRAIN@INESC TEC, Porto. Co-author of several scientific papers. Hugo is a BRAIN (Biomedical Research And INnovation) researcher since 2013. He is also a Kinect for Windows developer. Hugo has a strong passion for the Healthcare Industry. Focused in technology development, optimization and usage by Healthcare profissionals."
+    organizationBio: "The Institute for Systems and Computer Engineering, Technology and Science – INESC TEC is an Associate Laboratory with 30 years of experience in R&D and technology transfer. Present in 6 sites in the cities of Porto, Braga and Vila Real, INESC TEC incorporates 12 R&D Centres and one Associate Unit with complementary competences, always looking to the international market."
+    abstract: "BRAIN (Biomedical Research And INnovation) is a transversal, pluridisciplinary R&D group that has its main focus on two areas: NeuroEngineering and Wearable & Mobile Technologies for human sensing, crossing all the areas of C-BER and interacting with other INESC-TEC centres."
 
   - id: 206
     title: '<strong>Discover a Bit</strong> Smart Cities'
