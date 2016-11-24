@@ -1,0 +1,34 @@
+#small-description {
+  font-size: 20pt;
+  height: 50px;
+}
+
+#feup-logo {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  height: 40px;
+  width: 95,677px;
+}
+
+#banner {
+  height: 80px;
+}
+
+#call-sponsors {
+  font-size: 20pt;
+  padding: 0px 24pt;
+  height: 36px;
+}
+
+#arrow-button {
+  height: 50px;
+}
+
+#footer {
+  height: 40px;
+}
+
+.footer-icon {
+  height: 20px;
+}
