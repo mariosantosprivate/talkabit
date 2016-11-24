@@ -32,3 +32,14 @@
 .footer-icon {
   height: 20px;
 }
+
+/* This is for the animation */
+#corner {
+  bottom: 4px;
+  left: 45px;
+  height: 35px;
+}
+
+#ring {
+  height: 170px;
+}

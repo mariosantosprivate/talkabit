@@ -19,6 +19,15 @@ body {
   text-align: center;
 }
 
+#banner-text {
+  height: 100%;
+}
+
+#banner-logo {
+  height: 100%;
+  display: inline;
+}
+
 #call-sponsors {
   display: flex;
   justify-content: center;
@@ -42,6 +51,10 @@ body {
   cursor: pointer;
 }
 
+#feup-logo {
+  padding: 10px;
+}
+
 #footer {
   display: flex;
   justify-content: center;
@@ -52,4 +65,15 @@ body {
 
 .footer-icon {
   cursor: pointer;
+}
+
+#corner {
+  position:relative;
+}
+
+#ring {
+  transition: transform 3s;
+  position:relative;
+  top: 0px;
+  left: 0px;
 }
