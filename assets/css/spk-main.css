@@ -11,18 +11,35 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
+}
+
+#tab-ico{
+    height: 30px;
+    float: left;
+}
+#tab-ring{
+    height: 30px;
 }
 
 #spk-header a {
   color: white; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+  margin-left: 10px;
+}
+
+#sp-h-c-hyperlinks{
+    margin-left: auto;
 }
 
 #spk-header a:hover {
   /*color: white; /* blue colors for links too */
   text-decoration: underline; /* no underline */
+}
+
+#spk-h-content{
+    display: flex;
 }
 
 #spk-speakers{
