@@ -1,0 +1,74 @@
+body{
+    background-image: none;
+    background-color: #002f41;
+}
+
+
+#spk-header{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#spk-header a {
+  color: white; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+#spk-header a:hover {
+  /*color: white; /* blue colors for links too */
+  text-decoration: underline; /* no underline */
+}
+
+#spk-speakers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    width: 290px;
+}
+
+
+.spk-speaker{
+    width: 290px;
+    text-align: center;
+    /*float: left;*/
+    /*flex-grow: 1;*/
+}
+
+.speaker_name{
+    height: 70px;
+    font-size: 20pt;
+    color: white;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.spk-speaker img{
+    border-radius: 50%;
+    height: 178px;
+    border: 5px solid #1A99D6;
+    float: letf;
+}
+
+.talk-en{
+    color: white;
+    font-size: 14pt;
+    margin-top: 25px;
+}
+
+.talk-pt{
+    color: #1A99D6;
+    font-size: 14pt;
+}
+
+.speaker-about{
+    color: white;
+    margin-top: 15px;
+}

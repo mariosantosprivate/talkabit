@@ -43,3 +43,16 @@
 #ring {
   height: 80px;
 }
+
+/*
+ *
+ *
+ Speakers page*/
+ #spk-h-content {
+  width: 290px;
+  height: 30px;
+}
+
+#spk-speakers{
+  width: 290px;
+}
