@@ -64,3 +64,11 @@ div.spk-speaker:nth-child(3n+2) {
 div.spk-speaker:nth-child(3n+3) {
     margin-left: 25px;
 }
+
+div.spk-footer{
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+}
