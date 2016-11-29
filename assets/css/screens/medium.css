@@ -57,6 +57,6 @@
   width: 605px;
 }
 
-.spk-speaker::nth-child(2n) {
+div.spk-speaker:nth-child(2n+2) {
     margin-left: 25px;
 }
