@@ -3,13 +3,6 @@
   height: 50px;
 }
 
-#feup-logo {
-  position: relative;
-  bottom: 0px;
-  right: 0px;
-  height: 40px;
-  width: 95.677px;
-}
 
 #banner {
   height: 80px;
@@ -23,6 +16,7 @@
 
 #arrow-button {
   height: 50px;
+    width: 50px;
 }
 
 #footer {
@@ -59,4 +53,22 @@
 
 #tab-about .small-description {
   width: 290px;
+}
+
+.EDGE-2684740 {
+    -ms-transform: scale(0.35, 0.35);
+    /* IE 9 */
+    
+    -webkit-transform: scale(0.35, 0.35);
+    /* Chrome, Safari, Opera */
+    
+    transform: scale(0.35, 0.35);
+}
+
+#second-col {
+    padding-top: 20px;
+}
+
+#feup-logo {
+    width: 25%;
 }

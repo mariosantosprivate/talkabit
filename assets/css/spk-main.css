@@ -59,7 +59,7 @@
 }
 
 .spk-speaker_name{
-    height: 70px;
+    padding-bottom: 10px;
     font-size: 20pt;
     color: white;
     display: flex;

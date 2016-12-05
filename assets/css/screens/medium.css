@@ -3,14 +3,6 @@
   height: 20px;
 }
 
-#feup-logo {
-  position: relative;
-  bottom: 0px;
-  right: 0px;
-  height: 50px;
-  width: 119.597px;
-}
-
 #banner {
   height: 110px;
 }
@@ -18,11 +10,12 @@
 #call-sponsors {
   font-size: 30pt;
   padding: 0px 36pt;
-  height: 36px;
+  height: 56px;
 }
 
 #arrow-button {
   height: 50px;
+    width: 50px;
 }
 
 #footer {
@@ -72,4 +65,22 @@ div.spk-footer{
   width: 100%;
   left: 0;
   bottom: 0px;
+}
+
+.EDGE-2684740 {
+    -ms-transform: scale(0.6, 0.6);
+    /* IE 9 */
+    
+    -webkit-transform: scale(0.6, 0.6);
+    /* Chrome, Safari, Opera */
+    
+    transform: scale(0.6, 0.6);
+}
+
+#second-col {
+    padding-top: 20px;
+}
+
+#feup-logo {
+    width: 20%;
 }

@@ -3,14 +3,6 @@
   height: 30px;
 }
 
-#feup-logo {
-  position: relative;
-  bottom: 0px;
-  right: 0px;
-  height: 80px;
-  width: 191.355px;
-}
-
 #banner {
   height: 170px;
 }
@@ -22,7 +14,8 @@
 }
 
 #arrow-button {
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 #footer {
@@ -83,4 +76,14 @@ div.spk-footer{
   width: 100%;
   left: 0;
   bottom: 0px;
+}
+
+.EDGE-2684740 {
+    -ms-transform: scale(0.75, 0.75);
+    /* IE 9 */
+    
+    -webkit-transform: scale(0.75, 0.75);
+    /* Chrome, Safari, Opera */
+    
+    transform: scale(0.85, 0.85);
 }
