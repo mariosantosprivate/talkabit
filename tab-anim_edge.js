@@ -21,7 +21,7 @@
         g7 = 'TAB-ANIM-1.svg',
         g8 = 'TAB-ANIM-4.svg',
         g5 = 'TAB-ANIM-3.2.svg';
-    var im = '../images/rotating-logo/',
+    var im = 'assets/images/spin/',
         aud = 'media/',
         vid = 'media/',
         js = 'js/',
