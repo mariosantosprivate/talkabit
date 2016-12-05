@@ -33,6 +33,11 @@
   height: 20px;
 }
 
+#tab-about .small-description {
+  width: 605px;
+}
+
+
 /* This is for the animation */
 #corner {
   bottom: 2px;
