@@ -1,7 +1,7 @@
-body{
+/*body{
     background-image: none;
     background-color: #002f41;
-}
+}*/
 
 
 #spk-header{
@@ -15,11 +15,11 @@ body{
     align-items: center;
 }
 
-#tab-ico{
+#spk-tab-ico{
     height: 30px;
     float: left;
 }
-#tab-ring{
+#spk-tab-ring{
     height: 30px;
 }
 
@@ -47,6 +47,7 @@ body{
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
+    margin-top: 10px;
 }
 
 
@@ -57,7 +58,7 @@ body{
     /*flex-grow: 1;*/
 }
 
-.speaker_name{
+.spk-speaker_name{
     height: 70px;
     font-size: 20pt;
     color: white;
@@ -73,18 +74,18 @@ body{
     float: letf;
 }
 
-.talk-en{
+.spk-talk-en{
     color: white;
     font-size: 14pt;
     margin-top: 25px;
 }
 
-.talk-pt{
+.spk-talk-pt{
     color: #1A99D6;
     font-size: 14pt;
 }
 
-.speaker-about{
+.spk-speaker-about{
     color: white;
     margin-top: 15px;
 }

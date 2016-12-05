@@ -4,11 +4,11 @@
 }
 
 #feup-logo {
-  position: absolute;
-  bottom: 40px;
+  position: relative;
+  bottom: 0px;
   right: 0px;
   height: 40px;
-  width: 95,677px;
+  width: 95.677px;
 }
 
 #banner {
