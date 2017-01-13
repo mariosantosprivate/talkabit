@@ -1,8 +1,8 @@
 
-var callForSponsors = document.getElementById('call-sponsors');
-callForSponsors.addEventListener('click', function() {
-  window.open('assets/sponsorship.pdf');
-});
+//var callForSponsors = document.getElementById('call-sponsors');
+//callForSponsors.addEventListener('click', function() {
+//  window.open('assets/sponsorship.pdf');
+//});
 /*var ring = document.getElementById('ring');
 
 var toggle = false;
