@@ -439,6 +439,8 @@ img#arrow-button:hover {
 .schedule-entry-speaker {
   color: #999;
   font-size: 0.83333em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
 }
 
 .schedule-entry-description-title {
