@@ -59,7 +59,7 @@
 }
 
 .spk-speaker_name{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 20pt;
     color: white;
     display: flex;
@@ -132,4 +132,15 @@
 
 .speaker {
     padding-bottom: 30px;
+}
+
+.spk-speaker_company {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    font-size: 10pt;
+    color: #009AD7;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+
 }
