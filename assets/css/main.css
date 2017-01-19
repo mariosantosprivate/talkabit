@@ -276,7 +276,8 @@ section .text {
     text-justify: inter-word;
 }
 
-#speakers, #faq {
+#speakers,
+#faq {
     background-color: #012D3F;
 }
 
@@ -313,20 +314,22 @@ section .text {
 }
 
 .img-responsive {
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 .row-centered {
-    text-align:center;
+    text-align: center;
 }
 
 .col-centered {
-    display:inline-block;
-    float:none;
+    display: inline-block;
+    float: none;
     /* reset the text-align */
-    text-align:left;
+    
+    text-align: left;
     /* inline-block space fix */
-    margin-right:-4px;
+    
+    margin-right: -4px;
 }
 
 p {
@@ -356,8 +359,9 @@ h3 {
     text-align: center;
     font-size: 16pt;
 }
-#topics-introduction .element{
-  font-weight: bold;
+
+#topics-introduction .element {
+    font-weight: bold;
 }
 
 img#arrow-button {
@@ -366,6 +370,7 @@ img#arrow-button {
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
 }
+
 img#arrow-button:hover {
     opacity: 1.0;
     transition: opacity .55s ease-in-out;
@@ -378,106 +383,116 @@ img#arrow-button:hover {
 }
 
 .schedule h3 {
-  font-weight: 500;
-  margin: 0;
-  font-size: 1.07em
+    font-weight: 500;
+    margin: 0;
+    font-size: 1.07em
 }
 
 .schedule ol {
-  list-style: none;
-  margin: 0 -0.48225em 1.44em;
-  padding: 0;
+    list-style: none;
+    margin: 0 -0.48225em 1.44em;
+    padding: 0;
 }
 
 .schedule li a {
-  text-decoration: none;
-  display: flex;
-  padding: 0.5em;
-  background: #fff;
-  border-top: 1px solid #ccc;
+    text-decoration: none;
+    display: flex;
+    padding: 0.5em;
+    background: #fff;
+    border-top: 1px solid #ccc;
 }
-
 /* Avoid pointer cursor for entries with no description */
-.schedule li a.no-description{
-  cursor: default;
-}
 
+.schedule li a.no-description {
+    cursor: default;
+}
 
 .schedule li a,
 .schedule li a:visited,
 .schedule li a:hover,
-.schedule li a:active{
-  color: #000;
+.schedule li a:active {
+    color: #000;
 }
 
 .schedule-entry-time {
-  padding: 0 0.83333em;
-  text-align: center;
+    padding: 0 0.83333em;
+    text-align: center;
 }
 
 .schedule-entry-time time {
-  font-size: 0.83333em;
-  display: block;
+    font-size: 0.83333em;
+    display: block;
 }
+
 .schedule-entry-time time:nth-of-type(2) {
-  color: #999;
+    color: #999;
 }
 
 .schedule-entry-title {
-  overflow: hidden;
-  border-left: 2px solid #1399D6;
-  padding-left: 0.69444em;
-  width: 100%;
+    overflow: hidden;
+    border-left: 2px solid #1399D6;
+    padding-left: 0.69444em;
+    width: 100%;
 }
 
 .schedule h3 {
-  margin: 0 0 0.3349em;
-  font-weight: 400;
-  font-size: 1em;
+    margin: 0 0 0.3349em;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 .schedule-entry-speaker {
-  color: #999;
-  font-size: 0.83333em;
+    color: #999;
+    font-size: 0.83333em;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
 }
 
 .schedule-entry-description-title {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .schedule-entry-photo {
-/*  display: block;*/
-  width: 30px;
-  height: 30px;
+    /*  display: block;*/
+    
+    width: 30px;
+    height: 30px;
 }
-
 /* 
  * section: FAQ
  */
+
 .faq .panel-heading {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 .faq .faq-icon {
-  -webkit-transition: 0.5s linear ease-out;
-          transition: 0.5s linear ease-out;
-  position: absolute;
-  left: 15px;
+    -webkit-transition: 0.5s linear ease-out;
+    transition: 0.5s linear ease-out;
+    position: absolute;
+    left: 15px;
 }
+
 .faq .panel-group .panel + .panel {
-  margin-top: 15px;
+    margin-top: 15px;
 }
+
 .faq .panel-default > .panel-heading {
-  color: #FFF;
-  background-color: #1399D6;
-  border-color: #000;
-  border-radius: 0;
-  padding: 0;
+    color: #FFF;
+    background-color: #1399D6;
+    border-color: #000;
+    border-radius: 0;
+    padding: 0;
 }
+
 .faq .panel-default > .panel-heading a {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  padding: 15px 15px 15px 35px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px 15px 35px;
+}
+
+.reg-bttn {
+    padding: 0,0,0,0;
+    margin: 0,0,0,0;
 }
