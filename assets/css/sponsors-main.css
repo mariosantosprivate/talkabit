@@ -1,0 +1,60 @@
+.sponsors div .row {
+    text-align: center;
+}
+
+#sponsors .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#sponsors .sponsor-type h4 {
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    background-color: #009AD7;
+    margin: 50px auto;
+    width: 280px;
+    font-family: 'DecimaLight';
+    font-weight: bold;
+}
+
+#sponsors .sponsors a img {
+    margin: 20px;
+}
+.gold a img {
+    height: 200px;
+}
+
+.silver a img {
+    height: 125px;
+}
+
+.bronze a img,
+.friends a img {
+    height: 75px;
+}
+
+#critical img {
+    height: 150px;
+}
+
+#farfetch img {
+    height: 60px;
+}
+
+#itgrow img,
+#feedzai img {
+    height: 50px;
+}
+
+
+#uber {
+    margin-top: 10px;
+}
+
+#uber img {
+    height: 20px;
+}

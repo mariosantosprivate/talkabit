@@ -117,7 +117,7 @@ body {
     z-index: 2;
     color: #fff;
     /*position: relative;*/
-    
+
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -165,7 +165,7 @@ body {
 
 ul li {
     /* font-weight: 700; */
-    
+
     margin-bottom: 10px;
 }
 
@@ -294,7 +294,7 @@ section .text {
 
 @media (max-width: 600px) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    
+
     .site-header {
         background: url(../images/background.jpg) no-repeat center center/cover;
     }
@@ -325,10 +325,10 @@ section .text {
     display: inline-block;
     float: none;
     /* reset the text-align */
-    
+
     text-align: left;
     /* inline-block space fix */
-    
+
     margin-right: -4px;
 }
 
@@ -454,11 +454,11 @@ img#arrow-button:hover {
 
 .schedule-entry-photo {
     /*  display: block;*/
-    
+
     width: 30px;
     height: 30px;
 }
-/* 
+/*
  * section: FAQ
  */
 
@@ -495,4 +495,30 @@ img#arrow-button:hover {
 .reg-bttn {
     padding: 0,0,0,0;
     margin: 0,0,0,0;
+}
+
+.workshop-register {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.workshop-register .workshop-register-bttn {
+    text-transform: uppercase;
+    font-family: 'DecimaLight';
+    background-color: #009add;
+    border-radius: 0;
+    padding: 5px 20px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s
+}
+
+.workshop-register .workshop-register-bttn:hover {
+    transform: scale(1.1);
+}
+
+.workshop-register .workshop-register-bttn:focus {
+    outline: 0;
 }

@@ -38,6 +38,15 @@
   height: 80px;
 }
 
+/**
+ *
+ * sponsors
+ */
+
+#sponsors .sponsors {
+  flex-direction: column;
+}
+
 /*
  *
  *
@@ -58,10 +67,10 @@
 .EDGE-2684740 {
     -ms-transform: scale(0.35, 0.35);
     /* IE 9 */
-    
+
     -webkit-transform: scale(0.35, 0.35);
     /* Chrome, Safari, Opera */
-    
+
     transform: scale(0.35, 0.35);
 }
 
