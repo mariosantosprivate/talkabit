@@ -37,12 +37,16 @@
     height: 75px;
 }
 
-#critical img {
+#critical_manufacturing img {
     height: 150px;
 }
 
 #farfetch img {
     height: 60px;
+}
+
+#critical_software img {
+    height: 100px;
 }
 
 #itgrow img,
