@@ -499,7 +499,7 @@ img#arrow-button:hover {
 
 .workshop-register {
   text-align: center;
-  margin: 15px 0 5px 0;
+  margin: 15px 0;
 }
 
 .workshop-register .workshop-register-bttn {
@@ -507,7 +507,7 @@ img#arrow-button:hover {
     font-family: 'DecimaLight';
     background-color: #009add;
     border-radius: 0;
-    padding: 5px 20px;
+    padding: 10px 25px;
     border: 0;
     color: white;
     cursor: pointer;
