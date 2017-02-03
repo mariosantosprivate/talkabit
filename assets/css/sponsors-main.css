@@ -37,8 +37,16 @@
     height: 75px;
 }
 
+#accenture img {
+    height: 90px;
+}
+
 #critical_manufacturing img {
     height: 150px;
+}
+
+#deloitte img {
+    height: 60px;
 }
 
 #farfetch img {
