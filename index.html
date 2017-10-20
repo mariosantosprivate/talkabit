@@ -15,10 +15,10 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -56,93 +56,49 @@
     <title>Talk A Bit - 6th Edition</title>
 </head>
 
-<body class="gradient">
-    <header id="site-header" class="site-header valign-center">
-        <div class="intro header-content">
-         <img src="assets/images/talk_a_bit_2018.svg"/>
-
-         <div>
-            <b>6TH EDITION</b> OF THE STUDENT<br/>ORGANIZED TECH CONFERENCE &commat; PORTO
+<body>
+    <img class="banner" src="assets/images/talk_a_bit_2018.svg"/>
+    <div class="description">Student Organized Tech Conference &commat; Porto<br/>20 Jan 2018</div>
+    <div class="countdown">
+        <div class="counter weeks">
+            <div class="value">00</div>
+            <span class="legend">Weeks</span>
         </div>
-
-        <span>20 Jan 2018</span>
-
-        <div id="countdown">
-            <div class="counter weeks">
-                <div class="value">13</div>
-                <span class="legend">Weeks</span>
-            </div>
-            <div class="counter days">
-                <div class="value">13</div>
-                <span class="legend">Days</span>
-            </div>
-            <div class="counter hours">
-                <div class="value">13</div>
-                <span class="legend">Hours</span>
-            </div>
-            <div class="counter minutes">
-                <div class="value">13</div>
-                <span class="legend">Minutes</span>
-            </div>
-            <div class="counter seconds">
-                <div class="value">13</div>
-                <span class="legend">Seconds</span>
-            </div>
+        <div class="counter days">
+            <div class="value">00</div>
+            <span class="legend">Days</span>
         </div>
-
-    </br>
-
-    <img src="assets/images/porto.svg"/>
-
-    <img src="assets/images/feup_logo.png" style="height:60px"/>
-</div>
-</header>
-
-<section id="tab-about">
-    <div class="container">
-        <div class="row">
-			<!--
-                <div class="col-md-6 col-sm-12">
-                    <div class="title">About the conference</div>
-                    <div class="text">
-                        Talk a Bit - <a href="http://talkabit.org">talkabit.org</a> - is a non-profit student organised conference where are discussed hot topics about the social Impact of technology. The organisers are graduating students in Software Engineering at FEUP (Faculty of Engineering - University of Porto, Portugal). It started in 2013 with less than 150 people attending and was mostly internal to our university. Last year, the 4th edition, we had 400 participants ranging from software engineering students to experts in the area. Our activities include talks from startups and important players, ideas for the future, workshops, networking and more.
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12" id="second-col">
-                    <div class="title">V Edition</div>
-                    <div class="text">
-                        Our goal is to greatly inspire the creators of tomorrow to act with greater social responsibility. It reflects our effort in this matter alongside with other initiatives like <a href="http://codingforsocialimpact.org">codingforsocialimpact.org</a>, a partnership where students build technological solutions to social innovators. The 5th edition will take place on the 4th February, 2017 in the great auditorium of FEUP.
-                    </div>
-                </div>
-            -->
+        <div class="counter hours">
+            <div class="value">00</div>
+            <span class="legend">Hours</span>
+        </div>
+        <div class="counter minutes">
+            <div class="value">00</div>
+            <span class="legend">Minutes</span>
+        </div>
+        <div class="counter seconds">
+            <div class="value">00</div>
+            <span class="legend">Seconds</span>
         </div>
     </div>
-</section>
+    <img class="illustration" src="assets/images/porto.svg"/>
+    <a class="feup" href="https://fe.up.pt/"><img src="assets/images/feup_logo.png"/></a>
 
-<section class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="social-block">
-                    <li><a href="https://www.facebook.com/talkabit"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://twitter.com/talkabitconf"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/talkabit/"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>#talkabit</li>
-                </ul>
-                <a class="btn btn-default" title="5th edition - 2017" href="2017" role="button">Previous Edition</a>
-            </div>
-        </div>
-    </div>
-</section>
+    <footer>
+        <ul class="social">
+            <li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/talkabitconf"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/talkabit/"><i class="fa fa-instagram"></i></a></li>
+            <!-- <li>#talkabit</li> -->
+        </ul>
+        <a class="previous-edition" title="5th edition - 2017" href="2017">Previous Edition</a>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<script src="assets/js/googleanalytics.js"></script>
-<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="assets/js/countdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/googleanalytics.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="assets/js/countdown.js"></script>
 
 </body>
 
