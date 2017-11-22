@@ -30,7 +30,10 @@ div.circle-avatar{
     bottom: 0;
 }
 
-.organization-title {
-    display: inline;
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.black-bg h3 {
     background-color: rgba(0, 0, 0, 0.5);
 }
