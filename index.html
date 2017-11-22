@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,35 +28,49 @@
     <meta property="og:url" content="http://talkabit.org/">
     <meta property="og:site_name" content="Talk A Bit 2018">
     <meta property="og:title" content="Talk A Bit 2018">
-    <meta property="og:description" content="Talk A Bit is a student organised conference where technology hot topics are discussed, in a motivating and friendly environment. This year's topic is The Social Impact of Technology. Join us for free!">
-    <meta property="og:image" content="http://talkabit.org/assets/images/talkabit.jpg" />
+    <meta property="og:description"
+          content="Talk A Bit is a student organised conference where technology hot topics are discussed, in a motivating and friendly environment. This year's topic is The Social Impact of Technology. Join us for free!">
+    <meta property="og:image" content="http://talkabit.org/assets/images/talkabit.jpg"/>
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="assets/css/landing.css">
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
-    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/organization.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="assets/css/fonts.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/spk-main.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/sponsors-main.css"> -->
-    <!-- <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/screens/large.css" /> -->
-    <!-- <link rel="stylesheet" media="(min-width: 769px) and (max-width: 1024px)" href="assets/css/screens/medium.css" /> -->
-    <!-- <link rel="stylesheet" media="(max-width: 768px)" href="assets/css/screens/small.css" /> -->
-    <!-- Latest compiled and minified Boostrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-	<!--[if gte IE 9]
-		<style type="text/css">
-		.gradient {
-		filter: none;
-		}
-		</style>
-	<![endif]-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Latest compiled and minified Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if gte IE 9]
+        <style type="text/css">
+        .gradient {
+        filter: none;
+        }
+        </style>
+    <![endif]-->
 
     <title>Talk A Bit - 6th Edition</title>
 </head>
 
 <body>
+
+<nav class="navbar navbar-fixed-top">
+    <div class="container text-center">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#organization">Organization</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="welcome">
     <img class="banner" src="assets/images/talk_a_bit_2018.svg"/>
     <div class="date">20 Jan 2018</div>
     <div class="description">Student Organized<br/>Tech Conference &commat; Porto</div>
@@ -84,22 +98,275 @@
     </div>
     <div class="illustration"></div>
     <a class="feup no-selection" target="_blank" href="https://fe.up.pt/"><img src="assets/images/feup_logo.png"/></a>
+
+</section>
+
+<section id="info">
+
+    <section id="about">
+        <div class="container">
+            <h2 class="text-left uppercase">About</h2>
+            <p class="text-left">Talk A Bit is a student organised conference where technology hot topics are discussed,
+                in a motivating
+                and friendly environment. This year's topic is The Social Impact of Technology. Join us for free!</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2 class="text-left uppercase">Faq</h2>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2 class="text-left uppercase">Location</h2>
+            <p class="text-left"><b>Faculdade</b> de Engenharia da Universidade do Porto | <b>Address</b> Dr. Roberto
+                Frias | <b>Phone:</b> +351 22 508 14 00
+                | <b>Email:</b> hello@talkabit.org</p>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section id="organization">
+        <div class="container">
+
+            <h2 class="text-left uppercase">Organization</h2>
+
+            <div class="organization-title">
+                <h3 class="text-left uppercase">Conference Chairmen</h3>
+            </div>
+
+            <div class="row">
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Hugo Sereno</h3>
+                    <h4>Steering Committee</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Ademar Aguiar</h3>
+                    <h4>Steering Committee</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Raul Vidal</h3>
+                    <h4>Steering Committee</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>João Pedro Dias</h3>
+                    <h4>Advisory Board</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>André Lago</h3>
+                    <h4>Conference</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Diogo Amaral</h3>
+                    <h4>Program</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Rui Vilares</h3>
+                    <h4>Social Program</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Rolando Azevedo</h3>
+                    <h4>Treasurer</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Marco Rodrigues</h3>
+                    <h4>Web</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>João Almeida</h3>
+                    <h4>Media & Publicity</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Ana Rita Silva</h3>
+                    <h4>Sponsorships</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Pedro Rodrigues</h3>
+                    <h4>Operations</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Miguel Botelho</h3>
+                    <h4>Student Volunteers</h4>
+                </div>
+            </div>
+
+            <div class="organization-title">
+                <h3 class="text-left uppercase">Conference Members</h3>
+            </div>
+
+            <div class="row">
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Edgar Ramos</h3>
+                    <h4>Conference</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Flávio Couto</h3>
+                    <h4>Conference</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Ana Casimiro</h3>
+                    <h4>Program</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Leonardo Ferreira</h3>
+                    <h4>Program</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>André Maia</h3>
+                    <h4>Social Program</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Filipa Barroso</h3>
+                    <h4>Social Program</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>João Bernardino</h3>
+                    <h4>Web</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Hugo Drumond</h3>
+                    <h4>Media & Publicity</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Pedro Lourenço</h3>
+                    <h4>Media & Publicity</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Daniel Maciel</h3>
+                    <h4>Sponsorships</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Paulo Peixoto</h3>
+                    <h4>Sponsorships</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Guilherme Pinto</h3>
+                    <h4>Operations</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Francisco Rodrigues</h3>
+                    <h4>Operations</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Hanna Denysuyk</h3>
+                    <h4>Student Volunteers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Nuno Barros</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Ricardo Malafaya</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Paulo Barbosa</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Manuel Zamith</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Renato Ayres</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Leonardo Machado</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>João Gomes</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Pedro Melo</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Nuno Silva</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Maria Chaves</h3>
+                    <h4>Reviewers</h4>
+                </div>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="circle-avatar" style="background-image:url(assets/images/organization/robot.svg)"></div>
+                    <h3>Duarte Gomes</h3>
+                    <h4>Reviewers</h4>
+                </div>
+            </div>
+
+            <!--<h3 class="text-left uppercase organization-title">Volunteers</h3>-->
+        </div>
+    </section>
+
     <footer class="no-selection">
         <ul class="social">
             <li><a target="_blank" href="mailto:geral@talkabit.org"><i class="fa fa-fw fa-envelope"></i></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fa fa-fw fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/talkabit"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
             <li><a target="_blank" href="https://twitter.com/talkabitconf"><i class="fa fa-fw fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i class="fa fa-fw fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/talkabit/"><i class="fa fa-fw fa-instagram"></i></a>
+            </li>
             <!-- <li>#talkabit</li> -->
         </ul>
         <a class="previous-edition" title="5th edition - 2017" href="2017">Previous Edition</a>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-    <script src="assets/js/googleanalytics.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="assets/js/countdown.js"></script>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/googleanalytics.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+<script type="text/javascript" src="assets/js/navbar.js"></script>
+<script type="text/javascript" src="assets/js/smooth.scroll.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8cnfOx8vqqfizLLgBTZXwc5PD5Yambyg&callback=initMap"></script>
+<script type="text/javascript" src="assets/js/map.js"></script>
 
 </body>
 
