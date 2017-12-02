@@ -1,4 +1,4 @@
-$('.countdown').countdown('2018/01/20 10:00:00')
+$('.countdown').countdown('2018/01/20 09:00:00')
 .on('update.countdown', function(event) {
 	$(this).find('.counter.weeks .value').text(('0' + event.offset.weeks).slice(-2));
 	$(this).find('.counter.days .value').text(('0' + event.offset.days).slice(-2));
