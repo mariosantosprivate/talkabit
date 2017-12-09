@@ -292,7 +292,10 @@ nav ul li .fa {
 #main #faq > ul > li .answer {
     color: #000;
     font-size: 12px;
-    padding: 6px 10px;
+    padding: 10px;
+    max-height: 200px;
+    overflow: scroll;
+    line-height: 1.5;
 }
 
 #main #faq > ul > li .answer h4 {
@@ -304,7 +307,7 @@ nav ul li .fa {
 #main #faq > ul > li .answer p {
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.5;
     margin-bottom: 8px;
 }
 
@@ -352,20 +355,32 @@ nav ul li .fa {
     margin: 0 6px;
 }
 
-#main #organization .separator {
+#main section .separator {
     background-color: #001220;
     text-transform: uppercase;
     padding: 3px 15px;
     font-weight: 500;
     max-width: 300px;
+    margin-bottom: 20px;
 }
+
+#main #sponsors .sponsor-logo {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+#main #sponsors .sponsor-logo.main   { width: 700px; }
+#main #sponsors .sponsor-logo.gold   { width: 400px; }
+#main #sponsors .sponsor-logo.silver { width: 250px; }
 
 #main #organization .group {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     margin-left: -15px;
-    padding-top: 20px;
+    // padding-top: 20px;
 }
 
 #main #organization .group .person {
