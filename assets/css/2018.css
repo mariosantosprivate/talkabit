@@ -91,6 +91,10 @@ nav.bg {
     background: rgba(0, 18, 32, 0.7);
 }
 
+nav ul {
+    padding: 0 20px;
+}
+
 nav ul li {
     display: inline-block;
     margin: 0 10px;
@@ -268,6 +272,7 @@ nav ul li .fa {
     padding: 12px 34px 12px 10px;
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 1.4;
     position: relative;
     cursor: pointer;
 }
@@ -364,28 +369,43 @@ nav ul li .fa {
     margin-bottom: 20px;
 }
 
-#main #sponsors .sponsor-logo {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 50px;
-    margin-right: 50px;
+#main #sponsors .sponsor-block {
+    background-color: white;
+    border: 3px solid #001220;
+    display: inline-block !important;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    text-align: center;
+    position: relative;
 }
-
-#main #sponsors .sponsor-logo.main   { width: 700px; }
-#main #sponsors .sponsor-logo.gold   { width: 400px; }
-#main #sponsors .sponsor-logo.silver { width: 250px; }
+#main #sponsors .sponsor-block.deloitte { background-color: #242122; }
+#main #sponsors .sponsor-logo {
+    display: inline-block !important;
+    height: auto;
+    max-height: 80%;
+    max-width: 90%;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 #main #organization .group {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    margin-left: -15px;
+    flex-direction: left;
+    // align-content: flex-start;
+    // margin-left: -15px;
     // padding-top: 20px;
 }
 
 #main #organization .group .person {
-    flex: 1 0 calc(20% - 15px);
-    margin-left: 15px;
+    // flex: 1 0 calc(20% - 15px);
+    // margin-left: 15px;
+    width: 170px;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -414,14 +434,8 @@ nav ul li .fa {
 }
 
 #main #organization .group .person .avatar {
-    width: auto;
-    height: 120px;
+    width: 100%;
     position: relative;
-    left: -30%;
-}
-
-#main #organization .group .person .avatar.default {
-    left: 0;
 }
 
 #main #organization .group .person .name {
@@ -433,4 +447,16 @@ nav ul li .fa {
 #main #organization .group .person .department {
     font-size: 0.7em;
     font-weight: 100;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        position: static;
+    }
+    #landing {
+        margin-top: 0;
+    }
+    #main #organization .group .person {
+        width: 140px;
+    }
 }
