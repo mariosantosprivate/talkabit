@@ -251,18 +251,14 @@
 
         <section id="organization">
             <h2>Organization</h2>
-            <div class="separator">Program Chair</div>
+            <div class="separator">Program Chairmen</div>
             <div class="group">
                 {% for member in site.data.org2017.chair %}
                     <div class="person">
                         {% if member.linkedin %}
                             <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
                                 <div class="linkedin-contact">
-                                    {% if member.name == "Raúl Vidal" or member.name == "Ademar Aguiar" %}
-                                        <img class="avatar" src="assets/images/organization/user.svg">
-                                    {% else %}
-                                        <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                    {% endif %}
+                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
                                 </div>
                                 <i class="fa fa-linkedin-square fa-2x"></i>
                             </a>
@@ -328,11 +324,7 @@
                     <div class="person">
                         <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
                             <div class="linkedin-contact">
-                                {% if member.name == "Raúl Vidal" or member.name == "Ademar Aguiar" %}
-                                    <img class="avatar" src="assets/images/organization/user.svg">
-                                {% else %}
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                {% endif %}
+                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
                             </div>
                             <i class="fa fa-linkedin-square fa-2x"></i>
                         </a>

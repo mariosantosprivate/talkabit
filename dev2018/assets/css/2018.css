@@ -93,8 +93,6 @@ nav.bg {
 
 nav ul {
     padding: 0 20px;
-    white-space: nowrap;
-    overflow-x: scroll;
 }
 
 nav ul li {
@@ -449,4 +447,16 @@ nav ul li .fa {
 #main #organization .group .person .department {
     font-size: 0.7em;
     font-weight: 100;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        position: static;
+    }
+    #landing {
+        margin-top: 0;
+    }
+    #main #organization .group .person {
+        width: 150px;
+    }
 }
