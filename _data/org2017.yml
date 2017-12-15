@@ -1,4 +1,4 @@
-chairs:
+steering:
   - linkedin: hugoserenoferreira
     name: Hugo Sereno
     department: Steering Committee
@@ -19,6 +19,7 @@ chairs:
     department: Advisory Board
     photo:
 
+chair:
   - linkedin: andré-lago-9942b1108
     name: André Lago
     department: Conference
@@ -135,6 +136,8 @@ others:
     department: Student Volunteers
     photo:
 
+
+committee:
   - linkedin: ngmatos
     name: Nuno Barros
     department: Reviewers

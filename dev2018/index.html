@@ -251,9 +251,9 @@
 
         <section id="organization">
             <h2>Organization</h2>
-            <div class="separator">Conference Chairmen</div>
+            <div class="separator">Program Chair</div>
             <div class="group">
-                {% for member in site.data.org2017.chairs %}
+                {% for member in site.data.org2017.chair %}
                     <div class="person">
                         {% if member.linkedin %}
                             <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
@@ -289,6 +289,27 @@
                             </a>
                         {% else %}
                             <div class="linkedin-contact">
+                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
+                            </div>
+                        {% endif %}
+                        <div class="name">{{ member.name }}</div>
+                        <div class="department">{{ member.department }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="separator">Program Committee</div>
+            <div class="group">
+                {% for member in site.data.org2017.committee %}
+                    <div class="person">
+                        {% if member.linkedin %}
+                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
+                                <div class="linkedin-contact">
+                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
+                                </div>
+                                <i class="fa fa-linkedin-square fa-2x"></i>
+                            </a>
+                        {% else %}
+                            <div class="linkedin-contact">
                                 {% if member.name == "Maria Chaves" %}
                                     <img class="avatar" src="assets/images/organization/user.svg">
                                 {% else %}
@@ -296,6 +317,25 @@
                                 {% endif %}
                             </div>
                         {% endif %}
+                        <div class="name">{{ member.name }}</div>
+                        <div class="department">{{ member.department }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="separator">Steering Committee</div>
+            <div class="group">
+                {% for member in site.data.org2017.steering %}
+                    <div class="person">
+                        <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
+                            <div class="linkedin-contact">
+                                {% if member.name == "Raúl Vidal" or member.name == "Ademar Aguiar" %}
+                                    <img class="avatar" src="assets/images/organization/user.svg">
+                                {% else %}
+                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
+                                {% endif %}
+                            </div>
+                            <i class="fa fa-linkedin-square fa-2x"></i>
+                        </a>
                         <div class="name">{{ member.name }}</div>
                         <div class="department">{{ member.department }}</div>
                     </div>
@@ -341,7 +381,7 @@
 gtag('config', 'UA-110014794-1');
 </script>
 
-<!-- <script async defer
+<script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk8nU6ky4fXLJCiQqP4lrgisCFo-tNz30&callback=initMap"></script>
 <script type="text/javascript">
     function initMap() {
@@ -613,7 +653,7 @@ gtag('config', 'UA-110014794-1');
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
     }
-</script> -->
+</script>
 
 </body>
 

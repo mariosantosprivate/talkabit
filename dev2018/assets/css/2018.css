@@ -398,14 +398,16 @@ nav ul li .fa {
 #main #organization .group {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    margin-left: -15px;
+    flex-direction: left;
+    // align-content: flex-start;
+    // margin-left: -15px;
     // padding-top: 20px;
 }
 
 #main #organization .group .person {
-    flex: 1 0 calc(20% - 15px);
-    margin-left: 15px;
+    // flex: 1 0 calc(20% - 15px);
+    // margin-left: 15px;
+    width: 170px;
     margin-bottom: 25px;
     text-align: center;
 }
