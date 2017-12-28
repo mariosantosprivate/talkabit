@@ -369,7 +369,7 @@ nav ul li .fa {
     margin-bottom: 20px;
 }
 
-#main #sponsors .sponsor-block {
+#main #sponsors .sponsors-block {
     background-color: white;
     border: 3px solid #001220;
     display: inline-block !important;
@@ -380,8 +380,8 @@ nav ul li .fa {
     text-align: center;
     position: relative;
 }
-#main #sponsors .sponsor-block.deloitte { background-color: #242122; }
-#main #sponsors .sponsor-logo {
+#main #sponsors .sponsors-block.deloitte { background-color: #242122; }
+#main #sponsors .sponsors-logo {
     display: inline-block !important;
     height: auto;
     max-height: 80%;
