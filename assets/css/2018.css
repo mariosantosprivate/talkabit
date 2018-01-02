@@ -369,7 +369,7 @@ nav ul li .fa {
     margin-bottom: 20px;
 }
 
-#main #sponsors .sponsor-block {
+#main #sponsors .sponsors-block {
     background-color: white;
     border: 3px solid #001220;
     display: block !important;
@@ -378,8 +378,8 @@ nav ul li .fa {
     text-align: center;
     position: relative;
 }
-#main #sponsors .sponsor-block.deloitte { background-color: #242122; }
-#main #sponsors .sponsor-logo {
+#main #sponsors .sponsors-block.deloitte { background-color: #242122; }
+#main #sponsors .sponsors-logo {
     display: inline-block !important;
     height: auto;
     max-height: 80%;
@@ -488,7 +488,7 @@ nav ul li .fa {
 }
 
 @media screen and (max-width: 360px) {
-    #main #sponsors .sponsor-block { height: 80px; }
+    #main #sponsors .sponsors-block { height: 80px; }
     .tb-row .tb-col-2 { width: 100% !important; }
     .tb-row .tb-col-3 { width: 100% !important; }
     .tb-row .tb-col-4 { width: 100% !important; }
