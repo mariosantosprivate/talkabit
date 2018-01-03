@@ -127,12 +127,15 @@
         <section id="speakers">
             <h2>Speakers</h2>
             <ul>
-                {% for speaker in site.data.speakers2017 %}
+                {% for speaker in site.data.speakers2018 %}
                     <li class="speaker">
-                        <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+                        <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}/" target="_blank">
+                            <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+                        </a>
                         <div class="name">{{ speaker.name }}</div>
                         <div class="company">{{ speaker.company }}</div>
-                        <div class="bio">{{ speaker.bio }}</div>
+                        <div class="bio">{{ speaker.title }}</div>
+                        <div class="bio">{{ speaker.resume }}</div>
                     </li>
                 {% endfor %}
             </ul>
