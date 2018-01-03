@@ -44,7 +44,7 @@
     <ul>
         <!-- <li><a href="#tickets">Tickets</a></li> -->
         <li><a href="#about">About</a></li>
-        <!-- <li><a href="#speakers">Speakers</a></li> -->
+        <li><a href="#speakers">Speakers</a></li>
         <!-- <li><a href="#schedule">Schedule</a></li> -->
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#location">Location</a></li>
@@ -122,6 +122,20 @@
                 social event, to bring companies and students together in a relaxed environment where experiences and
                 thoughts can be shared.</p>
             <p>Keep an eye out for the registration, which will start soon!</p>
+        </section>
+
+        <section id="speakers">
+            <h2>Speakers</h2>
+            <ul>
+                {% for speaker in site.data.speakers2017 %}
+                    <li class="speaker">
+                        <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+                        <div class="name">{{ speaker.name }}</div>
+                        <div class="company">{{ speaker.company }}</div>
+                        <div class="bio">{{ speaker.bio }}</div>
+                    </li>
+                {% endfor %}
+            </ul>
         </section>
 
         <section id="faq">
