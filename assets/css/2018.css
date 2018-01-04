@@ -249,6 +249,71 @@ nav ul li .fa {
     margin-bottom: 50px;
 }
 
+#main #speakers ul {
+    padding-top: 10px;
+    /* margin-right: -65px; */
+}
+#main #speakers ul li {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 500px 500px 0 0;
+    margin-right: 65px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    width: 240px;
+    background-color: #001220;
+    position: relative;
+}
+#main #speakers ul li .photo {
+    display: block;
+    border: 6px solid #009ADD;
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#main #speakers ul li .name {
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6px;
+    padding: 0 16px;
+}
+#main #speakers ul li .company {
+    color: #009AFF;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+#main #speakers ul li .title {
+    font-size: 0.9em;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+#main #speakers ul li .resume {
+    /* display: none; */
+    font-size: 0.75em;
+    line-height: 1.75;
+    padding: 0 16px 20px;
+    font-weight: 100;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+}
+#main #speakers ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 20px;
+    background-color: red;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,18,32,1) 60%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,18,32,1) 60%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,18,32,1) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 #main #faq > ul {
     display: flex;
     flex-wrap: wrap;
@@ -492,4 +557,17 @@ nav ul li .fa {
     .tb-row .tb-col-2 { width: 100% !important; }
     .tb-row .tb-col-3 { width: 100% !important; }
     .tb-row .tb-col-4 { width: 100% !important; }
+}
+
+@media screen and (min-width: 888px) {
+    #main #speakers ul li:nth-child(3n) { margin-right: 0; }
+}
+@media screen and (min-width: 578px) and (max-width: 887px) {
+    #main #speakers ul li:nth-child(2n) { margin-right: 0; }
+}
+@media screen and (max-width: 577px) {
+    #main #speakers ul li { margin-right: 0; }
+}
+@media screen and (max-width: 349px) {
+    #main #speakers ul li { width: 100%; }
 }
