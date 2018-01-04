@@ -101,6 +101,7 @@
 
     <div class="container">
 
+        {% comment %}
         <section id="tickets">
             <h2>Tickets</h2>
             <div class="tb-row clearfix">
@@ -115,6 +116,7 @@
                 </div>
             </div>
         </section>
+        {% endcomment %}
 
         <section id="about">
             <h2>About</h2>
@@ -149,8 +151,8 @@
                         </a>
                         <div class="name">{{ speaker.name }}</div>
                         <div class="company">{{ speaker.company }}</div>
-                        <div class="bio">{{ speaker.title }}</div>
-                        <div class="bio">{{ speaker.resume }}</div>
+                        <div class="title">{{ speaker.title }}</div>
+                        <div class="resume">{{ speaker.resume }}</div>
                     </li>
                 {% endfor %}
             </ul>
