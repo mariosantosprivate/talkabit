@@ -601,8 +601,7 @@ nav ul li .fa {
     .tab-grid-container .row .col-4{ width: 100%;    }
     .tab-grid-container .row .col-5{ width: 100%;    }
     .tab-grid-container .row .col-6{ width: 100%;    }
-    .tab-grid-container .row .col-2:last-of-type { width: 100%; }
-    .tab-grid-container .row .col-5 ~ .col-1 { width: 100%; }
+    /* .tab-grid-container .row .col-2:last-of-type { width: 100%; } */
 }
 @media all and (max-width:650px){
     .tab-grid-container .row .col-1 { width: 50%;  }
