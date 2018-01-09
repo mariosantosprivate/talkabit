@@ -192,8 +192,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-2">
                         <div class="faq-item closed">
                             <div class="question">Is there any requirement to attend Talk A Bit?</div>
@@ -345,86 +343,84 @@
         <section id="organization">
             <h2>Organization</h2>
             <div class="separator">Conference Chairmen</div>
-            <div class="group">
-                {% for member in site.data.org2017.chair %}
-                    <div class="person">
-                        {% if member.linkedin %}
-                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                                <div class="linkedin-contact">
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.chair %}
+                        <div class="person col-1_2">
+                            {% if member.linkedin %}
+                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
+                            {% endif %}
+                                <div class="avatar">
+                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
                                 </div>
-                                <i class="fa fa-linkedin-square fa-2x"></i>
+                                <div class="name">{{ member.name }}</div>
+                                <div class="department">{{ member.department }}</div>
+                            {% if member.linkedin %}
                             </a>
-                        {% else %}
-                            <div class="linkedin-contact">
-                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                            </div>
-                        {% endif %}
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
             <div class="separator">Conference Members</div>
-            <div class="group">
-                {% for member in site.data.org2017.others %}
-                    <div class="person">
-                        {% if member.linkedin %}
-                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                                <div class="linkedin-contact">
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.conference %}
+                        <div class="person col-1_2">
+                            {% if member.linkedin %}
+                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
+                            {% endif %}
+                                <div class="avatar">
+                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
                                 </div>
-                                <i class="fa fa-linkedin-square fa-2x"></i>
+                                <div class="name">{{ member.name }}</div>
+                                <div class="department">{{ member.department }}</div>
+                            {% if member.linkedin %}
                             </a>
-                        {% else %}
-                            <div class="linkedin-contact">
-                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                            </div>
-                        {% endif %}
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
             <div class="separator">Program Committee</div>
-            <div class="group">
-                {% for member in site.data.org2017.committee %}
-                    <div class="person">
-                        {% if member.linkedin %}
-                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                                <div class="linkedin-contact">
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.program %}
+                        <div class="person col-1_2">
+                            {% if member.linkedin %}
+                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
+                            {% endif %}
+                                <div class="avatar">
+                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
                                 </div>
-                                <i class="fa fa-linkedin-square fa-2x"></i>
+                                <div class="name">{{ member.name }}</div>
+                                <div class="department">{{ member.department }}</div>
+                            {% if member.linkedin %}
                             </a>
-                        {% else %}
-                            <div class="linkedin-contact">
-                                {% if member.name == "Maria Chaves" %}
-                                    <img class="avatar" src="assets/images/organization/user.svg">
-                                {% else %}
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                {% endif %}
-                            </div>
-                        {% endif %}
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
             <div class="separator">Steering Committee</div>
-            <div class="group">
-                {% for member in site.data.org2017.steering %}
-                    <div class="person">
-                        <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                            <div class="linkedin-contact">
-                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                            </div>
-                            <i class="fa fa-linkedin-square fa-2x"></i>
-                        </a>
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.steering %}
+                        <div class="person col-1_2">
+                            {% if member.linkedin %}
+                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
+                            {% endif %}
+                                <div class="avatar">
+                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
+                                </div>
+                                <div class="name">{{ member.name }}</div>
+                                <div class="department">{{ member.department }}</div>
+                            {% if member.linkedin %}
+                            </a>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </section>
 
