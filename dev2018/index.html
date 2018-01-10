@@ -102,7 +102,7 @@
     <div class="container">
 
         {% comment %}
-        <section id="tickets">
+        <section id="tickets" class="main-section">
             <h2>Tickets</h2>
             <div class="tb-row clearfix">
                 <div class="tb-col-3">
@@ -111,14 +111,14 @@
                             <h3>Conference</h3>
                             <img style="width:160px" src="assets/images/ticket.png">
                             <p>Get your tyckets now!</p>
-                        </div>           
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
         {% endcomment %}
 
-        <section id="about">
+        <section id="about" class="main-section">
             <h2>About</h2>
             <p>Talk A Bit is a non-profit tech conference organized by graduating Software Engineering students from
                 FEUP, the Faculty of Engineering of the University of Porto. Like in previous occurances, this year's
@@ -141,64 +141,64 @@
             <p>Keep an eye out for the registration, which will start soon!</p>
         </section>
 
-        <section id="speakers">
+        <section id="speakers" class="main-section">
             <h2>Speakers</h2>
-            <ul>
-                {% for speaker in site.data.speakers2018 %}
-                    <li class="speaker">
-                        <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}/" target="_blank">
-                            <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
-                        </a>
-                        <div class="name">{{ speaker.name }}</div>
-                        <div class="company">{{ speaker.company }}</div>
-                        <div class="title">{{ speaker.title }}</div>
-                        <div class="resume">{{ speaker.resume }}</div>
-                    </li>
-                {% endfor %}
-            </ul>
+            <div class="tab-grid-container">
+                <div class="row extra-padding">
+                    {% for speaker in site.data.speakers2018 %}
+                        <div class="col-2">
+                            <div class="speaker">
+                                <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}/" target="_blank">
+                                    <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+                                </a>
+                                <div class="name">{{ speaker.name }}</div>
+                                <div class="company">{{ speaker.company }}</div>
+                                <div class="title">{{ speaker.title }}</div>
+                                <div class="resume">{{ speaker.resume }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </section>
 
         <!-- <section id="schedule">
             <h2>Schedule</h2>
         </section> -->
 
-        <section id="faq">
+        <section id="faq" class="main-section">
             <h2>FAQ</h2>
             <div class="tab-grid-container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-3">
                         <div class="faq-item closed">
                             <div class="question">What is the price of my ticket?</div>
-                            <div class="answer">The main ticket is entirely free. If you want some extra goodies,
-                                registration will open soon.
-                            </div>
+                            <div class="answer">The main ticket is entirely free. If you want some extra goodies, registration will open soon.</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <div class="faq-item closed">
                             <div class="question">What is included in my ticket?</div>
-                            <div class="answer">The ticket includes access to the presentations, forum, lunch, coffee-breaks
-                                and networking.
-                                Registered attendees also get extra goodies! Dinner is optional at this point.
-                            </div>
+                            <div class="answer">The ticket includes access to the presentations, forum, lunch, coffee-breaks and networking. Registered attendees also get extra goodies! Dinner is optional at this point.</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                </div>
+                <div class="row">
+                    <div class="col-3">
                         <div class="faq-item closed">
                             <div class="question">What languages are spoken?</div>
-                            <div class="answer">Most of the event talks and workshops will be held in Portuguese, however
-                                there can be talks in English
-                                depending on the final program.
-                            </div>
+                            <div class="answer">Most of the event talks and workshops will be held in Portuguese, however there can be talks in English depending on the final program.</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <div class="faq-item closed">
                             <div class="question">Is there any requirement to attend Talk A Bit?</div>
                             <div class="answer">Nope, just bring your excitement, curiosity and contageous smile!</div>
                         </div>
                     </div>
-                    <div class="col-2">
+                </div>
+                <div class="row">
+                    <div class="col-3">
                         <div class="faq-item closed">
                             <div class="question">How to get to Talk A Bit?</div>
                             <div class="answer">
@@ -241,21 +241,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <div class="faq-item closed">
-                            <div class="question closed">I have specific questions that are not adressed here. Who can help
-                                me?
-                            </div>
-                            <div class="answer">For additional enquiries reach out to <a href="mailto:geral@talkabit.org">geral@talkabit.org</a>
-                                and we will reply as soon as possible!.
-                            </div>
+                            <div class="question closed">I have specific questions that are not adressed here. Who can help me?</div>
+                            <div class="answer">For additional enquiries reach out to <a href="mailto:geral@talkabit.org">geral@talkabit.org</a> and we will reply as soon as possible!</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="location">
+        <section id="location" class="main-section">
             <h2>Location</h2>
             <div id="map"></div>
             <ul class="details">
@@ -266,11 +262,11 @@
             </ul>
         </section>
 
-        <section id="sponsors">
+        <section id="sponsors" class="main-section">
             <h2>Sponsors</h2>
 
             <div class="separator">Main</div>
-            <div class="tab-grid-container">                
+            <div class="tab-grid-container">
                 <div class="row">
                     <div class="col-2">
                         <a class="sponsors-block" href="http://www.natixis.com/">
@@ -335,30 +331,15 @@
                     </div>
                 </div>
             </div>
-
-            <br>
-
         </section>
 
-        <section id="organization">
+        <section id="organization" class="main-section">
             <h2>Organization</h2>
             <div class="separator">Conference Chairmen</div>
             <div class="group tab-grid-container">
                 <div class="row">
                     {% for member in site.data.org2017.chair %}
-                        <div class="person col-1_2">
-                            {% if member.linkedin %}
-                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
-                            {% endif %}
-                                <div class="avatar">
-                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <div class="name">{{ member.name }}</div>
-                                <div class="department">{{ member.department }}</div>
-                            {% if member.linkedin %}
-                            </a>
-                            {% endif %}
-                        </div>
+                        {% include member.html %}
                     {% endfor %}
                 </div>
             </div>
@@ -366,19 +347,7 @@
             <div class="group tab-grid-container">
                 <div class="row">
                     {% for member in site.data.org2017.conference %}
-                        <div class="person col-1_2">
-                            {% if member.linkedin %}
-                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
-                            {% endif %}
-                                <div class="avatar">
-                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <div class="name">{{ member.name }}</div>
-                                <div class="department">{{ member.department }}</div>
-                            {% if member.linkedin %}
-                            </a>
-                            {% endif %}
-                        </div>
+                        {% include member.html %}
                     {% endfor %}
                 </div>
             </div>
@@ -386,19 +355,7 @@
             <div class="group tab-grid-container">
                 <div class="row">
                     {% for member in site.data.org2017.program %}
-                        <div class="person col-1_2">
-                            {% if member.linkedin %}
-                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
-                            {% endif %}
-                                <div class="avatar">
-                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <div class="name">{{ member.name }}</div>
-                                <div class="department">{{ member.department }}</div>
-                            {% if member.linkedin %}
-                            </a>
-                            {% endif %}
-                        </div>
+                        {% include member.html %}
                     {% endfor %}
                 </div>
             </div>
@@ -406,19 +363,7 @@
             <div class="group tab-grid-container">
                 <div class="row">
                     {% for member in site.data.org2017.steering %}
-                        <div class="person col-1_2">
-                            {% if member.linkedin %}
-                            <a class="linkedin" title="Linkedin Profile" href="https://www.linkedin.com/in/{{ member.linkedin }}/">
-                            {% endif %}
-                                <div class="avatar">
-                                    <img src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <div class="name">{{ member.name }}</div>
-                                <div class="department">{{ member.department }}</div>
-                            {% if member.linkedin %}
-                            </a>
-                            {% endif %}
-                        </div>
+                        {% include member.html %}
                     {% endfor %}
                 </div>
             </div>
