@@ -223,6 +223,38 @@ nav ul li .fa {
 
 
 /**
+== @@ Tickets
+== == == == == == == == == == == == == == == == == == == ==
+**/
+
+#main #tickets h2 {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: none;
+    font-weight: 400;
+}
+#main #tickets .ticket {
+    display: block;
+}
+#main #tickets .ticket img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+@media only screen and (max-width: 659px) {
+    #main #tickets h2 { font-size: 1.8em; }
+}
+@media only screen and (max-width: 464px) {
+    #main #tickets h2 { font-size: 1.3em; }
+}
+@media only screen and (max-width: 344px) {
+    #main #tickets h2 { font-size: 1.1em; }
+}
+
+/**
 == @@ Speakers
 == == == == == == == == == == == == == == == == == == == ==
 **/
