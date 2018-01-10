@@ -101,24 +101,21 @@
 
     <div class="container">
 
-        {% comment %}
-        <section id="tickets">
-            <h2>Tickets</h2>
-            <div class="tb-row clearfix">
-                <div class="tb-col-3">
-                    <a href="https://www.eventbrite.com/e/talk-a-bit-tickets-41167796989?ref=elink" target="_blank" style="color:white;text-decoration:none">
-                        <div>
-                            <h3>Conference</h3>
-                            <img style="width:160px" src="assets/images/ticket.png">
-                            <p>Get your tyckets now!</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <section id="tickets" class="main-section">
+            <h2>Tickets available - Get yours now!</h2>
+            <a class="ticket" href="https://www.eventbrite.com/e/talk-a-bit-tickets-41167796989?ref=elink" target="_blank" title="Get your ticket!">
+                <img src="assets/images/tb-ticket.png">
+            </a>
+                <!-- <a href="https://www.eventbrite.com/e/talk-a-bit-tickets-41167796989?ref=elink" target="_blank">
+                    <div>
+                        <h3>Conference</h3>
+                        <img style="width:160px" src="assets/images/ticket.png">
+                        <p>Get your tickets now!</p>
+                    </div>
+                </a> -->
         </section>
-        {% endcomment %}
 
-        <section id="about">
+        <section id="about" class="main-section">
             <h2>About</h2>
             <p>Talk A Bit is a non-profit tech conference organized by graduating Software Engineering students from
                 FEUP, the Faculty of Engineering of the University of Porto. Like in previous occurances, this year's
@@ -141,115 +138,117 @@
             <p>Keep an eye out for the registration, which will start soon!</p>
         </section>
 
-        <section id="speakers">
+        <section id="speakers" class="main-section">
             <h2>Speakers</h2>
-            <ul>
-                {% for speaker in site.data.speakers2018 %}
-                    <li class="speaker">
-                        <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}/" target="_blank">
-                            <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
-                        </a>
-                        <div class="name">{{ speaker.name }}</div>
-                        <div class="company">{{ speaker.company }}</div>
-                        <div class="title">{{ speaker.title }}</div>
-                        <div class="resume">{{ speaker.resume }}</div>
-                    </li>
-                {% endfor %}
-            </ul>
+            <div class="tab-grid-container">
+                <div class="row extra-padding">
+                    {% for speaker in site.data.speakers2018 %}
+                        <div class="col-2">
+                            <div class="speaker">
+                                <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}/" target="_blank">
+                                    <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+                                </a>
+                                <div class="name">{{ speaker.name }}</div>
+                                <div class="company">{{ speaker.company }}</div>
+                                <div class="title">{{ speaker.title }}</div>
+                                <div class="resume">{{ speaker.resume }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </section>
 
-        <section id="faq">
+        <!-- <section id="schedule">
+            <h2>Schedule</h2>
+        </section> -->
+
+        <section id="faq" class="main-section">
             <h2>FAQ</h2>
-            <ul>
-                <li>
-                    <div class="faq-item closed">
-                        <div class="question">What is the price of my ticket?</div>
-                        <div class="answer">The main ticket is entirely free. If you want some extra goodies,
-                            registration will open soon.
+            <div class="tab-grid-container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="faq-item closed">
+                            <div class="question">What is the price of my ticket?</div>
+                            <div class="answer">The main ticket is entirely free. If you want some extra goodies, registration will open soon.</div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="faq-item closed">
-                        <div class="question">What is included in my ticket?</div>
-                        <div class="answer">The ticket includes access to the presentations, forum, lunch, coffee-breaks
-                            and networking.
-                            Registered attendees also get extra goodies! Dinner is optional at this point.
+                    <div class="col-3">
+                        <div class="faq-item closed">
+                            <div class="question">What is included in my ticket?</div>
+                            <div class="answer">The ticket includes access to the presentations, forum, lunch, coffee-breaks and networking. Registered attendees also get extra goodies! Dinner is optional at this point.</div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="faq-item closed">
-                        <div class="question">What languages are spoken?</div>
-                        <div class="answer">Most of the event talks and workshops will be held in Portuguese, however
-                            there can be talks in English
-                            depending on the final program.
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="faq-item closed">
+                            <div class="question">What languages are spoken?</div>
+                            <div class="answer">Most of the event talks and workshops will be held in Portuguese, however there can be talks in English depending on the final program.</div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="faq-item closed">
-                        <div class="question">Is there any requirement to attend Talk A Bit?</div>
-                        <div class="answer">Nope, just bring your excitement, curiosity and contageous smile!</div>
+                    <div class="col-3">
+                        <div class="faq-item closed">
+                            <div class="question">Is there any requirement to attend Talk A Bit?</div>
+                            <div class="answer">Nope, just bring your excitement, curiosity and contageous smile!</div>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="faq-item closed">
-                        <div class="question">How to get to Talk A Bit?</div>
-                        <div class="answer">
-                            <h4>By plane:</h4>
-                            <p>To Aeroporto Sá Carneiro (OPorto), and then by car or subway (line E) with line changing
-                                in Trindade to line D with direction to Hospital S.João with exit on station IPO.</p>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="faq-item closed">
+                            <div class="question">How to get to Talk A Bit?</div>
+                            <div class="answer">
+                                <h4>By plane:</h4>
+                                <p>To Aeroporto Sá Carneiro (OPorto), and then by car or subway (line E) with line changing
+                                    in Trindade to line D with direction to Hospital S.João with exit on station IPO.</p>
 
-                            <h4>By car:</h4>
-                            <ul>
-                                <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow
-                                    the signs toward the Hospital de S. João.
-                                </li>
-                                <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the
-                                    Hospital de S. João.
-                                </li>
-                                <li>Coming from A3: Take the direction to Hospital de S. João</li>
-                                <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the
-                                    direction to Hospital de S. João.
-                                </li>
-                            </ul>
+                                <h4>By car:</h4>
+                                <ul>
+                                    <li>Coming from South by A1 - Ash bridge: Take the direction Porto - Paranhos and follow
+                                        the signs toward the Hospital de S. João.
+                                    </li>
+                                    <li>Coming from A4: Take the direction Porto Centro and follow the signs toward the
+                                        Hospital de S. João.
+                                    </li>
+                                    <li>Coming from A3: Take the direction to Hospital de S. João</li>
+                                    <li>Coming from A28: Take the A4 direction to Vila Real - Porto Centro - Follow the
+                                        direction to Hospital de S. João.
+                                    </li>
+                                </ul>
 
-                            <h4>By bus:</h4>
-                            <p>From Rodonorte/Rede Expressos/Tâmega station, follow to Aliados Avenue and take the
-                                subway with direction Hospital S. João (line D). Or take bus number: 204, 300, 301 and
-                                803. There are also other buses near Hospital de São João. For more information: <a
-                                        href="www.stcp.pt">www.stcp.pt</a></p>
+                                <h4>By bus:</h4>
+                                <p>From Rodonorte/Rede Expressos/Tâmega station, follow to Aliados Avenue and take the
+                                    subway with direction Hospital S. João (line D). Or take bus number: 204, 300, 301 and
+                                    803. There are also other buses near Hospital de São João. For more information: <a
+                                            href="www.stcp.pt">www.stcp.pt</a></p>
 
-                            <h4>By train:</h4>
+                                <h4>By train:</h4>
 
-                            <p>If coming by train, there are two main stations:</p>
-                            <ul>
-                                <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change
-                                    to D line.
-                                </li>
-                                <li>São Bento – and then get in the subway (line D)</li>
-                            </ul>
-                            <p>If coming by subway, take the one from line D (yellow) going to Hospital de São João and
-                                exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP. For more information:
-                                <a href="www.metrodoporto.pt">www.metrodoporto.pt</a></p>
+                                <p>If coming by train, there are two main stations:</p>
+                                <ul>
+                                    <li>Campanhã – followed by the subway to Trindade in any line (A,B,C,E) and then change
+                                        to D line.
+                                    </li>
+                                    <li>São Bento – and then get in the subway (line D)</li>
+                                </ul>
+                                <p>If coming by subway, take the one from line D (yellow) going to Hospital de São João and
+                                    exit on IPO. After that, follow Rua Dr. Plácido da Costa to FEUP. For more information:
+                                    <a href="www.metrodoporto.pt">www.metrodoporto.pt</a></p>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="faq-item closed">
-                        <div class="question closed">I have specific questions that are not adressed here. Who can help
-                            me?
-                        </div>
-                        <div class="answer">For additional enquiries reach out to <a href="mailto:geral@talkabit.org">geral@talkabit.org</a>
-                            and we will reply as soon as possible!.
+                    <div class="col-3">
+                        <div class="faq-item closed">
+                            <div class="question closed">I have specific questions that are not adressed here. Who can help me?</div>
+                            <div class="answer">For additional enquiries reach out to <a href="mailto:geral@talkabit.org">geral@talkabit.org</a> and we will reply as soon as possible!</div>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="location">
+        <section id="location" class="main-section">
             <h2>Location</h2>
             <div id="map"></div>
             <ul class="details">
@@ -260,157 +259,110 @@
             </ul>
         </section>
 
-        <section id="sponsors">
+        <section id="sponsors" class="main-section">
             <h2>Sponsors</h2>
 
             <div class="separator">Main</div>
-            <div class="tb-row clearfix">
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="http://www.natixis.com/">
-                        <img class="sponsors-logo main" src="assets/images/sponsors/natixis.png" alt="Natixis">
-                    </a>
+            <div class="tab-grid-container">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="sponsors-block" href="http://www.natixis.com/">
+                            <img class="sponsors-logo main" src="assets/images/sponsors/natixis.png" alt="Natixis">
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <br>
 
             <div class="separator">Gold</div>
-            <div class="tb-row clearfix">
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="http://www.sonae.pt/">
-                        <img class="sponsors-logo gold" src="assets/images/sponsors/bitsonae.png" alt="Sonae">
-                    </a>
-                </div>
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="https://www.talkdesk.com/">
-                        <img class="sponsors-logo gold" src="assets/images/sponsors/talkdesk.png" alt="Talkdesk">
-                    </a>
+            <div class="tab-grid-container">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="sponsors-block" href="http://www.sonae.pt/">
+                            <img class="sponsors-logo gold" src="assets/images/sponsors/bitsonae.png" alt="Sonae">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="https://www.talkdesk.com/">
+                            <img class="sponsors-logo gold" src="assets/images/sponsors/talkdesk.png" alt="Talkdesk">
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <br>
 
             <div class="separator">Silver</div>
-            <div class="tb-row clearfix">
-                <div class="tb-col-3">
-                    <a class="sponsors-block deloitte" href="http://www2.deloitte.com/">
-                        <img class="sponsors-logo silver" src="assets/images/sponsors/deloitte.png" alt="Deloitte">
-                    </a>
-                </div>
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="http://www.mindera.com/">
-                        <img class="sponsors-logo silver" src="assets/images/sponsors/mindera.png" alt="Mindera">
-                    </a>
-                </div>
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="https://www.vodafone.pt/">
-                        <img class="sponsors-logo silver" src="assets/images/sponsors/vodafone.svg" alt="Vodafone">
-                    </a>
-                </div>
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="https://www.xpand-it.com/">
-                        <img class="sponsors-logo silver" src="assets/images/sponsors/xpandit.png" alt="Xpand IT">
-                    </a>
-                </div>
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="http://www.itgrow.pt/">
-                        <img class="sponsors-logo silver" src="assets/images/sponsors/itgrow.png" alt="IT Grow">
-                    </a>
-                </div>
-                <div class="tb-col-3">
-                    <a class="sponsors-block" href="https://www.criticalsoftware.com/">
-                        <img class="sponsors-logo silver" src="assets/images/sponsors/critical.png" alt="Critical Software">
-                    </a>
+            <div class="tab-grid-container">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="sponsors-block deloitte" href="http://www2.deloitte.com/">
+                            <img class="sponsors-logo silver" src="assets/images/sponsors/deloitte.png" alt="Deloitte">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="http://www.mindera.com/">
+                            <img class="sponsors-logo silver" src="assets/images/sponsors/mindera.png" alt="Mindera">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="https://www.vodafone.pt/">
+                            <img class="sponsors-logo silver" src="assets/images/sponsors/vodafone.svg" alt="Vodafone">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="https://www.xpand-it.com/">
+                            <img class="sponsors-logo silver" src="assets/images/sponsors/xpandit.png" alt="Xpand IT">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="http://www.itgrow.pt/">
+                            <img class="sponsors-logo silver" src="assets/images/sponsors/itgrow.png" alt="IT Grow">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="https://www.criticalsoftware.com/">
+                            <img class="sponsors-logo silver" src="assets/images/sponsors/critical.png" alt="Critical Software">
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <br>
-
         </section>
 
-        <section id="organization">
+        <section id="organization" class="main-section">
             <h2>Organization</h2>
             <div class="separator">Conference Chairmen</div>
-            <div class="group">
-                {% for member in site.data.org2017.chair %}
-                    <div class="person">
-                        {% if member.linkedin %}
-                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                                <div class="linkedin-contact">
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <i class="fa fa-linkedin-square fa-2x"></i>
-                            </a>
-                        {% else %}
-                            <div class="linkedin-contact">
-                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                            </div>
-                        {% endif %}
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.chair %}
+                        {% include member.html %}
+                    {% endfor %}
+                </div>
             </div>
             <div class="separator">Conference Members</div>
-            <div class="group">
-                {% for member in site.data.org2017.conference %}
-                    <div class="person">
-                        {% if member.linkedin %}
-                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                                <div class="linkedin-contact">
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <i class="fa fa-linkedin-square fa-2x"></i>
-                            </a>
-                        {% else %}
-                            <div class="linkedin-contact">
-                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                            </div>
-                        {% endif %}
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.conference %}
+                        {% include member.html %}
+                    {% endfor %}
+                </div>
             </div>
             <div class="separator">Program Committee</div>
-            <div class="group">
-                {% for member in site.data.org2017.program %}
-                    <div class="person">
-                        {% if member.linkedin %}
-                            <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                                <div class="linkedin-contact">
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                </div>
-                                <i class="fa fa-linkedin-square fa-2x"></i>
-                            </a>
-                        {% else %}
-                            <div class="linkedin-contact">
-                                {% if member.name == "Maria Chaves" %}
-                                    <img class="avatar" src="assets/images/organization/user.svg">
-                                {% else %}
-                                    <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                                {% endif %}
-                            </div>
-                        {% endif %}
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.program %}
+                        {% include member.html %}
+                    {% endfor %}
+                </div>
             </div>
             <div class="separator">Steering Committee</div>
-            <div class="group">
-                {% for member in site.data.org2017.steering %}
-                    <div class="person">
-                        <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
-                            <div class="linkedin-contact">
-                                <img class="avatar" src="assets/images/organization/{{ member.name | slugify }}.jpg">
-                            </div>
-                            <i class="fa fa-linkedin-square fa-2x"></i>
-                        </a>
-                        <div class="name">{{ member.name }}</div>
-                        <div class="department">{{ member.department }}</div>
-                    </div>
-                {% endfor %}
+            <div class="group tab-grid-container">
+                <div class="row">
+                    {% for member in site.data.org2017.steering %}
+                        {% include member.html %}
+                    {% endfor %}
+                </div>
             </div>
         </section>
 
@@ -425,7 +377,7 @@
 <script type="text/javascript">
     (function ($) {
         $(document).ready(function () {
-            $('#faq ul li .faq-item').click(function () {
+            $('#faq .faq-item').click(function () {
                 $(this).toggleClass('closed');
             });
             $('nav li a').click(function (e) {
