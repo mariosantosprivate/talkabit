@@ -52,7 +52,7 @@ chair:
     name: Miguel Botelho
     department: Student Volunteers
 
-others:
+conference:
   - linkedin: edgar-ramos-446826134
     name: Edgar Ramos
     department: Conference
@@ -109,8 +109,7 @@ others:
     name: Hanna Denysuyk
     department: Student Volunteers
 
-
-committee:
+program:
   - linkedin: ngmatos
     name: Nuno Barros
     department: Reviewers
