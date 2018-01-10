@@ -111,7 +111,7 @@
                             <h3>Conference</h3>
                             <img style="width:160px" src="assets/images/ticket.png">
                             <p>Get your tyckets now!</p>
-                        </div>           
+                        </div>
                     </a>
                 </div>
             </div>
@@ -353,7 +353,7 @@
             </div>
             <div class="separator">Conference Members</div>
             <div class="group">
-                {% for member in site.data.org2017.others %}
+                {% for member in site.data.org2017.conference %}
                     <div class="person">
                         {% if member.linkedin %}
                             <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
@@ -374,7 +374,7 @@
             </div>
             <div class="separator">Program Committee</div>
             <div class="group">
-                {% for member in site.data.org2017.committee %}
+                {% for member in site.data.org2017.program %}
                     <div class="person">
                         {% if member.linkedin %}
                             <a href="https://www.linkedin.com/in/{{ member.linkedin }}/" target="_blank">
