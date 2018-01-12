@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/2018.css">
+    <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
     <title>Talk A Bit - 6th Edition</title>
 </head>
 
@@ -371,6 +372,7 @@
 </div>
 
 <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="assets/js/countdown.js"></script>
 
@@ -390,6 +392,9 @@
                     behavior: 'smooth'
                 });
             });
+            $('#main #speakers .speaker .resume').slimScroll({
+                height: '200px'
+            })
         });
     })(jQuery);
 </script>
