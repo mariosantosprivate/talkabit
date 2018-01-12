@@ -1,14 +1,3 @@
-- linkedin: simaobelchior
-  name: Simão Belchior
-  company: Vizzuality
-  title: Let's Talk a Bit About Data to Save Our Planet
-  resume: |
-    Started his studies at FEUP in 2002, on the Electrical and Computers Engineering Degree. Two years later requested a transfer to the Master in Informatics and Computing Engineering, as he felt it was a better match for his profile and skills.
-    After finishing his studies, in 2009, moved to the United Kingdom to work at UNEP-WCMC an executive agency of the United Nations Environment Programme. In the five years at UNEP-WCMC, first as a Web Developer and later as an Analyst Developer, his enthusiasm for building web applications that have a direct and positive impact in our planet grew.
-    At the end of 2014 he joined Vizzuality following an invitation by its CEO with whom he worked at UNEP-WCMC. Since then he has been working as a Product Developer, leading a team of designers, developers, data scientists and social scientists in the development of several projects in the fields of biodiversity and conservation, transparency and social development.
-    In 2017 he lead the opening of a Vizzuality office in Porto.
-
-
 - linkedin: carvalhao
   name: David Carvalhão
   company: Vigil365
@@ -27,6 +16,35 @@
     After the completion of her PhD, Annemarie joined Bosch Chassis Systems Control (CC) in Abstatt, Germany, working in R&D on optical sensors in the context of highly automated driving. She recently transferred to Braga, Portugal, as team leader in R&D for CC in Portugal.
 
 
+- linkedin: simaobelchior
+  name: Simão Belchior
+  company: Vizzuality
+  title: Let's Talk a Bit About Data to Save Our Planet
+  resume: |
+    Started his studies at FEUP in 2002, on the Electrical and Computers Engineering Degree. Two years later requested a transfer to the Master in Informatics and Computing Engineering, as he felt it was a better match for his profile and skills.
+    After finishing his studies, in 2009, moved to the United Kingdom to work at UNEP-WCMC an executive agency of the United Nations Environment Programme. In the five years at UNEP-WCMC, first as a Web Developer and later as an Analyst Developer, his enthusiasm for building web applications that have a direct and positive impact in our planet grew.
+    At the end of 2014 he joined Vizzuality following an invitation by its CEO with whom he worked at UNEP-WCMC. Since then he has been working as a Product Developer, leading a team of designers, developers, data scientists and social scientists in the development of several projects in the fields of biodiversity and conservation, transparency and social development.
+    In 2017 he lead the opening of a Vizzuality office in Porto.
+
+
+- linkedin: daniel-catalão-946a8a15
+  name: Daniel Catalão
+  company: RTP
+  title: Let’s Moderate The Talk a Bit Forum
+  resume: |
+    Daniel Catalão is Journalist and Presenter at RTP television (Portuguese TV Public Service Broadcast). He is also Professor of Journalism at University Lusófona of Porto, and "Digital Media" PhD student at Faculty of Engineering University of Porto.
+    Daniel has been part of international research projects on media education and literacy (RadioActive Europe and RadioActive Portugal).
+
+
+- linkedin: anascpimentel
+  name: Ana Pimentel
+  company: Observador
+  title: Let’s Moderate The Talk a Bit Forum
+  resume: |
+    I'm a journalist at Observador. As a freelancer, I've published in Jornal de Negócios, Exame, Expresso, Saber Viver, Nau XXI, Notícias Magazine, Carrossel Magazine, Ei Montepio - Portal de Educação Financeira, Anuário XXI – Ter Opinião 2012, etc. I also wrote in english to the news site BioNews Texas. I've graduated from Universidade Nova de Lisboa in Communication Sciencies in 2007 and have a post-degree in Portuguese Economy in the Global Context from IDEFE – ISEG. I was still a student (2007) when I published my first article in Única, Expresso's magazine.
+
+
+
 - linkedin: josefonseca
   name: José Fonseca
   company: Mindera
@@ -38,18 +56,28 @@
   name: Pedro Oliveira
   company: Católica Lisbon School of Business and Economics
   title: Let's Talk a Bit About Patient Innovation
-  resume: |+
+  resume: |
     Pedro Oliveira is Professor at the Católica-Lisbon School of Business and Economics; Academic Fellow at the Cornell Institute for Healthy Futures; Founder and President of Patient Innovation; and co-founder of PPL Crowdfunding. Pedro is Principal Investigator of several research initiatives.
-
     Previously he was Senior Associate Dean for Faculty and Research at Católica-Lisbon; Academic Director of the LisbonMBA (a joint-venture in the collaboration with NovaSBE and MIT-Sloan); Director of the doctoral program in Technology Change and Entrepreneurship (jointly offered with IST and Carnegie Mellon University). He was also an International Faculty Fellow at MIT Sloan School of Management and Advisor to the Ministry of Science, Technology and Higher Education.
-
     He received his Ph.D. in Operations, Technology and Innovation Management from the University of North Carolina at Chapel Hill; his M.Sc. in Operations Research and Systems Engineering; and his "licenciatura" in Naval Engineering from Instituto Superior Técnico. He also completed some advanced training at Harvard Business School and Northwestern University’s Kellogg School of Management.
 
 
 - linkedin: paulol
   name: Paulo Lopes
   company: Xpand IT
-  title: Let's Talk a Bit About Why We Think 1% Can Change The World
+  title: Let's Talk a Bit About Project Pledge 1%
   resume: |
     Paulo Lopes is the current CEO of Xpand IT, being in the company since 2008 and directly contributing to the growth and affirmation of the consultant on the global panorama  as a reference company in the fields of Business Intelligence, Big Data, Enterprise Middleware and Enterprise Mobility. WIth over 15 years of experience in the IT industry, he has made a part of his professional course with Sybase as a strategy consultant, business developer and team manager. In the recent years he has played a key leading role in international projects with special relevance in the domains of Enterprise Mobility, RFID, EAI, SOA, BPM, BI and Big Data in several industries like telecommunications, banking, transportation and public administration. His base education is ISCTE’s course in Telecommunications and Informatics Engineering and in 2007/2008 he was enrolled in ISCTE Business School’s Executive Master’s in Business Administration. He was also an invited teacher of Mobile Enterprise Systems at Universidade Lusófona.
 
+
+#- linkedin: filipe-araújo-227452
+#  name: Filipe Araújo
+#  company: CM Porto
+#  title: Let’s discuss a bit about he social impact of technology
+#  resume:
+
+#- linkedin: rmvidal
+#  name: Raúl Vidal
+#  company: FEUP
+#  title: Let’s discuss a bit about he social impact of technology
+#  resume:
