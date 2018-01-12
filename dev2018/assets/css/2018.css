@@ -282,10 +282,14 @@ nav ul li .fa {
     position: relative;
     padding-bottom: 16px;
 }
+#main #speakers .speaker > a:first-child {
+    border-radius: 500px;
+    display: block;
+}
 #main #speakers .speaker .photo {
     display: block;
     border: 4px solid #009ADD;
-    border-radius: 50%;
+    border-radius: 500px;
     width: 100%;
     margin-bottom: 20px;
 }

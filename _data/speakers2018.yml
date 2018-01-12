@@ -1,21 +1,3 @@
-- linkedin: carvalhao
-  name: David Carvalhão
-  company: Vigil365
-  title: Let's Talk a Bit About How Your Computer Will Use YOU
-  resume: |
-    Obsessive serial entrepreneur, polymath and creative thinker, he has 21 startups under his belt and a few extra pounds on top, some patents and a track record for getting exotic things done.
-    For the past few years he has been invested in helping startups get to market, having been a trainer and mentor at some of the best known acceleration programs in Europe, and creating an ethical framework for technological evolution.
-
-
-- linkedin: annemarie-holleczek-a2a922102
-  name: Annemarie Holleczek
-  company: Bosch
-  title: Let's Talk a Bit About Automated Driving
-  resume: |
-    Annemarie studied physics at the University of Erlangen-Nuernberg and completed her diploma thesis at the local Max Planck Institute for the Science of Light on classical and quantum properties of non-uniformly polarised states of light. For her PhD, she transferred to the University of Oxford, researching in the area of experimental quantum computing, using single photons from an atom-cavity source as well as a photonic integrated circuit.
-    After the completion of her PhD, Annemarie joined Bosch Chassis Systems Control (CC) in Abstatt, Germany, working in R&D on optical sensors in the context of highly automated driving. She recently transferred to Braga, Portugal, as team leader in R&D for CC in Portugal.
-
-
 - linkedin: simaobelchior
   name: Simão Belchior
   company: Vizzuality
@@ -27,22 +9,22 @@
     In 2017 he lead the opening of a Vizzuality office in Porto.
 
 
-- linkedin: daniel-catalão-946a8a15
-  name: Daniel Catalão
-  company: RTP
-  title: Let’s Moderate The Talk a Bit Forum
+- linkedin: annemarie-holleczek-a2a922102
+  name: Annemarie Holleczek
+  company: Bosch
+  title: Let's Talk a Bit About Automated Driving
   resume: |
-    Daniel Catalão is Journalist and Presenter at RTP television (Portuguese TV Public Service Broadcast). He is also Professor of Journalism at University Lusófona of Porto, and "Digital Media" PhD student at Faculty of Engineering University of Porto.
-    Daniel has been part of international research projects on media education and literacy (RadioActive Europe and RadioActive Portugal).
+    Annemarie studied physics at the University of Erlangen-Nuernberg and completed her diploma thesis at the local Max Planck Institute for the Science of Light on classical and quantum properties of non-uniformly polarised states of light. For her PhD, she transferred to the University of Oxford, researching in the area of experimental quantum computing, using single photons from an atom-cavity source as well as a photonic integrated circuit.
+    After the completion of her PhD, Annemarie joined Bosch Chassis Systems Control (CC) in Abstatt, Germany, working in R&D on optical sensors in the context of highly automated driving. She recently transferred to Braga, Portugal, as team leader in R&D for CC in Portugal.
 
 
-- linkedin: anascpimentel
-  name: Ana Pimentel
-  company: Observador
-  title: Let’s Moderate The Talk a Bit Forum
+- linkedin: carvalhao
+  name: David Carvalhão
+  company: Vigil365
+  title: Let's Talk a Bit About How Your Computer Will Use YOU
   resume: |
-    I'm a journalist at Observador. As a freelancer, I've published in Jornal de Negócios, Exame, Expresso, Saber Viver, Nau XXI, Notícias Magazine, Carrossel Magazine, Ei Montepio - Portal de Educação Financeira, Anuário XXI – Ter Opinião 2012, etc. I also wrote in english to the news site BioNews Texas. I've graduated from Universidade Nova de Lisboa in Communication Sciencies in 2007 and have a post-degree in Portuguese Economy in the Global Context from IDEFE – ISEG. I was still a student (2007) when I published my first article in Única, Expresso's magazine.
-
+    Obsessive serial entrepreneur, polymath and creative thinker, he has 21 startups under his belt and a few extra pounds on top, some patents and a track record for getting exotic things done.
+    For the past few years he has been invested in helping startups get to market, having been a trainer and mentor at some of the best known acceleration programs in Europe, and creating an ethical framework for technological evolution.
 
 
 - linkedin: josefonseca
@@ -50,6 +32,14 @@
   company: Mindera
   title: Let's Talk a Bit About Autism Rocks
   resume: With over 15 years in high performance software engineering, José is the founder of the successful companies Mindera and Blip.
+
+
+- linkedin: paulol
+  name: Paulo Lopes
+  company: Xpand IT
+  title: Let’s Talk a Bit About Why We Think 1% Can Change The World
+  resume: |
+    Paulo Lopes is the current CEO of Xpand IT, being in the company since 2008 and directly contributing to the growth and affirmation of the consultant on the global panorama  as a reference company in the fields of Business Intelligence, Big Data, Enterprise Middleware and Enterprise Mobility. WIth over 15 years of experience in the IT industry, he has made a part of his professional course with Sybase as a strategy consultant, business developer and team manager. In the recent years he has played a key leading role in international projects with special relevance in the domains of Enterprise Mobility, RFID, EAI, SOA, BPM, BI and Big Data in several industries like telecommunications, banking, transportation and public administration. His base education is ISCTE’s course in Telecommunications and Informatics Engineering and in 2007/2008 he was enrolled in ISCTE Business School’s Executive Master’s in Business Administration. He was also an invited teacher of Mobile Enterprise Systems at Universidade Lusófona.
 
 
 - linkedin: poliveira1
@@ -62,12 +52,27 @@
     He received his Ph.D. in Operations, Technology and Innovation Management from the University of North Carolina at Chapel Hill; his M.Sc. in Operations Research and Systems Engineering; and his "licenciatura" in Naval Engineering from Instituto Superior Técnico. He also completed some advanced training at Harvard Business School and Northwestern University’s Kellogg School of Management.
 
 
-- linkedin: paulol
-  name: Paulo Lopes
-  company: Xpand IT
-  title: Let’s Talk a Bit About Why We Think 1% Can Change The World
+- linkedin: daniel-catalão-946a8a15
+  name: Daniel Catalão
+  company: RTP
+  title: Let's Discuss a Bit About The Social Impact of Technology
   resume: |
-    Paulo Lopes is the current CEO of Xpand IT, being in the company since 2008 and directly contributing to the growth and affirmation of the consultant on the global panorama  as a reference company in the fields of Business Intelligence, Big Data, Enterprise Middleware and Enterprise Mobility. WIth over 15 years of experience in the IT industry, he has made a part of his professional course with Sybase as a strategy consultant, business developer and team manager. In the recent years he has played a key leading role in international projects with special relevance in the domains of Enterprise Mobility, RFID, EAI, SOA, BPM, BI and Big Data in several industries like telecommunications, banking, transportation and public administration. His base education is ISCTE’s course in Telecommunications and Informatics Engineering and in 2007/2008 he was enrolled in ISCTE Business School’s Executive Master’s in Business Administration. He was also an invited teacher of Mobile Enterprise Systems at Universidade Lusófona.
+    Daniel Catalão is Journalist and Presenter at RTP television (Portuguese TV Public Service Broadcast). He is also Professor of Journalism at University Lusófona of Porto, and "Digital Media" PhD student at Faculty of Engineering University of Porto.
+    Daniel has been part of international research projects on media education and literacy (RadioActive Europe and RadioActive Portugal).
+
+
+- linkedin: anascpimentel
+  name: Ana Pimentel
+  company: Observador
+  title: Let's Discuss a Bit About The Social Impact of Technology
+  resume: |
+    I'm a journalist at Observador. As a freelancer, I've published in Jornal de Negócios, Exame, Expresso, Saber Viver, Nau XXI, Notícias Magazine, Carrossel Magazine, Ei Montepio - Portal de Educação Financeira, Anuário XXI – Ter Opinião 2012, etc. I also wrote in english to the news site BioNews Texas. I've graduated from Universidade Nova de Lisboa in Communication Sciencies in 2007 and have a post-degree in Portuguese Economy in the Global Context from IDEFE – ISEG. I was still a student (2007) when I published my first article in Única, Expresso's magazine.
+
+
+
+
+
+
 
 
 #- linkedin: filipe-araújo-227452

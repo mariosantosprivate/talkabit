@@ -328,6 +328,61 @@
                     </div>
                 </div>
             </div>
+
+            <div class="separator">Friends</div>
+            <div class="tab-grid-container">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="sponsors-block" href="https://www.bosch.com/">
+                            <img class="sponsors-logo" src="assets/images/sponsors/bosch.jpg" alt="Bosch">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="sponsors-block" href="https://www.redbull.com/">
+                            <img class="sponsors-logo" src="assets/images/sponsors/redbull.jpg" alt="Red Bull">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="main-section">
+            <h2>Partners</h2>
+
+            <div class="tab-grid-container">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="partners-block" href="https://sigarra.up.pt/">
+                            <img class="partners-logo" src="assets/images/friends/uporto.png" alt="UP">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="partners-block" href="https://sigarra.up.pt/feup/">
+                            <img class="partners-logo" src="assets/images/friends/feup.png" alt="FEUP">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="partners-block" href="https://ni.fe.up.pt/">
+                            <img class="partners-logo" src="assets/images/friends/niaefeup.svg" alt="NIAEFEUP">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="partners-block" href="https://www.ieee.org/">
+                            <img class="partners-logo" src="assets/images/friends/ieee.png" alt="IEEE">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="partners-block" href="https://www.aefeup.pt/">
+                            <img class="partners-logo" src="assets/images/friends/aefeup.png" alt="AEFEUP">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="partners-block" href="https://www.best.eu.org/">
+                            <img class="partners-logo" src="assets/images/friends/best.png" alt="Best">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="organization" class="main-section">
@@ -371,6 +426,8 @@
 </div>
 
 <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.matchHeight.js"></script>
 <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="assets/js/countdown.js"></script>
 
@@ -390,6 +447,10 @@
                     behavior: 'smooth'
                 });
             });
+            $('#main #speakers .speaker .resume').slimScroll({ height: '150px' })
+            $('#main #faq .faq-item .answer').slimScroll({ height: '200px' })
+            $('#main #speakers .speaker').matchHeight()
+            $('#main #faq .faq-item .question').matchHeight()
         });
     })(jQuery);
 </script>
