@@ -33,7 +33,7 @@
     <meta property="og:image" content="http://talkabit.org/assets/images/talkabit.jpg"/>
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> -->
     <link rel="stylesheet" href="assets/css/2018.css">
     <title>Talk A Bit - 6th Edition</title>
 </head>
@@ -49,11 +49,16 @@
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#location">Location</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#partners">Partners</a></li>
         <li><a href="#organization">Organization</a></li>
         <!-- <li><a href="https://facebook.com/talkabit"><i class="fa fa-fw fa-facebook"></i></a></li> -->
         <!-- <li><a href="https://twitter.com/talkabitconf"><i class="fa fa-fw fa-twitter"></i></a></li> -->
     </ul>
 </nav>
+
+<div id="preloader">
+    <div class="loader"></div>
+</div>
 
 <div id="landing">
     <img class="banner" src="assets/images/talk_a_bit_2018.svg"/>
@@ -329,6 +334,8 @@
                 </div>
             </div>
 
+            <br>
+
             <div class="separator">Friends</div>
             <div class="tab-grid-container">
                 <div class="row">
@@ -433,20 +440,20 @@
 
 <script type="text/javascript">
     (function ($) {
+        $(window).on('load', function () {
+            $('#preloader').fadeOut(500, function () {
+                $(this).remove();
+            });
+        });
         $(document).ready(function () {
             $('#faq .faq-item').click(function () {
                 $(this).toggleClass('closed');
             });
             $('nav li a').click(function (e) {
                 e.preventDefault();
-                var $target = $($(this).attr('href'));
-                console.log($target.offset().top);
-                window.scroll({
-                    top: $target.offset().top - 70,
-                    left: 0,
-                    behavior: 'smooth'
-                });
+                $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 70}, 250)
             });
+
             $('#main #speakers .speaker .resume').slimScroll({ height: '150px' })
             $('#main #faq .faq-item .answer').slimScroll({ height: '200px' })
             $('#main #speakers .speaker').matchHeight()
