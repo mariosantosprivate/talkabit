@@ -150,9 +150,13 @@
                     {% for speaker in site.data.speakers2018 %}
                         <div class="col-2">
                             <div class="speaker">
-                                <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}/" target="_blank">
+                                {% if speaker.url %}
+                                <a href="{{ speaker.url }}" target="_blank">
+                                {% endif %}
                                     <img class="photo" src="assets/images/speakers/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+                                {% if speaker.url %}
                                 </a>
+                                {% endif %}
                                 <div class="name">{{ speaker.name }}</div>
                                 <div class="company">{{ speaker.company }}</div>
                                 <div class="title">{{ speaker.title }}</div>
