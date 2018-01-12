@@ -294,24 +294,22 @@ nav ul li .fa {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 6px;
-    padding: 0 16px;
+    line-height: 1.2;
+    margin-bottom: 4px;
 }
 #main #speakers .speaker .company {
     color: #009AFF;
     font-size: 1.1em;
-    line-height: 1.2;
-    min-height: 42px;
+    line-height: 1.5;
     text-align: center;
     padding: 0 16px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 #main #speakers .speaker .title {
     font-size: 0.9em;
     padding: 0 16px;
     margin-bottom: 8px;
     line-height: 1.5;
-    min-height: 42px;
 }
 #main #speakers .speaker .resume {
     /* display: none; */
@@ -362,19 +360,17 @@ nav ul li .fa {
 }
 #main #faq .answer {
     color: #000;
-    font-size: 12px;
+    font-size: 0.9em;
     padding: 10px;
     max-height: 200px;
     overflow: scroll;
     line-height: 1.5;
 }
 #main #faq .answer h4 {
-    font-size: 16px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 #main #faq .answer p {
-    font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 8px;
@@ -389,6 +385,13 @@ nav ul li .fa {
 }
 #main #faq .faq-item.closed .answer {
     display: none;
+}
+#main #faq .faq-item div.slimScrollDiv {
+    max-height: 200px;
+    transition: max-height 0.25s;
+}
+#main #faq .faq-item.closed div.slimScrollDiv[style] {
+    max-height: 0 !important;
 }
 
 

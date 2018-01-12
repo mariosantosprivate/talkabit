@@ -427,6 +427,7 @@
 
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.matchHeight.js"></script>
 <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="assets/js/countdown.js"></script>
 
@@ -446,9 +447,10 @@
                     behavior: 'smooth'
                 });
             });
-            $('#main #speakers .speaker .resume').slimScroll({
-                height: '200px'
-            })
+            $('#main #speakers .speaker .resume').slimScroll({ height: '150px' })
+            $('#main #faq .faq-item .answer').slimScroll({ height: '200px' })
+            $('#main #speakers .speaker').matchHeight()
+            $('#main #faq .faq-item .question').matchHeight()
         });
     })(jQuery);
 </script>
