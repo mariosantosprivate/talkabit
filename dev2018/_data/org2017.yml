@@ -109,6 +109,14 @@ conference:
     name: Hanna Denysuyk
     department: Student Volunteers
 
+  - linkedin:
+    name: Francisco Silva
+    department: Multimedia
+
+  - linkedin:
+    name: Arthur Veras
+    department: Multimedia
+
 program:
   - linkedin: ngmatos
     name: Nuno Barros
