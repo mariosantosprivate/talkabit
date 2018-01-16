@@ -381,6 +381,23 @@ nav ul li .fa {
 
 
 /**
+== @@ Program
+== == == == == == == == == == == == == == == == == == == ==
+**/
+
+#program {
+    margin-bottom: 50px;
+}
+#program a {
+    display: block;
+}
+#program a img {
+    display: block;
+    width: 100%;
+}
+
+
+/**
 == @@ Speakers
 == == == == == == == == == == == == == == == == == == == ==
 **/
@@ -596,6 +613,7 @@ nav ul li .fa {
     transform: translate(-50%, -50%);
 }
 
+
 /**
 == @@ Organization
 == == == == == == == == == == == == == == == == == == == ==
@@ -637,16 +655,6 @@ nav ul li .fa {
 #main #organization .group .person .details .department {
     font-size: 0.7em;
     font-weight: 100;
-}
-
-
-/**
-== @@ Schedule
-== == == == == == == == == == == == == == == == == == == ==
-**/
-
-#schedule {
-    margin-bottom: 50px;
 }
 
 
