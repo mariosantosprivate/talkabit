@@ -109,12 +109,12 @@ conference:
     name: Hanna Denysuyk
     department: Student Volunteers
 
-  - linkedin:
-    name: Francisco Silva
+  - linkedin: ochicomodesto
+    name: Francisco Modesto
     department: Multimedia
 
-  - linkedin:
-    name: Arthur Veras
+  - linkedin: arthurveras
+    name: Arthur Silveira
     department: Multimedia
 
 program:
