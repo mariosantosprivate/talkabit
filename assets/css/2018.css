@@ -428,6 +428,7 @@ nav ul li .fa {
     text-align: center;
     line-height: 1.2;
     margin-bottom: 4px;
+    padding: 0 16px;
 }
 #main #speakers .speaker .company {
     color: #009AFF;
