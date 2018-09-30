@@ -151,6 +151,13 @@ div#preloader .loader {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about .content-mobile {
+        padding-top: 10%;
+    }
+}
+
+
 @media screen and (max-width: 992px)
 {
     .landing-feup img{
