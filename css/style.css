@@ -41,6 +41,10 @@ body {
     width: 100%;
 }
 
+#navbar .nav-item {
+    margin: 0px 2px;
+}
+
 #navbar .nav-item .nav-link {
     border: 5px solid transparent;
 
@@ -50,6 +54,12 @@ body {
 
     border-left: 5px solid #1399D6;
     border-right: 5px solid #1399D6;
+}
+
+#navbarNav .nav-link.active {
+    color: #1399D6;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #navbar.hide-while-reloading {
@@ -248,6 +258,14 @@ div#preloader .loader {
 
     #navbar .brand-img-hide-mobile {
         display: none;
+    }
+
+    #navbar {
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    #navbar.fadeIn {
+        background-color: rgba(0, 0, 0, 0.9) !important;
     }
 
 }
