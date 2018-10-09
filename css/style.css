@@ -246,6 +246,10 @@ div#preloader .loader {
         padding-bottom:15px;
     }
 
+    #navbar .brand-img-hide-mobile {
+        display: none;
+    }
+
 }
 @media screen and (min-width: 992px) {
     .landing-feup {
