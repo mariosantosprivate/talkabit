@@ -52,80 +52,60 @@ body {
     border-right: 5px solid #1399D6;
 }
 
-#navbar.hide-first {
-    display: none;
-}
-
-#navbar.hide {
-
-    -webkit-animation: fadeout 0.7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeout 0.7s; /* Firefox < 16 */
-    -ms-animation: fadeout 0.7s; /* Internet Explorer */
-    -o-animation: fadeout 0.7s; /* Opera < 12.1 */
-    animation: fadeout 0.7s;
+#navbar.hide-while-reloading {
+    visibility: hidden;
 }
 
 #navbar {
-    -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 0.7s; /* Firefox < 16 */
-    -ms-animation: fadein 0.7s; /* Internet Explorer */
-    -o-animation: fadein 0.7s; /* Opera < 12.1 */
-    animation: fadein 0.7s;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+#navbar.hide {
+    background-color: rgba(0,0,0, 0);
+}
+
+#navbar .navbar-brand.hide {
+    visibility: hidden;
+}
+
+#navbar.fadeIn {
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera < 12.1 */
+    animation: fadein 0.5s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background-color: rgba(0,0,0, 0);}
+    to   {  background-color: rgba(0,0,0, 0.9); }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { background-color: rgba(0,0,0, 0);}
+    to   {  background-color: rgba(0,0,0, 0.9); }
 }
-
-@-moz-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
-
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background-color: rgba(0,0,0, 0);}
+    to   {  background-color: rgba(0,0,0, 0.9); }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-ms-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background-color: rgba(0,0,0, 0);}
+    to   {  background-color: rgba(0,0,0, 0.9); }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-o-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+    from { background-color: rgba(0,0,0, 0);}
+    to   {  background-color: rgba(0,0,0, 0.9); }
 }
 
 /* Preloader */

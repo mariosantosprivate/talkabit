@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark hide-first" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top hide-while-reloading hide" id="navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -52,7 +52,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav mx-auto">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand hide" id="navbarBrandImg" href="#">
                     <img src="res/img/tab.png" width="60" height="60" alt="">
                 </a>
             </ul>
@@ -361,9 +361,11 @@
     <script type="text/javascript">
         (function ($) {
             $(window).on('load', function () {
+
+                document.getElementById("navbar").classList.remove("hide-while-reloading");
+
                 $('#preloader').fadeOut(500, function () {
                     $(this).remove();
-                    document.getElementById("navbar").classList.add("fixed-top");
                 });
             });
         })(jQuery);
