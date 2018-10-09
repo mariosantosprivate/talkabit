@@ -54,7 +54,6 @@ body {
 
 #navbarNav .nav-link.active {
     color: #1399D6;
-    font-style: italic;
     font-weight: bold;
 }
 
@@ -193,8 +192,9 @@ div#preloader .loader {
 }
 
 .landing .is-table .center-block{
-	    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 40px;
+
 }
 .landing .landing-logo img {
     width: 600px;
