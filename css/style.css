@@ -41,10 +41,6 @@ body {
     width: 100%;
 }
 
-#navbar .nav-item {
-    margin: 0px 2px;
-}
-
 #navbar .nav-item .nav-link {
     border: 5px solid transparent;
 
