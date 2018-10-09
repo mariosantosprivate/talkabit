@@ -490,7 +490,7 @@ h3{
     letter-spacing: 1px;
 }
 
-#about, #faq {
+#about, #program, #sponsors {
     width: 100%;
     font-family: 'DecimaLight';
     background: #fafafa;
@@ -506,7 +506,7 @@ h3{
     letter-spacing: 1px;
 }
 
-#about p{
+#about p, #program p, #sponsors p{
     color: #000000;
     font-weight: 500;
     font-size: 17px;
@@ -519,18 +519,18 @@ h3{
 
 /* Program */
 
-#speakers, #program {
+#speakers, #faq, #organization {
     width: 100%;
     font-family: 'DecimaLight';
     background: #0f2e51;
     text-align: justify;
 }
 
-#program h3{
-    color:white;
+#program h3, #sponsors h3 {
+    color: #009AD7;
 }
 
-#faq h3{
+program h3{
     color: #009AD7;
 }
 
