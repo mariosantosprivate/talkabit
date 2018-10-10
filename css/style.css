@@ -37,12 +37,15 @@ body {
     font-size: 17px;
 }
 
+
 #navbar .navbar-brand {
     width: 100%;
 }
 
 #navbar .nav-item .nav-link {
+	font-size:15px;
     border: 5px solid transparent;
+	-webkit-transition: all .3s;
 
 }
 
@@ -192,7 +195,7 @@ div#preloader .loader {
 }
 
 .landing .is-table .center-block{
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 40px;
 
 }
@@ -202,7 +205,28 @@ div#preloader .loader {
     margin-bottom: 60px;
 }
 
+
+.navbar-dark .navbar-toggler{
+	border:none;
+	background:none;
+	height:30px;
+}
+
+.navbar-toggler-icon{
+	height:1em;
+	width:1em;
+}
+
+@media screen and (min-width: 992px) {
+	
+	.landing .is-table .center-block{
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+}
+
 @media screen and (max-width: 992px) {
+
     .landing .landing-logo img {
         width: 500px;
     }
@@ -225,7 +249,7 @@ div#preloader .loader {
 }
 
 .landing-feup img {
-    width: 150px;
+    width: 130px;
     margin: 10px;
 }
 
@@ -411,7 +435,7 @@ div#preloader .loader {
     padding: 0;
     list-style-type: none;
     OVERFLOW: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .social > li {
@@ -419,7 +443,7 @@ div#preloader .loader {
 }
 
 .social ul {
-    margin-top: 80px;
+    margin-top: 40px;
     padding-left: 0 !important;
 }
 
@@ -445,6 +469,7 @@ div#preloader .loader {
 .social ul li {
     display: inline-block;
     margin: 0 20px;
+	
 }
 
 .social a {
