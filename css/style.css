@@ -515,24 +515,6 @@ div#preloader .loader {
     color: #ffffff;
 }
 
-#previous-edition button {
-    color: #1399D6;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: oblique;
-    margin-top: 40px;
-}
-
-#previous-edition button i {
-    margin-right: 5px;
-    animation: moving 1s infinite;
-}
-
-@keyframes moving {
-    0%   {position:relative; left: 0; top: 0;}
-    50%  {position:relative; left: -5px; }
-    100% {position:relative; left: 0; }
-}
 
 /* About */
 
@@ -701,6 +683,78 @@ h3{
 .location-detailed-info p:last-of-type {
     margin-bottom: 30px;
 }
+
+/* Organization */
+
+.organization-container {
+    color: black;
+    background: #fafafa;
+    font-family: 'DecimaLight';
+    height: 100vh;
+}
+
+.organization-container .container:first-of-type {
+    padding-top: 80px;
+
+}
+
+.organization-title {
+    color: #1399D6;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+
+}
+
+.organization-container .organization-title-container {
+    text-align: center;
+}
+
+.organization-container .p {
+
+    vertical-align: center;
+    height: 100%;
+
+}
+
+.departments .col-sm-2{
+    margin-top: 20px;
+}
+
+.departments a {
+    text-decoration: none !important;
+    color: black;
+    font-weight: bold;
+    border: 5px solid transparent;
+    font-size: 1.1em;
+}
+
+.departments a:hover {
+    border-bottom: 5px solid #1399D6;
+}
+
+.department {
+    margin-top: 20px;
+}
+
+.department .teammate-figure > img {
+    border-radius: 75px;
+    border: 4px solid #1399D6;
+}
+
+.teammate-figure .teammate-name {
+    font-weight: bold;
+    font-size: 19px;
+    color: black;
+}
+
+.teammate-figure .teammate-role {
+    margin-top: -10px;
+    font-style: oblique;
+    font-size: 16px;
+}
+
 
 
 
