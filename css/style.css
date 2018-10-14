@@ -730,8 +730,16 @@ h3{
     font-size: 1.1em;
 }
 
-.departments a:hover {
+.departments a:not(.active):hover {
+
+    font-style: italic;
+}
+
+
+.departments a.active {
     border-bottom: 5px solid #1399D6;
+    transition: border-bottom-color 0.7s;
+
 }
 
 .department {
@@ -754,6 +762,8 @@ h3{
     font-style: oblique;
     font-size: 16px;
 }
+
+
 
 
 

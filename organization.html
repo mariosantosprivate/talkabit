@@ -104,7 +104,7 @@
             </div>
             <div class="row departments justify-content-center">
                 <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseConference" role="button" aria-expanded="false"
+                    <a class="active" data-toggle="collapse" href="#collapseConference" role="button" aria-expanded="false"
                        aria-controls="collapseConference">
                         Conference
                     </a>
@@ -646,6 +646,7 @@
             $(window).on('load', function () {
 
                 document.getElementById("navbar").classList.remove("hide-while-reloading");
+                $("#collapseConference").addClass("show");
 
                 $('#preloader').fadeOut(500, function () {
                     $(this).remove();
@@ -658,7 +659,18 @@
                 offset: 150
             });
             jQuery('.departments a').click(function (e) {
-                jQuery('.collapse').collapse('hide');
+
+                $('.collapse').collapse('hide');
+                if(! $(this).hasClass( "active" ))
+                {
+                    $('.departments a.active').removeClass("active");
+                    $(this).addClass('active');
+
+                }
+                else
+                    $(this).removeClass('active');
+
+
             });
         });
     </script>
