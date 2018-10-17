@@ -719,7 +719,7 @@ h3{
 }
 
 .departments .col-sm-2{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .departments a {
@@ -727,7 +727,7 @@ h3{
     color: black;
     font-weight: bold;
     border: 5px solid transparent;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .departments a:not(.active):hover {
@@ -743,7 +743,7 @@ h3{
 }
 
 .department {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .department .c-collapse:not(.show) {
@@ -780,8 +780,31 @@ h3{
     font-style: oblique;
     font-size: 16px;
 }
+.teammate-name{
+	margin-bottom: 8px;
+}
 
+ #organization-mobile{
+	  display:none;
+  }
+  
+@media (max-width: 768px){
+  
+  #organization-desktop{
+	  display:none;
+  }
+  
+  #organization-mobile{
+	  display:block;
+  }
+}
 
-
-
+.org-title {
+    color: #1399D6;
+    text-transform: uppercase;
+    font-weight: 700;
+	font-size: 30px;
+    letter-spacing: 1px;
+	margin-bottom: 25px;
+}
 
