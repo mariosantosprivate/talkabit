@@ -96,553 +96,430 @@
 <div id="preloader">
     <div class="loader"></div>
 </div>
-
-<div class="container-fluid organization-container">
+<div class="container-fluid organization-container organization-desktop">
     <div class="container">
-        <div class="col-sm-12">
-            <div class="row organization-title-container">
-                <h1 class="organization-title"> Meet the Team</h1>
+        <div class="row">
+			<div class="col-md-12 organization-title-container">
+				<h1 class="organization-title"> Meet the Team</h1>
+			</div>
+		</div>
+		<div class="row departments justify-content-center">
+			<div class="col-md-2">
+                <a class="active" onClick="onClick('conference')">Conference</a>
+			</div>
+            <div class="col-md-2">
+                <a onClick="onClick('social')">Social Program</a>
+			</div>
+			<div class="col-md-2">
+                <a onClick="onClick('treasure')">Treasure</a>
+			</div>
+            <div class="col-md-2">
+                <a onClick="onClick('sponsorship')">Sponsorship</a>
+			</div>
+			<div class="col-md-2">
+                <a onClick="onClick('app')">App</a>
+			</div>
+			<div class="col-md-2">
+                <a onClick="onClick('web')">Web</a>
+			</div>
+            <div class="col-md-2">
+                <a onClick="onClick('media')">Media & Publicity</a>
+			</div>
+            <div class="col-md-2">
+                <a onClick="onClick('operations')">Operations</a>
+			</div>
+			<div class="col-md-2">
+                <a onClick="onClick('editors')">Editors</a>
+			</div>
+			<div class="col-md-2">
+                <a onClick="onClick('program')">Program</a>
+			</div>
+            <div class="col-md-2">
+                <a onClick="onClick('steering')">Steering Committee</a>
+			</div>
+		</div>
+		<div id="conference-org" class="row department active">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Sara Fernandes"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Sara Fernandes</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="row departments justify-content-center">
-                <div class="col-sm-2">
-                    <a class="active" data-toggle="collapse" href="#collapseConference" role="button" aria-expanded="false"
-                       aria-controls="collapseConference">
-                        Conference
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseSocialProgram" role="button" aria-expanded="false"
-                       aria-controls="collapseSocialProgram">
-                        Social Program
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseTreasure" role="button" aria-expanded="false"
-                       aria-controls="collapseTreasure">
-                        Treasure
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseSponsorship" role="button" aria-expanded="false"
-                       aria-controls="collapseSponsorship">
-                        Sponsorship
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseApp" role="button" aria-expanded="false"
-                       aria-controls="collapseApp">
-                        App
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseWeb" role="button" aria-expanded="false"
-                       aria-controls="collapseWeb">
-                        Web
-                    </a>
-                </div>
-                <div class="col-sm-2 col-sm-offset-1">
-                    <a class="" data-toggle="collapse" href="#collapseMedia" role="button" aria-expanded="false"
-                       aria-controls="collapseMedia">
-                        Media & Publicity
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseOperations" role="button" aria-expanded="false"
-                       aria-controls="collapseOperations">
-                        Operations
-                    </a>
-
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseEditors" role="button" aria-expanded="false"
-                       aria-controls="collapseEditors">
-                        Editors
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseProgram" role="button" aria-expanded="false"
-                       aria-controls="collapseProgram">
-                        Program
-                    </a>
-                </div>
-                <div class="col-sm-2">
-                    <a class="" data-toggle="collapse" href="#collapseSteeringCommittee" role="button"
-                       aria-expanded="false"
-                       aria-controls="collapseSteeringCommittee">
-                        Steering Committee
-                    </a>
-                </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Nuno Ramos"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Nuno Ramos</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="row department">
-                <div class="collapse container-fluid" id="collapseConference">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Sara Fernandes</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Nuno Ramos</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Ana Rita Torres</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseSocialProgram">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Carolina Moreira</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Pedro Ferreira</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Bruno Coelho</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseTreasure">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Carolina Catorze</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Vasco Ribeiro</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">José Costa</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseSponsorship">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Miriam Gonçalves</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">António Melo</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">José Costa</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Luís Melo</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseApp">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Daniel Fernandes</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Fábio Caramelo</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Guilherme Reis</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseWeb">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Eduardo Leite</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Andreia Rodrigues</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Pedro Lima</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseMedia">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Marta Vasconcelos</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Henrique Lopes Cardoso</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">João Pinto</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Tiago Moreira</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseOperations">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Luís Barbosa</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Hugo Cunha</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Jorge Ferreira</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Marco Gonçalves</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseEditors">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Rafael Rocha</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Tiago Matias</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-3">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Adélia Gonçalves</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-3">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Fábio Pereira</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-3">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Raquel Casado</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseProgram">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Diogo Campos</p>
-                                    <p class="teammate-role">Chair</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Lázaro Costa</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Alexandre Ribeiro</p>
-                                    <p class="teammate-role">Member</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse container-fluid" id="collapseSteeringCommittee">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">André Lago</p>
-                                    <p class="teammate-role">Advisory Board</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Hugo Sereno</p>
-                                    <p class="teammate-role">Steering Committee</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Ademar Aguiar</p>
-                                    <p class="teammate-role">Steering Committee</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4">
-                            <figure class="teammate-figure">
-                                <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img"
-                                     alt="Sara Fernandes">
-                                <figcaption class="figure-caption text-center">
-                                    <p class="teammate-name">Raul Vidal</p>
-                                    <p class="teammate-role">Steering Committee</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Ana Rita Torres"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Ana Rita Torres</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
             </div>
-        </div>
-    </div>
+		</div>
+		<div id="social-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Carolina Moreira"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Carolina Moreira</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Pedro Ferreira"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Pedro Ferreira</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Bruno Coelho"/>
+                   <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Bruno Coelho</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="treasure-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Carolina Catorze"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Carolina Catorze</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Vasco Ribeiro"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Vasco Ribeiro</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="José Costa"/>
+                   <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">José Costa</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="sponsorship-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Miriam Gonçalves"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Miriam Gonçalves</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="António Melo"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">António Melo</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="José Costa"/>
+                   <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">José Costa</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Luís Melo"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Luís Melo</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="app-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Daniel Fernandes"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Daniel Fernandes</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Fábio Caramelo"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Fábio Caramelo</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Guilherme Reis"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Guilherme Reis</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="web-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Eduardo Leite"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Eduardo Leite</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Andreia Rodrigues"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Andreia Rodrigues</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Pedro Lima"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Pedro Lima</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="media-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Marta Vasconcelos"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Marta Vasconcelos</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Henrique Lopes Cardoso"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Henrique Lopes Cardoso</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="João Pinto"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">João Pinto</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Tiago Moreira"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Tiago Moreira</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="operations-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Luís Barbosa"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Luís Barbosa</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Hugo Cunha"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Hugo Cunha</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Jorge Ferreira"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Jorge Ferreira</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Marco Gonçalves"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Marco Gonçalves</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="editors-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Rafael Rocha"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Rafael Rocha</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-3">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Tiago Matias"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Tiago Matias</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-3">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Adélia Gonçalves"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Adélia Gonçalves</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-3">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Fábio Pereira"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Fábio Pereira</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-3">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Raquel Casado"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Raquel Casado</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="program-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Diogo Campos"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Diogo Campos</p>
+                        <p class="teammate-role">Chair</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Lázaro Costa"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Lázaro Costa</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-6">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Alexandre Ribeiro"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Alexandre Ribeiro</p>
+                        <p class="teammate-role">Member</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+		<div id="steering-org" class="row department unactive">
+			<div class="col-sm-12">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="André Lago"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">André Lago</p>
+                        <p class="teammate-role">Advisory Board</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Hugo Sereno"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Hugo Sereno</p>
+                        <p class="teammate-role">Steering Committee</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Ademar Aguiar"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Ademar Aguiar</p>
+                        <p class="teammate-role">Steering Committee</p>
+                    </figcaption>
+                </figure>
+            </div>
+			<div class="col-sm-4">
+                <figure class="teammate-figure">
+                    <img src="res/img/bg-teste2.png" width="150px" height="150px" class="figure-img" alt="Raul Vidal"/>
+                    <figcaption class="figure-caption text-center">
+                        <p class="teammate-name">Raul Vidal</p>
+                        <p class="teammate-role">Steering Committee</p>
+                    </figcaption>
+                </figure>
+            </div>
+		</div>
+	</div>
 </div>
-
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/countdown.js"></script>
-    <script type="text/javascript" src="js/smooth.scroll.js"></script>
-    <script src="css/bootstrap/js/popper.min.js"></script>
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript" src="js/smooth.scroll.js"></script>
+<script src="css/bootstrap/js/popper.min.js"></script>
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
         (function ($) {
             $(window).on('load', function () {
 
@@ -674,6 +551,16 @@
 
             });
         });
+		
+		const orgArray = ["conference", "social", "treasure", "sponsorship", "app", "web", "media", "operations", "editors", "program", "steering"];
+		
+		function onClick(name){
+			orgArray.forEach(function(item) {
+				$("#" + item + "-org").removeClass("active");
+			});
+			
+			$("#" + name + "-org").addClass("active");
+		}
     </script>
 
 </body>
