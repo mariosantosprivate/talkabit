@@ -799,6 +799,14 @@ h3{
   }
 }
 
+@media (min-width: 769px) {
+    .organization-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .org-title {
     color: #1399D6;
     text-transform: uppercase;
