@@ -764,15 +764,48 @@ h3{
     100% {opacity: 1;}
 }
 
-.department .teammate-figure > img {
+.teammate-figure-img-wrapper img {
+    transition: .3s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+
+.teammate-figure-img-wrapper, .teammate-figure-img-wrapper img {
     border-radius: 75px;
-    border: 4px solid #1399D6;
+    border: 4px solid white;
 }
 
 .teammate-figure .teammate-name {
     font-weight: bold;
     font-size: 19px;
     color: black;
+}
+
+.teammate-figure-img-wrapper {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    top: -65px;
+    overflow: hidden;
+}
+
+.teammate-container {
+    width: 170px;
+    height: 170px;
+}
+
+.teammate-container:hover{
+    background: url("../res/img/avatar-info.png");
+    background-size: cover;
+}
+
+.teammate-container:hover img {
+    transform: scale(1.15);
+}
+
+.teammate-container:hover .teammate-figure-img-wrapper {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .teammate-figure .teammate-role {
