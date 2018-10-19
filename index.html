@@ -353,7 +353,9 @@
         (function ($) {
             $(window).on('load', function () {
 
-                document.getElementById("navbar").classList.remove("hide-while-reloading");
+                setInterval(() => {
+                    document.getElementById("navbar").classList.remove("hide-while-reloading");
+                }, 200);
 
                 $('#preloader').fadeOut(500, function () {
                     $(this).remove();
