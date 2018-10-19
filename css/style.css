@@ -813,10 +813,10 @@ h3{
 
 .teammate-linkedin-website {
     color: #111;
-    font-size: 30px;
+    font-size: 60px;
     z-index: 1;
     position: relative;
-    top: -30px;
+    top: -90px;
     display: none;
 }
 
