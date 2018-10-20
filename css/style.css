@@ -696,13 +696,42 @@ h3{
     font-family: 'DecimaLight';
     height: 100vh;
 }
-#organization-desktop{
-    margin-top: 40px;
+
+#organization-desktop, #organization-mobile {
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
-#organization-mobile {
-    margin-top: 80px;
+@media (max-height: 750px){
+    #organization-desktop{
+        margin-top: 125px;
+    }
 }
+
+@media (max-height: 700px){
+    #organization-desktop{
+        margin-top: 160px;
+    }
+}
+
+@media (max-height: 650px){
+    #organization-desktop{
+        margin-top: 210px;
+    }
+}
+
+@media (max-height: 600px){
+    #organization-desktop{
+        margin-top: 260px;
+    }
+}
+
+@media (max-height: 550px){
+    #organization-desktop{
+        margin-top: 300px;
+    }
+}
+
 
 hr{
     border: 0;
