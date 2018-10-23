@@ -740,7 +740,7 @@ hr{
     width: 100%;
 }
 
-.organization-title {
+.organization-title, .cfp-title {
     color: #1399D6;
     text-transform: uppercase;
     font-weight: 700;
@@ -945,4 +945,66 @@ figure{
    margin-top:30px;
     margin-bottom: 20px;
 }
+
+/*
+    Call for papers
+ */
+.cfp-main-container {
+    color: black;
+    background: #fafafa;
+    font-family: 'DecimaLight';
+    padding-bottom: 15px;
+}
+
+.cfp-main-container h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #009AD7;
+    font-weight: 700;
+    padding-bottom:15px;
+    letter-spacing: 1px;
+}
+
+
+.cfp-title-container {
+    padding-top: 80px;
+}
+
+.cfp-sub-container, .cfp-info-container, .cfp-review-container, .cfp-timeline-container {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: rgba(19,153,214, .4);
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #1399D6;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
 
