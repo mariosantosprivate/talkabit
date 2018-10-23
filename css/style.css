@@ -983,6 +983,8 @@ figure{
 ul.timeline {
     list-style-type: none;
     position: relative;
+    display: inline-block;
+    text-align: center;
 }
 
 ul.timeline:before {
@@ -1010,6 +1012,16 @@ ul.timeline > li:before {
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+ul.timeline > li p {
+    text-align: left;
+    position: relative;
+     top: -3px;
+}
+
+.cfp-sub-content a {
+    word-wrap: break-word;
 }
 
 
