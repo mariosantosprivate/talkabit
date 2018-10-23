@@ -956,6 +956,10 @@ figure{
     padding-bottom: 15px;
 }
 
+.cfp-info-container {
+    margin-top: 20px;
+}
+
 .cfp-info-container h5 {
     font-size: 17px;
     font-weight: bold;
@@ -968,6 +972,8 @@ figure{
     font-weight: 700;
     padding-bottom:15px;
     letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 
@@ -976,7 +982,6 @@ figure{
 }
 
 .cfp-sub-container, .cfp-info-container, .cfp-review-container, .cfp-timeline-container {
-    margin-top: 30px;
     font-size: 17px;
 }
 
