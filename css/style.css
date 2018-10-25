@@ -694,8 +694,9 @@ h3{
     color: black;
     background: #fafafa;
     font-family: 'DecimaLight';
-    height: 100vh;
+    height: 100%;
 }
+
 
 #organization-desktop, #organization-mobile {
     margin-top: 80px;
@@ -704,7 +705,7 @@ h3{
 
 @media (max-height: 750px){
     #organization-desktop{
-        margin-top: 125px;
+        margin-top: 80px;
     }
 }
 
@@ -777,8 +778,10 @@ hr{
     transition: all .2s;
 }
 
+
 .departments a:not(.active):hover {
     color: #1399D6;
+    cursor:pointer;
 }
 
 
