@@ -932,6 +932,9 @@ figure{
         justify-content: center;
         align-items: center;
     }
+    .cfp-content-container {
+        width: 90%;
+    }
 }
 
 .org-title {
@@ -963,9 +966,20 @@ figure{
     margin-top: 20px;
 }
 
+.cfp-info-container p:first-child {
+    text-align: center;
+    font-size: 18px;
+}
+
 .cfp-info-container h5 {
     font-size: 17px;
     font-weight: bold;
+}
+
+.cfp-info-container h4 {
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0px;
 }
 
 .cfp-main-container h3 {
