@@ -935,6 +935,10 @@ figure{
     .cfp-content-container {
         width: 80%;
     }
+
+    .cfp-info-container, .cfp-sub-content, .cfp-review-content {
+        text-align: left;
+    }
 }
 
 .org-title {
@@ -966,13 +970,13 @@ figure{
     margin-top: 20px;
 }
 
-.cfp-info-container p:first-child {
+.cfp-info-container p:first-child, .cfp-info-container p:nth-child(3){
     text-align: center;
     font-size: 18px;
 }
 
 .cfp-info-container h5 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: bold;
 }
 
@@ -999,7 +1003,7 @@ figure{
 }
 
 .cfp-sub-container, .cfp-info-container, .cfp-review-container, .cfp-timeline-container {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 ul.timeline {
