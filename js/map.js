@@ -4,6 +4,15 @@ function initMap() {
     let map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 41.1779401, lng: -8.597687599999972},
         zoom: 16,
+        panControl: false,
+        zoomControl: true,
+        mapTypeControl:false,
+        scaleControl:true,
+        streetViewControl:true,
+        overviewMapControl:true,
+        rotateControl:true,
+        fullscreenControl: false,
+
         styles: [
             {elementType: 'geometry', stylers: [{color: '#1d2c4d'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#1a3646'}]},
