@@ -932,9 +932,9 @@ figure{
         justify-content: center;
         align-items: center;
     }
-    .cfp-content-container {
+    /*.cfp-content-container {
         width: 80%;
-    }
+    }*/
 
     .cfp-info-container, .cfp-sub-content, .cfp-review-content {
         text-align: left;
@@ -967,7 +967,7 @@ figure{
 }
 
 .cfp-info-container {
-    margin-top: 20px;
+    margin-top:50px;
 }
 
 .cfp-info-container p:first-child, .cfp-info-container p:nth-child(3){
@@ -999,7 +999,7 @@ figure{
 
 
 .cfp-title-container {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .cfp-sub-container, .cfp-info-container, .cfp-review-container, .cfp-timeline-container {
