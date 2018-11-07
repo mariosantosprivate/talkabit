@@ -108,9 +108,6 @@
         </ul>
     </div>
 </nav>
-<div id="preloader">
-    <div class="loader"></div>
-</div>
 
 <div class="container-fluid organization-container">
     <div class="center-container container is-table">
@@ -1641,10 +1638,6 @@
         $(window).on('load', function () {
 
             document.getElementById("navbar").classList.remove("hide-while-reloading");
-
-            $('#preloader').fadeOut(500, function () {
-                $(this).remove();
-            });
         });
     })(jQuery);
     $(document).ready(function () {

@@ -106,10 +106,23 @@ body {
 
 @media (min-width: 992px){
 
-	#navbar .dropdown-menu{
-        background-color: rgba(0,0,0, 1) !important;
+    #navbar .dropdown-menu {
         margin-top:10px;
+    }
+
+	#navbar:not(.hide) .dropdown-menu{
+        background-color: rgba(0,0,0, 1) !important;
 	}
+
+    #navbar.hide .dropdown-menu .dropdown-item {
+        background: transparent !important;
+    }
+
+    #navbar.hide .dropdown-menu {
+        background: rgba(0,0,0, 0.4) !important;
+
+    }
+
 }
 
 @keyframes fadein {
