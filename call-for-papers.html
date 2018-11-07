@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top hide-while-reloading" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -108,9 +108,6 @@
         </ul>
     </div>
 </nav>
-<div id="preloader">
-    <div class="loader"></div>
-</div>
 
 <div class="container-fluid cfp-main-container">
     <div class="container">
@@ -217,20 +214,6 @@
 <script type="text/javascript" src="js/smooth.scroll.js"></script>
 <script src="css/bootstrap/js/popper.min.js"></script>
 <script src="css/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    (function ($) {
-        $(window).on('load', function () {
-
-            setInterval(() => {
-                document.getElementById("navbar").classList.remove("hide-while-reloading");
-            }, 200);
-
-            $('#preloader').fadeOut(500, function () {
-                $(this).remove();
-            });
-        });
-    })(jQuery);
-</script>
 </body>
 
 </html>
