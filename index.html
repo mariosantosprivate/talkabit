@@ -339,9 +339,6 @@
     </div>
 
     <script type="text/javascript" src="js/map.js"></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFi3rUC2wDO4Lu-LTdNkQoM1MGkd-XsvU&callback=initMap">
-    </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
@@ -367,8 +364,16 @@
                 target: '#navbar',
                 offset: 150
             });
+
+            //lazy load applied to google maps
+            $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAFi3rUC2wDO4Lu-LTdNkQoM1MGkd-XsvU&callback=initMap")
+                .done(function (script, textStatus) {
+                    //alert("Google map script loaded successfully");
+                })
+                .fail(function (jqxhr, settings, ex) {
+                    //alert("Could not load Google Map script: " + jqxhr);
+                });
         });
     </script>
-
 </body>
 </html>
