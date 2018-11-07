@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top hide-while-reloading" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -1634,12 +1634,6 @@
 <script src="css/bootstrap/js/popper.min.js"></script>
 <script src="css/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    (function ($) {
-        $(window).on('load', function () {
-
-            document.getElementById("navbar").classList.remove("hide-while-reloading");
-        });
-    })(jQuery);
     $(document).ready(function () {
         jQuery('.departments a').click(function (e) {
 
