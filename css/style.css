@@ -12,6 +12,41 @@
     src: local('DecimaLight'), url('../res/fonts/decima-light-webfont.woff') format('truetype');
 }
 
+@font-face {
+    font-family: 'Decima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Decima'), url('../res/fonts/Decima-Pro.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DecimaBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaBold'), url('../res/fonts/Decima-Pro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DecimaA';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaA'), url('../res/fonts/Decima-Pro-A.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DecimaALight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaALight'), url('../res/fonts/Decima-Pro-A-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DecimaABold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DecimaABold'), url('../res/fonts/Decima-Pro-A-Bold.ttf') format('truetype');
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -31,7 +66,8 @@ body {
 
 #navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
     color: white;
-    font-family: 'DecimaLight';
+    font-family: 'DecimaALight';
+    letter-spacing: .3px;
     font-size: 17px;
 }
 
@@ -228,7 +264,7 @@ div#preloader .loader {
 #landing {
     height: 100%;
     width: 100%;
-    font-family: 'DecimaLight';
+    font-family: 'DecimaALight';
     background: url(../res/img/bg-teste2.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -292,6 +328,7 @@ div#preloader .loader {
 
 .landing-edition span {
     letter-spacing: 1px;
+    font-family: 'DecimaALight';
 }
 
 .landing-feup img {
@@ -300,7 +337,7 @@ div#preloader .loader {
 }
 
 .landing .landing-countdown {
-    font-family: 'Karben';
+    font-family: 'DecimaABold';
 }
 
 @media screen and (max-width: 992px) {
@@ -308,6 +345,7 @@ div#preloader .loader {
         padding-bottom: 15px;
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .about .content-mobile {
@@ -543,16 +581,19 @@ h3{
     letter-spacing: 1px;
 }
 
-#about, #faq, #sponsors {
+#about, #speakers, #program, #sponsors {
     width: 100%;
-    font-family: 'DecimaLight';
     background: #fafafa;
-    text-align: justify;
-
+    text-align: left;
 }
 
-#about h4, #sponsors h4{
+b{
+    font-family: 'DecimaABold';
+}
+
+#about h4, #speakers h3, #program h3, #sponsors h4{
     font-size: 25px;
+    font-family: 'Decima';
     text-transform: uppercase;
     color: #009AD7;
     font-weight: 700;
@@ -560,9 +601,10 @@ h3{
     letter-spacing: 1px;
 }
 
-#about p, #sponsors p{
+#about p, #speakers p, #program p, #sponsors p{
     color: #000000;
-    font-weight: 500;
+    font-family: 'DecimaALight';
+    letter-spacing: .1px;
     font-size: 17px;
 }
 
@@ -576,18 +618,29 @@ h3{
     padding-bottom:10%;
 }
 
-/* Program */
-
-#speakers, #program {
+#tickets {
     width: 100%;
-    font-family: 'DecimaLight';
+    font-family: 'DecimaBold';
     background: #0f2e51;
     text-align: justify;
 }
 
-#program h3 {
+#tickets h2 {
     color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
 }
+
+#tickets p{
+    font-family: 'DecimaALight';
+    font-weight: 300;
+    font-size: 17px;
+    color: #fafafa;
+    letter-spacing: .3px;
+    margin-bottom: 0px;
+}
+/* Program */
 
 #faq .panel-heading {
     cursor: pointer;
@@ -677,7 +730,7 @@ h3{
 
 #location {
     width: 100%;
-    font-family: 'DecimaLight';
+    font-family: 'DecimaALight';
     background: #0f2e51;
     text-align: justify;
 }
@@ -688,6 +741,16 @@ h3{
     border: 1px solid #001220;
 }
 
+#location h3{
+    font-family: 'Decima';
+}
+
+#location p{
+    letter-spacing: .1px;
+}
+#location i{
+    padding-right:10px;
+}
 .location-detailed-info {
     padding-right: 50px;
 }
@@ -710,7 +773,8 @@ h3{
 .organization-container {
     color: black;
     background: #fafafa;
-    font-family: 'DecimaLight';
+    font-family: 'DecimaALight';
+    letter-spacing: .1px;
     height: 100%;
 }
 
@@ -763,6 +827,7 @@ hr{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    font-family: 'Decima';
     width: 100%;
     margin-bottom: 0;
 
@@ -785,6 +850,7 @@ hr{
 .departments a {
     text-decoration: none !important;
     color: black;
+    font-family: "DecimaALight";
     font-weight: 900;
     border: 5px transparent;
     font-size: 1em;
@@ -849,7 +915,7 @@ figure{
 }
 
 .teammate-figure .teammate-name {
-    font-weight: bold;
+    font-family: "DecimaA";
     font-size: 19px;
     color: black;
 }
@@ -920,7 +986,6 @@ figure{
 
 .teammate-figure .teammate-role {
     margin-top: -10px;
-    font-style: oblique;
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -979,7 +1044,8 @@ figure{
 .cfp-main-container {
     color: black;
     background: #fafafa;
-    font-family: 'DecimaLight';
+    font-family: 'DecimaALight';
+    letter-spacing: .1px;
     padding-bottom: 15px;
 }
 
@@ -994,19 +1060,21 @@ figure{
 
 .cfp-info-container h5 {
     font-size: 19px;
-    font-weight: bold;
+    font-family: "DecimaABold";
 }
 
 .cfp-info-container h4 {
     font-style: italic;
     text-align: center;
     margin: 20px 0px;
+    font-family: "DecimaABold";
 }
 
 .cfp-main-container h3 {
     font-size: 25px;
     text-transform: uppercase;
     color: #009AD7;
+    font-family: "DecimaBold";
     font-weight: 700;
     padding-bottom:15px;
     letter-spacing: 1px;
