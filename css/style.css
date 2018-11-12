@@ -1136,3 +1136,41 @@ ul.timeline > li p {
 }
 
 
+/* Mailchimp */
+
+#mc_embed_signup label{
+    color: #000000;
+    font-family: 'DecimaABold';
+    letter-spacing: .3px;
+    font-size: 19px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+#mc_embed_signup input[type="email"]{
+    border: solid #009AD7 1px;
+    border-radius: 5px;
+    padding:5px;
+    letter-spacing: .1px;
+    color: #000000;
+    min-width: 280px;
+    font-size: 16px;
+    font-family: 'DecimaALight';
+    margin-bottom: 5px;
+}
+
+#mc_embed_signup input[type="submit"]{
+    margin-left:10px;
+    border:none;
+    background: #009AD7;
+    border-radius: 5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20px;
+    padding-right:20px;
+    letter-spacing: .1px;
+    color: white;
+    font-size: 19px;
+    font-family: 'DecimaABold';
+    margin-bottom: 5px;
+}
