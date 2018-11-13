@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top hide-while-reloading hide" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top hide" id="navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -105,10 +105,8 @@
         </div>
     </nav>
 
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
     <div id="landing" class="landing">
+        <img class="landing-background" data-original="res/img/bg-teste2.png"/>
         <div class="container-fluid">
         <div class="center-container container is-table">
             <div class="table-cell">
@@ -116,7 +114,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="landing-logo">
-                                <img src="res/img/logo.png"/>
+                                <img data-original="res/img/logo.png"/>
                             </div>
                         </div>
                     </div>
@@ -295,6 +293,7 @@
 
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
     <script type="text/javascript" src="js/smooth.scroll.js"></script>
@@ -302,23 +301,24 @@
     <script src="css/bootstrap/js/popper.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        (function ($) {
-            $(window).on('load', function () {
 
-                setInterval(() => {
-                    document.getElementById("navbar").classList.remove("hide-while-reloading");
-                }, 200);
-
-                $('#preloader').fadeOut(500, function () {
-                    $(this).remove();
-                });
-            });
-        })(jQuery);
         $( document ).ready(function() {
             $('body').scrollspy({
                 target: '#navbar',
                 offset: 150
             });
+
+            $(".landing-logo img").lazyload({
+                threshold: 200,
+                effect: 'fadeIn',
+            });
+
+            $(".landing-background").lazyload({
+                threshold: 200,
+                effect: 'fadeIn',
+            });
+
+
 
             //lazy load applied to google maps
             $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAFi3rUC2wDO4Lu-LTdNkQoM1MGkd-XsvU&callback=initMap")

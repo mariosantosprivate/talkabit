@@ -265,12 +265,32 @@ div#preloader .loader {
     height: 100%;
     width: 100%;
     font-family: 'DecimaALight';
-    background: url(../res/img/bg-teste2.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
+
+.landing-background {
+    position: absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.landing-background:after, .teammate-figure-img-wrapper img:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    content: attr(alt);
+}
+
 
 #sponsors{
     min-height:100vh;
