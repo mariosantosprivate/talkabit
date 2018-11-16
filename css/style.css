@@ -1052,11 +1052,22 @@ figure{
     background: #fafafa;
     font-family: 'DecimaALight';
     letter-spacing: .1px;
-    padding-bottom: 15px;
+}
+.cfp-main-container > container {
+    padding: 0 1%;
 }
 
-.cfp-info-container {
-    margin-top:50px;
+.description-section {
+    padding: 30px 0;
+}
+
+.submission-section, .deadlines-section, .review-section {
+    padding: 5% 0;
+}
+
+.submission-section, .deadlines-section {
+    background-color:  #0f2e51;
+    color: white;
 }
 
 .cfp-info-container p:first-child, .cfp-info-container p:nth-child(3){
@@ -1079,13 +1090,13 @@ figure{
 .cfp-main-container h3 {
     font-size: 25px;
     text-transform: uppercase;
-    color: #009AD7;
     font-family: "DecimaBold";
     font-weight: 700;
-    padding-bottom:15px;
     letter-spacing: 1px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+}
+
+.description-section h3, .review-section h3 {
+    color: #009AD7;
 }
 
 
@@ -1095,6 +1106,10 @@ figure{
 
 .cfp-sub-container, .cfp-info-container, .cfp-review-container, .cfp-timeline-container {
     font-size: 18px;
+}
+
+.cfp-timeline-container {
+    width: 100%;
 }
 
 ul.timeline {
@@ -1180,3 +1195,29 @@ ul.timeline > li p {
     font-family: 'DecimaABold';
     margin-bottom: 5px;
 }
+
+/* Scroll back to top button */
+
+#scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: #009AD7;
+    border-color: #009AD7;
+    z-index: 9999;
+    display: none;
+    -webkit-transition: display 0.5s ease;
+    -moz-transition: display 0.5s ease;
+    -ms-transition: display 0.5s ease;
+    -o-transition: display 0.5s ease;
+    transition: display 0.5s ease;
+
+}
+
+#scroll-to-top-button:focus, #scroll-to-top-button:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
