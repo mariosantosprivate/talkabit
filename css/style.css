@@ -1180,3 +1180,22 @@ ul.timeline > li p {
     font-family: 'DecimaABold';
     margin-bottom: 5px;
 }
+
+@-moz-document url-prefix() {
+    #landing {
+        height: 100vh;
+    }
+
+    .landing-background {
+        height: 100%;
+        z-index: -1;
+    }
+
+    #landing .container-fluid{
+        height:100vh;
+    }
+
+    #landing .center-container.is-table{
+        height: 100%;
+    }
+}
