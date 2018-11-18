@@ -552,6 +552,25 @@ body {
     }
 }
 
+@media screen and (max-height: 625px) {
+
+    .subscribe {
+        margin: 10px 0px;
+    }
+
+    .social ul {
+        margin: 0px !important;
+    }
+
+    .social {
+        margin: 10px 0px !important;
+    }
+
+    .landing-edition span {
+        font-size: 12px !important;
+    }
+}
+
 .social {
     padding: 0;
     list-style-type: none;
