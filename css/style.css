@@ -1195,6 +1195,15 @@ ul.timeline > li p {
     word-wrap: break-word;
 }
 
+.cfp-sub-title, .deadlines-section h3  {
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.cfp-review-title {
+    text-shadow: -1px 1px 1px #005A7E;
+}
+
+
 
 
 @-moz-document url-prefix() {
@@ -1223,8 +1232,8 @@ ul.timeline > li p {
     bottom: 20px;
     right: 20px;
     background-color: #000000;
-    color: #009AD7;
-    border-color: #009AD7;
+    color: white;
+    border: 2px solid #009AD7;
     z-index: 9999;
     display: none;
     -webkit-transition: display 0.5s ease;
