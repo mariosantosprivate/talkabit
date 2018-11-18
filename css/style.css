@@ -307,7 +307,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .about .content-mobile {
         padding-top: 10%;
     }
@@ -477,19 +477,12 @@ body {
 
 .subscribe {
     margin: 40px 0;
+    overflow: hidden;
 }
 
 
 /* Mailchimp */
 
-#mc_embed_signup label{
-    color: #000000;
-    font-family: 'DecimaABold';
-    letter-spacing: .3px;
-    font-size: 19px;
-    padding-right: 10px;
-    margin-bottom: 5px;
-}
 
 #mc_embed_signup input[type="email"]{
     border: solid #009AD7 1px;
@@ -523,6 +516,42 @@ body {
     border-left: 1px solid black;
 }
 
+
+@media screen and  (min-width: 356px) and (max-width: 397px){
+    #mc_embed_signup  input[type="email"] {
+        min-width: 150px; !important;
+    }
+
+    #mc_embed_signup input[type="submit"] {
+        font-size: 16px;
+        padding: 9px 10px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 356px) {
+    #mc_embed_signup  input[type="email"] {
+        min-width: 80px; !important;
+        max-width: 120px;
+    }
+
+    #mc_embed_signup input[type="submit"] {
+        font-size: 15px;
+        padding: 10px 5px;
+    }
+}
+
+
+@media screen and (min-width: 397px) and (max-width: 506px) {
+    #mc_embed_signup  input[type="email"] {
+        min-width: 203px; !important;
+    }
+
+    #mc_embed_signup input[type="submit"] {
+        font-size: 16px;
+        padding: 9px 10px;
+    }
+}
+
 .social {
     padding: 0;
     list-style-type: none;
@@ -540,6 +569,7 @@ body {
 }
 
 @media (max-width: 397px) {
+
     .social ul {
         margin-top: 60px;
     }
@@ -556,6 +586,8 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+
 }
 
 .social ul li {
