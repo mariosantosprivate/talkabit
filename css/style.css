@@ -201,6 +201,12 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'DecimaALight';
+    background: url(../res/img/bg-teste2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
 }
 
 .landing-background {
@@ -288,7 +294,7 @@ body {
 }
 
 .landing-feup img {
-    width: 130px;
+    height: 45px;
     margin: 10px;
 }
 
@@ -297,9 +303,6 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-    .landing-feup img {
-        padding-bottom: 15px;
-    }
 
     .landing-feup {
         display: none;
@@ -316,10 +319,6 @@ body {
 
 @media screen and (max-width: 992px)
 {
-    .landing-feup img{
-        padding-bottom:15px;
-    }
-
     #navbar .brand-img-hide-mobile {
         display: none;
     }
@@ -335,8 +334,8 @@ body {
 }
 @media screen and (min-width: 992px) {
     .landing-feup {
-        position: absolute;
-        bottom: 0;
+        position: relative;
+        bottom: 70px;
         right: 0;
         margin-right: 0;
     }
