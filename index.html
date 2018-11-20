@@ -106,7 +106,6 @@
     </nav>
 
     <div id="landing" class="landing" data-background="res/img/bg-teste2.png">
-        <!--<img class="landing-background" width="auto" height="100%" data-original="res/img/bg-teste2.png"/>-->
         <div class="container-fluid">
         <div class="center-container container is-table">
             <div class="table-cell">
@@ -307,6 +306,7 @@
     <script type="text/javascript">
 
         $( document ).ready(function() {
+
             $('body').scrollspy({
                 target: '#navbar',
                 offset: 150
@@ -314,12 +314,7 @@
 
             $(".landing-logo img").lazyload({
                 threshold: 1000,
-                effect: 'fadeIn',
-            });
 
-            $(".landing-background").lazyload({
-                threshold: 200,
-                effect: 'fadeIn',
             });
 
             $("#landing").lazyload({
