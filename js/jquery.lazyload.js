@@ -102,12 +102,28 @@
                         var elements_left = elements.length;
                         settings.appear.call(self, elements_left, settings);
                     }
+
+                    var loadImgUri;
+                    if($self.data("background"))
+                        loadImgUri = $self.data("background");
+                    else
+                        loadImgUri  = $self.data(settings.data_attribute);
+
                     $("<img />")
                         .bind("load", function() {
 
                             var original = $self.attr("data-" + settings.data_attribute);
                             $self.hide();
-                            if ($self.is("img")) {
+
+                            if($self.data("background")) {
+                                $self.css({
+                                    'background': 'url(' + $self.data("background") + ') no-repeat center center fixed',
+                                    '-webkit-background-size': 'cover',
+                                    '-moz-background-size': 'cover',
+                                    'background-size': 'cover',
+                                    '-o-background-size': 'cover'});
+                            }
+                            else if ($self.is("img")) {
                                 $self.attr("src", original);
                             } else {
                                 $self.css("background-image", "url('" + original + "')");
@@ -127,7 +143,7 @@
                                 settings.load.call(self, elements_left, settings);
                             }
                         })
-                        .attr("src", $self.attr("data-" + settings.data_attribute));
+                        .attr("src",  loadImgUri);
                 }
             });
 

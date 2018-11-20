@@ -105,7 +105,7 @@
         </div>
     </nav>
 
-    <div id="landing" class="landing">
+    <div id="landing" class="landing" data-background="res/img/bg-teste2.png">
         <!--<img class="landing-background" width="auto" height="100%" data-original="res/img/bg-teste2.png"/>-->
         <div class="container-fluid">
         <div class="center-container container is-table">
@@ -318,6 +318,11 @@
             });
 
             $(".landing-background").lazyload({
+                threshold: 200,
+                effect: 'fadeIn',
+            });
+
+            $("#landing").lazyload({
                 threshold: 200,
                 effect: 'fadeIn',
             });
