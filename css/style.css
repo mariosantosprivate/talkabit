@@ -965,7 +965,6 @@ figure{
     z-index: -1;
 }
 
-
 .teammate-figure .teammate-name {
     font-family: "DecimaA";
     font-size: 19px;
@@ -984,11 +983,14 @@ figure{
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .teammate-container {
     width: 170px;
     height: 170px;
+    padding: 0 !important;
 
     z-index: 0;
     -webkit-transition: opacity .2s ease-in;
@@ -1055,12 +1057,16 @@ figure{
         justify-content: center;
         align-items: center;
     }
-    /*.cfp-content-container {
-        width: 80%;
-    }*/
 
     .cfp-info-container, .cfp-sub-content, .cfp-review-content {
         text-align: left;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .figure-caption {
+        position: relative;
+        left: 15px;
     }
 }
 
