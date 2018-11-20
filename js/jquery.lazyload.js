@@ -124,7 +124,10 @@
                                     '-o-background-size': 'cover'});
                             }
                             else if ($self.is("img")) {
-                                $self.attr("src", original);
+                                if($self.attr("class") === "figure-img")
+                                    $self.css("content", "url('" + original + "')");
+                                else
+                                    $self.attr("src", original);
                             } else {
                                 $self.css("background-image", "url('" + original + "')");
                             }
