@@ -1061,9 +1061,15 @@ figure{
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-    .figure-caption {
+    #collapseProgramCommittee .figure-caption, .program-committee-mobile .figure-caption {
         position: relative;
         left: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 769px) {
+    #organization-mobile .col-sm-4 {
+        padding-right: 0px;
     }
 }
 
