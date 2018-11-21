@@ -963,7 +963,6 @@ figure{
     max-width: 100%;
     height: auto;
     z-index: -1;
-    content:url('../res/img/committee/no-photo.jpg');
 }
 
 .teammate-figure .teammate-name {
