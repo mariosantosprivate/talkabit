@@ -285,8 +285,10 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <p>To be announced soon.</p>
+                                <div class="col-sm-3">
+                                    <a href="https://www.blip.pt/">
+                                    <img data-original="res/img/sponsors/blip.jpg" class="sponsors-img" src="res/img/committee/no-photo.jpg"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -386,6 +388,11 @@
             });
 
             $("#landing").lazyload({
+                threshold: 200,
+                effect: 'fadeIn',
+            });
+
+            $(".sponsors-img").lazyload({
                 threshold: 200,
                 effect: 'fadeIn',
             });
