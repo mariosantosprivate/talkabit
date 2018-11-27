@@ -695,88 +695,15 @@ b{
 }
 /* Program */
 
-#faq .panel-heading {
-    cursor: pointer;
+#program {
+    font-family: 'DecimaALight';
+    background: #0f2e51;
+    text-align: justify;
+    color: white;
 }
 
-#faq .faq-toggle.collapsed::before {
-    content: "+";
-    -webkit-transition:  0.5s linear ease-out;
-    -moz-transition: 0.5s linear ease-out;
-    -o-transition:  0.5s linear ease-out;
-    transition:  0.5s linear ease-out;
-    position: absolute;
-    left: 15px;
-}
-
-#faq h3{
-    color: #009AD7;
-}
-
-
-#faq .faq-toggle::before {
-    position: absolute;
-    left: 15px;
-    -webkit-transition:  0.5s linear ease-out;
-    -moz-transition: 0.5s linear ease-out;
-    -o-transition:  0.5s linear ease-out;
-    transition:  0.5s linear ease-out;
-    content: "-";
-}
-
-#faq .panel-heading {
-    margin-top: 15px;
-}
-
-#faq .panel-default > .panel-heading {
-    color: #FFF;
-    background-color: #1399D6;
-    border-color: #000;
-    border-radius: 0;
-    padding: 0;
-}
-
-#faq .panel-default > .panel-heading a {
-    position: relative;
-    display: block;
-    text-decoration: none;
-    padding: 15px 15px 15px 35px;
-    color:white;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-#faq .panel-default .panel-title{
-    margin-bottom:0;
-}
-
-#faq .panel-default .panel-body {
-    background-color: #f7f7f7;
-    border-color: rgba(0, 0, 0, 0.06);
-    border-radius: 0;
-    color:black;
-    font-size: 16px;
-    border-style: solid;
-    border-top-style: none;
-    border-left-width:1px;
-    border-bottom-width:1px;
-    border-right-width: 1px;
-    padding: 20px;
-}
-
-#faq h4{
-
-    color: #1399D6;
-    font-size: 18px;
-   font-weight: 600;
-}
-
-#faq h4:not(:first-child){
-    margin-top: 15px;
-}
-
-#faq p{
-    margin-bottom: 0;
+#program h3, #program p {
+    color: white;
 }
 
 /* Location */
@@ -837,7 +764,7 @@ b{
 }
 
 #sponsors h3{
-    font-size: 25px;
+    font-size: 50px;
     font-family: 'Decima';
     text-transform: uppercase;
     color: #0f0f0f;
@@ -865,6 +792,11 @@ b{
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+#sponsors h4.official-title {
+    color:  #009AD7;
+}
+
 #sponsors h4.gold-title {
     color: #FFD700;
 }
@@ -883,6 +815,10 @@ b{
     width: 100%;
 }
 
+#sponsors .official-main-container hr {
+    background-image: linear-gradient(to right, rgb(0,154,215), rgba(0, 0, 0, 0));
+}
+
 #sponsors .gold-main-container hr {
     background-image: linear-gradient(to right, rgb(255,215,0), rgba(0, 0, 0, 0));
 }
@@ -892,8 +828,14 @@ b{
 }
 
 #sponsors .bronze-main-container hr {
+    height: 4px;
     background-image: linear-gradient(to right, rgb(205, 127, 50), rgba(0, 0, 0, 0));
 }
+
+#sponsors .bronze-sec-container div {
+    margin: 30px 0px;
+}
+
 
 #sponsors .sponsors-img {
     width: 170px;
