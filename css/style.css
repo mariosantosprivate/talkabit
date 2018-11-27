@@ -644,7 +644,7 @@ b{
     font-family: 'DecimaABold';
 }
 
-#about h4, #speakers h3, #program h3, #sponsors h4{
+#about h4, #speakers h3, #program h3{
     font-size: 25px;
     font-family: 'Decima';
     text-transform: uppercase;
@@ -820,6 +820,84 @@ b{
 .location-detailed-info p:last-of-type {
     margin-bottom: 30px;
 }
+
+
+/* Sponsors  */
+
+.new_sponsor_badge {
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(10deg); }
+    95% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#sponsors h3{
+    font-size: 25px;
+    font-family: 'Decima';
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: 700;
+    padding-bottom:15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#sponsors h5 {
+    font-size: 18px;
+    font-family: 'Decima';
+    color: #0f0f0f;
+    padding-bottom:15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#sponsors h4 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Decima';
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#sponsors h4.gold-title {
+    color: #FFD700;
+}
+
+#sponsors h4.silver-title {
+    color: #C0C0C0;
+}
+
+#sponsors h4.bronze-title {
+    color: #CD7F32;
+}
+
+#sponsors hr {
+    border: 0;
+    height: 3px;
+    width: 100%;
+}
+
+#sponsors .gold-main-container hr {
+    background-image: linear-gradient(to right, rgb(255,215,0), rgba(0, 0, 0, 0));
+}
+
+#sponsors .silver-main-container hr {
+    background-image: linear-gradient(to right, rgb(192,192,192), rgba(0, 0, 0, 0));
+}
+
+#sponsors .bronze-main-container hr {
+    background-image: linear-gradient(to right, rgb(205, 127, 50), rgba(0, 0, 0, 0));
+}
+
+
+
+
 
 /* Organization */
 
