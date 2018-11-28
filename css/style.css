@@ -891,6 +891,50 @@ b{
     float:left;
 }
 
+#subscription_done{
+    display:none;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Decima';
+    color: white;
+    letter-spacing: 1.3px;
+}
+
+#subscription_done:before {
+    content: '[';
+    left: 0;
+    margin-right:10px;
+}
+
+#subscription_done:after {
+    content: ']';
+    right: 0;
+    left: 0;
+    margin-left:10px;
+}
+
+#subscription_done:after, #subscription_done:before {
+    top: 0;
+    color: #009AD7;
+    font-size: 26px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+}
+
+
+#mc_embed_signup input[type="email"]{
+    background: #fafafaed;
+}
 /* Organization */
 
 .organization-container {

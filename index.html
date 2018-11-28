@@ -143,6 +143,9 @@
 
                     <div class="row subscribe">
                         <div class="col-md-12" style="padding-top:5px">
+                            <div >
+                            <p id="subscription_done"> Thank you for subscribing to our newsletter! </p>
+                            </div>
                             <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://talkabit.us19.list-manage.com/subscribe/post?u=01e2675d9a933e605e8bfe2b7&amp;id=48bda8cf41" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -150,7 +153,7 @@
                                         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_01e2675d9a933e605e8bfe2b7_48bda8cf41" tabindex="-1" value=""></div>
-                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="subcribeMessage()"></div>
                                     </div>
                                 </form>
                             </div>
@@ -430,7 +433,20 @@
                 .fail(function (jqxhr, settings, ex) {
                     //alert("Could not load Google Map script: " + jqxhr);
                 });
+
+
         });
+
+        function subcribeMessage() {
+            console.log('ei');
+            setTimeout(function() {
+                $("#mc_embed_signup").fadeOut(500);
+                setTimeout(function() {
+                    $("#subscription_done").fadeIn(500);
+                },500);
+
+            },1000);
+        }
     </script>
 </body>
 </html>
