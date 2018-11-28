@@ -243,7 +243,7 @@
         <div class="container">
             <div class="row content">
                 <div class="col-md-12">
-                    <div class="row">
+                    <div class="row sponsors-main-container">
                         <div class="col-md-12">
                             <h3> Meet Our Sponsors </h3>
                             <h5> We are grateful for their support! </h5>
@@ -397,6 +397,7 @@
     <script type="text/javascript" src="js/countdown.js"></script>
     <script type="text/javascript" src="js/smooth.scroll.js"></script>
     <script type="text/javascript" src="js/hide-navbar.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script src="css/bootstrap/js/popper.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -423,6 +424,16 @@
                 effect: 'fadeIn',
             });
 
+
+            $('#sponsors').waypoint(function() {
+
+                $(".sponsors-main-container").animate({"opacity": 1.00}, 500);
+                $(".official-main-container").delay(400).animate({"opacity": 1.00}, 500);
+                $(".gold-main-container").delay(700).animate({"opacity": 1.00}, 500);
+                $(".silver-main-container").delay(1000).animate({"opacity": 1.00}, 500);
+                $(".bronze-main-container").delay(1300).animate({"opacity": 1.00}, 500);
+
+            }, { offset: '50%' });
 
 
             //lazy load applied to google maps
