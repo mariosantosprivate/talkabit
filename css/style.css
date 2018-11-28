@@ -752,10 +752,50 @@ b{
 /* Sponsors  */
 
 .new_sponsor_badge {
+    -webkit-animation: shake 1s infinite; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: shake 1s infinite; /* Firefox < 16 */
+    -ms-animation: shake 1s infinite; /* Internet Explorer */
+    -o-animation: shake 1s infinite; /* Opera < 12.1 */
     animation: shake 1s infinite;
 }
 
 @keyframes shake {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(10deg); }
+    95% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes shake {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(10deg); }
+    95% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes shake {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(10deg); }
+    95% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes shake {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(10deg); }
+    95% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes shake {
     0% { transform: rotate(0deg); }
     80% { transform: rotate(0deg); }
     85% { transform: rotate(10deg); }
