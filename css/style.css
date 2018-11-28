@@ -803,6 +803,11 @@ b{
     100% { transform: rotate(0deg); }
 }
 
+
+.sponsors-main-container, .official-main-container, .gold-main-container, .silver-main-container, .bronze-main-container {
+    opacity: 0;
+}
+
 #sponsors h3{
     font-size: 50px;
     font-family: 'Decima';
