@@ -298,7 +298,6 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-
     .landing-feup {
         display: none;
     }
@@ -803,31 +802,39 @@ b{
     100% { transform: rotate(0deg); }
 }
 
+
 #sponsors h3{
-    font-size: 50px;
-    font-family: 'Decima';
+    font-size: 25px;
+    font-family: 'DecimaBold';
     text-transform: uppercase;
     color: #0f0f0f;
     font-weight: 700;
-    padding-bottom:15px;
+    color:  #009AD7;
+    padding-bottom:0;
     letter-spacing: 1px;
     text-align: center;
 }
 
 #sponsors h5 {
-    font-size: 18px;
-    font-family: 'Decima';
+    font-size: 16px;
+    font-family: 'DecimaA';
     color: #0f0f0f;
-    padding-bottom:15px;
-    letter-spacing: 1px;
+    padding-bottom:0;
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    #sponsors h3, #sponsors h5 {
+        text-align: left;
+    }
 }
 
 #sponsors h4 {
     margin-top: 40px;
-    font-size: 40px;
+    font-size: 24px;
     font-family: 'Decima';
-
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -868,24 +875,20 @@ b{
 }
 
 #sponsors .bronze-main-container hr {
-    height: 4px;
     background-image: linear-gradient(to right, rgb(205, 127, 50), rgba(0, 0, 0, 0));
 }
 
 #sponsors .bronze-sec-container div {
-    margin: 30px 0px;
+  /*  margin: 30px 0px; */
+    margin:0px;
 }
-
 
 #sponsors .sponsors-img {
     width: 170px;
     height: 170px;
     background-size: contain;
+    float:left;
 }
-
-
-
-
 
 /* Organization */
 
