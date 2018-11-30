@@ -1416,4 +1416,15 @@ ul.timeline > li p {
     box-shadow: none;
 }
 
+.footer {
+    background-color: black;
+}
+
+.footer p {
+    padding: 15px 0;
+    margin: 0;
+    color: white;
+    font-family: 'DecimaALight';
+}
+
 
