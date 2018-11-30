@@ -281,6 +281,10 @@ body {
     .landing .landing-logo img {
         width: 100%;
     }
+
+    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee  {
+        margin-right: 0px !important;
+    }
 }
 
 .landing-edition span {
@@ -301,6 +305,10 @@ body {
 
     .landing-feup {
         display: none;
+    }
+
+    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee,.sponsors-img.niaefeup   {
+        margin-bottom: 0px !important;
     }
 }
 
@@ -904,8 +912,26 @@ b{
     float:left;
 }
 
+.partners-sec-container .sponsors-img {
+    margin-right: 40px !important;
+    margin-bottom: 20px !important;
+}
+
+#sponsors .sponsors-img.niaefeup {
+    height: 120px;
+    float: none;
+}
+
 #sponsors .sponsors-img.ieee {
     height: 80px;
+    margin: 0 auto;
+    float: none;
+}
+
+#sponsors .sponsors-img.dei {
+    height: 40px;
+    margin: 0 auto;
+    float: none;
 }
 
 
