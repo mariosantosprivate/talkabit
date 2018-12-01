@@ -842,7 +842,7 @@ b{
 
 
  .official-main-container, .gold-main-container, .silver-main-container, .bronze-main-container, .partners-main-container {
-   // opacity: 0;
+    opacity: 0;
 }
 #sponsors a:hover{
     text-decoration: none;
