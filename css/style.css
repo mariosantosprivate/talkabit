@@ -812,10 +812,12 @@ b{
 }
 
 
-.sponsors-main-container, .official-main-container, .gold-main-container, .silver-main-container, .bronze-main-container, .partners-main-container {
-    opacity: 0;
+ .official-main-container, .gold-main-container, .silver-main-container, .bronze-main-container, .partners-main-container {
+   // opacity: 0;
 }
-
+#sponsors a:hover{
+    text-decoration: none;
+}
 #sponsors h3{
     font-size: 25px;
     font-family: 'Decima';
