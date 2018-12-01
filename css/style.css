@@ -815,7 +815,7 @@ b{
  .official-main-container, .gold-main-container, .silver-main-container, .bronze-main-container, .partners-main-container {
    // opacity: 0;
 }
-#sponsors a:hover{
+#sponsors a:hover, #app-available a:hover{
     text-decoration: none;
 }
 #sponsors h3{
@@ -1429,4 +1429,198 @@ ul.timeline > li p {
     font-family: 'DecimaALight';
 }
 
+#tickets-available{
+    margin-top: 60px ;
+    margin-bottom: 60px ;
+}
 
+.tickets-btn:link:hover, .tickets-btn:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+.tickets-btn {
+    border: 2px solid #009AD7;
+}
+.tickets-btn:link, .tickets-btn:visited {
+    position: relative;
+
+    padding: 14px 15px;
+    color: #fff;
+    z-index:1;
+    font-family: 'DecimaABold';
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.tickets-btn-outside{
+    display: inline;
+
+}
+.tickets-btn.tickets-btn-left:after {
+    background: #009AD7;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+.tickets-btn.tickets-btn-right:after {
+    background: #009AD7;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+.tickets-btn:link:after, .tickets-btn:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index:-1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+
+.tickets-btn:link:hover, .tickets-btn:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+
+.tickets-btn:link:hover:after, .tickets-btn:visited:hover:after {
+    height: 450%;
+}
+
+
+.a-right, .a-left {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+
+    color: #fff;
+}
+
+.a-left:before {
+    content: "→";
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 50px;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.a-right:before {
+    content: "←";
+    font-weight: 700;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.a-right, .a-left  {
+    text-decoration: none;
+    color: #009AD7;
+}
+
+.a-left:before {
+    animation: R2L 1.5s forwards infinite;
+}
+
+.a-right:before {
+    animation: L2R 1.5s forwards infinite;
+}
+
+@keyframes R2L {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-100%);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes L2R {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(100%);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+#app-available{
+    text-align: right;
+}
+
+#app-available .app-links{
+    text-align: left;
+}
+
+
+@media (max-width: 769px){
+
+    #tickets-available span{
+        display:none;
+    }
+    #app-available{
+        text-align: center;
+    }
+
+    #app-available .app-links{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #app-available .app-links img{
+        margin-top: 10px;
+    }
+
+    .tickets-btn:link, .tickets-btn:visited{
+        font-size: 18px;
+    }
+
+    .tickets-btn-right{
+        margin-top:15px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .tickets-btn:link, .tickets-btn:visited{
+
+        font-size: 16px;
+    }
+
+}
