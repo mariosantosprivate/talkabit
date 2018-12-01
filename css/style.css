@@ -269,6 +269,15 @@ body {
     .landing .landing-logo img {
         width: 500px;
     }
+
+    .about-desktop {
+        display: none;
+    }
+
+    .about-mobile {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -346,6 +355,14 @@ body {
     .landing-feup img {
         float: right;
     }
+
+   .about-desktop {
+        display: block;
+   }
+
+   .about-mobile {
+       display: none;
+   }
 }
 
 @media (max-width: 777px) {
@@ -646,6 +663,14 @@ h3{
     width: 100%;
     background: #fafafa;
     text-align: left;
+}
+
+#about img {
+    background-size: cover;
+    width: 100%;
+    border: 10px solid #009AD7;
+    border-radius: 20px;
+    visibility: hidden;
 }
 
 b{
