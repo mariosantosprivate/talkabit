@@ -291,7 +291,7 @@ body {
         width: 100%;
     }
 
-    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee  {
+    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee, .sec-container .sponsors-img  {
         margin-right: 0px !important;
     }
 }
@@ -316,7 +316,7 @@ body {
         display: none;
     }
 
-    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee,.sponsors-img.niaefeup   {
+    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee,.sponsors-img.niaefeup, .sec-container .sponsors-img   {
         margin-bottom: 0px !important;
     }
 }
@@ -943,7 +943,7 @@ b{
     float:left;
 }
 
-.partners-sec-container .sponsors-img {
+.partners-sec-container .sponsors-img, .sec-container .sponsors-img {
     margin-right: 40px !important;
     margin-bottom: 20px !important;
 }
