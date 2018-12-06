@@ -949,7 +949,8 @@ b{
 }
 
 #sponsors .sponsors-img.niaefeup {
-    height: 120px;
+    height: 100px;
+    margin: 0 auto;
     float: none;
 }
 
