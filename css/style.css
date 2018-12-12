@@ -316,9 +316,9 @@ body {
         display: none;
     }
 
-    .partners-sec-container .sponsors-img.dei, .sponsors-img.ieee,.sponsors-img.niaefeup, .sec-container .sponsors-img   {
+    /*.partners-sec-container .sponsors-img.dei, .sponsors-img.ieee,.sponsors-img.niaefeup, .sec-container .sponsors-img   {
         margin-bottom: 0px !important;
-    }
+    }*/
 }
 
 
@@ -962,6 +962,12 @@ b{
 
 #sponsors .sponsors-img.dei {
     height: 40px;
+    margin: 0 auto;
+    float: none;
+}
+
+#sponsors .sponsors-img.juni {
+    height: 60px;
     margin: 0 auto;
     float: none;
 }
