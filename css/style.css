@@ -920,6 +920,10 @@ b{
     width: 100%;
 }
 
+#speakers hr {
+    background-image: linear-gradient(to right, rgb(0,154,215), rgba(0, 0, 0, 0));
+}
+
 #sponsors .official-main-container hr {
     background-image: linear-gradient(to right, rgb(0,154,215), rgba(0, 0, 0, 0));
 }
@@ -1669,4 +1673,15 @@ ul.timeline > li p {
         font-size: 16px;
     }
 
+}
+
+.speaker img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #009AD7;
+}
+
+.speaker {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
