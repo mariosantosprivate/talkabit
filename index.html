@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top hide" id="navbar">
@@ -186,15 +187,39 @@
         </div>
     </div>
     <div id="about" class="about">
-        <div class="container content">
-            <div class="row ">
-                <div class="col-md-6">
+       <!-- <div class="container content about-desktop">
+            <div class="row seventh-edition-row" style="margin-bottom: 40px">
+                <div class="col-md-6 about-conference">
                     <h4>About the conference</h4>
                     <p>Talk a Bit is a non-profit tech conference organized by graduating Software Engineering students from FEUP, the Faculty of Engineering of the University of Porto. Like in previous occurrences, this year's 7th edition of the conference will focus on the future of technology.</p>
                     <p>The conference started in 2013 with less than 150 attendees, a number that has grown to 500 in last year's edition. The trend is clear and demonstrates how important it is to think about the future of technology, since today the technological world is becoming more and more a part of our lives.</p>
                     <p>The conference talks are suitable for english-speakers.</p>
                 </div>
-                <div class="col-md-6 content-mobile">
+                <div class="col-md-6 about-img-container" style="overflow:hidden">
+                    <img data-original="res/img/about/conference.jpg"  style="float:right"/>
+                </div>
+            </div>
+            <div class="row seventh-edition-row">
+                <div class="col-md-6 about-img-container">
+                    <img data-original="res/img/about/7th-edition.jpg" style="float:left"/>
+                </div>
+                <div class="col-md-6 content-mobile about-edition">
+                    <h4>VII Edition</h4>
+                    <p>The 7th edition of Talk a Bit will take place on January 26th, 2019, at FEUP. Starting at 9:00, the morning will be occupied by presentations from the codingforsocialimpact.org project, a local project that has FEUP students developing real projects for real organizations that aim to use those projects to make a positive social impact. Also during the morning, there will be several workshops with different subjects, which will be announced soon.</p>
+                    <p>During the afternoon, there will be talks from external speakers, as well as a discussion forum. Both will cover all sorts of topics about the main theme of this conference.</p>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="container">
+            <div class="row content">
+                <div class="col-md-6 about-conference">
+                    <h4>About the conference</h4>
+                    <p>Talk a Bit is a non-profit tech conference organized by graduating Software Engineering students from FEUP, the Faculty of Engineering of the University of Porto. Like in previous occurrences, this year's 7th edition of the conference will focus on the future of technology.</p>
+                    <p>The conference started in 2013 with less than 150 attendees, a number that has grown to 500 in last year's edition. The trend is clear and demonstrates how important it is to think about the future of technology, since today the technological world is becoming more and more a part of our lives.</p>
+                    <p>The conference talks are suitable for english-speakers.</p>
+                </div>
+                <div class="col-md-6 content-mobile about-edition">
                     <h4>VII Edition</h4>
                     <p>The 7th edition of Talk a Bit will take place on January 26th, 2019, at FEUP. Starting at 9:00, the morning will be occupied by presentations from the codingforsocialimpact.org project, a local project that has FEUP students developing real projects for real organizations that aim to use those projects to make a positive social impact. Also during the morning, there will be several workshops with different subjects, which will be announced soon.</p>
                     <p>During the afternoon, there will be talks from external speakers, as well as a discussion forum. Both will cover all sorts of topics about the main theme of this conference.</p>
@@ -203,7 +228,11 @@
             </div>
 
         </div>
+
+
+
     </div>
+
     <div id="tickets">
         <div class="container">
             <div class="row content">
@@ -317,7 +346,7 @@
                             <div class="row sec-container">
                                 <div class="col-sm-12 col-md-4 col-lg-3" >
                                 <a href="https://www.semasio.com/">
-                                    <img data-original="res/img/sponsors/semasio_logo.png"  class="sponsors-img img-smaller" height="50px" src="res/img/committee/no-photo.jpg"/>
+                                    <img data-original="res/img/sponsors/semasio_logo.png"  class="sponsors-img img-smaller" height="45px" src="res/img/committee/no-photo.jpg"/>
                                 </a>
                             </div>
                         </div>
@@ -334,9 +363,13 @@
                                 </div>
                             </div>
                             <div class="row sec-container">
-                                <div class="col-sm-12 col-md-4 col-lg-3">
+                                <div class="container">
                                     <a href="https://www.blip.pt/">
-                                    <img data-original="res/img/sponsors/blip-logo.png" class="sponsors-img" height="120px" src="res/img/committee/no-photo.jpg"/>
+                                    <img data-original="res/img/sponsors/blip-logo.png" class="sponsors-img" height="105px" src="res/img/committee/no-photo.jpg"/>
+                                    </a>
+
+                                    <a href="https://www.cervejaletra.pt/">
+                                        <img data-original="res/img/sponsors/letra.png" class="sponsors-img" height="90px" src="res/img/committee/no-photo.jpg"/>
                                     </a>
                                 </div>
                             </div>
@@ -355,7 +388,7 @@
                             <div class="row partners-sec-container">
                                 <div class="container">
                                     <a href="https://ni.fe.up.pt/">
-                                        <img data-original="res/img/sponsors/niaefeup.svg" class="sponsors-img niaefeup" src="res/img/committee/no-photo.jpg"/>
+                                        <img data-original="res/img/sponsors/niaefeup.png" class="sponsors-img niaefeup" src="res/img/committee/no-photo.jpg"/>
                                     </a>
 
                                     <a href="https://up.ieee-pt.org/">
@@ -364,6 +397,10 @@
 
                                     <a href="https://sigarra.up.pt/feup/pt/uni_geral.unidade_view?pv_unidade=151">
                                         <img data-original="res/img/sponsors/dei.png" class="sponsors-img dei" src="res/img/committee/no-photo.jpg"/>
+                                    </a>
+
+                                    <a href="https://www.junifeup.pt/">
+                                        <img data-original="res/img/sponsors/junifeup.png" class="sponsors-img juni" src="res/img/committee/no-photo.jpg" />
                                     </a>
                                 </div>
 
@@ -375,8 +412,9 @@
         </div>
     </div>
     <div id="location">
-        <div class="container content">
-            <div class="row ">
+        <div class="container">
+            <div class="content">
+            <div class="row">
                 <div class="col-md-12">
                     <h3> Location </h3>
                 </div>
@@ -390,8 +428,8 @@
                 </div>
                 <div class="col-md-9" id="map">
                 </div>
-
             </div>
+
             <div class="row" style="margin-top:100px">
                 <div class="col-md-12">
                 <h3> Need help getting to Talk a Bit? </h3>
@@ -440,6 +478,7 @@
             </div>
         </div>
     </div>
+    </div>
 
     <div class="container-fluid footer">
         <p style=""> Copyright &#9400; 2018 Talk a Bit. All rights reserved.</p>
@@ -479,6 +518,11 @@
                 effect: 'fadeIn',
             });
 
+            $(".about-img-container img").lazyload({
+                threshold: 200,
+                effect: 'fadeIn',
+            });
+
 
             $('#sponsors').waypoint(function() {
 
@@ -490,6 +534,28 @@
                 $(".partners-main-container").delay(1600).animate({"opacity": 1.00}, 500);
 
             }, { offset: '50%' });
+
+            $('.about-desktop .row:first-of-type').waypoint(function() {
+
+                $('.about-desktop .about-conference').addClass(" animated slideInLeft");
+                $('.about-desktop .about-conference').css("visibility", "visible");
+
+            }, { offset: '50%' });
+
+            $('.about-desktop .seventh-edition-row').waypoint(function() {
+
+                $('.about-desktop .about-edition').addClass(" animated slideInRight");
+                $('.about-desktop .about-edition').css("visibility", "visible");
+
+            }, { offset: '15%' });
+
+
+
+
+
+
+
+
 
 
             //lazy load applied to google maps

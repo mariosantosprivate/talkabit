@@ -125,6 +125,7 @@
                             }
                             else if ($self.is("img")) {
                                 $self.attr("src", original);
+                                $self.css("visibility", "visible");
                             } else {
                                 $self.css("background-image", "url('" + original + "')");
                             }
@@ -142,6 +143,7 @@
                                 var elements_left = elements.length;
                                 settings.load.call(self, elements_left, settings);
                             }
+
                         })
                         .attr("src",  loadImgUri);
                 }
