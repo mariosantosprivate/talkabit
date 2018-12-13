@@ -665,6 +665,16 @@ h3{
     text-align: left;
 }
 
+#about .container {
+    overflow: hidden;
+}
+
+@-moz-document url-prefix() {
+    #about .container {
+        overflow: hidden;
+    }
+}
+
 #about img {
     background-size: cover;
     width: 90%;
@@ -673,7 +683,7 @@ h3{
     visibility: hidden;
 }
 
-.about-desktop .about-conference,.about-desktop .about-edition {
+.about-conference, .about-edition {
     visibility: hidden;
 }
 
