@@ -1260,6 +1260,15 @@ figure{
   #organization-mobile{
 	  display:block;
   }
+
+  .speaker-profile-info {
+      width: 100%;
+      clear: left;
+  }
+
+  .speaker-detailed-info {
+      overflow: visible !important;
+  }
 }
 
 @media (min-width: 769px) {
