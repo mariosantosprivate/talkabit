@@ -701,6 +701,10 @@ b{
     letter-spacing: 1px;
 }
 
+#speakers h3{
+    padding-bottom:0;
+}
+
 #about p, #speakers p, #program p, #sponsors p{
     color: #000000;
     font-family: 'DecimaALight';
@@ -1703,20 +1707,36 @@ ul.timeline > li p {
 }
 
 .speaker .caption {
-    padding-top: 10px
+    padding-top: 10px;
 }
 
-.speaker-name {
+.speaker-detailed-info{
+    padding-top:15px;
+}
+.speaker-name{
     text-transform: uppercase;
-    margin: 0;
+    margin-bottom: 0;
+    font-family: 'DecimaABold';
+    color: black;
+    font-size: 20px;
 }
 
 .speaker-biography-content {
     display: none;
+    font-family: 'DecimaA';
 }
 
-.speaker-talk p:first-of-type {
-    margin: 0px;
+.speaker-biography h5{
+    font-size: 20px;
+    font-family: 'DecimaABold';
+    color: black;
+}
+
+.speaker-talk h4{
+    font-size: 24px;
+    font-family: 'DecimaABold';
+    text-transform: uppercase;
+    color: #009AD7;
 }
 
 .speaker-biography p:first-of-type {
@@ -1725,9 +1745,19 @@ ul.timeline > li p {
 
 button.show-more-content, button.show-less-content{
     margin-left: 5px;
+    font-size: 13.5px;
+    background-color: transparent;
+    border:1px solid #009AD7;
+    padding: .25rem .5rem;
+    color:  #009AD7;
+    font-family: 'DecimaABold';
 }
 
-
+.btn-dark:hover {
+    color: #fff;
+    background-color: #009AD7;
+    border-color: #009AD7;
+}
 .speaker-profile-info{text-align:center;position:relative}
 .speaker-profile-info .box-content{overflow: hidden;width:200px;height:200px;border-radius: 50%;background:0 0;position:absolute;top:0;left:0;transition:all .3s ease 0s}
 .speaker-profile-info .title{font-size:24px;color:white !important;transform:scale(0);transition:all .2s ease 0s}
