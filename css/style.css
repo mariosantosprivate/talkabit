@@ -937,6 +937,7 @@ b{
 }
 
 #sponsors .silver-main-container hr {
+    height: 3.5px;
     background-image: linear-gradient(to right, rgb(192,192,192), rgba(0, 0, 0, 0));
 }
 
@@ -1724,12 +1725,17 @@ ul.timeline > li p {
 .speaker-biography-content {
     display: none;
     font-family: 'DecimaA';
+
 }
 
 .speaker-biography h5{
     font-size: 20px;
     font-family: 'DecimaABold';
     color: black;
+}
+
+#speakers p.speaker-biography-content{
+    text-align: justify;
 }
 
 .speaker-talk h4{
@@ -1761,3 +1767,12 @@ button.show-more-content, button.show-less-content{
 .speaker-profile-info{text-align:center;position:relative}
 .speaker-profile-info .box-content{overflow: hidden;width:200px;height:200px;border-radius: 50%;background:0 0;position:absolute;top:0;left:0;transition:all .3s ease 0s}
 .speaker-profile-info .title{font-size:24px;color:white !important;transform:scale(0);transition:all .2s ease 0s}
+
+.speaker-talk h4{
+    margin-bottom: 20px;
+}
+@media (max-width: 575px){
+    .speaker-talk h4{
+        text-align: center;
+    }
+}
