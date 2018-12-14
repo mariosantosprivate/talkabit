@@ -802,7 +802,7 @@ b{
 
 /* Sponsors  */
 
-.new_sponsor_badge {
+.new_sponsor_badge, .new_speaker_badge {
     -webkit-animation: shake2 1s infinite; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: shake2 1s infinite; /* Firefox < 16 */
     -ms-animation: shake2 1s infinite; /* Internet Explorer */
