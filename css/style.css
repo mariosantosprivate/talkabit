@@ -1764,13 +1764,35 @@ button.show-more-content, button.show-less-content{
     background-color: #009AD7;
     border-color: #009AD7;
 }
-.speaker-profile-info{text-align:center;position:relative}
-.speaker-profile-info .box-content{overflow: hidden;width:200px;height:200px;border-radius: 50%;background:0 0;position:absolute;top:0;left:0;transition:all .3s ease 0s}
-.speaker-profile-info .title{font-size:24px;color:white !important;transform:scale(0);transition:all .2s ease 0s}
+
+.speaker-profile-info{
+    text-align:center;
+    position:relative;
+}
+
+.speaker-profile-info .box-content{
+    overflow: hidden;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background:0 0;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:all .3s ease 0s;
+}
+
+.speaker-profile-info .title{
+    font-size:24px;
+    color:white !important;
+    transform:scale(0);
+    transition:all .2s ease 0s
+}
 
 .speaker-talk h4{
     margin-bottom: 20px;
 }
+
 @media (max-width: 575px){
     .speaker-talk h4{
         text-align: center;
