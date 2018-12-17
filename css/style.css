@@ -769,6 +769,45 @@ b{
 
 #program article {
     margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform .7s;
+
+}
+
+#program .workshop-separator {
+    background-color: #009AD7;
+    margin: 0px 15px;
+}
+
+#program .workshop-separator h4 {
+    color: white;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#program .workshop-title-container p {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#program .workshop-content-container p {
+    margin: 0px;
+}
+
+#program article:hover {
+    transform: scale(1.05);
+}
+
+#program .workshops-container {
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    #program .workshops-container {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
 }
 
 /* Location */
