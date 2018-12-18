@@ -1286,6 +1286,16 @@ figure{
     .cfp-info-container, .cfp-sub-content, .cfp-review-content {
         text-align: left;
     }
+
+    .speaker-profile-info, .speaker-detailed-info {
+        height:100%;
+    }
+
+    .speaker-center-vertical, .speaker-info-center-vertical{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
@@ -1705,15 +1715,14 @@ ul.timeline > li p {
 .speaker-profile-info {
     float: left;
     margin: 0 20px 0 0;
+    min-width:250px;
+
 }
 
 .speaker .caption {
     padding-top: 10px;
 }
 
-.speaker-detailed-info{
-    padding-top:15px;
-}
 .speaker-name{
     text-transform: uppercase;
     margin-bottom: 0;
@@ -1725,7 +1734,6 @@ ul.timeline > li p {
 .speaker-biography-content {
     display: none;
     font-family: 'DecimaA';
-
 }
 
 .speaker-biography h5{
@@ -1798,3 +1806,5 @@ button.show-more-content, button.show-less-content{
         text-align: center;
     }
 }
+
+
