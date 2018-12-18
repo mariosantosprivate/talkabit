@@ -774,12 +774,12 @@ b{
 
 }
 
-#program .workshop-separator {
+#program .program-separator {
     background-color: #009AD7;
     margin: 0px 15px;
 }
 
-#program .workshop-separator h4 {
+#program .program-separator h4 {
     color: white;
     margin: 0 auto;
     padding: 5px;
@@ -812,6 +812,52 @@ b{
         margin-left: 15px !important;
         margin-right: 15px !important;
     }
+}
+
+#program .schedule-container {
+    margin-top: 40px;
+}
+
+#program .schedule-content {
+    margin-top: 15px;
+}
+
+
+#program .schedule-item-container {
+    padding: 10px;
+    margin-left: 15px !important;
+}
+
+#program .schedule-item-container:not(:last-child) {
+    /*border-bottom: 1px solid #009AD7;*/
+}
+
+#program .schedule-item {
+    display: flex;
+}
+
+#program .schedule-item-content h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#program .time {
+    border-right: 1px solid #009AD7;
+    margin: 0px 10px 0px 0px;
+    padding-right: 10px;
+}
+
+#program .time p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#program .break {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#program .afternoon-separator {
+    margin-bottom: 15px;
 }
 
 /* Location */
