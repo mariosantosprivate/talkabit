@@ -783,6 +783,7 @@ b{
     color: white;
     margin: 0 auto;
     padding: 5px;
+    font-size: 20px;
 }
 
 #program .workshop-title-container p {
@@ -837,7 +838,7 @@ b{
 }
 
 #program .schedule-item-content h5 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -858,6 +859,15 @@ b{
 
 #program .afternoon-separator {
     margin-bottom: 15px;
+}
+
+#program .coffee-break {
+    background-color: rgba(0,0,0, 0.2) !important;
+    border: 2px solid #009AD7
+}
+
+#program .schedule-container p {
+    font-size: 16px;
 }
 
 /* Location */
