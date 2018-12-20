@@ -1622,8 +1622,8 @@ ul.timeline > li p {
 }
 
 #tickets-available{
-    margin-top: 60px ;
-    margin-bottom: 60px ;
+    margin-top: 40px ;
+    /*margin-bottom: 40px ; */ /*DESCOMENTAR QUANDO TIVER A APP*/
 }
 
 .tickets-btn:link:hover, .tickets-btn:visited:hover {
@@ -1780,12 +1780,8 @@ ul.timeline > li p {
     text-align: left;
 }
 
-
 @media (max-width: 769px){
 
-    #tickets-available span{
-        display:none;
-    }
     #app-available{
         text-align: center;
     }
@@ -1810,9 +1806,13 @@ ul.timeline > li p {
 }
 
 @media (max-width: 360px) {
-    .tickets-btn:link, .tickets-btn:visited{
 
-        font-size: 16px;
+    .a-left:before, .a-right:before{
+        font-size: 20px;
+    }
+
+    .tickets-btn:link, .tickets-btn:visited{
+        font-size: 17px;
     }
 
 }
