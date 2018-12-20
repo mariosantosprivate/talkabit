@@ -204,7 +204,7 @@
     <div id="tickets">
         <div class="container">
             <div class="row content">
-                <div class="col-md-12 content-mobile text-center">
+                <div class="tickets col-md-12 content-mobile text-center">
                     <h2 class="">Tickets are FREE!</h2>
                     <p>The conference ticket is <b>entirely free</b> and includes access to the presentations, forum, workshops, lunch, coffee-breaks and networking! </p>
                     <p>Registered attendees also get extra goodies!</p>
@@ -1029,31 +1029,44 @@
                 effect: 'fadeIn',
             });
 
-
             $('#sponsors').waypoint(function() {
-
                 //$(".sponsors-main-container").animate({"opacity": 1.00}, 500);
-                $(".official-main-container").delay(400).animate({"opacity": 1.00}, 500);
-                $(".gold-main-container").delay(700).animate({"opacity": 1.00}, 500);
-                $(".silver-main-container").delay(1000).animate({"opacity": 1.00}, 500);
-                $(".bronze-main-container").delay(1300).animate({"opacity": 1.00}, 500);
-                $(".partners-main-container").delay(1600).animate({"opacity": 1.00}, 500);
+                $(".official-main-container").delay(100).animate({"opacity": 1.00}, 500);
+                $(".gold-main-container").delay(500).animate({"opacity": 1.00}, 500);
+                $(".silver-main-container").delay(800).animate({"opacity": 1.00}, 500);
+                $(".bronze-main-container").delay(1100).animate({"opacity": 1.00}, 500);
+                $(".partners-main-container").delay(1400).animate({"opacity": 1.00}, 500);
 
-            }, { offset: '50%' });
+            }, { offset: '60%' });
 
             $('.about-conference').waypoint(function() {
 
                 $('.about-conference').addClass(" animated slideInLeft");
                 $('.about-conference').css("visibility", "visible");
 
-            }, { offset: '50%' });
+            }, { offset: '70%' });
 
             $('.about-edition').waypoint(function() {
 
                 $('.about-edition').addClass(" animated slideInRight");
                 $('.about-edition').css("visibility", "visible");
 
-            }, { offset: '50%' });
+            }, { offset: '70%' });
+
+            $('#tickets').waypoint(function() {
+                $('.tickets').delay(100).animate({"opacity": 1.00}, 500);
+                $('#tickets-available').delay(500).animate({"opacity": 1.00}, 500);
+            }, { offset: '80%' });
+
+            $('#speakers').waypoint(function() {
+
+                $('.speaker-profile-info').addClass("animated slideInLeft");
+                $('.speaker-profile-info').css("visibility", "visible");
+
+                $('.speaker-detailed-info').addClass("animated slideInRight");
+                $('.speaker-detailed-info').css("visibility", "visible");
+
+            }, { offset: '70%' });
 
 
             //lazy load applied to google maps

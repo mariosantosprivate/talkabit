@@ -744,6 +744,12 @@ b{
     letter-spacing: .3px;
     margin-bottom: 0px;
 }
+
+.tickets, #tickets-available{
+    opacity: 0;
+}
+
+
 /* Program */
 
 #program {
@@ -1862,6 +1868,10 @@ ul.timeline > li p {
 
 #speakers p.speaker-biography-content{
     text-align: justify;
+}
+
+.speaker-profile-info, .speaker-detailed-info{
+    visibility: hidden;
 }
 
 .speaker-talk h4{
