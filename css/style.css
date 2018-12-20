@@ -46,12 +46,11 @@
     src: local('DecimaABold'), url('../res/fonts/Decima-Pro-A-Bold.ttf') format('truetype');
 }
 
-
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Calibri';
     font-style: normal;
     font-weight: normal;
-    src: local('Lato'), url('../res/fonts/Lato.ttf') format('truetype');
+    src: local('Calibri'), url('../res/fonts/Calibri.ttf') format('truetype');
 }
 
 
@@ -1725,7 +1724,7 @@ ul.timeline > li p {
 
 .a-left:before {
     content: "→";
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: Calibri, 'Calibri', Arial, sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 50px;
@@ -1737,7 +1736,7 @@ ul.timeline > li p {
 .a-right:before {
     content: "←";
     font-weight: 700;
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: Calibri, 'Calibri', Arial, sans-serif;
     font-size: 25px;
     line-height: 50px;
     text-transform: none;
