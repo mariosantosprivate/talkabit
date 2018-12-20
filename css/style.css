@@ -47,6 +47,14 @@
 }
 
 
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato'), url('../res/fonts/Lato.ttf') format('truetype');
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
