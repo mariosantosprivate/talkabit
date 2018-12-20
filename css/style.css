@@ -671,7 +671,7 @@ h3{
     background: #fafafa;
     text-align: left;
 }
-
+/*
 #about .container {
     overflow: hidden;
 }
@@ -681,7 +681,7 @@ h3{
         overflow: hidden;
     }
 }
-
+*/
 #about img {
     background-size: cover;
     width: 90%;
@@ -1723,7 +1723,7 @@ ul.timeline > li p {
 }
 
 .a-left:before {
-    content: "→";
+    content: "\2192";
     font-family: Calibri, 'Calibri', Arial, sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -1734,7 +1734,7 @@ ul.timeline > li p {
 }
 
 .a-right:before {
-    content: "←";
+    content: "\2190";
     font-weight: 700;
     font-family: Calibri, 'Calibri', Arial, sans-serif;
     font-size: 25px;
