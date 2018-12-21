@@ -1085,7 +1085,6 @@ b{
     height: 170px;*/
 
     background-size: contain;
-    float:left;
 }
 
 .partners-sec-container .sponsors-img, .sec-container .sponsors-img {
@@ -1121,6 +1120,11 @@ b{
     height: 68px;
     margin: 0 auto;
     float: none;
+}
+
+#sponsors .sponsors-img.inesctec {
+    margin-right: 0px !important;
+    float: none !important;
 }
 
 #sponsors .img-smaller {
