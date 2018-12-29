@@ -1404,6 +1404,7 @@ figure{
   .speaker-profile-info {
       width: 100%;
       clear: left;
+
   }
 
   .speaker-detailed-info {
@@ -1424,12 +1425,22 @@ figure{
 
     .speaker-profile-info, .speaker-detailed-info {
         height:100%;
+
+    }
+
+    .speaker-profile-info{
+        max-width: 250px;
     }
 
     .speaker-center-vertical, .speaker-info-center-vertical{
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .speaker-center-vertical p{
+        padding-right: 2px;
+        padding-left: 2px;
     }
 }
 
