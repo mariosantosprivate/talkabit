@@ -821,6 +821,33 @@ b{
     margin-left: 15px;
 }
 
+
+#program .networking-container h4 {
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+#program .networking-container .container {
+    background-color: rgba(0,0,0, 0.2);
+    border-left: 10px solid #009AD7;
+    border-right: 10px solid #009AD7;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+#program .networking-apply-header {
+    margin-top: 30px;
+    text-transform: uppercase;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 @media (max-width: 600px) {
     #program .workshops-container {
         margin-left: 15px !important;
@@ -828,11 +855,11 @@ b{
     }
 }
 
-#program .schedule-container {
+#program .schedule-container, .networking-container {
     margin-top: 40px;
 }
 
-#program .schedule-content {
+#program .schedule-content{
     margin-top: 15px;
 }
 
