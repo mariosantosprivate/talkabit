@@ -1982,7 +1982,7 @@ button.show-more-content, button.show-less-content{
     margin-bottom: 20px;
 }
 
-@media (max-width: 575px){
+@media (max-width: 768px){
     .speaker-talk h4{
         text-align: center;
     }
