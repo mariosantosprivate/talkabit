@@ -835,6 +835,7 @@ b{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     max-width: 500px;
+    margin-top: 15px;
 }
 
 #program .networking-apply-header {
