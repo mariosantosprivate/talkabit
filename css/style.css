@@ -834,6 +834,7 @@ b{
     border-right: 10px solid #009AD7;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
+    max-width: 500px;
 }
 
 #program .networking-apply-header {
@@ -847,6 +848,8 @@ b{
         opacity: 0;
     }
 }
+
+
 
 @media (max-width: 600px) {
     #program .workshops-container {
