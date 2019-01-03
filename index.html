@@ -1088,7 +1088,7 @@
     </div>
 
     <div class="container-fluid footer">
-        <p style=""> Copyright &#9400; 2018 Talk a Bit. All rights reserved.</p>
+        <p style=""> Copyright &#9400; 2019 Talk a Bit. All rights reserved.</p>
     </div>
 
     <script type="text/javascript" src="js/map.js"></script>
@@ -1160,15 +1160,19 @@
                 $('#tickets-available').delay(500).animate({"opacity": 1.00}, 500);
             }, { offset: '80%' });
 
-            $('#speakers').waypoint(function() {
 
-                $('.speaker-profile-info').addClass("animated slideInLeft");
-                $('.speaker-profile-info').css("visibility", "visible");
+            $('.speaker').each(function() {
+                let $this = $(this);
+                $this.waypoint(function() {
 
-                $('.speaker-detailed-info').addClass("animated slideInRight");
-                $('.speaker-detailed-info').css("visibility", "visible");
+                    $('.speaker-profile-info', $this).addClass("animated fadeInUp");
+                    $('.speaker-profile-info', $this).css("visibility", "visible");
 
-            }, { offset: '80%' });
+                    $('.speaker-detailed-info', $this).addClass("animated fadeInUp");
+                    $('.speaker-detailed-info', $this).css("visibility", "visible");
+
+                }, { offset: '70%' });
+            });
 
 
             //lazy load applied to google maps

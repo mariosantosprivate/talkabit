@@ -671,17 +671,17 @@ h3{
     background: #fafafa;
     text-align: left;
 }
-/*
-#about .container {
+
+#about .content {
     overflow: hidden;
 }
 
 @-moz-document url-prefix() {
-    #about .container {
+    #about .content {
         overflow: hidden;
     }
 }
-*/
+
 #about img {
     background-size: cover;
     width: 90%;
