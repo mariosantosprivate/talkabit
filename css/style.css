@@ -1988,4 +1988,10 @@ button.show-more-content, button.show-less-content{
     }
 }
 
+/*
+    Preloads
+ */
+
+#preload-avatar { background: url("../res/img/avatar-info.png") no-repeat -9999px -9999px; }
+
 
