@@ -1992,6 +1992,7 @@ button.show-more-content, button.show-less-content{
     Preloads
  */
 
-#preload-avatar { background: url("../res/img/avatar-info.png") no-repeat -9999px -9999px; }
+#preload-default-photo { background: url("../res/img/committee/no-photo.jpg") no-repeat -9999px -9999px; }
 
+#preload-avatar { background: url("../res/img/avatar-info.png") no-repeat -9999px -9999px; }
 
