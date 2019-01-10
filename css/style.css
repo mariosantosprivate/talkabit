@@ -1044,6 +1044,10 @@ b{
     #sponsors h3, #sponsors h5 {
         text-align: left;
     }
+
+    .critical-software {
+        margin-left: 20px;
+    }
 }
 
 #sponsors h4 {
