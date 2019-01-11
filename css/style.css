@@ -821,6 +821,61 @@ b{
     margin-left: 15px;
 }
 
+#workshop-modal {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+#workshop-modal .modal-content {
+    background-color: rgba(0,0,0, 1);
+    border: 5px solid #009AD7;
+}
+
+#workshop-modal .modal-header {
+    max-height: 50px;
+    border: none;
+}
+
+#workshop-modal .modal-body hr {
+    height: 1px !important;
+}
+
+#workshop-modal .modal-body h3, .workshop-modal-insight p {
+    padding: 0;
+    margin: 0;
+}
+
+#workshop-modal .workshop-modal-description {
+    margin-top: 20px;
+}
+
+#workshop-modal .workshop-modal-description .ws-description-title {
+    margin-bottom: 5px;
+}
+
+#workshop-modal .workshop-modal-description .ws-description-content {
+    max-height: 150px;
+    overflow: auto;
+}
+
+#workshop-modal .modal-header span {
+    color: white;
+    font-size: 2rem;
+}
+
+#workshop-modal .modal-body img {
+    background-size: contain;
+}
+
+#workshop-modal .ws-sponsor {
+    background-size: contain;
+    height: 30px;
+}
+
+.modal-footer span {
+    align-items: center;
+}
+
+
 
 #program .networking-container h4 {
     font-weight: 700;

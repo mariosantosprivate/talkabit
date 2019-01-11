@@ -1113,14 +1113,40 @@
     </div>
 
     <!-- Workshops Modal -->
-    <div class="modal fade text-center py-5" style="top:30px" id="workshop-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-md" role="document">
+    <div class="modal fade" id="workshop-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <div class="modal-body">
-                    <img src="res/img/tab.png" class="modal-img">
-                    <h3 class="pt-5 mb-0 text-secondary">Thanks for your love and support!</h3>
-                    <p class="pb-3 text-muted"><small>Hope that you enjoy it well! Check also our site</small></p>
-                    <a role="button" class="btn btn-secondary text-white mb-3" href="https://www.sunlimetech.com" target="_blank">www.sunlimetech.com</a>
+                    <div class="workshop-modal-title">
+                        <hr>
+                        <h3 style="color: white">Workshop: Introduction to Python</h3>
+                        <hr>
+                    </div>
+                    <div class="workshop-modal-details text-left">
+                        <div class="workshop-modal-insight">
+                            <p>Room: B003</p>
+                            <p>Schedule: 9:15 am - 10:25 am</p>
+                            <p>Speakers: Arlindo Oliveira & Marcelo Marques</p>
+                        </div>
+                        <div class="workshop-modal-description">
+                            <p class="ws-description-title"> Description: </p>
+                            <p class="ws-description-content">   Rui is a Postdoctoral computer science researcher at the University of Minho and HASLab/INESC Tec. He received his PhD degree with the thesis entitled "Energyware Engineering: Techniques and Tools for Green Software Development" under the MAPi doctoral program from the Universities of Minho, Aveiro, and Porto, financed by FCT. During his PhD, he worked on analyzing, understanding, and optimizing software energy consumption levels through source code analysis and manipulation techniques.
+                                Additionally, is one of the co-founders of the Green Software for Space Control Mission (GreenSSCM) project, the Software Repositories for Green Computin FLAD/NSF project, and the Green Software Lab (GSL) project and research group.
+
+                                Currently, he is working on the GreenHub project and his research interests focus on green computing, human-computer interaction, and source code analysis and manipulation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-dark show-more-content">Register</button>
+                </div>
+                <div class="modal-footer">
+                    <span>Powered by <img class="ws-sponsor" src="res/img/sponsors/sonae.png"/></span>
                 </div>
             </div>
         </div>
