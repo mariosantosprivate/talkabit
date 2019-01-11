@@ -422,7 +422,7 @@
                             <p> To be announced soon.</p>
                         </div>
                     </div>
-                    <!-- Workshops
+                    <!-- Workshops-->
                     <div class="row">
                         <div class="col-sm-12 program-separator" >
                             <div class="container" >
@@ -431,7 +431,7 @@
                         </div>
                     </div>
                     <div class="row workshops-container justify-content-center">
-                        <article class="col-sm-12 col-md-4 text-center">
+                        <article class="col-sm-12 col-md-6 text-center">
                             <div class="in">
                                 <div class="workshop-title-container">
                                     <p> Workshop: Introduction to Python</p>
@@ -442,18 +442,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="col-sm-12 col-md-4 text-center">
-                            <div class="in">
-                                <div class="workshop-title-container">
-                                    <p> Workshop: Introduction to Python</p>
-                                </div>
-                                <div class="workshop-content-container">
-                                    <p style="color:white">Room: B003</p>
-                                    <p style="color:white">9:15 am - 10:25 am</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-sm-12 col-md-4 text-center">
+                        <article class="col-sm-12 col-md-6 text-center">
                             <div class="in">
                                 <div class="workshop-title-container">
                                     <p> Workshop: Introduction to Python</p>
@@ -475,7 +464,7 @@
                     </div>
 
                     <div class="row workshops-container justify-content-center">
-                        <article class="col-sm-12 col-md-4 text-center">
+                        <article class="col-sm-12 col-md-6 text-center">
                             <div class="in">
                                 <div class="workshop-title-container">
                                     <p> Workshop: Introduction to Python</p>
@@ -486,18 +475,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="col-sm-12 col-md-4 text-center">
-                            <div class="in">
-                                <div class="workshop-title-container">
-                                    <p> Workshop: Introduction to Python</p>
-                                </div>
-                                <div class="workshop-content-container">
-                                    <p style="color:white">Room: B003</p>
-                                    <p style="color:white">9:15 am - 10:25 am</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-sm-12 col-md-4 text-center">
+                        <article class="col-sm-12 col-md-6 text-center">
                             <div class="in">
                                 <div class="workshop-title-container">
                                     <p> Workshop: Introduction to Python</p>
@@ -509,7 +487,7 @@
                             </div>
                         </article>
                     </div>
-                    -->
+
                     <div class="row networking-container">
                         <div class="col-sm-12 col-md-12">
                             <div class="row">
@@ -1134,6 +1112,20 @@
     </div>
     </div>
 
+    <!-- Workshops Modal -->
+    <div class="modal fade text-center py-5" style="top:30px" id="workshop-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="res/img/tab.png" class="modal-img">
+                    <h3 class="pt-5 mb-0 text-secondary">Thanks for your love and support!</h3>
+                    <p class="pb-3 text-muted"><small>Hope that you enjoy it well! Check also our site</small></p>
+                    <a role="button" class="btn btn-secondary text-white mb-3" href="https://www.sunlimetech.com" target="_blank">www.sunlimetech.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid footer">
         <p style=""> Copyright &#9400; 2019 Talk a Bit. All rights reserved.</p>
     </div>
@@ -1152,7 +1144,17 @@
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
 
+        function handleWorkshopClick() {
+            $('#workshop-modal').modal('show');
+        }
+
+
         $( document ).ready(function() {
+
+            $(".workshops-container article").on('click', function(){
+                handleWorkshopClick();
+            });
+
 
             $('body').scrollspy({
                 target: '#navbar',
