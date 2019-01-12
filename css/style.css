@@ -1149,7 +1149,6 @@ b{
 }
 
 #sponsors h4 {
-    margin-top: 40px;
     font-size: 24px;
     font-family: 'Decima';
     text-transform: uppercase;
@@ -1208,11 +1207,6 @@ b{
     background-image: linear-gradient(to right, rgb(80,200,120), rgba(0, 0, 0, 0));
 }
 
-#sponsors .sec-container div {
-  /*  margin: 30px 0px; */
-    margin:0px;
-}
-
 #sponsors .sponsors-img {
   /*  width: 170px;
     height: 170px;*/
@@ -1220,27 +1214,20 @@ b{
     background-size: contain;
 }
 
-.partners-sec-container .sponsors-img, .sec-container .sponsors-img {
-    margin-right: 40px;
-    margin-bottom: 20px !important;
+#sponsors a:link {
+    text-decoration: none;
 }
 
-#sponsors .sponsors-img.niaefeup {
-    height: 100px;
-    margin: 0 auto;
-    float: none;
+#sponsors a:visited {
+    text-decoration: none;
 }
 
-#sponsors .sponsors-img.ieee {
-    height: 80px;
-    margin: 0 auto;
-    float: none;
+#sponsors a:hover {
+    text-decoration: none;
 }
 
-#sponsors .sponsors-img.dei {
-    height: 40px;
-    margin: 0 auto;
-    float: none;
+#sponsors a:active {
+    text-decoration: none;
 }
 
 #sponsors .sponsors-img.juni {
