@@ -826,13 +826,44 @@ b{
 }
 
 #workshop-modal .modal-content {
-    background-color: rgba(0,0,0, 1);
+    background-color: rgba(15, 46, 81, 0.6);
     border: 5px solid #009AD7;
 }
 
 #workshop-modal .modal-header {
     max-height: 50px;
     border: none;
+}
+
+#workshop-modal .modal-body button {
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 1.2rem !important;
+}
+
+.ws-modal-room, .ws-modal-schedule, .ws-modal-speakers {
+    font-weight: 700;
+    color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #009AD7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0076a4;
 }
 
 #workshop-modal .modal-body hr {
@@ -1997,7 +2028,7 @@ ul.timeline > li p {
     margin-bottom: 0px;
 }
 
-button.show-more-content, button.show-less-content{
+button.show-more-content, button.show-less-content, #workshop-modal .modal-body button{
     margin-left: 5px;
     font-size: 13.5px;
     background-color: transparent;
@@ -2007,7 +2038,7 @@ button.show-more-content, button.show-less-content{
     font-family: 'DecimaABold';
 }
 
-.btn-dark:hover {
+.btn-dark:hover, #workshop-modal .modal-body button:hover {
     color: #fff;
     background-color: #009AD7;
     border-color: #009AD7;
