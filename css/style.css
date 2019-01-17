@@ -809,6 +809,20 @@ b{
     margin: 0px;
 }
 
+@media (min-width: 767px) and (max-width: 1200px) {
+    .workshops-container .in {
+        height: 250px;
+        display: table;
+    }
+
+    .workshops-container .in .wrapper {
+       display: table-cell;
+        vertical-align: middle;
+    }
+
+
+}
+
 #program article:hover {
     transform: scale(1.05);
 }
