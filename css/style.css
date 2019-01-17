@@ -809,9 +809,9 @@ b{
     margin: 0px;
 }
 
-@media (min-width: 767px) and (max-width: 1200px) {
+@media (min-width: 767px) {
     .workshops-container .in {
-        height: 250px;
+        height: 230px;
         display: table;
     }
 
@@ -819,8 +819,6 @@ b{
        display: table-cell;
         vertical-align: middle;
     }
-
-
 }
 
 #program article:hover {
@@ -847,6 +845,10 @@ b{
 #workshop-modal .modal-header {
     max-height: 50px;
     border: none;
+}
+
+#workshop-modal .modal-header button:focus, .slide a:focus {
+    outline: 0;
 }
 
 #workshop-modal .modal-body button {
