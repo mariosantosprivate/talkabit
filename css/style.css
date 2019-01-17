@@ -839,15 +839,34 @@ b{
     width: 150px;
     text-transform: uppercase;
     font-size: 1.2rem !important;
+    background-color: #009AD7 !important;
+    color: white !important;
+    margin-bottom: 8px;
 }
 
-.ws-modal-room, .ws-modal-schedule, .ws-modal-speakers {
+.ws-modal-room, .ws-modal-schedule, .ws-modal-speakers, .ws-modal-status {
     font-weight: 700;
     color: white;
 }
 
-#workshop-modal .ws-insight-detail {
+#workshop-modal .ws-insight-detail-room, .ws-insight-detail-schedule, .ws-insight-detail-experts, .ws-insight-detail-status {
     font-family: DecimaALight;
+}
+
+#workshop-modal .status {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#workshop-modal .status.green-dot {
+    background-color: #3e8f3e;
+}
+
+#workshop-modal .status.red-dot {
+    background-color: #ac2925;
 }
 
 /* width */
@@ -911,9 +930,11 @@ b{
 
 #workshop-modal .ws-sponsor {
     background-size: contain;
-    height: 30px;
 }
 
+.modal-footer {
+    background-color: rgba(255,255, 255, 0.2);
+}
 .modal-footer span {
     align-items: center;
 }
@@ -1149,7 +1170,6 @@ b{
 }
 
 #sponsors h4 {
-    margin-top: 40px;
     font-size: 24px;
     font-family: 'Decima';
     text-transform: uppercase;
@@ -1208,11 +1228,6 @@ b{
     background-image: linear-gradient(to right, rgb(80,200,120), rgba(0, 0, 0, 0));
 }
 
-#sponsors .sec-container div {
-  /*  margin: 30px 0px; */
-    margin:0px;
-}
-
 #sponsors .sponsors-img {
   /*  width: 170px;
     height: 170px;*/
@@ -1220,27 +1235,20 @@ b{
     background-size: contain;
 }
 
-.partners-sec-container .sponsors-img, .sec-container .sponsors-img {
-    margin-right: 40px;
-    margin-bottom: 20px !important;
+#sponsors a:link {
+    text-decoration: none;
 }
 
-#sponsors .sponsors-img.niaefeup {
-    height: 100px;
-    margin: 0 auto;
-    float: none;
+#sponsors a:visited {
+    text-decoration: none;
 }
 
-#sponsors .sponsors-img.ieee {
-    height: 80px;
-    margin: 0 auto;
-    float: none;
+#sponsors a:hover {
+    text-decoration: none;
 }
 
-#sponsors .sponsors-img.dei {
-    height: 40px;
-    margin: 0 auto;
-    float: none;
+#sponsors a:active {
+    text-decoration: none;
 }
 
 #sponsors .sponsors-img.juni {
