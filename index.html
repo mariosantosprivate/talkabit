@@ -453,11 +453,10 @@
                     <div class="row workshops-title-container">
                         <div class="col-md-12">
                             <h3> Workshops </h3>
-                            <p> To be announced soon.</p>
                         </div>
                     </div>
 
-                    <!-- Workshops
+                    <!-- Workshops -->
                     <div class="row workshops-container justify-content-center">
                         <article class="col-sm-12 col-md-4 text-center" id="workshop-1">
                             <div class="in">
@@ -499,7 +498,7 @@
                             </div>
                         </article>
                     </div>
-                    -->
+
 
                     <div class="row networking-container">
                         <div class="col-sm-12 col-md-12">
@@ -1232,14 +1231,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="workshop-modal-title">
-                        <hr><h3></h3><hr>
+                        <hr>
+                        <h3></h3><hr>
                     </div>
                     <div class="workshop-modal-details text-left">
                         <div class="workshop-modal-insight">
                             <p><span class="ws-modal-room">Room:</span> <span class="ws-insight-detail-room"></span></p>
                             <p><span class="ws-modal-schedule">Schedule:</span> <span class="ws-insight-detail-schedule"></span></p>
-                            <p><span class="ws-modal-speakers">Speakers:</span> <span class="ws-insight-detail-experts"></span></p>
-                            <p><span class="ws-modal-status">Status:</span> <span class="status"> </span> <span class="ws-insight-detail-status"></span></p>
+                            <p><span class="ws-modal-status">Status*:</span> <span class="status"> </span> <span class="ws-insight-detail-status"></span></p>
+                            <p class="ws-modal-capacity-note">*Limited to 20 individuals</p>
                         </div>
                         <div class="workshop-modal-description text-center">
                             <p class="ws-description-title" style="font-weight: bold"> Description: </p>
@@ -1344,6 +1344,11 @@
                 }, { offset: '60%' });
             });
 
+
+            $('.workshops-container').waypoint(function() {
+                $('.workshops-container').addClass(" animated flipInX");
+                $('.workshops-container').css("visibility", "visible");
+            }, { offset: '50%' });
 
             //lazy load applied to google maps
             $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAFi3rUC2wDO4Lu-LTdNkQoM1MGkd-XsvU&callback=initMap")

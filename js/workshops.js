@@ -1,33 +1,30 @@
 const workshops = [
     {
-        title: "Workshop: Dominos",
+        title: "\"Dominos\"",
         room: "To be defined",
         schedule: "9:15 am - 10:25 am",
-        expert: "Arlindo Oliveira & Marcelo Marques",
         status: true,
         description: "To be included\n",
         sponsor_image: "",
-        form_link: "",
+        form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     },
     {
-        title: "Workshop: Evolve Software to scale on teams",
+        title: "\"Evolve Software to scale on teams\"",
         room: "To be defined",
         schedule: "9:15 am - 10:25 am",
-        expert: "Arlindo Oliveira & Marcelo Marques",
         status: true,
         description: "To be included\n",
         sponsor_image: "res/img/sponsors/farfetch.png",
-        form_link: "",
+        form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     },
     {
-        title: "Workshop: Design Systems 101: Front-end as a Team Sport",
+        title: "\"Design Systems 101: Front-end as a Team Sport\"",
         room: "B003",
         schedule: "9:15 am - 10:25 am",
-        expert: "Arlindo Oliveira & Marcelo Marques",
         status: true,
         description: "To be included\n",
         sponsor_image: "res/img/sponsors/HostelWorld.png",
-        form_link: "",
+        form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     }
 ];
 
@@ -40,7 +37,6 @@ $( document ).ready(function() {
         $("#workshop-modal .workshop-modal-title h3").text(workshops[id].title);
         $("#workshop-modal .ws-insight-detail-room").text(workshops[id].room);
         $("#workshop-modal .ws-insight-detail-schedule").text(workshops[id].schedule);
-        $("#workshop-modal .ws-insight-detail-experts").text(workshops[id].expert);
         $("#workshop-modal .status").removeClass('red-dot').removeClass('green-dot');
         $("#workshop-modal .status").addClass(workshops[id].status ? "green-dot" : "red-dot");
         $("#workshop-modal .ws-insight-detail-status").text(workshops[id].status ? "(Available)" : "(Full)");
@@ -48,7 +44,7 @@ $( document ).ready(function() {
         $("#workshop-modal .ws-sponsor").attr("src",(workshops[id].sponsor_image));
         $("#workshop-modal .modal-body button").attr("disabled", (!workshops[id].status));
         $("#workshop-modal .modal-body a").attr("href", workshops[id].form_link);
-        $("#workshop-modal .ws-sponsor").css("max-height", id === 1 ? "20px": "30px");
+        $("#workshop-modal .ws-sponsor").css("max-height", id === 1 ? "23px": "35px");
         if(id === 0)
             $(".modal-footer").hide();
         else

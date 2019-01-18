@@ -780,11 +780,14 @@ b{
     width: 100%;
 }
 
+#program .workshops-container {
+    visibility: hidden;
+}
+
 #program article {
     margin-top: 20px;
     margin-bottom: 20px;
     transition: transform .7s;
-
 }
 
 #program .program-separator {
@@ -863,6 +866,11 @@ b{
 .ws-modal-room, .ws-modal-schedule, .ws-modal-speakers, .ws-modal-status {
     font-weight: 700;
     color: white;
+}
+
+.ws-modal-capacity-note {
+    font-size: 0.8rem;
+    margin-top: 10px !important;
 }
 
 #workshop-modal .ws-insight-detail-room, .ws-insight-detail-schedule, .ws-insight-detail-experts, .ws-insight-detail-status {
