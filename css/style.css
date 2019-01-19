@@ -773,8 +773,8 @@ b{
 #program .in {
     background: rgba(0,0,0, 0.4);
     padding: 26px 16px;
-    /*box-shadow: 0 0 4px 2px rgba(253, 253, 253, 0.1);*/
-    border: 3px solid #009AD7;
+    border-left: 1px solid #009AD7;
+    border-right: 1px solid #009AD7;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -784,12 +784,19 @@ b{
     visibility: hidden;
 }
 
+@supports (-ms-ime-align:auto) {
+    #program article {
+        transition: none !important;
+    }
+}
+
 #program article {
     margin: 20px;
-    transition: transform .7s;
-    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
-    -moz-box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
-    box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
+    transition: transform .7s, box-shadow .7s;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,154,215,1);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0,154,215,1);
+    box-shadow: 0px 0px 1px 1px rgba(0,154,215,1);
+    border-radius: 5px;
 }
 
 
@@ -828,9 +835,13 @@ b{
     }
 }
 
+
 #program article:hover {
     transform: scale(1.05);
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
+    -moz-box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
+    box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
 }
 
 #workshop-modal .modal-body button:disabled:hover {
@@ -1591,6 +1602,10 @@ figure{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #program article:hover .in {
+        border: 2px solid #009AD7;
     }
 
     .cfp-info-container, .cfp-sub-content, .cfp-review-content {
