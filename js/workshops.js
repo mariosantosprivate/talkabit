@@ -19,7 +19,7 @@ const workshops = [
     },
     {
         title: "\"Design Systems 101: Front-end as a Team Sport\"",
-        room: "B003",
+        room: "To be defined",
         schedule: "9:15 am - 10:25 am",
         status: true,
         description: "To be included\n",

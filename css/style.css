@@ -785,10 +785,13 @@ b{
 }
 
 #program article {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     transition: transform .7s;
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
+    -moz-box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
+    box-shadow: 0px 0px 10px 6px rgba(0,154,215,1);
 }
+
 
 #program .program-separator {
     background-color: #009AD7;
@@ -806,6 +809,7 @@ b{
     color: white;
     font-size: 22px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 #program .workshop-content-container p {
@@ -826,6 +830,11 @@ b{
 
 #program article:hover {
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+#workshop-modal .modal-body button:disabled:hover {
+    cursor: not-allowed !important;
 }
 
 #program article:hover .in {
