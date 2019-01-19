@@ -1006,17 +1006,26 @@ b{
 #program .schedule-item-container {
     padding: 10px;
     margin-left: 15px !important;
-}
-
-#program .schedule-item-container:not(:last-child) {
-    /*border-bottom: 1px solid #009AD7;*/
+    margin-right: 15px !important;
 }
 
 #program .schedule-item {
     display: flex;
 }
 
-#program .schedule-item-content h5 {
+#program .schedule-item-content-sp{
+    display: flex;
+}
+
+#program .schedule-item-content-sp img{
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #009AD7;
+}
+
+#program .schedule-item h5 {
     font-size: 18px;
     font-weight: 600;
 }
