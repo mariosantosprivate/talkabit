@@ -50,6 +50,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav mx-auto navbar-first-list">
                 <li class="nav-item">
@@ -76,7 +77,9 @@
             </ul>
             <ul class="nav navbar-nav mx-auto">
                 <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="#">
-                    <img src="res/img/tab.png" width="40" height="40" alt="">
+                    <img height="40"
+                         src="res/img/logo.png"/>
+
                 </a>
             </ul>
             <ul class="nav navbar-nav mx-auto">
@@ -727,9 +730,12 @@
                                                <p> 13:45 </p>
                                                <p> 14:30 </p>
                                            </div>
-                                           <div class="schedule-item-content" >
-                                               <h5> Arlindo Oliveira </h5>
-                                               <p> Let's Talk a Bit About Artificial Intelligence.</p>
+                                           <div class="schedule-item-content-sp" >
+                                               <img src="res/img/speakers/arlindo-oliveira.jpg">
+                                               <div class="testes">
+                                                   <h5> Arlindo Oliveira </h5>
+                                                   <p> Let's Talk a Bit About Artificial Intelligence.</p>
+                                               </div>
                                            </div>
                                        </div>
                                    </div>
@@ -762,9 +768,12 @@
                                                <p> 15:55 </p>
                                                <p> 16:30 </p>
                                            </div>
-                                           <div class="schedule-item-content" >
-                                               <h5> Sérgio Viana </h5>
-                                               <p> Let's Talk a Bit About Personalized Experiences Through AI.</p>
+                                           <div class="schedule-item-content-sp">
+                                               <img src="res/img/speakers/sergio-viana.JPG">
+                                               <div class="testes">
+                                                   <h5> Sérgio Viana </h5>
+                                                   <p> Let's Talk a Bit About Personalized Experiences Through AI.</p>
+                                               </div>
                                            </div>
                                        </div>
                                    </div>
@@ -776,9 +785,12 @@
                                                <p> 16:30 </p>
                                                <p> 17:05 </p>
                                            </div>
-                                           <div class="schedule-item-content" >
-                                               <h5> Rui Cordeiro </h5>
-                                               <p> Let's Talk a Bit About Connected Cars.</p>
+                                           <div class="schedule-item-content-sp" >
+                                               <img src="res/img/speakers/rui-cordeiro.png">
+                                               <div class="testes">
+                                                   <h5> Rui Cordeiro </h5>
+                                                   <p> Let's Talk a Bit About Connected Cars.</p>
+                                               </div>
                                            </div>
                                        </div>
                                    </div>
@@ -790,9 +802,12 @@
                                                <p> 17:05 </p>
                                                <p> 17:40 </p>
                                            </div>
-                                           <div class="schedule-item-content" >
-                                               <h5> Clara Gonçalves </h5>
-                                               <p> Let's Talk a Bit About Transdisciplinary Approach to Innovation.</p>
+                                           <div class="schedule-item-content-sp" >
+                                               <img src="res/img/speakers/clara-goncalves.jpg">
+                                               <div class="testes">
+                                                   <h5> Clara Gonçalves </h5>
+                                                   <p> Let's Talk a Bit About Transdisciplinary Approach to Innovation.</p>
+                                               </div>
                                            </div>
                                        </div>
                                    </div>
@@ -811,9 +826,12 @@
                                                <p> 18:00 </p>
                                                <p> 18:35 </p>
                                            </div>
-                                           <div class="schedule-item-content" >
-                                               <h5> André Silva </h5>
-                                               <p> Let's Talk a Bit About Blockchain and the Web 3.0.</p>
+                                           <div class="schedule-item-content-sp" >
+                                               <img src="res/img/speakers/andre-silva.jpg">
+                                               <div class="testes">
+                                                   <h5> André Silva </h5>
+                                                   <p> Let's Talk a Bit About Blockchain and the Web 3.0.</p>
+                                               </div>
                                            </div>
                                        </div>
                                    </div>
@@ -825,9 +843,12 @@
                                                <p> 18:35 </p>
                                                <p> 19:10 </p>
                                            </div>
-                                           <div class="schedule-item-content" >
-                                               <h5> Rui Pereira </h5>
-                                               <p> Let's Talk a Bit About Green Software.</p>
+                                           <div class="schedule-item-content-sp" >
+                                               <img src="res/img/speakers/rui-pereira.jpg">
+                                               <div class="testes">
+                                                   <h5> Rui Pereira </h5>
+                                                   <p> Let's Talk a Bit About Green Software.</p>
+                                               </div>
                                            </div>
                                        </div>
                                    </div>
@@ -1266,6 +1287,7 @@
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
     <script type="text/javascript" src="js/smooth.scroll.js"></script>
+    <script type="text/javascript" src="js/navbar-toggler-animation.js"></script>
     <script type="text/javascript" src="js/workshops.js"></script>
     <script type="text/javascript" src="js/speaker-expand-content.js"></script>
     <script type="text/javascript" src="js/hide-navbar.js"></script>
@@ -1276,9 +1298,6 @@
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
 
-
-
-
         $( document ).ready(function() {
 
             $('body').scrollspy({
@@ -1288,7 +1307,10 @@
 
             $(".landing-logo img").lazyload({
                 threshold: 1000,
+            });
 
+            $(".navbar-brand img").lazyload({
+                threshold: 1000,
             });
 
             $("#landing").lazyload({
@@ -1329,7 +1351,6 @@
                 $('.tickets').delay(100).animate({"opacity": 1.00}, 500);
                 $('#tickets-available').delay(500).animate({"opacity": 1.00}, 500);
             }, { offset: '80%' });
-
 
             $('.speaker').each(function() {
                 let $this = $(this);
