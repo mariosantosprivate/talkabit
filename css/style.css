@@ -545,7 +545,8 @@ body {
 
 @media screen and  (min-width: 356px) and (max-width: 397px){
     #mc_embed_signup  input[type="email"] {
-        min-width: 150px; !important;
+        min-width: 120px; !important;
+        max-width: 160px !important;
     }
 
     #mc_embed_signup input[type="submit"] {
@@ -570,6 +571,7 @@ body {
 @media screen and (min-width: 397px) and (max-width: 506px) {
     #mc_embed_signup  input[type="email"] {
         min-width: 203px; !important;
+        max-width: 230px !important;
     }
 
     #mc_embed_signup input[type="submit"] {
