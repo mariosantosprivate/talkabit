@@ -1,28 +1,31 @@
 const workshops = [
     {
-        title: "\"Dominos\"",
-        room: "To be defined",
-        schedule: "9:15 am - 10:25 am",
+        title: "\"Learn how to build a computer entirely out of dominoes.\"",
+        room: "B111",
+        schedule: "10:35 am - 12:00 am",
         status: true,
-        description: "To be included\n",
+        description_line1: "\"Learn how to build a computer entirely out of dominoes.\" is a workshop that will teach you how to build a computer using only dominoes!\n At the end of this workshop, we will bring together a team to try to beat the world's greatest computer dominos record!",
+        description_line2:   " <br/>" + " There is no requirement so feel free to join us!",
         sponsor_image: "",
         form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     },
     {
         title: "\"Evolve Software to scale on teams\"",
-        room: "To be defined",
+        room: "B109",
         schedule: "9:15 am - 10:25 am",
         status: true,
-        description: "To be included\n",
+        description_line1: "A workshop provided by our gold sponsor, Farfetch!",
+        description_line2: "You should bring your own computer and have a minimal knowledge in software development.",
         sponsor_image: "res/img/sponsors/farfetch.png",
         form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     },
     {
         title: "\"Design Systems 101: Front-end as a Team Sport\"",
-        room: "To be defined",
+        room: "B110",
         schedule: "9:15 am - 10:25 am",
         status: true,
-        description: "To be included\n",
+        description_line1: "This workshop will be given by another gold sponsor, Hostelworld!",
+        description_line2: "The prerequisites are the same as for Farfetch workshop, as such it requires your personal computer and being faimiliar with software development.",
         sponsor_image: "res/img/sponsors/HostelWorld.png",
         form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     }
@@ -40,7 +43,7 @@ $( document ).ready(function() {
         $("#workshop-modal .status").removeClass('red-dot').removeClass('green-dot');
         $("#workshop-modal .status").addClass(workshops[id].status ? "green-dot" : "red-dot");
         $("#workshop-modal .ws-insight-detail-status").text(workshops[id].status ? "(Available)" : "(Full)");
-        $("#workshop-modal .ws-description-content").text(workshops[id].description);
+        $("#workshop-modal .ws-description-content").text(workshops[id].description_line1).append("<br/>" + workshops[id].description_line2);
         $("#workshop-modal .ws-sponsor").attr("src",(workshops[id].sponsor_image));
         $("#workshop-modal .modal-body button").attr("disabled", (!workshops[id].status));
         $("#workshop-modal .modal-body a").attr("href", workshops[id].form_link);

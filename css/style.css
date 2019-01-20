@@ -831,7 +831,7 @@ b{
 
 @media (min-width: 767px) {
     .workshops-container .in {
-        height: 230px;
+        height: 260px;
         display: table;
     }
 
@@ -860,6 +860,8 @@ b{
 
 #program .workshops-container {
     margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #workshop-modal {
