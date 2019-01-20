@@ -50,6 +50,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav mx-auto navbar-first-list">
                 <li class="nav-item">
@@ -76,7 +77,9 @@
             </ul>
             <ul class="nav navbar-nav mx-auto">
                 <a class="navbar-brand hide brand-img-hide-mobile py-0" id="navbarBrandImg" href="#">
-                    <img src="res/img/tab.png" width="40" height="40" alt="">
+                    <img height="40"
+                         src="res/img/logo.png"/>
+
                 </a>
             </ul>
             <ul class="nav navbar-nav mx-auto">
@@ -1284,6 +1287,7 @@
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
     <script type="text/javascript" src="js/smooth.scroll.js"></script>
+    <script type="text/javascript" src="js/navbar-toggler-animation.js"></script>
     <script type="text/javascript" src="js/workshops.js"></script>
     <script type="text/javascript" src="js/speaker-expand-content.js"></script>
     <script type="text/javascript" src="js/hide-navbar.js"></script>
@@ -1294,9 +1298,6 @@
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
 
-
-
-
         $( document ).ready(function() {
 
             $('body').scrollspy({
@@ -1306,7 +1307,10 @@
 
             $(".landing-logo img").lazyload({
                 threshold: 1000,
+            });
 
+            $(".navbar-brand img").lazyload({
+                threshold: 1000,
             });
 
             $("#landing").lazyload({
@@ -1347,7 +1351,6 @@
                 $('.tickets').delay(100).animate({"opacity": 1.00}, 500);
                 $('#tickets-available').delay(500).animate({"opacity": 1.00}, 500);
             }, { offset: '80%' });
-
 
             $('.speaker').each(function() {
                 let $this = $(this);
