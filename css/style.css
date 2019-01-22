@@ -706,7 +706,7 @@ b{
 
 #about h4, #speakers h3, #program h3{
     font-size: 25px;
-    font-family: 'Decima';
+    font-family: 'DecimaBold';
     text-transform: uppercase;
     color: #009AD7;
     font-weight: 700;
@@ -809,12 +809,15 @@ b{
 #program .program-separator {
     background-color: #009AD7;
     margin: 0px 15px;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #program .program-separator h4 {
     color: white;
     margin: 0 auto;
     padding: 5px;
+    font-family: "DecimaA";
     font-size: 20px;
 }
 
@@ -831,7 +834,7 @@ b{
 
 @media (min-width: 767px) {
     .workshops-container .in {
-        height: 260px;
+        height: 220px;
         display: table;
     }
 
@@ -1088,10 +1091,15 @@ b{
 }
 
 #program .coffee-break {
+
+
     background-color: rgba(0,0,0, 0.2) !important;
     border: 2px solid #009AD7
 }
-
+#program .coffee-break h4 {
+    font-family: "DecimaLight";
+    font-size: 18px;
+}
 #program .schedule-container p {
     font-size: 16px;
 }
@@ -1112,7 +1120,7 @@ b{
 }
 
 #location h3{
-    font-family: 'Decima';
+    font-family: 'DecimaBold';
 }
 
 #location p{
@@ -1202,7 +1210,7 @@ b{
 }
 #sponsors h3{
     font-size: 25px;
-    font-family: 'Decima';
+    font-family: 'DecimaBold';
     text-transform: uppercase;
     color: #0f0f0f;
     font-weight: 700;
