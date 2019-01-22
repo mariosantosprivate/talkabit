@@ -1047,6 +1047,7 @@ b{
 
 #program .schedule-item {
     display: flex;
+    width: 100%;
 }
 
 #program .schedule-item-content-sp{
@@ -1064,6 +1065,24 @@ b{
 #program .schedule-item h5 {
     font-size: 18px;
     font-weight: 600;
+}
+
+#program .schedule-item-title {
+    display: flex;
+    width: 100%;
+}
+
+.forum-button-container {
+    width: 100%;
+    padding-left: 10px;
+}
+
+#program .schedule-item-title button {
+    background-color: #009AD7;
+
+    outline: none;
+    font-size: .6rem;
+    padding: .08rem .5rem !important;
 }
 
 #program .time {
@@ -1092,6 +1111,23 @@ b{
 
 #program .schedule-container p {
     font-size: 16px;
+}
+
+#program .forum-speakers {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#program .forum-speakers img {
+    height: 70px;
+    width: 70px;
+    margin: 0px 10px 10px 0px;
+    background-size: contain;
+    border-radius: 50%;
+    border: 3px solid #009AD7;
 }
 
 /* Location */
