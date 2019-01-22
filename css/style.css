@@ -1055,6 +1055,10 @@ b{
     width: 100%;
 }
 
+.schedule-item-title h5.LDSO-INTRO {
+    min-width: 4.8rem !important;
+}
+
 #program .schedule-item-content-sp{
     display: flex;
 }
@@ -1077,7 +1081,7 @@ b{
     width: 100%;
 }
 
-.forum-button-container {
+.schedule-item-title > div {
     width: 100%;
     padding-left: 10px;
 }
@@ -1131,13 +1135,22 @@ b{
     justify-content: center;
 }
 
-#program .forum-speakers img {
+#program .schedule-item-content .hide {
+    display: none;
+}
+
+
+#program .forum-speakers img, .ldso-intro-speaker img {
     height: 70px;
     width: 70px;
     margin: 0px 10px 10px 0px;
     background-size: contain;
     border-radius: 50%;
     border: 3px solid #009AD7;
+}
+
+.ldso-intro-speaker img {
+    margin: 0px !important;
 }
 
 /* Location */
