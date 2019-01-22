@@ -706,7 +706,7 @@ b{
 
 #about h4, #speakers h3, #program h3{
     font-size: 25px;
-    font-family: 'Decima';
+    font-family: 'DecimaBold';
     text-transform: uppercase;
     color: #009AD7;
     font-weight: 700;
@@ -809,19 +809,22 @@ b{
 #program .program-separator {
     background-color: #009AD7;
     margin: 0px 15px;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #program .program-separator h4 {
     color: white;
     margin: 0 auto;
     padding: 5px;
+    font-family: "DecimaA";
     font-size: 20px;
 }
 
 #program .workshop-title-container p {
     color: white;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: "DecimaABold";
     text-transform: uppercase;
 }
 
@@ -831,7 +834,7 @@ b{
 
 @media (min-width: 767px) {
     .workshops-container .in {
-        height: 260px;
+        height: 220px;
         display: table;
     }
 
@@ -892,7 +895,7 @@ b{
 }
 
 .ws-modal-room, .ws-modal-schedule, .ws-modal-speakers, .ws-modal-status {
-    font-weight: 700;
+    font-family: "DecimaABold";
     color: white;
 }
 
@@ -955,16 +958,18 @@ b{
 }
 
 #workshop-modal .workshop-modal-description .ws-description-title {
+    font-family: "DecimaABold";
     margin-bottom: 5px;
 }
 
 #workshop-modal .workshop-modal-description .ws-description-content {
     max-height: 150px;
     overflow: auto;
-    font-family: DecimaALight;
 }
 
-
+#workshop-modal{
+    font-family: 'DecimaALight';
+}
 #workshop-modal .modal-header span {
     color: white;
     font-size: 2rem;
@@ -973,7 +978,7 @@ b{
 #workshop-modal .workshop-modal-title h3 {
     color: white;
     font-style: italic;
-    font-family: "Decima Italic";
+    font-family: "DecimaBold";
 }
 
 #workshop-modal .modal-body img {
@@ -994,8 +999,8 @@ b{
 
 
 #program .networking-container h4 {
-    font-weight: 700;
-    font-size: 23px;
+    font-family: "DecimaABold";
+    font-size: 20px;
     margin-top: 30px;
 }
 
@@ -1064,7 +1069,7 @@ b{
 
 #program .schedule-item h5 {
     font-size: 18px;
-    font-weight: 600;
+    font-family: "DecimaA";
 }
 
 #program .schedule-item-title {
@@ -1105,10 +1110,15 @@ b{
 }
 
 #program .coffee-break {
+
+
     background-color: rgba(0,0,0, 0.2) !important;
     border: 2px solid #009AD7
 }
-
+#program .coffee-break h4 {
+    font-family: "DecimaLight";
+    font-size: 18px;
+}
 #program .schedule-container p {
     font-size: 16px;
 }
@@ -1146,7 +1156,7 @@ b{
 }
 
 #location h3{
-    font-family: 'Decima';
+    font-family: 'DecimaBold';
 }
 
 #location p{
@@ -1236,7 +1246,7 @@ b{
 }
 #sponsors h3{
     font-size: 25px;
-    font-family: 'Decima';
+    font-family: 'DecimaBold';
     text-transform: uppercase;
     color: #0f0f0f;
     font-weight: 700;
@@ -1893,7 +1903,14 @@ ul.timeline > li p {
 
 #tickets-available{
     margin-top: 40px ;
-    /*margin-bottom: 40px ; */ /*DESCOMENTAR QUANDO TIVER A APP*/
+    margin-bottom: 40px ;
+}
+
+#app-available .link{
+    color: inherit;
+    font-family: 'DecimaA';
+    border-bottom: 2px solid #009AD7;
+    animation: blinker 1.5s linear infinite;
 }
 
 .tickets-btn:link:hover, .tickets-btn:visited:hover {
