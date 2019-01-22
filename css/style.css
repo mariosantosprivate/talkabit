@@ -892,7 +892,7 @@ b{
 }
 
 .ws-modal-room, .ws-modal-schedule, .ws-modal-speakers, .ws-modal-status {
-    font-weight: 700;
+    font-family: "DecimaABold";
     color: white;
 }
 
@@ -955,16 +955,18 @@ b{
 }
 
 #workshop-modal .workshop-modal-description .ws-description-title {
+    font-family: "DecimaABold";
     margin-bottom: 5px;
 }
 
 #workshop-modal .workshop-modal-description .ws-description-content {
     max-height: 150px;
     overflow: auto;
-    font-family: DecimaALight;
 }
 
-
+#workshop-modal{
+    font-family: 'DecimaALight';
+}
 #workshop-modal .modal-header span {
     color: white;
     font-size: 2rem;
@@ -973,7 +975,7 @@ b{
 #workshop-modal .workshop-modal-title h3 {
     color: white;
     font-style: italic;
-    font-family: "Decima Italic";
+    font-family: "DecimaBold";
 }
 
 #workshop-modal .modal-body img {
