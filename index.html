@@ -220,26 +220,24 @@
                         <a href="https://www.eventbrite.com/e/talk-a-bit-2019-tickets-53913000235?fbclid=IwAR33Phz2qOtAV0C8tGK02wu8QANdLuPYvcxAWObSvfpH82CxbHUX7pyAtZw" class="btn btn-sm tickets-btn tickets-btn-left">Get your tickets here</a>
                         <span class="a-right"></span>
                     </div>
-                   <!-- <div class="tickets-btn-outside ">
-                        <a href="#" class="btn btn-sm tickets-btn tickets-btn-right">Workshop reservations here </a>
 
-                    </div>-->
                 </div>
-              <!--  <div id="app-available" class="col-md-12 content-mobile">
+               <div id="app-available" class="col-md-12 content-mobile">
                     <div class="row">
-                    <div class="col-md-6">
-                        <p>If you are attending the conference, check out our brand new App! <br/> It's available for Android and iOS!</p>
+                    <div class="col-md-8">
+                        <p>If you are attending the conference, check out our brand new App! <br/> It's available for Android and you can get it <a href="https://play.google.com/store/apps/details?id=com.org.talkabit"
+                        class="link">here</a> right now!</p>
                     </div>
-                    <div class="col-md-6 app-links">
-                        <a href="#">
+                    <div class="col-md-4 app-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.org.talkabit" class="pull-right">
                             <img src="res/img/google_play.png"  class="img-smaller" height="50px"/>
                         </a>
-                        <a href="#">
+                        <!--<a href="#">
                             <img src="res/img/ios.svg"  class="img-smaller" height="50px"/>
-                        </a>
+                        </a>-->
                     </div>
                     </div>
-                </div>-->
+                </div>
             </div>
         </div>
     </div>
@@ -1380,14 +1378,14 @@
                     $('.speaker-detailed-info', $this).addClass("animated zoomInDown");
                     $('.speaker-detailed-info', $this).css("visibility", "visible");
 
-                }, { offset: '60%' });
+                }, { offset: '80%' });
             });
 
 
             $('.workshops-container').waypoint(function() {
                 $('.workshops-container').addClass(" animated flipInX");
                 $('.workshops-container').css("visibility", "visible");
-            }, { offset: '50%' });
+            }, { offset: '80%' });
 
             //lazy load applied to google maps
             $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAFi3rUC2wDO4Lu-LTdNkQoM1MGkd-XsvU&callback=initMap")
