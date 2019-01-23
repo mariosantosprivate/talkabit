@@ -47,7 +47,8 @@ $( document ).ready(function() {
         $("#workshop-modal .ws-sponsor").attr("src",(workshops[id].sponsor_image));
         $("#workshop-modal .modal-body button").attr("disabled", (!workshops[id].status));
         $("#workshop-modal .modal-body a").attr("href", workshops[id].form_link);
-        $("#workshop-modal .ws-sponsor").css("max-height", id === 1 ? "23px": "35px");
+        $("#workshop-modal .ws-sponsor").css("max-height", id === 1 ? "30px": "35px");
+        $("#workshop-modal .modal-footer").css("background-color", id === 1? "rgba(255,255, 255, .9)" : "rgba(255,255, 255, 0.2)");
         if(id === 0)
             $(".modal-footer").hide();
         else
