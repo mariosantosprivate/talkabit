@@ -190,7 +190,7 @@
     </div>
     <div id="about" class="about">
         <div class="container">
-            <div class="row content">
+            <div class="row content-appliable-top">
                 <div class="col-md-6 about-conference">
                     <h4>About the conference</h4>
                     <p>Talk a Bit is a non-profit tech conference organized by graduating Software Engineering students from FEUP, the Faculty of Engineering of the University of Porto. Like in previous occurrences, this year's 7th edition of the conference will focus on the future of technology.</p>
@@ -203,7 +203,19 @@
                     <h4>VII Edition</h4>
                     <p>The 7th edition of Talk a Bit will take place on January 26th, 2019, at FEUP. Starting at 9:00, the morning will be occupied by presentations from the codingforsocialimpact.org project, a local project that has FEUP students developing real projects for real organizations that aim to use those projects to make a positive social impact. Also during the morning, there will be several workshops with different subjects, which will be announced soon.</p>
                     <p>During the afternoon, there will be talks from external speakers, as well as a discussion forum. Both will cover all sorts of topics about the main theme of this conference.</p>
+                    <p>The booklet from this edition is already available and can be downloaded here: </p>
+                    <p class="text-center">
+                        <figure class="text-center">
+                            <a class="text-center" href="res/booklet-7th-edition.pdf" download="booklet-7th-edition">
+                            <img src="res/img/pdf.png"  class="img-smaller" height="45px"/>
+                            </a>
+                            <figcaption>Booklet.pdf</figcaption>
+                        </figure>
+                    </p>
                 </div>
+            </div>
+            <div class="booklet-section embed-responsive embed-responsive-16by9">
+                <iframe class=embed-responsive-item" src="https://e.issuu.com/anonymous-embed.html?u=talkabit&d=talkabit_booklet_final3" width="944" height="500" frameborder="0" allowfullscreen="true"></iframe>
             </div>
         </div>
     </div>
@@ -1446,12 +1458,21 @@
 
             }, { offset: '70%' });
 
+
+
             $('.about-edition').waypoint(function() {
 
                 $('.about-edition').addClass(" animated slideInRight");
                 $('.about-edition').css("visibility", "visible");
 
             }, { offset: '70%' });
+
+            $('.booklet-section').waypoint(function() {
+
+                $('.booklet-section').addClass(" animated pulse");
+                $('.booklet-section').css("visibility", "visible");
+
+            }, { offset: '30%' });
 
             $('#tickets').waypoint(function() {
                 $('.tickets').delay(100).animate({"opacity": 1.00}, 500);
