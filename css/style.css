@@ -993,6 +993,9 @@ b{
     align-items: center;
 }
 
+#workshop-modal .modal-footer{
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
 
 
 #program .networking-container h4 {
@@ -1156,7 +1159,7 @@ b{
     width: 100%;
     font-family: 'DecimaALight';
     background: #0f2e51;
-    text-align: justify;
+    text-align: left;
 }
 
 #map  {
@@ -1972,8 +1975,18 @@ ul.timeline > li p {
 }
 
 #tickets-available{
-    margin-top: 40px ;
-    margin-bottom: 40px ;
+   /* margin-top: 40px ;
+    margin-bottom: 40px ;*/
+    margin-bottom: 20px ;
+}
+
+#app-available{
+    margin-top:20px;
+}
+
+#tickets-available .ticket-thanks{
+    font-family: "DecimaA";
+    font-size: 19px;
 }
 
 #app-available .link{
