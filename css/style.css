@@ -1982,6 +1982,7 @@ ul.timeline > li p {
 
 #app-available{
     margin-top:20px;
+    opacity:0;
 }
 
 #tickets-available .ticket-thanks{
