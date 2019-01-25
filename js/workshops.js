@@ -26,7 +26,7 @@ const workshops = [
         status: true,
         description_line1: "This workshop will be given by another gold sponsor, Hostelworld!",
         description_line2: "The prerequisites are the same as for Farfetch workshop, as such it requires your personal computer and being familiar with software development.",
-        sponsor_image: "res/img/sponsors/HostelWorld.png",
+        sponsor_image: "res/img/sponsors/hostel-world.png",
         form_link: "https://docs.google.com/forms/d/e/1FAIpQLSflMZzzAB8dfJF6QL7OQckkuiqE9OwDDTEPsFFxOMbSjxYM8g/viewform?usp=sf_link",
     }
 ];
