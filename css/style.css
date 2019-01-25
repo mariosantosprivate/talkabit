@@ -1614,12 +1614,19 @@ hr{
     height: 100%;
 
 }
-.program-committee-redirect {
-    margin-top: 20px;
-}
+
+
 
 .departments .col-sm-2{
     margin-top: 10px;
+}
+
+.advisory-board {
+    margin-top: 20px;
+}
+
+.program-committee-redirect {
+    margin-bottom: 10px;
 }
 
 .departments a {
