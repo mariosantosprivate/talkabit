@@ -637,11 +637,6 @@ body {
 
 @media (max-width: 397px) {
 
-    /* To remove */
-    .social ul {
-        margin-top: 60px;
-    }
-
     .social {
         margin-bottom: 30px;
     }
