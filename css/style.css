@@ -418,7 +418,11 @@ body {
     }
 
     .conference-status p {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .conference-status p:before, .conference-status p:after {
+        font-size: 2.2rem !important;
     }
 }
 
@@ -636,7 +640,7 @@ body {
 }
 
 @media (max-width: 397px) {
-
+    conference-status
     .social {
         margin-bottom: 30px;
     }
@@ -1833,7 +1837,7 @@ figure{
 
 @media (min-width: 398px) and (max-width: 576px){
     .conference-status p {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
