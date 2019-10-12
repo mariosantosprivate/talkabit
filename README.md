@@ -2,17 +2,17 @@
 Talk a Bit Website
 
 ### Features
-* [] Login/register
-* [] About
-* [] Previous editions
-* [] Tickets
-* [] Speakers
-* [] Program
-* [] Sponsors
-* [] Location
-* [] Organization
-* [] Profile (at least to see achievements and score
-* [] QR Code reader to read achievements
+* [ ] Login/register
+* [ ] About
+* [ ] Previous editions
+* [ ] Tickets
+* [ ] Speakers
+* [ ] Program
+* [ ] Sponsors
+* [ ] Location
+* [ ] Organization
+* [ ] Profile (at least to see achievements and score
+* [ ] QR Code reader to read achievements
 
 ### Warnings
 
