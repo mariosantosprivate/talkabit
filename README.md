@@ -2,15 +2,16 @@
 Talk a Bit Website
 
 ### Features
-* [ ] Login/register
 * [ ] About
-* [ ] Previous editions
+* [x] Previous editions
 * [ ] Tickets
 * [ ] Speakers
 * [ ] Program
 * [ ] Sponsors
 * [ ] Location
 * [ ] Organization
+
+* [ ] Login/register
 * [ ] Profile (at least to see achievements and score
 * [ ] QR Code reader to read achievements
 
