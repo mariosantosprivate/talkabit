@@ -2,13 +2,13 @@
 Talk a Bit Website
 
 ### Features
-* [ ] About
-* [x] Previous editions
-* [ ] Tickets
-* [ ] Speakers
-* [ ] Program
+* [ ] About (Bruno)
+* [x] Previous editions (Danny)
+* [ ] Tickets - botão na landing page + link na navbar para site dos eventos
+* [ ] Speakers (David)
+* [ ] Program (Danny)
 * [ ] Sponsors
-* [ ] Location
+* [ ] Location - FEUP com google maps + salas com indicações textuais
 * [ ] Organization
 
 * [ ] Login/register
