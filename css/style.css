@@ -11,6 +11,7 @@
     font-weight: normal;
     src: local('Decima'), url('fonts/Decima-Pro.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'DecimaBold';
     font-style: normal;
@@ -41,8 +42,11 @@
 
 body {
     font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
-  
+
 html,
 .fullscreen {
     display: flex;
@@ -50,7 +54,6 @@ html,
     margin: 0;
     padding: 0;
     width: 100%;
-    
 }
 
 .container {
@@ -64,6 +67,68 @@ html,
 
 .logo {
     max-width: 40%;
+}
+
+#organization {
+    height: 100%;
+}
+
+.container-fluid.organization-gallery {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+
+.organization-card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vw;
+    color: white;
+    margin-bottom: 0.1%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.organization-card-text-overlay {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vw;
+    color: white;
+    margin-bottom: 0.1%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.organization-card-text-overlay:hover {
+    opacity: 1;
+    color: black;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.row.organization-columns {
+    height: 80%;
+    text-align: center;
+}
+
+.row.organization-columns-overlay {
+    position: absolute;
+    height: 80%;
+    text-align: center;
+    z-index: 1;
+}
+
+.organization-gallery {
+    height: 100%;
 }
 
 .landing {
@@ -107,11 +172,15 @@ html,
     font-family: 'DecimaABold';
 }
 
+.h-20 {
+    height: 20%!important;
+    background-color: black
+}
+
 @media (max-width: 992px) {
     .conf-status p {
         font-size: 2rem;
     }
-
     .logo {
         max-width: 70%;
     }
@@ -121,7 +190,6 @@ html,
     .conf-status p {
         font-size: 2rem;
     }
-
     .logo {
         max-width: 95%;
     }
@@ -131,7 +199,6 @@ html,
     .conf-status p {
         font-size: 1.5rem;
     }
-
     .logo {
         max-width: 100%;
     }
@@ -153,32 +220,35 @@ html,
 }
 
 @keyframes wave {
-	0%, 60%, 100% {
-		transform: initial;
-	}
-
-	30% {
-		transform: translateY(-15px);
-	}
+    0%,
+    60%,
+    100% {
+        transform: initial;
+    }
+    30% {
+        transform: translateY(-15px);
+    }
 }
 
-#navbar ul li > a,  #navbar .dropdown-menu .dropdown-item{
+#navbar ul li>a,
+#navbar .dropdown-menu .dropdown-item {
     color: white;
     font-family: 'DecimaA';
     letter-spacing: .3px;
     font-size: 17px;
 }
 
-#navbar .dropdown-menu .dropdown-item{
-	text-align: center;
+#navbar .dropdown-menu .dropdown-item {
+    text-align: center;
 }
 
-#navbar .dropdown-menu{
-	min-width: 8.5rem;
+#navbar .dropdown-menu {
+    min-width: 8.5rem;
 }
 
-#navbar .nav-item .nav-link, #navbar .dropdown-menu .dropdown-item{
-	font-size:15px;
+#navbar .nav-item .nav-link,
+#navbar .dropdown-menu .dropdown-item {
+    font-size: 15px;
     border: 5px solid transparent;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -187,20 +257,21 @@ html,
     opacity: 0.8;
 }
 
-#navbar .nav-item .nav-link:hover, #navbar .dropdown-menu .dropdown-item:hover {
+#navbar .nav-item .nav-link:hover,
+#navbar .dropdown-menu .dropdown-item:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-#navbar .dropdown-menu .dropdown-item:hover{
-	background:transparent;
+#navbar .dropdown-menu .dropdown-item:hover {
+    background: transparent;
 }
 
-#navbar .dropdown-menu{
-	background-color: transparent !important;
-	border: none;
-	border-radius:2px 2px 8px 8px;
-	padding:0;
+#navbar .dropdown-menu {
+    background-color: transparent !important;
+    border: none;
+    border-radius: 2px 2px 8px 8px;
+    padding: 0;
 }
 
 @media (min-width: 577px) {
@@ -209,7 +280,6 @@ html,
         right: 10px;
         bottom: 10px;
     }
-    
     .edition {
         width: 100%;
         font-size: 1.5rem;
@@ -225,11 +295,9 @@ html,
         right: 10px;
         bottom: 10px;
     }
-
     .logo-feup img {
         width: 150px;
     }
-
     .edition {
         width: 100%;
         font-size: 0.9rem;
@@ -240,24 +308,40 @@ html,
 }
 
 .conf-status p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
-  
+
+
 /* The typing effect */
+
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
-  
+
+
 /* The typewriter cursor effect */
+
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
 }
